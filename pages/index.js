@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import LinkedInIcon from '../node_modules/bootstrap-icons/icons/linkedin.svg'
+import StackOverflowIcon from '../node_modules/bootstrap-icons/icons/stack-overflow.svg'
+import TwitterIcon from '../node_modules/bootstrap-icons/icons/twitter.svg'
 
 export default function Home() {
   return <>
@@ -16,7 +19,7 @@ export default function Home() {
           <Link href="/" className="d-flex align-items-center text-dark text-decoration-none">
             <>
               <Image src="/logo.png" width="32" height="32" />
-              <span className="fs-4" style={{'padding-left': '8px'}}>Kalyna Solutions</span>
+              <span className="fs-4" style={{paddingLeft: '8px'}}>Kalyna Solutions</span>
             </>
           </Link>
 
@@ -35,15 +38,25 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="container col-xxl-10 py-5">
+        <div className="container col-xxl-10 py-4">
           <div className="row align-items-center g-5">
-            <div className="col-12 col-lg-4">
-              <Image className="d-block mx-lg-auto img-fluid" src="/profile.png" width="700" height="700" />
+            <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
+              <Image className="d-block mx-lg-auto img-fluid align-top" src="/profile.png" width="300" height="300" />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Daniel Jonsson</h1>
               <p className="lead">Daniel är en systemutvecklare med 7+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har Daniel arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Han började programmera som nioåring och har en civilingenjörsexamen i systemutveckling från Chalmers tekniska högskola. Plattformarna som Daniel har arbetat professionellt med är Windows, webben, iOS och inbyggda system.</p>
               {/*<p className="lead">Daniel är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Han är en fantastisk lagspelare och duktig på att höra sina kunder och kollegor. Han en människokännare med ett analytiskt sinne. Utanför arbetstid programmerar han gärna på egna projekt, tränar på gymmet, spelar schack, lär sig språk eller läser om kryptovalutor. Så här har en av Daniels referenser beskrivit honom: "Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa."</p>*/}
+              <h2 className="display-7 fw-bold lh-1 mb-3">Sociala medier</h2>
+              <a href="https://www.linkedin.com/in/dnljnssn/">
+                <Image src={LinkedInIcon} width="40" height="40" />
+              </a>
+              <a href="https://twitter.com/fibonaccital" className="px-3">
+                <Image src={TwitterIcon} width="40" height="40" />
+              </a>
+              <a href="https://stackoverflow.com/users/595990/daniel-jonsson">
+                <Image src={StackOverflowIcon} width="40" height="40" />
+              </a>
             </div>
           </div>
         </div>

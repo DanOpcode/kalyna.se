@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Vad betyder Kalyna?</h1>
-              <p className="lead">{'"Kalyna" är det ukrainska ordet "Калина"'} skrivet med latinska bokstäver. Калина är en växt som på svenska översätts till <a href="https://sv.wikipedia.org/wiki/Skogsolvon">skogsolvon</a>. Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är {'"'}<a href="https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen">Ett rött olvon vid ängen</a>{'"'} som skrevs 1914; {'"'}Ой у лузі червона калина{'"'} är dess originaltitel och kan exempelvis höras <a href="https://www.youtube.com/watch?v=EV_vT0Vud5Q">här</a>.</p>
+              <p className="lead">{'"Kalyna" är det ukrainska ordet "Калина"'} skrivet med latinska bokstäver. Калина är en växt som på svenska översätts till <a href="https://sv.wikipedia.org/wiki/Skogsolvon">skogsolvon</a>. Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är {'"'}<a href="https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen">Ett rött olvon vid ängen</a>{'"'} som skrevs 1914; {'"'}Ой у лузі червона калина{'"'} är dess originaltitel och kan exempelvis höras <a href="https://www.youtube.com/watch?v=EV_vT0Vud5Q" title="En grupp personer som sjunger sången 'Ой у лузі червона калина'.">här</a>.</p>
             </div>
           </div>
         </div>

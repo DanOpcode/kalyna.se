@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export && next-export-optimize-images && rm -r docs && mv out docs && touch docs/.nojekyll"
+    "export": "next build && next export && next-export-optimize-images && rm -r docs && mv out docs && touch docs/.nojekyll && git checkout docs/CNAME"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",

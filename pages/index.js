@@ -39,7 +39,7 @@ export default function Home() {
 
       <main>
         <div className="container col-xxl-10 py-4">
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
               <Image className="d-block mx-lg-auto img-fluid align-top" src="/profile.png" width="300" height="300" />
             </div>
@@ -62,11 +62,9 @@ export default function Home() {
         </div>
 
         <div className="container col-xxl-10 py-5">
-          <div className="row flex-lg-row-reverse align-items-center g-5">
-            <div className="col-12 col-lg-4">
-              <div className="d-block mx-auto img-fluid ">
-                <Image src="/kalyna-illustration.jpg" width="400" height="400" />
-              </div>
+          <div className="row flex-lg-row-reverse align-items-center gy-2 gx-5">
+            <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
+              <Image className="d-block mx-lg-auto img-fluid align-top" src="/kalyna-illustration.jpg" width="300" height="300" />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Vad betyder Kalyna?</h1>

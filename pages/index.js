@@ -8,6 +8,9 @@ import LinkedInIcon from '../node_modules/bootstrap-icons/icons/linkedin.svg'
 import StackOverflowIcon from '../node_modules/bootstrap-icons/icons/stack-overflow.svg'
 import TwitterIcon from '../node_modules/bootstrap-icons/icons/twitter.svg'
 import GitHubIcon from '../node_modules/bootstrap-icons/icons/github.svg'
+import FacebookIcon from '../node_modules/bootstrap-icons/icons/facebook.svg'
+import PhoneIcon from '../node_modules/bootstrap-icons/icons/phone.svg'
+import EnvelopeIcon from '../node_modules/bootstrap-icons/icons/envelope.svg'
 
 export default function Home() {
   return <>
@@ -35,7 +38,7 @@ export default function Home() {
           <Link href="/" className="d-flex align-items-center text-dark text-decoration-none">
             <>
               <Image src={LogoImage} width="32" height="32" alt="Företagsloggo för Kalyna Solutions AB." />
-              <span className="fs-4" style={{paddingLeft: '8px'}}>Kalyna Solutions</span>
+              <span className="fs-4" style={{paddingLeft: '8px'}}>Kalyna Solutions AB</span>
             </>
           </Link>
 
@@ -54,16 +57,123 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="container col-xxl-10 py-4">
+        <div className="container mb-5">
           <div className="row align-items-center align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
               <Image className="d-block mx-lg-auto img-fluid align-top" src={ProfileImage} width="300" height="300" alt="Profilbild av Daniel Jonsson, ägare av Kalyna Solutions AB." />
             </div>
             <div className="col-lg-8">
-              <h1 className="display-5 fw-bold lh-1 mb-3">Daniel Jonsson</h1>
+              <h1 className="display-5">Daniel Jonsson</h1>
               <p className="lead">Daniel är en systemutvecklare med 7+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har Daniel arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Han började programmera som nioåring och har en civilingenjörsexamen i systemutveckling från Chalmers tekniska högskola. Plattformarna som Daniel har arbetat professionellt med är Windows, webben, iOS och inbyggda system.</p>
-              {/*<p className="lead">Daniel är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Han är en fantastisk lagspelare och duktig på att höra sina kunder och kollegor. Han en människokännare med ett analytiskt sinne. Utanför arbetstid programmerar han gärna på egna projekt, tränar på gymmet, spelar schack, lär sig språk eller läser om kryptovalutor. Så här har en av Daniels referenser beskrivit honom: "Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa."</p>*/}
-              <h2 className="display-7 fw-bold lh-1 mb-3">Sociala medier</h2>
+              <p className="lead">Daniel är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Han är en fantastisk lagspelare och duktig på att höra sina kunder och kollegor. Han en människokännare med ett analytiskt sinne. Utanför arbetstid programmerar han gärna på egna projekt, tränar på gymmet, spelar schack, lär sig språk eller läser om kryptovalutor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container my-5">
+          <div className="row g-5">
+            <div className="col">
+              <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Citat från tidigare kollega.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div className="container my-5">
+          <div className="row g-5">
+            <div className="col">
+              <h1 className="display-5">Erfarenhet av tekniker</h1>
+            </div>
+          </div>
+          <div className="row g-5">
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Programmeringsspråk</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">C#</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">C</li>
+                <li class="list-group-item">C++</li>
+                <li class="list-group-item">Swift</li>
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+              </ul>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Ramverk & bibliotek</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">.NET Framework 4.8, .NET Core 3.1, .NET 6</li>
+                <li class="list-group-item">ASP.NET</li>
+                <li class="list-group-item">WPF</li>
+                <li class="list-group-item">Prism Library for WPF</li>
+                <li class="list-group-item">Telerik UI for WPF</li>
+                <li class="list-group-item">React</li>
+                <li class="list-group-item">Next.js</li>
+                <li class="list-group-item">jQuery</li>
+                <li class="list-group-item">Django</li>
+                <li class="list-group-item">Flask</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">Foundation Framework</li>
+              </ul>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Verkyg</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Azure DevOps</li>
+                <li class="list-group-item">Jenkins</li>
+                <li class="list-group-item">Grunt</li>
+                <li class="list-group-item">Gulp</li>
+                <li class="list-group-item">Webpack</li>
+                <li class="list-group-item">GNU Make</li>
+                <li class="list-group-item">CMake</li>
+                <li class="list-group-item">Ansible</li>
+              </ul>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Protokoll</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TCP/IP</li>
+                <li class="list-group-item">HTTP</li>
+                <li class="list-group-item">REST</li>
+                <li class="list-group-item">gRPC</li>
+                <li class="list-group-item">MQTT</li>
+                <li class="list-group-item">RabbitMQ</li>
+              </ul>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Utvecklingsmiljöer</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Visual Studio</li>
+                <li class="list-group-item">Visual Studio Code</li>
+                <li class="list-group-item">PyCharm</li>
+                <li class="list-group-item">Xcode</li>
+                <li class="list-group-item">Eclipse</li>
+                <li class="list-group-item">Notepad++</li>
+                <li class="list-group-item">Vim</li>
+              </ul>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <h2 className="display-7">Plattformar</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Windows</li>
+                <li class="list-group-item">Webben (backend & frontend)</li>
+                <li class="list-group-item">Linux/embedded</li>
+                <li class="list-group-item">iOS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="container py-5">
+          <div className="row g-5">
+            <div className="col-12 col-lg-6">
+              <h1 className="display-5">Daniel i sociala medier</h1>
               <a href="https://www.linkedin.com/in/dnljnssn/" className="px-1" title="Daniel Jonsson på LinkedIn.">
                 <Image src={LinkedInIcon} width="40" height="40" alt="LinkedIn-ikon." />
               </a>
@@ -77,6 +187,15 @@ export default function Home() {
                 <Image src={GitHubIcon} width="40" height="40" alt="GitHub-ikon." />
               </a>
             </div>
+            <div className="col-12 col-lg-6">
+              <h1 className="display-5">Kalyna Solutions AB i sociala medier</h1>
+              <a href="https://www.linkedin.com/company/kalyna-solutions-ab/" className="px-1" title="Kalyna Solutions AB på LinkedIn.">
+                <Image src={LinkedInIcon} width="40" height="40" alt="LinkedIn-ikon." />
+              </a>
+              <a href="https://www.facebook.com/kalyna.solutions.ab" className="px-1" title="Kalyna Solutions AB på Facebook.">
+                <Image src={FacebookIcon} width="40" height="40" alt="Facebook-ikon." />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -86,8 +205,27 @@ export default function Home() {
               <Image className="d-block mx-lg-auto img-fluid align-top" src={KalynaIllustrationImage} width="260" height="300" alt="Illustration av växten 'skogsolvon'." />
             </div>
             <div className="col-lg-8">
-              <h1 className="display-5 fw-bold lh-1 mb-3">Vad betyder Kalyna?</h1>
+              <h1 className="display-5">Vad betyder Kalyna?</h1>
               <p className="lead">{'"'}Kalyna{'"'} är det ukrainska ordet {'"'}Калина{'"'} skrivet med latinska bokstäver. Калина är en växt som på svenska översätts till <a href="https://sv.wikipedia.org/wiki/Skogsolvon" title="Wikipedia-artikel om skogsolvon.">skogsolvon</a>. Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är {'"'}<a href="https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen" title="Wikipedia-artikel om sången 'Ett rött olvon vid ängen'.">Ett rött olvon vid ängen</a>{'"'} som skrevs 1914; {'"'}Ой у лузі червона калина{'"'} är dess originaltitel och <a href="https://www.youtube.com/watch?v=EV_vT0Vud5Q" title="En grupp personer som sjunger sången 'Ой у лузі червона калина'.">sjungs fortfarande</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container py-5">
+          <div className="row g-5">
+            <div className="col-md-4">
+              <h1 className="display-5">Kontakt</h1>
+              <p className="lead">För att komma i kontakt med mig</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item align-middle">
+                  <Image src={PhoneIcon} width="20" height="20" />
+                  <span className="px-3">Telefon: <a href="tel:+46707329868" title="Ring till Daniel Jonsson.">+46 707 32 98 68</a></span>
+                </li>
+                <li class="list-group-item align-middle">
+                  <Image src={EnvelopeIcon} width="20" height="20" />
+                  <span className="px-3">Mejl: <a href="mailto:daniel.jonsson@kvadrat.se" title="Skicka mejl till Daniel Jonsson.">daniel.jonsson@kvadrat.se</a></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import LogoImage from '../public/logo.png'
+import ProfileImage from '../public/profile.png'
+import KalynaIllustrationImage from '../public/kalyna-illustration.jpg'
 import LinkedInIcon from '../node_modules/bootstrap-icons/icons/linkedin.svg'
 import StackOverflowIcon from '../node_modules/bootstrap-icons/icons/stack-overflow.svg'
 import TwitterIcon from '../node_modules/bootstrap-icons/icons/twitter.svg'
@@ -31,7 +34,7 @@ export default function Home() {
         <div className="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
           <Link href="/" className="d-flex align-items-center text-dark text-decoration-none">
             <>
-              <Image src="/logo.png" width="32" height="32" alt="Företagsloggo för Kalyna Solutions AB." />
+              <Image src={LogoImage} width="32" height="32" alt="Företagsloggo för Kalyna Solutions AB." />
               <span className="fs-4" style={{paddingLeft: '8px'}}>Kalyna Solutions</span>
             </>
           </Link>
@@ -54,7 +57,7 @@ export default function Home() {
         <div className="container col-xxl-10 py-4">
           <div className="row align-items-center align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
-              <Image className="d-block mx-lg-auto img-fluid align-top" src="/profile.png" width="300" height="300" alt="Profilbild av Daniel Jonsson, ägare av Kalyna Solutions AB." />
+              <Image className="d-block mx-lg-auto img-fluid align-top" src={ProfileImage} width="300" height="300" alt="Profilbild av Daniel Jonsson, ägare av Kalyna Solutions AB." />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Daniel Jonsson</h1>
@@ -80,7 +83,7 @@ export default function Home() {
         <div className="container col-xxl-10 py-5">
           <div className="row flex-lg-row-reverse align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
-              <Image className="d-block mx-lg-auto img-fluid align-top" src="/kalyna-illustration.jpg" width="260" height="300" alt="Illustration av växten 'skogsolvon'." />
+              <Image className="d-block mx-lg-auto img-fluid align-top" src={KalynaIllustrationImage} width="260" height="300" alt="Illustration av växten 'skogsolvon'." />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Vad betyder Kalyna?</h1>
@@ -93,7 +96,7 @@ export default function Home() {
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div className="col-md-4 d-flex align-items-center">
           <Link href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <Image className="mb-2" src="/logo.png" width="24" height="24" alt="Företagsloggo för Kalyna Solutions AB." />
+            <Image className="mb-2" src={LogoImage} width="24" height="24" alt="Företagsloggo för Kalyna Solutions AB." />
           </Link>
           <span className="mb-3 mb-md-0 text-muted">&copy; 2022 Kalyna Solutions AB</span>
         </div>

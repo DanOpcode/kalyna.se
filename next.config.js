@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
 const withExportImages = require('next-export-optimize-images')
+const withPurgeCss = require('next-purgecss');
 
-const nextConfig = withExportImages({
+const nextConfig = withPurgeCss(withExportImages({
   reactStrictMode: true,
   swcMinify: true,
-})
+}))
 
 module.exports = nextConfig

@@ -20,6 +20,7 @@
     "eslint": "8.26.0",
     "eslint-config-next": "^12.0.0",
     "next-export-optimize-images": "^1.9.0",
+    "next-purgecss": "^4.0.0",
     "sass": "^1.55.0"
   }
 }

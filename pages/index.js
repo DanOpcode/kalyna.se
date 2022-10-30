@@ -11,13 +11,15 @@ export default function Home() {
     <Head>
       <title>Kalyna Solutions AB</title>
       <meta name="description" content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling." key="desc" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content="Kalyna Solutions AB" />
       <meta property="og:description" content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling." />
       <meta property="og:image" content="/apple-touch-icon.png" />
+      <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content="fibonaccital" />
       <meta property="twitter:title" content="Kalyna Solutions AB" />
       <meta property="twitter:description" content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling." />
-      <meta property="twitter:image" content="/apple-touch-icon.png" />
+      <meta property="twitter:image" content="https://raw.githubusercontent.com/matachi/kalyna.se/main/public/logo.png" />
       <meta property="twitter:image:alt" content="Företagsloggo för Kalyna Solutions AB." />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

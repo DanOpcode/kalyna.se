@@ -80,7 +80,7 @@ export default function Home() {
         <div className="container col-xxl-10 py-5">
           <div className="row flex-lg-row-reverse align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
-              <Image className="d-block mx-lg-auto img-fluid align-top" src="/kalyna-illustration.jpg" width="300" height="300" alt="Illustration av växten 'skogsolvon'." />
+              <Image className="d-block mx-lg-auto img-fluid align-top" src="/kalyna-illustration.jpg" width="260" height="300" alt="Illustration av växten 'skogsolvon'." />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5 fw-bold lh-1 mb-3">Vad betyder Kalyna?</h1>

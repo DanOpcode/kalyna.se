@@ -73,11 +73,11 @@ export default function Home() {
         <div className="container my-5">
           <div className="row g-5">
             <div className="col">
-              <figure class="text-center">
-                <blockquote class="blockquote">
+              <figure className="text-center">
+                <blockquote className="blockquote">
                   <p>”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”</p>
                 </blockquote>
-                <figcaption class="blockquote-footer">
+                <figcaption className="blockquote-footer">
                   Citat från tidigare kollega.
                 </figcaption>
               </figure>
@@ -94,77 +94,77 @@ export default function Home() {
           <div className="row g-5">
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Programmeringsspråk</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">C#</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">JavaScript</li>
-                <li class="list-group-item">C</li>
-                <li class="list-group-item">C++</li>
-                <li class="list-group-item">Swift</li>
-                <li class="list-group-item">HTML</li>
-                <li class="list-group-item">CSS</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">C#</li>
+                <li className="list-group-item">Python</li>
+                <li className="list-group-item">JavaScript</li>
+                <li className="list-group-item">C</li>
+                <li className="list-group-item">C++</li>
+                <li className="list-group-item">Swift</li>
+                <li className="list-group-item">HTML</li>
+                <li className="list-group-item">CSS</li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Ramverk & bibliotek</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">.NET Framework 4.8, .NET Core 3.1, .NET 6</li>
-                <li class="list-group-item">ASP.NET</li>
-                <li class="list-group-item">WPF</li>
-                <li class="list-group-item">Prism Library for WPF</li>
-                <li class="list-group-item">Telerik UI for WPF</li>
-                <li class="list-group-item">React</li>
-                <li class="list-group-item">Next.js</li>
-                <li class="list-group-item">jQuery</li>
-                <li class="list-group-item">Django</li>
-                <li class="list-group-item">Flask</li>
-                <li class="list-group-item">Bootstrap</li>
-                <li class="list-group-item">Foundation Framework</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">.NET Framework 4.8, .NET Core 3.1, .NET 6</li>
+                <li className="list-group-item">ASP.NET</li>
+                <li className="list-group-item">WPF</li>
+                <li className="list-group-item">Prism Library for WPF</li>
+                <li className="list-group-item">Telerik UI for WPF</li>
+                <li className="list-group-item">React</li>
+                <li className="list-group-item">Next.js</li>
+                <li className="list-group-item">jQuery</li>
+                <li className="list-group-item">Django</li>
+                <li className="list-group-item">Flask</li>
+                <li className="list-group-item">Bootstrap</li>
+                <li className="list-group-item">Foundation Framework</li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Verkyg</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Azure DevOps</li>
-                <li class="list-group-item">Jenkins</li>
-                <li class="list-group-item">Grunt</li>
-                <li class="list-group-item">Gulp</li>
-                <li class="list-group-item">Webpack</li>
-                <li class="list-group-item">GNU Make</li>
-                <li class="list-group-item">CMake</li>
-                <li class="list-group-item">Ansible</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Azure DevOps</li>
+                <li className="list-group-item">Jenkins</li>
+                <li className="list-group-item">Grunt</li>
+                <li className="list-group-item">Gulp</li>
+                <li className="list-group-item">Webpack</li>
+                <li className="list-group-item">GNU Make</li>
+                <li className="list-group-item">CMake</li>
+                <li className="list-group-item">Ansible</li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Protokoll</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">TCP/IP</li>
-                <li class="list-group-item">HTTP</li>
-                <li class="list-group-item">REST</li>
-                <li class="list-group-item">gRPC</li>
-                <li class="list-group-item">MQTT</li>
-                <li class="list-group-item">RabbitMQ</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">TCP/IP</li>
+                <li className="list-group-item">HTTP</li>
+                <li className="list-group-item">REST</li>
+                <li className="list-group-item">gRPC</li>
+                <li className="list-group-item">MQTT</li>
+                <li className="list-group-item">RabbitMQ</li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Utvecklingsmiljöer</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Visual Studio</li>
-                <li class="list-group-item">Visual Studio Code</li>
-                <li class="list-group-item">PyCharm</li>
-                <li class="list-group-item">Xcode</li>
-                <li class="list-group-item">Eclipse</li>
-                <li class="list-group-item">Notepad++</li>
-                <li class="list-group-item">Vim</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Visual Studio</li>
+                <li className="list-group-item">Visual Studio Code</li>
+                <li className="list-group-item">PyCharm</li>
+                <li className="list-group-item">Xcode</li>
+                <li className="list-group-item">Eclipse</li>
+                <li className="list-group-item">Notepad++</li>
+                <li className="list-group-item">Vim</li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4">
               <h2 className="display-7">Plattformar</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Windows</li>
-                <li class="list-group-item">Webben (backend & frontend)</li>
-                <li class="list-group-item">Linux/embedded</li>
-                <li class="list-group-item">iOS</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Windows</li>
+                <li className="list-group-item">Webben (backend & frontend)</li>
+                <li className="list-group-item">Linux/embedded</li>
+                <li className="list-group-item">iOS</li>
               </ul>
             </div>
           </div>
@@ -215,14 +215,14 @@ export default function Home() {
           <div className="row g-5">
             <div className="col-md-4">
               <h1 className="display-5">Kontakt</h1>
-              <p className="lead">För att komma i kontakt med mig</p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item align-middle">
-                  <Image src={PhoneIcon} width="20" height="20" />
+              <p className="lead">För att komma i kontakt med mig:</p>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item align-middle">
+                  <Image src={PhoneIcon} width="20" height="20" alt="Telefon-ikon." />
                   <span className="px-3">Telefon: <a href="tel:+46707329868" title="Ring till Daniel Jonsson.">+46 707 32 98 68</a></span>
                 </li>
-                <li class="list-group-item align-middle">
-                  <Image src={EnvelopeIcon} width="20" height="20" />
+                <li className="list-group-item align-middle">
+                  <Image src={EnvelopeIcon} width="20" height="20" alt="Mejl-ikon." />
                   <span className="px-3">Mejl: <a href="mailto:daniel.jonsson@kvadrat.se" title="Skicka mejl till Daniel Jonsson.">daniel.jonsson@kvadrat.se</a></span>
                 </li>
               </ul>

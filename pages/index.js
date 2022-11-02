@@ -98,6 +98,7 @@ export default function Home() {
                 <li className="list-group-item">C#</li>
                 <li className="list-group-item">Python</li>
                 <li className="list-group-item">JavaScript</li>
+                <li className="list-group-item">SQL</li>
                 <li className="list-group-item">C</li>
                 <li className="list-group-item">C++</li>
                 <li className="list-group-item">Swift</li>

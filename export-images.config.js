@@ -1,7 +1,7 @@
 const config = {
   convertFormat: [
     ['png', 'webp'],
-    ['jpg', 'avif'],
+    ['jpg', 'webp'],
   ],
 }
 

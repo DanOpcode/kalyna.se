@@ -202,8 +202,8 @@ export default function Home() {
 
         <div className="container col-xxl-10 py-5">
           <div className="row flex-lg-row-reverse align-items-center gy-2 gx-5">
-            <div className="col-12 col-lg-4 d-flex justify-content-center align-self-start py-2">
-              <Image className="d-block mx-lg-auto img-fluid align-top" src={KalynaIllustrationImage} width="260" height="300" alt="Illustration av växten 'skogsolvon'." />
+            <div className="col-12 col-lg-4 d-flex justify-content-center py-2">
+              <Image className="d-block mx-lg-auto img-fluid" src={KalynaIllustrationImage} width="512" height="300" alt="Illustration av växten 'skogsolvon'." />
             </div>
             <div className="col-lg-8">
               <h1 className="display-5">Vad betyder Kalyna?</h1>

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import LogoImage from '../static/logo.png'
 import ProfileImage from '../static/profile.png'
 import KalynaIllustrationImage from '../static/kalyna-illustration.jpg'
+import KvadratLogoImage from '../static/kvadrat-logo.png'
+import ArtImage from '../static/art.png'
 import LinkedInIcon from '../node_modules/bootstrap-icons/icons/linkedin.svg'
 import StackOverflowIcon from '../node_modules/bootstrap-icons/icons/stack-overflow.svg'
 import TwitterIcon from '../node_modules/bootstrap-icons/icons/twitter.svg'
@@ -200,7 +202,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container col-xxl-10 py-5">
+        <div className="container py-5">
           <div className="row flex-lg-row-reverse align-items-center gy-2 gx-5">
             <div className="col-12 col-lg-4 d-flex justify-content-center py-2">
               <Image className="d-block mx-lg-auto img-fluid" src={KalynaIllustrationImage} width="512" height="300" alt="Illustration av växten 'skogsolvon'." />
@@ -213,18 +215,34 @@ export default function Home() {
         </div>
 
         <div className="container py-5">
-          <div className="row g-5">
-            <div className="col-md-4">
+          <div className="row align-items-center gy-2 gx-5">
+            <div className="col-lg-4 d-flex justify-content-center py-2">
+              <Image className="d-block mx-lg-auto img-fluid" src={KvadratLogoImage} width="400" height="172" alt="Logga för Kvadrat." />
+            </div>
+            <div className="col-lg-8">
+              <h1 className="display-5">Partner i Kvadrat</h1>
+              <p className="lead">Jag är partner i Kvadrat – Sveriges lyckligaste konsulter. Kvadrat erbjuder kunderna en unik kombination av konsultens expertis och egenföretagarens engagemang, attityd och motivation att alltid lyckas. Kvadrat bildades 1988 och är idag ca 500 Kvadratare med kontor i Stockholm, Göteborg, Malmö, Linköping, Norrköping, Jönköping, Växjö, Örebro, Borlänge och Sundsvall.</p>
+              <p className="lead"><a href="https://kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/">Se min konsultprofil på Kvadrat.se.</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container py-5">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-4 offset-lg-2 d-flex justify-content-center py-2">
+              <Image className="d-block mx-lg-auto img-fluid" src={ArtImage} width="300" height="300" alt="Abstrakt bild av skogsolvon." />
+            </div>
+            <div className="col-lg-4">
               <h1 className="display-5">Kontakt</h1>
               <p className="lead">För att komma i kontakt med mig:</p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item align-middle">
                   <Image src={PhoneIcon} width="20" height="20" alt="Telefon-ikon." />
-                  <span className="px-3">Telefon: <a href="tel:+46707329868" title="Ring till Daniel Jonsson.">+46 707 32 98 68</a></span>
+                  <span className="px-3 lead">Telefon: <a href="tel:+46707329868" title="Ring till Daniel Jonsson.">+46 707 32 98 68</a></span>
                 </li>
                 <li className="list-group-item align-middle">
                   <Image src={EnvelopeIcon} width="20" height="20" alt="Mejl-ikon." />
-                  <span className="px-3">Mejl: <a href="mailto:daniel.jonsson@kvadrat.se" title="Skicka mejl till Daniel Jonsson.">daniel.jonsson@kvadrat.se</a></span>
+                  <span className="px-3 lead">Mejl: <a href="mailto:daniel.jonsson@kvadrat.se" title="Skicka mejl till Daniel Jonsson.">daniel.jonsson@kalyna.se</a></span>
                 </li>
               </ul>
             </div>

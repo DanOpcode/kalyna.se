@@ -8,7 +8,7 @@ import KvadratLogoImage from '../public/static/kvadrat-logo.png'
 import ArtImage from '../public/static/art.png'
 import LinkedInIcon from '../node_modules/bootstrap-icons/icons/linkedin.svg'
 import StackOverflowIcon from '../node_modules/bootstrap-icons/icons/stack-overflow.svg'
-import TwitterIcon from '../node_modules/bootstrap-icons/icons/twitter.svg'
+import MastodonIcon from '../node_modules/bootstrap-icons/icons/mastodon.svg'
 import GitHubIcon from '../node_modules/bootstrap-icons/icons/github.svg'
 import FacebookIcon from '../node_modules/bootstrap-icons/icons/facebook.svg'
 import PhoneIcon from '../node_modules/bootstrap-icons/icons/phone.svg'
@@ -180,14 +180,14 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/dnljnssn/" className="px-1" title="Daniel Jonsson på LinkedIn.">
                 <Image src={LinkedInIcon} width="40" height="40" alt="LinkedIn-ikon." />
               </a>
-              <a href="https://twitter.com/fibonaccital" className="px-1" title="Daniel Jonsson på Twitter.">
-                <Image src={TwitterIcon} width="40" height="40" alt="Twitter-ikon." />
-              </a>
               <a href="https://stackoverflow.com/users/595990/daniel-jonsson" className="px-1" title="Daniel Jonsson på Stack Overflow.">
                 <Image src={StackOverflowIcon} width="40" height="40" alt="Stack Overflow-ikon." />
               </a>
               <a href="https://github.com/matachi" className="px-1" title="Daniel Jonsson på GitHub.">
                 <Image src={GitHubIcon} width="40" height="40" alt="GitHub-ikon." />
+              </a>
+              <a rel="me" href="https://mastodon.world/@fibonaccital" className="px-1" title="Daniel Jonsson på Mastodon.">
+                <Image src={MastodonIcon} width="40" height="40" alt="Mastodon-ikon." />
               </a>
             </div>
             <div className="col-12 col-lg-6">

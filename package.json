@@ -10,17 +10,17 @@
     "export": "next build && next export && next-export-optimize-images && rm -r docs && mv out docs && touch docs/.nojekyll && git checkout docs/CNAME"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
-    "bootstrap-icons": "^1.9.1",
-    "next": "^12.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "eslint": "8.26.0",
-    "eslint-config-next": "^12.0.0",
-    "next-export-optimize-images": "^1.9.0",
+    "eslint-config-next": "^13.2.3",
+    "next-export-optimize-images": "^2.0.0",
     "next-purgecss": "^4.0.0",
-    "sass": "^1.55.0"
+    "sass": "^1.58.3"
   }
 }

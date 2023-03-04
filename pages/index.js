@@ -256,7 +256,7 @@ export default function Home() {
           <Link href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" style={{marginTop: 4 }}>
             <Image className="mb-2" src={LogoImage} width="24" height="24" alt="Företagsloggo för Kalyna Solutions AB." />
           </Link>
-          <span className="mb-3 mb-md-0 text-muted">&copy; 2022 Kalyna Solutions AB</span>
+          <span className="mb-3 mb-md-0 text-muted">&copy; 2023 Kalyna Solutions AB</span>
         </div>
       </footer>
     </div>

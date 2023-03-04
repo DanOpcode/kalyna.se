@@ -179,25 +179,25 @@ export default function Home() {
             <div className="col-12 col-lg-6">
               <h1 className="display-5">Daniel i sociala medier</h1>
               <a href="https://www.linkedin.com/in/dnljnssn/" className="px-1" title="Daniel Jonsson på LinkedIn.">
-                <Image src={LinkedInIcon} width="40" height="40" alt="LinkedIn-ikon." />
+                <LinkedInIcon width="40" height="40" alt="LinkedIn-ikon." />
               </a>
               <a href="https://stackoverflow.com/users/595990/daniel-jonsson" className="px-1" title="Daniel Jonsson på Stack Overflow.">
-                <Image src={StackOverflowIcon} width="40" height="40" alt="Stack Overflow-ikon." />
+                <StackOverflowIcon width="40" height="40" alt="Stack Overflow-ikon." />
               </a>
               <a href="https://github.com/matachi" className="px-1" title="Daniel Jonsson på GitHub.">
-                <Image src={GitHubIcon} width="40" height="40" alt="GitHub-ikon." />
+                <GitHubIcon width="40" height="40" alt="GitHub-ikon." />
               </a>
               <a rel="me" href="https://mastodon.world/@fibonaccital" className="px-1" title="Daniel Jonsson på Mastodon.">
-                <Image src={MastodonIcon} width="40" height="40" alt="Mastodon-ikon." />
+                <MastodonIcon width="40" height="40" alt="Mastodon-ikon." />
               </a>
             </div>
             <div className="col-12 col-lg-6">
               <h1 className="display-5">Kalyna Solutions AB i sociala medier</h1>
               <a href="https://www.linkedin.com/company/kalyna-solutions-ab/" className="px-1" title="Kalyna Solutions AB på LinkedIn.">
-                <Image src={LinkedInIcon} width="40" height="40" alt="LinkedIn-ikon." />
+                <LinkedInIcon width="40" height="40" alt="LinkedIn-ikon." />
               </a>
               <a href="https://www.facebook.com/kalyna.solutions.ab" className="px-1" title="Kalyna Solutions AB på Facebook.">
-                <Image src={FacebookIcon} width="40" height="40" alt="Facebook-ikon." />
+                <FacebookIcon width="40" height="40" alt="Facebook-ikon." />
               </a>
             </div>
           </div>
@@ -238,11 +238,11 @@ export default function Home() {
               <p className="lead">För att komma i kontakt med mig:</p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item align-middle">
-                  <Image src={PhoneIcon} width="20" height="20" alt="Telefon-ikon." />
+                  <PhoneIcon width="20" height="20" style={{marginTop: -5 }} alt="Telefon-ikon." />
                   <span className="px-3 lead">Telefon: <a href="tel:+46707329868" title="Ring till Daniel Jonsson.">+46 707 32 98 68</a></span>
                 </li>
                 <li className="list-group-item align-middle">
-                  <Image src={EnvelopeIcon} width="20" height="20" alt="Mejl-ikon." />
+                  <EnvelopeIcon width="20" height="20" style={{marginTop: -5 }} alt="Mejl-ikon." />
                   <span className="px-3 lead">Mejl: <a href="mailto:daniel.jonsson@kvadrat.se" title="Skicka mejl till Daniel Jonsson.">daniel.jonsson@kalyna.se</a></span>
                 </li>
               </ul>

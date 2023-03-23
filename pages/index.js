@@ -66,7 +66,7 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <h1 className="display-5">Daniel Jonsson</h1>
-              <p className="lead">Daniel är en systemutvecklare med 7+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har Daniel arbetat med C#/.NET, men har även erfarenhet av JavaScript, C++, Python, Swift, Java, HTML och CSS. Han började programmera som nioåring och har en civilingenjörsexamen i systemutveckling från Chalmers tekniska högskola. Miljöerna som Daniel har arbetat professionellt med är Windows, webben, iOS, inbyggda system och testautomation. </p>
+              <p className="lead">Daniel är en systemutvecklare med 7+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har Daniel arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Han började programmera som nioåring och har en civilingenjörsexamen i systemutveckling från Chalmers tekniska högskola. Plattformarna som Daniel har arbetat professionellt med är Windows, webben, iOS och inbyggda system.</p>
               <p className="lead">Daniel är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Han är en fantastisk lagspelare och duktig på att höra sina kunder och kollegor. Han en människokännare med ett analytiskt sinne. Utanför arbetstid programmerar han gärna på egna projekt, tränar på gymmet, spelar schack, lär sig språk eller läser om kryptovalutor.</p>
             </div>
           </div>
@@ -104,7 +104,6 @@ export default function Home() {
                 <li className="list-group-item">C</li>
                 <li className="list-group-item">C++</li>
                 <li className="list-group-item">Swift</li>
-                <li className="list-group-item">Java</li>
                 <li className="list-group-item">HTML</li>
                 <li className="list-group-item">CSS</li>
               </ul>

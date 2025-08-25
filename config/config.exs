@@ -20,6 +20,7 @@ config :tailwind,
     args: ~w(
     --input=assets/css/site.css
     --output=_site/css/site.css
+    --config=tailwind.config.js
     )
   ]
 

@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mix help:*)"
+      "Bash(mix help:*)",
+      "Bash(mix compile)",
+      "Bash(mix:*)",
+      "Bash(grep:*)",
+      "Bash(./deps/tailwind/tailwind-*)",
+      "Bash(./_build/tailwind-linux-x64:*)"
     ],
     "deny": [],
     "ask": []

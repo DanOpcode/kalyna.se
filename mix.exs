@@ -5,7 +5,7 @@ defmodule Kalyna.MixProject do
     [
       app: :kalyna,
       version: "0.1.0",
-      elixir: "~> 1.15",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       compilers: Mix.compilers(),
       aliases: aliases(),

@@ -82,9 +82,6 @@ defmodule Kalyna.HomePage do
     <!-- About Section -->
       <section id="about" class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-            Om Daniel Jonsson
-          </h2>
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 text-center">
               <img
@@ -94,6 +91,9 @@ defmodule Kalyna.HomePage do
               />
             </div>
             <div class="md:col-span-2">
+              <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
+                Om Daniel Jonsson
+              </h2>
               <div class="text-slate-600 dark:text-slate-200 space-y-6">
                 <p>
                   Jag är en systemutvecklare med 10+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i systemutveckling från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system.
@@ -1650,9 +1650,6 @@ defmodule Kalyna.HomePage do
     <!-- Personal Section -->
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
-            Utanför jobbet
-          </h2>
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 text-center">
               <img
@@ -1662,35 +1659,33 @@ defmodule Kalyna.HomePage do
               />
             </div>
             <div class="md:col-span-2">
-              <div class="text-slate-600 dark:text-slate-200">
-                <p class="mb-6">
-                  När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj.
-                </p>
-                <p class="mb-6"></p>
-                <div class="grid md:grid-cols-2 gap-6 mt-8">
-                  <div>
-                    <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Personliga intressen
-                    </h4>
-                    <ul class="space-y-2">
-                      <li class="flex items-center text-slate-600 dark:text-slate-200">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                        Sparande och finans
-                      </li>
-                      <li class="flex items-center text-slate-600 dark:text-slate-200">
-                        <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-                        Self-hosting, Linux och öppen källkod
-                      </li>
-                      <li class="flex items-center text-slate-600 dark:text-slate-200">
-                        <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
-                        Funktionell programmering (Elixir)
-                      </li>
-                      <li class="flex items-center text-slate-600 dark:text-slate-200">
-                        <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
-                        Träning och hälsa
-                      </li>
-                    </ul>
-                  </div>
+              <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
+                Utanför jobbet
+              </h2>
+              <p class="mb-6 text-slate-600 dark:text-slate-200">
+                När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj.
+              </p>
+              <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div>
+                  <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                    Personliga intressen
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-center text-slate-600 dark:text-slate-200">
+                      <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span> Sparande och finans
+                    </li>
+                    <li class="flex items-center text-slate-600 dark:text-slate-200">
+                      <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                      Self-hosting, Linux och öppen källkod
+                    </li>
+                    <li class="flex items-center text-slate-600 dark:text-slate-200">
+                      <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                      Funktionell programmering (Elixir)
+                    </li>
+                    <li class="flex items-center text-slate-600 dark:text-slate-200">
+                      <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span> Träning och hälsa
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1700,9 +1695,6 @@ defmodule Kalyna.HomePage do
 
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto rounded-lg p-10">
-          <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
-            Del av Kvadrat
-          </h2>
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 px-4 py-10 rounded-lg bg-[#d9d4fc] dark:bg-[#5e0228]">
               <img
@@ -1712,6 +1704,9 @@ defmodule Kalyna.HomePage do
               />
             </div>
             <div class="md:col-span-2">
+              <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
+                Del av Kvadrat
+              </h2>
               <p class="text-slate-600 dark:text-slate-200 mb-4">
                 Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling.
               </p>
@@ -1820,7 +1815,7 @@ defmodule Kalyna.HomePage do
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
             Innehåll & community
           </h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid md:grid-cols-2 gap-8">
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
                 <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
@@ -1855,26 +1850,6 @@ defmodule Kalyna.HomePage do
                 class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium inline-block"
               >
                 Titta på videos
-              </a>
-            </div>
-            
-    <!-- X/Twitter -->
-            <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
-              <div class="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-lg flex items-center justify-center">
-                <svg class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">X</h3>
-              <p class="text-slate-600 dark:text-slate-200 mb-4">
-                Korta tankar och kommentarer.
-              </p>
-              <a
-                href="https://x.com/@DanOpcode"
-                target="_blank"
-                class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium inline-block"
-              >
-                Följ mig
               </a>
             </div>
           </div>

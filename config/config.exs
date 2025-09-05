@@ -24,6 +24,7 @@ config :tableau, :assets, tailwind: {Tailwind, :install_and_run, [:default, ~w(-
 
 config :tableau, :config,
   url: "http://localhost:4999",
+  out_dir: "docs",
   markdown: [
     mdex: [
       extension: [

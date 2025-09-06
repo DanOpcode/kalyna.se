@@ -1194,8 +1194,8 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_consilium.svg"
-                    alt="Consilium Marine & Safety logga"
+                    src="/images/company_logo_mentice.svg"
+                    alt="Mentice logga"
                     class="w-full h-full object-contain"
                   />
                 </div>
@@ -1204,10 +1204,10 @@ defmodule Kalyna.HomePage do
     <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                  Consilium Marine & Safety
+                  Mentice
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
+                  Lead-utvecklare • Konsultuppdrag • 2017–2019
                 </p>
               </div>
               
@@ -1238,6 +1238,186 @@ defmodule Kalyna.HomePage do
     <!-- Expandable Content -->
               <div
                 id="content-company-8"
+                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <div class="pt-4 border-t border-slate-200 mt-4">
+                  <div class="space-y-6">
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                      iOS-app
+                    </h4>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Utveckla en iPad-app för demonstration av kliniska instrument för endovaskulär kirurgi. Till en början var Daniel ensam iOS-utvecklare i projektet, och i 2 st uppföljningsprojekt var han lead-utvecklare för 2 st kollegor.
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Daniel implementerade en simulering av en operation med 3D-modeller av kirurgiska instrument. Han integrerade även stöd för att använda ett fysiskt instrument till att genomföra utvalda moment under operationen, där instrumentet kommunicerade med iPaden via Bluetooth (BLE). Projektet mottogs väl av kunden och ledde till 2 st uppföljningsprojekt, i vilka Daniel var lead-utvecklare tillsammans med 2 st kollegor.
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Swift
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          UIKit
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          SceneKit
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          OpenGL
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          BLE
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Blender
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          GIMP
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          SolidWorks
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Python
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Jira
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Git
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Xcode
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          agila metoder (Kanban)
+                        </span>
+                      </div>
+                    </div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                      Webb-app
+                    </h4>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Daniel var lead-utvecklare i ett team tillsammans med 2 st utvecklare, där han planerade och tillsammans med dem implementerade en ny version av en webbapplikation där läkare kunde starta övningar i en kirurgisimulator och se resultat från tidigare övningstillfällen. I den nya versionen implementerade de stöd för mer avancerad metrikinsamling, jämförelse av resultaten mot benchmarks, flerspråksstöd, samt möjligheten att kunna konfigurera simulatorövningarna.
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Daniel deltog i hela kedjan, från krav till implementation. I början av projektet formulerade Daniel arbetspaket och tidsestimat, ritade GUI-mockups och gjorde ER-diagram över den nya databasmodellen. Kunden var nöjd med planen, och därefter utförde Daniel också en stor del av implementationen tillsammans med sina 2 st kollegor. Han jobbade med både backend och frontend, och hade regelbundet möten med kunden för att ta emot feedback. Kunden var i slutet av projektet väldigt nöjd med resultatet.
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Python
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Django
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          SQLite
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          HTML
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          CSS
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          JavaScript
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          jQuery
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          jQuery UI
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          JSON
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Java
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Balsamiq
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Windows 10
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Visual Studio Code
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          agila metoder (Kanban)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    <!-- Company 9 -->
+            <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
+              <!-- Logo Row -->
+              <div class="flex justify-center mb-4">
+                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
+                  <img
+                    src="/images/company_logo_consilium.svg"
+                    alt="Consilium Marine & Safety logga"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              
+    <!-- Content -->
+              <div class="text-center mb-4">
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Consilium Marine & Safety
+                </h3>
+                <p class="text-slate-600 dark:text-slate-200">
+                  Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
+                </p>
+              </div>
+              
+    <!-- Expand Button -->
+              <button
+                onclick="toggleCompany('company-9')"
+                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                <span>Visa mer</span>
+                <div class="expand-icon transition-transform duration-300">
+                  <svg
+                    class="w-4 h-4 text-slate-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    >
+                    </path>
+                  </svg>
+                </div>
+              </button>
+              
+    <!-- Expandable Content -->
+              <div
+                id="content-company-9"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1457,7 +1637,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 9 -->
+    <!-- Company 10 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1482,7 +1662,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-9')"
+                onclick="toggleCompany('company-10')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>Visa mer</span>
@@ -1506,7 +1686,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-9"
+                id="content-company-10"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">

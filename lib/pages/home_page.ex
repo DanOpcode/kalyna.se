@@ -1100,8 +1100,8 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_labgruppen.png"
-                    alt="Lab Gruppen logga"
+                    src="/images/company_logo_avarn.png"
+                    alt="AVARN Security logga"
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -1110,10 +1110,10 @@ defmodule Kalyna.HomePage do
     <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                  Lab Gruppen
+                  Avarn Security
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Konsultuppdrag • 2020–2020
+                  Väktare • Behovsanställd • 2020–2021
                 </p>
               </div>
               
@@ -1144,6 +1144,66 @@ defmodule Kalyna.HomePage do
     <!-- Expandable Content -->
               <div
                 id="content-company-7"
+                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <div class="pt-4 border-t border-slate-200 mt-4">
+                  <p class="text-slate-600 dark:text-slate-200 text-sm">
+                    Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+    <!-- Company 8 -->
+            <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
+              <!-- Logo Row -->
+              <div class="flex justify-center mb-4">
+                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
+                  <img
+                    src="/images/company_logo_labgruppen.png"
+                    alt="Lab Gruppen logga"
+                    class="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+              
+    <!-- Content -->
+              <div class="text-center mb-4">
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Lab Gruppen
+                </h3>
+                <p class="text-slate-600 dark:text-slate-200">
+                  Systemutvecklare • Konsultuppdrag • 2020–2020
+                </p>
+              </div>
+              
+    <!-- Expand Button -->
+              <button
+                onclick="toggleCompany('company-8')"
+                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                <span>Visa mer</span>
+                <div class="expand-icon transition-transform duration-300">
+                  <svg
+                    class="w-4 h-4 text-slate-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    >
+                    </path>
+                  </svg>
+                </div>
+              </button>
+              
+    <!-- Expandable Content -->
+              <div
+                id="content-company-8"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1188,7 +1248,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 8 -->
+    <!-- Company 9 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1213,7 +1273,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-8')"
+                onclick="toggleCompany('company-9')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>Visa mer</span>
@@ -1237,7 +1297,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-8"
+                id="content-company-9"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1368,7 +1428,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 9 -->
+    <!-- Company 10 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1393,7 +1453,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-9')"
+                onclick="toggleCompany('company-10')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>Visa mer</span>
@@ -1417,7 +1477,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-9"
+                id="content-company-10"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1637,7 +1697,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 10 -->
+    <!-- Company 11 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1662,7 +1722,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-10')"
+                onclick="toggleCompany('company-11')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>Visa mer</span>
@@ -1686,7 +1746,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-10"
+                id="content-company-11"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">

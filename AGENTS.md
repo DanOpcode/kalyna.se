@@ -78,7 +78,9 @@ Creates a new markdown post in `_posts/` with proper frontmatter.
 - RSS Extension (titled "kalyna")
 
 ### Styling
-- TailwindCSS v4.1.0 configured to watch `assets/css/site.css`
+- Tailwind CSS CLI version is pinned in `config/config.exs` under `config :tailwind, version: ...`
+- The `:tailwind` dependency in `mix.exs` is the Elixir installer and has its own version
+- Development builds watch `assets/css/site.css`
 - CSS output to `docs/css/site.css`
 - Live reload in development mode
 

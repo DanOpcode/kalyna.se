@@ -1,6 +1,11 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
+    "DevOps • 2026–pågående" => "DevOps • 2026–present",
+    "Jag arbetar med DevOps hos Carmenta." => "I work with DevOps at Carmenta.",
+    "Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps." =>
+      "I contribute experience in software development and DevOps.",
+    "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",
     "agila metoder (Kanban)" => "agile methods (Kanban)",
@@ -186,11 +191,11 @@ defmodule Kalyna.Translations do
       "Wikipedia article about the song Oh, the Red Viburnum in the Meadow.",
     "En grupp personer som sjunger sången 'Ой у лузі червона калина'." =>
       "A group singing Oh, the Red Viburnum in the Meadow.",
-    "DevOps • Konsultuppdrag • 2024–pågående" => "DevOps • Consulting assignment • 2024–present",
-    "Systemutvecklare • Konsultuppdrag • 2022–pågående" =>
-      "Software developer • Consulting assignment • 2022–present",
-    "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetar med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team bygger vi diverse applikationer tillsammans." =>
-      "Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We build a variety of applications in a cross-functional team.",
+    "DevOps • Konsultuppdrag • 2024–2026" => "DevOps • Consulting assignment • 2024–2026",
+    "Systemutvecklare • Konsultuppdrag • 2022–2025" =>
+      "Software developer • Consulting assignment • 2022–2025",
+    "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans." =>
+      "Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We built a variety of applications in a cross-functional team.",
     "Växla mörkt läge" => "Toggle dark mode",
     "REST API:er" => "REST APIs"
   }

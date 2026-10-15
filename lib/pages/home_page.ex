@@ -198,6 +198,97 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
+                    src="/images/company_logo_carmenta.svg"
+                    alt={t(@lang, "Carmenta logga")}
+                    class="max-w-full max-h-full object-contain brightness-0"
+                  />
+                </div>
+              </div>
+              <!-- Content -->
+              <div class="text-center mb-4">
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                  <a href="https://carmenta.com/" class="underline">Carmenta</a>
+                </h3>
+                <p class="text-slate-600 dark:text-slate-200">{t(@lang, "DevOps • 2026–pågående")}</p>
+              </div>
+              <!-- Expand Button -->
+              <button
+                onclick="toggleCompany('company-1')"
+                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                <span>{t(@lang, "Visa mer")}</span>
+                <div class="expand-icon transition-transform duration-300">
+                  <svg
+                    class="w-4 h-4 text-slate-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    >
+                    </path>
+                  </svg>
+                </div>
+              </button>
+              <!-- Expandable Content -->
+              <div
+                id="content-company-1"
+                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <div class="pt-4 border-t border-slate-200 mt-4">
+                  <div class="space-y-6">
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        {t(@lang, "Jag arbetar med DevOps hos Carmenta.")}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        {t(@lang, "Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps.")}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          .NET
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          C#
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Docker
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Linux
+                        </span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                          Windows
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Company 2 -->
+            <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
+              <!-- Logo Row -->
+              <div class="flex justify-center mb-4">
+                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
+                  <img
                     src="/images/company_logo_imy.png"
                     alt={t(@lang, "IMY logga")}
                     class="max-w-full max-h-full object-contain"
@@ -211,13 +302,13 @@ defmodule Kalyna.HomePage do
                   {t(@lang, "Integritetsskyddsmyndigheten")}
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  {t(@lang, "DevOps • Konsultuppdrag • 2024–pågående")}
+                  {t(@lang, "DevOps • Konsultuppdrag • 2024–2026")}
                 </p>
               </div>
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-1')"
+                onclick="toggleCompany('company-2')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -241,7 +332,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-1"
+                id="content-company-2"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -253,7 +344,7 @@ defmodule Kalyna.HomePage do
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
                         {t(
                           @lang,
-                          "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetar med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team bygger vi diverse applikationer tillsammans."
+                          "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans."
                         )}
                       </p>
                     </div>
@@ -302,7 +393,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 2 -->
+    <!-- Company 3 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -325,7 +416,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-2')"
+                onclick="toggleCompany('company-3')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -349,7 +440,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-2"
+                id="content-company-3"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -414,7 +505,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 3 -->
+    <!-- Company 4 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -433,13 +524,13 @@ defmodule Kalyna.HomePage do
                   Altero Consulting
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2022–pågående")}
+                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2022–2025")}
                 </p>
               </div>
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-3')"
+                onclick="toggleCompany('company-4')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -463,7 +554,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-3"
+                id="content-company-4"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -524,7 +615,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 4 -->
+    <!-- Company 5 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -547,7 +638,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-4')"
+                onclick="toggleCompany('company-5')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -571,7 +662,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-4"
+                id="content-company-5"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -637,7 +728,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 5 -->
+    <!-- Company 6 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -662,7 +753,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-5')"
+                onclick="toggleCompany('company-6')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -686,7 +777,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-5"
+                id="content-company-6"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -763,7 +854,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 6 -->
+    <!-- Company 7 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -786,7 +877,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-6')"
+                onclick="toggleCompany('company-7')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -810,7 +901,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-6"
+                id="content-company-7"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1001,7 +1092,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 7 -->
+    <!-- Company 8 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1021,69 +1112,6 @@ defmodule Kalyna.HomePage do
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
                   {t(@lang, "Väktare • Behovsanställd • 2020–2021")}
-                </p>
-              </div>
-              
-    <!-- Expand Button -->
-              <button
-                onclick="toggleCompany('company-7')"
-                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
-              >
-                <span>{t(@lang, "Visa mer")}</span>
-                <div class="expand-icon transition-transform duration-300">
-                  <svg
-                    class="w-4 h-4 text-slate-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    >
-                    </path>
-                  </svg>
-                </div>
-              </button>
-              
-    <!-- Expandable Content -->
-              <div
-                id="content-company-7"
-                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-              >
-                <div class="pt-4 border-t border-slate-200 mt-4">
-                  <p class="text-slate-600 dark:text-slate-200 text-sm">
-                    {t(
-                      @lang,
-                      "Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid."
-                    )}
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-    <!-- Company 8 -->
-            <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
-              <!-- Logo Row -->
-              <div class="flex justify-center mb-4">
-                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-                  <img
-                    src="/images/company_logo_labgruppen.png"
-                    alt={t(@lang, "Lab Gruppen logga")}
-                    class="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              </div>
-              
-    <!-- Content -->
-              <div class="text-center mb-4">
-                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                  Lab Gruppen
-                </h3>
-                <p class="text-slate-600 dark:text-slate-200">
-                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2020–2020")}
                 </p>
               </div>
               
@@ -1114,6 +1142,69 @@ defmodule Kalyna.HomePage do
     <!-- Expandable Content -->
               <div
                 id="content-company-8"
+                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <div class="pt-4 border-t border-slate-200 mt-4">
+                  <p class="text-slate-600 dark:text-slate-200 text-sm">
+                    {t(
+                      @lang,
+                      "Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+    <!-- Company 9 -->
+            <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
+              <!-- Logo Row -->
+              <div class="flex justify-center mb-4">
+                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
+                  <img
+                    src="/images/company_logo_labgruppen.png"
+                    alt={t(@lang, "Lab Gruppen logga")}
+                    class="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+              
+    <!-- Content -->
+              <div class="text-center mb-4">
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Lab Gruppen
+                </h3>
+                <p class="text-slate-600 dark:text-slate-200">
+                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2020–2020")}
+                </p>
+              </div>
+              
+    <!-- Expand Button -->
+              <button
+                onclick="toggleCompany('company-9')"
+                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                <span>{t(@lang, "Visa mer")}</span>
+                <div class="expand-icon transition-transform duration-300">
+                  <svg
+                    class="w-4 h-4 text-slate-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    >
+                    </path>
+                  </svg>
+                </div>
+              </button>
+              
+    <!-- Expandable Content -->
+              <div
+                id="content-company-9"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1167,7 +1258,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 9 -->
+    <!-- Company 10 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1192,7 +1283,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-9')"
+                onclick="toggleCompany('company-10')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -1216,7 +1307,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-9"
+                id="content-company-10"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1335,7 +1426,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 10 -->
+    <!-- Company 11 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1363,7 +1454,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-10')"
+                onclick="toggleCompany('company-11')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -1387,7 +1478,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-10"
+                id="content-company-11"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
@@ -1570,7 +1661,7 @@ defmodule Kalyna.HomePage do
               </div>
             </div>
             
-    <!-- Company 11 -->
+    <!-- Company 12 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1595,7 +1686,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expand Button -->
               <button
-                onclick="toggleCompany('company-11')"
+                onclick="toggleCompany('company-12')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <span>{t(@lang, "Visa mer")}</span>
@@ -1619,7 +1710,7 @@ defmodule Kalyna.HomePage do
               
     <!-- Expandable Content -->
               <div
-                id="content-company-11"
+                id="content-company-12"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">

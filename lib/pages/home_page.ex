@@ -1,6 +1,7 @@
 defmodule Kalyna.HomePage do
   use Tableau.Page,
     layout: Kalyna.RootLayout,
+    title: "Fullstack-utvecklare i Stockholm",
     permalink: "/",
     lang: "sv"
 

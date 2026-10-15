@@ -9,10 +9,15 @@ defmodule Kalyna.SocialMetadataTest do
       lang = unquote(lang)
       path = if lang == "en", do: "/en/", else: "/"
 
+      title =
+        if lang == "en",
+          do: "Full-stack developer in Stockholm",
+          else: "Fullstack-utvecklare i Stockholm"
+
       html =
         case unquote(source) do
           :template ->
-            render(%{lang: lang, permalink: path})
+            render(%{lang: lang, permalink: path, title: title})
 
           :published ->
             File.read!(Path.expand("../docs#{path}index.html", __DIR__))
@@ -26,7 +31,7 @@ defmodule Kalyna.SocialMetadataTest do
       assert metadata["og:image:type"] == "image/png"
       assert metadata["og:image:width"] == "512"
       assert metadata["og:image:height"] == "512"
-      assert metadata["og:title"] == "Kalyna Solutions AB"
+      assert metadata["og:title"] == "#{title} | Kalyna Solutions AB"
       assert metadata["twitter:title"] == metadata["og:title"]
       assert metadata["twitter:description"] == metadata["og:description"]
       assert metadata["description"] == metadata["og:description"]

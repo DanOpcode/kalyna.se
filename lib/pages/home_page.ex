@@ -85,7 +85,9 @@ defmodule Kalyna.HomePage do
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 text-center">
               <img
-                src="/images/profile1.jpg"
+                src="/images/profile.png"
+                width="192"
+                height="192"
                 alt="Profilbild"
                 class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
               />

@@ -61,9 +61,7 @@ defmodule Kalyna.RootLayout do
         </main>
       </body>
 
-      <%= if Mix.env() == :dev do %>
-        {Phoenix.HTML.raw(Tableau.live_reload(assigns))}
-      <% end %>
+      {if Mix.env() == :dev, do: Phoenix.HTML.raw(Tableau.live_reload(assigns))}
     </html>
     """
     |> Phoenix.HTML.Safe.to_iodata()

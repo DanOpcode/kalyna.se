@@ -176,7 +176,7 @@ defmodule Kalyna.Translations do
     "Kalyna Solutions AB logga" => "Kalyna Solutions AB logo",
     "Egenkonsult i Stockholm som erbjuder fullstack-utveckling." =>
       "Independent consultant in Stockholm offering full-stack development.",
-    "Företagsloggo för Kalyna Solutions AB." => "Company logo for Kalyna Solutions AB.",
+    "Företagslogotyp för Kalyna Solutions AB." => "Company logo for Kalyna Solutions AB.",
     "IMY logga" => "IMY logo",
     "Re:it logga" => "Re:it logo",
     "Altero Consulting logga" => "Altero Consulting logo",

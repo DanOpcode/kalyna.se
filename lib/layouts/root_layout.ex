@@ -5,7 +5,30 @@ defmodule Kalyna.RootLayout do
   import Kalyna.Translations, only: [t: 2]
 
   def template(assigns) do
-    assigns = Map.put(assigns, :lang, Map.get(assigns.page, :lang, "sv"))
+    lang = Map.get(assigns.page, :lang, "sv")
+    permalink = Map.get(assigns.page, :permalink, "/")
+    base_url = assigns.site.config.url
+
+    title =
+      [assigns.page[:title], "Kalyna Solutions AB"]
+      |> Enum.filter(& &1)
+      |> Enum.join(" | ")
+
+    assigns =
+      Map.merge(assigns, %{
+        lang: lang,
+        title: title,
+        description:
+          assigns.page[:description] ||
+            t(lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling."),
+        canonical_url: URI.merge(base_url, permalink) |> URI.to_string(),
+        social_image_url: URI.merge(base_url, "/images/favicon-512x512.png") |> URI.to_string(),
+        locale: if(lang == "en", do: "en_GB", else: "sv_SE"),
+        alternate_locale: if(lang == "en", do: "sv_SE", else: "en_GB"),
+        translated_homepage: permalink in ["/", "/en/"],
+        swedish_url: URI.merge(base_url, "/") |> URI.to_string(),
+        english_url: URI.merge(base_url, "/en/") |> URI.to_string()
+      })
 
     ~H"""
     <!DOCTYPE html>
@@ -17,40 +40,29 @@ defmodule Kalyna.RootLayout do
         <meta http_equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>
-          {[@page[:title], "Kalyna Solutions AB"]
-          |> Enum.filter(& &1)
-          |> Enum.intersperse("|")
-          |> Enum.join(" ")}
-        </title>
+        <title>{@title}</title>
+        <link rel="canonical" href={@canonical_url} />
+        <meta name="description" content={@description} />
 
-        <meta
-          name="description"
-          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
-          key="desc"
-        />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Kalyna Solutions AB" />
-        <meta
-          property="og:description"
-          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
-        />
-        <meta property="og:image" content="/apple-touch-icon.png" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:creator" content="DanOpcode" />
-        <meta property="twitter:title" content="Kalyna Solutions AB" />
-        <meta
-          property="twitter:description"
-          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
-        />
-        <meta
-          property="twitter:image"
-          content="https://raw.githubusercontent.com/matachi/kalyna.se/main/public/logo.png"
-        />
-        <meta
-          property="twitter:image:alt"
-          content={t(@lang, "Företagsloggo för Kalyna Solutions AB.")}
-        />
+        <meta property="og:site_name" content="Kalyna Solutions AB" />
+        <meta property="og:title" content={@title} />
+        <meta property="og:description" content={@description} />
+        <meta property="og:url" content={@canonical_url} />
+        <meta property="og:locale" content={@locale} />
+        <meta :if={@translated_homepage} property="og:locale:alternate" content={@alternate_locale} />
+        <meta property="og:image" content={@social_image_url} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content={t(@lang, "Företagslogotyp för Kalyna Solutions AB.")} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@DanOpcode" />
+        <meta name="twitter:title" content={@title} />
+        <meta name="twitter:description" content={@description} />
+        <meta name="twitter:image" content={@social_image_url} />
+        <meta name="twitter:image:alt" content={t(@lang, "Företagslogotyp för Kalyna Solutions AB.")} />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -61,9 +73,9 @@ defmodule Kalyna.RootLayout do
         <link rel="me" href="https://mastodon.social/@DanOpcode" />
         <meta name="fediverse:creator" content="@DanOpcode@mastodon.social" />
 
-        <link rel="alternate" hreflang="sv" href="https://www.kalyna.se/" />
-        <link rel="alternate" hreflang="en" href="https://www.kalyna.se/en/" />
-        <link rel="alternate" hreflang="x-default" href="https://www.kalyna.se/" />
+        <link :if={@translated_homepage} rel="alternate" hreflang="sv" href={@swedish_url} />
+        <link :if={@translated_homepage} rel="alternate" hreflang="en" href={@english_url} />
+        <link :if={@translated_homepage} rel="alternate" hreflang="x-default" href={@swedish_url} />
         <link rel="stylesheet" href="/css/site.css" />
       </head>
 

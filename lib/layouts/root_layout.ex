@@ -2,10 +2,14 @@ defmodule Kalyna.RootLayout do
   use Tableau.Layout
   use Phoenix.Component
 
+  import Kalyna.Translations, only: [t: 2]
+
   def template(assigns) do
+    assigns = Map.put(assigns, :lang, Map.get(assigns.page, :lang, "sv"))
+
     ~H"""
     <!DOCTYPE html>
-    <html lang="sv">
+    <html lang={@lang}>
       <head>
         <meta charset="utf-8" />
         <meta http_equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,14 +24,14 @@ defmodule Kalyna.RootLayout do
 
         <meta
           name="description"
-          content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling."
+          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
           key="desc"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Kalyna Solutions AB" />
         <meta
           property="og:description"
-          content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling."
+          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
         />
         <meta property="og:image" content="/apple-touch-icon.png" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -35,13 +39,16 @@ defmodule Kalyna.RootLayout do
         <meta property="twitter:title" content="Kalyna Solutions AB" />
         <meta
           property="twitter:description"
-          content="Egenkonsult i Stockholm som erbjuder fullstack-utveckling."
+          content={t(@lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling.")}
         />
         <meta
           property="twitter:image"
           content="https://raw.githubusercontent.com/matachi/kalyna.se/main/public/logo.png"
         />
-        <meta property="twitter:image:alt" content="Företagsloggo för Kalyna Solutions AB." />
+        <meta
+          property="twitter:image:alt"
+          content={t(@lang, "Företagsloggo för Kalyna Solutions AB.")}
+        />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -52,6 +59,9 @@ defmodule Kalyna.RootLayout do
         <link rel="me" href="https://mastodon.social/@DanOpcode" />
         <meta name="fediverse:creator" content="@DanOpcode@mastodon.social" />
 
+        <link rel="alternate" hreflang="sv" href="https://www.kalyna.se/" />
+        <link rel="alternate" hreflang="en" href="https://www.kalyna.se/en/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.kalyna.se/" />
         <link rel="stylesheet" href="/css/site.css" />
       </head>
 

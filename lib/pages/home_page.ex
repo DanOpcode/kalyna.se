@@ -1,19 +1,47 @@
 defmodule Kalyna.HomePage do
   use Tableau.Page,
     layout: Kalyna.RootLayout,
-    permalink: "/"
+    permalink: "/",
+    lang: "sv"
 
   use Phoenix.Component
 
+  import Kalyna.Translations, only: [t: 2]
+
   def template(assigns) do
+    assigns = Map.put(assigns, :lang, Map.get(assigns.page, :lang, "sv"))
+
     ~H"""
     <div class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+      <nav
+        aria-label="Language / Språk"
+        class="flex justify-center gap-4 px-4 pt-6 text-slate-900 dark:text-white"
+      >
+        <a
+          href="/"
+          lang="sv"
+          hreflang="sv"
+          aria-current={if @lang == "sv", do: "page"}
+          class="underline"
+        >
+          🇸🇪 Svenska
+        </a>
+        <a
+          href="/en/"
+          lang="en"
+          hreflang="en"
+          aria-current={if @lang == "en", do: "page"}
+          class="underline"
+        >
+          🇬🇧 English
+        </a>
+      </nav>
       <!-- Dark Mode Toggle -->
       <div class="fixed top-6 right-6 z-50">
         <button
           onclick="toggleTheme()"
           class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 shadow-lg hover:shadow-xl transition-all duration-200 group"
-          aria-label="Toggle dark mode"
+          aria-label={t(@lang, "Växla mörkt läge")}
         >
           <!-- Sun Icon (visible in dark mode) -->
           <svg
@@ -53,7 +81,7 @@ defmodule Kalyna.HomePage do
         <div class="flex items-center justify-center mb-8">
           <img
             src="/images/logo.png"
-            alt="Kalyna Solutions AB logga"
+            alt={t(@lang, "Kalyna Solutions AB logga")}
             class="w-16 mr-4"
           />
           <h1 class="text-5xl font-bold text-slate-900 dark:text-white">
@@ -61,20 +89,20 @@ defmodule Kalyna.HomePage do
           </h1>
         </div>
         <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Expertis inom mjukvaruutveckling och teknisk ledning.
+          {t(@lang, "Expertis inom mjukvaruutveckling och teknisk ledning.")}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
             class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
           >
-            Kontakta mig
+            {t(@lang, "Kontakta mig")}
           </a>
           <a
             href="#about"
             class="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 px-8 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-medium"
           >
-            Läs mer
+            {t(@lang, "Läs mer")}
           </a>
         </div>
       </section>
@@ -86,20 +114,26 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile1.jpg"
-                alt="Profilbild"
+                alt={t(@lang, "Profilbild")}
                 class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
               />
             </div>
             <div class="md:col-span-2">
               <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
-                Om Daniel Jonsson
+                {t(@lang, "Om Daniel Jonsson")}
               </h2>
               <div class="text-slate-600 dark:text-slate-200 space-y-6">
                 <p>
-                  Jag är en systemutvecklare med 10+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i informationsteknik från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system.
+                  {t(
+                    @lang,
+                    "Jag är en systemutvecklare med 10+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i informationsteknik från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system."
+                  )}
                 </p>
                 <p>
-                  Jag har ett analytiskt sinne, är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Jag är en människokännare, en bra lagspelare och duktig på att lyssna på mina kunder och kollegor.
+                  {t(
+                    @lang,
+                    "Jag har ett analytiskt sinne, är duktig på att lösa komplexa uppgifter och är snabbt produktiv i nya system. Jag är en människokännare, en bra lagspelare och duktig på att lyssna på mina kunder och kollegor."
+                  )}
                 </p>
               </div>
             </div>
@@ -111,19 +145,23 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-            Teknologier & expertis
+            {t(@lang, "Teknologier & expertis")}
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
-              <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">Roller</h3>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">
+                {t(@lang, "Roller")}
+              </h3>
               <ul class="text-slate-600 dark:text-slate-200 space-y-2">
-                <li>Teamledare</li>
-                <li>Lead-utvecklare</li>
-                <li>Systemutvecklare</li>
+                <li>{t(@lang, "Teamledare")}</li>
+                <li>{t(@lang, "Lead-utvecklare")}</li>
+                <li>{t(@lang, "Systemutvecklare")}</li>
               </ul>
             </div>
             <div class="text-center">
-              <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">Områden</h3>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">
+                {t(@lang, "Områden")}
+              </h3>
               <ul class="text-slate-600 dark:text-slate-200 space-y-2">
                 <li>Fullstack</li>
                 <li>Backend</li>
@@ -132,12 +170,12 @@ defmodule Kalyna.HomePage do
             </div>
             <div class="text-center">
               <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-4">
-                Plattformar
+                {t(@lang, "Plattformar")}
               </h3>
               <ul class="text-slate-600 dark:text-slate-200 space-y-2">
                 <li>Linux</li>
                 <li>Windows</li>
-                <li>Webb</li>
+                <li>{t(@lang, "Webb")}</li>
               </ul>
             </div>
           </div>
@@ -148,10 +186,10 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-            Professionell erfarenhet
+            {t(@lang, "Professionell erfarenhet")}
           </h2>
           <p class="text-slate-600 dark:text-slate-200 text-center mb-12 max-w-2xl mx-auto">
-            Företag jag arbetat med.
+            {t(@lang, "Företag jag arbetat med.")}
           </p>
           <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
             <!-- Company 1 -->
@@ -161,7 +199,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_imy.png"
-                    alt="IMY logga"
+                    alt={t(@lang, "IMY logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -170,10 +208,10 @@ defmodule Kalyna.HomePage do
     <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                  Integritetsskyddsmyndigheten
+                  {t(@lang, "Integritetsskyddsmyndigheten")}
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  DevOps • Konsultuppdrag • 2024–pågående
+                  {t(@lang, "DevOps • Konsultuppdrag • 2024–pågående")}
                 </p>
               </div>
               
@@ -182,7 +220,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-1')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -209,19 +247,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetar med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team bygger vi diverse applikationer tillsammans.
+                        {t(
+                          @lang,
+                          "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetar med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team bygger vi diverse applikationer tillsammans."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Jag driver förbättringar i våra utvecklingsprocesser genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattar även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten.
+                        {t(
+                          @lang,
+                          "Jag driver förbättringar i våra utvecklingsprocesser genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattar även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -243,7 +293,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -259,7 +309,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_reit.svg"
-                    alt="Re:it logga"
+                    alt={t(@lang, "Re:it logga")}
                     class="max-w-full max-h-full object-contain brightness-0"
                   />
                 </div>
@@ -269,7 +319,7 @@ defmodule Kalyna.HomePage do
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">Re:it</h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Lead-utvecklare • Konsultuppdrag • 2023–pågående
+                  {t(@lang, "Lead-utvecklare • Konsultuppdrag • 2023–pågående")}
                 </p>
               </div>
               
@@ -278,7 +328,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-2')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -305,19 +355,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Senior utvecklare i ett tvärfunktionellt team med 6 st kollegor, varav 2 st är programmerare. Tillsammans utvecklar vi ett webbaserat ärendehanteringssystem där både externa användare och handläggare kan logga in.
+                        {t(
+                          @lang,
+                          "Senior utvecklare i ett tvärfunktionellt team med 6 st kollegor, varav 2 st är programmerare. Tillsammans utvecklar vi ett webbaserat ärendehanteringssystem där både externa användare och handläggare kan logga in."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Jag bidrar till projektet genom att arbeta nära koden, vara med i de beslut som tas gällande implementationen, och stötta mina programmerarkollegor. Jag deltar även tillsammans med teamets arkitekt i möten med andra parter gällande integration med de andra parternas system.
+                        {t(
+                          @lang,
+                          "Jag bidrar till projektet genom att arbeta nära koden, vara med i de beslut som tas gällande implementationen, och stötta mina programmerarkollegor. Jag deltar även tillsammans med teamets arkitekt i möten med andra parter gällande integration med de andra parternas system."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -343,7 +405,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -359,7 +421,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_altero.png"
-                    alt="Altero Consulting logga"
+                    alt={t(@lang, "Altero Consulting logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -371,7 +433,7 @@ defmodule Kalyna.HomePage do
                   Altero Consulting
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Konsultuppdrag • 2022–pågående
+                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2022–pågående")}
                 </p>
               </div>
               
@@ -380,7 +442,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-3')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -407,19 +469,28 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Utveckla en lösning som sammanställer data till ett datalager.
+                        {t(@lang, "Utveckla en lösning som sammanställer data till ett datalager.")}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Jag arbetade tillsammans med en projektledare i ett projekt där vi tog fram en lösning som automatiskt sammanställer data från databastabeller och Excel-filer till ett datalager. Detta resulterade i att kunden bland annat kan dra större affärsnytta från sin data. Jag jobbade självständigt med mycket kontakt med slutanvändarna för att ta emot feedback och iterativt implementera förbättringar.
+                        {t(
+                          @lang,
+                          "Jag arbetade tillsammans med en projektledare i ett projekt där vi tog fram en lösning som automatiskt sammanställer data från databastabeller och Excel-filer till ett datalager. Detta resulterade i att kunden bland annat kan dra större affärsnytta från sin data. Jag jobbade självständigt med mycket kontakt med slutanvändarna för att ta emot feedback och iterativt implementera förbättringar."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -444,7 +515,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -460,7 +531,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_idagree.jpg"
-                    alt="IdAgree logga"
+                    alt={t(@lang, "IdAgree logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -470,7 +541,7 @@ defmodule Kalyna.HomePage do
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">IdAgree</h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Medgrundare • 2024–2024
+                  {t(@lang, "Systemutvecklare • Medgrundare • 2024–2024")}
                 </p>
               </div>
               
@@ -479,7 +550,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-4')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -506,19 +577,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Som medgrundare i ett startup-företag, utvecklade jag en prototyp av en tjänst för att skapa kvitton för secondhand-köp.
+                        {t(
+                          @lang,
+                          "Som medgrundare i ett startup-företag, utvecklade jag en prototyp av en tjänst för att skapa kvitton för secondhand-köp."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Jag byggde en webbtjänst från grunden och satte upp både produktionsmiljön och kontinuerlig driftsättning dit. Jag arbetade tillsammans med företagets andra grundare, implementerade funktioner enligt deras önskemål och feedback, samt utvecklade en integration med en tredjepartstjänst för att signera PDF-filer.
+                        {t(
+                          @lang,
+                          "Jag byggde en webbtjänst från grunden och satte upp både produktionsmiljön och kontinuerlig driftsättning dit. Jag arbetade tillsammans med företagets andra grundare, implementerade funktioner enligt deras önskemål och feedback, samt utvecklade en integration med en tredjepartstjänst för att signera PDF-filer."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -545,7 +628,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -561,7 +644,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_carnegie.png"
-                    alt="Carnegie Investment Bank logga"
+                    alt={t(@lang, "Carnegie Investment Bank logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -573,7 +656,7 @@ defmodule Kalyna.HomePage do
                   Carnegie Investment Bank
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare, scrum-master • Anställd • 2021–2022
+                  {t(@lang, "Systemutvecklare, scrum-master • Anställd • 2021–2022")}
                 </p>
               </div>
               
@@ -582,7 +665,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-5')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -609,19 +692,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Vidareutveckling av integration mellan back office- och börshandelssystem, samt av system som används internt av mäklare för hantering av kunders värdepappersportföljer, i ett team med totalt 4-5 st utvecklare.
+                        {t(
+                          @lang,
+                          "Vidareutveckling av integration mellan back office- och börshandelssystem, samt av system som används internt av mäklare för hantering av kunders värdepappersportföljer, i ett team med totalt 4-5 st utvecklare."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel var både systemutvecklare och scrum master, och representerade teamet i Scrum of Scrums- och arkitekturmöten. Han hjälpte till med att leverera teamets system under ett back office-systembyte på ett lyckat sätt. Daniel vidareutvecklade därefter teamets applikationer och mikrotjänster. Förutom nya funktioner, migrerade han teamets kodbaser från .NET Core 3.1 till .NET 6, och införde körning av enhetstester och automatisk uppdatering av databaserna i CI/CD-pipeline:n. Han hjälpte ofta till med kodgranskning, skriva release notes och deploya nya versioner av mikrotjänsterna. Han löste också ofta akuta problem som användarna stötte på. Både Daniels teamledare och chef uppskattade hur han alltid tog för sig bland arbetsuppgifterna och gärna var inne i alla delar.
+                        {t(
+                          @lang,
+                          "Daniel var både systemutvecklare och scrum master, och representerade teamet i Scrum of Scrums- och arkitekturmöten. Han hjälpte till med att leverera teamets system under ett back office-systembyte på ett lyckat sätt. Daniel vidareutvecklade därefter teamets applikationer och mikrotjänster. Förutom nya funktioner, migrerade han teamets kodbaser från .NET Core 3.1 till .NET 6, och införde körning av enhetstester och automatisk uppdatering av databaserna i CI/CD-pipeline:n. Han hjälpte ofta till med kodgranskning, skriva release notes och deploya nya versioner av mikrotjänsterna. Han löste också ofta akuta problem som användarna stötte på. Både Daniels teamledare och chef uppskattade hur han alltid tog för sig bland arbetsuppgifterna och gärna var inne i alla delar."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -659,7 +754,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -675,7 +770,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_cellink.png"
-                    alt="Cellink logga"
+                    alt={t(@lang, "Cellink logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -685,7 +780,7 @@ defmodule Kalyna.HomePage do
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">Cellink</h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021
+                  {t(@lang, "Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021")}
                 </p>
               </div>
               
@@ -694,7 +789,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-6')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -720,21 +815,35 @@ defmodule Kalyna.HomePage do
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
-                    <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Teamledare</h4>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                      {t(@lang, "Teamledare")}
+                    </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Teamledare för 6 st kollegor som arbetade med utveckling i WPF, AWS och Flutter. Daniels team utvecklade det grafiska gränssnittet till deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover.
+                        {t(
+                          @lang,
+                          "Teamledare för 6 st kollegor som arbetade med utveckling i WPF, AWS och Flutter. Daniels team utvecklade det grafiska gränssnittet till deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        I rollen arbetade Daniel tillsammans med produktägaren med att bryta ner förfrågningar på nya funktioner till tekniska krav. Han gjorde grövre tidsestimat, förberedde arbete genom att designa grafiska gränssnitt och undanröjde hinder för teamet. Han stöttade sina kollegor, planerade och delade ut arbetsuppgifter, samt testade och kodgranskade vad de gjort. Daniel ansvarade för nya releaser av mjukvaran. Han samarbetade med teamledaren för embedded-systemet och de designade tillsammans API:er för systemen. Daniel reproducerade och lokaliserade även buggar från testarna. Han gjorde också viss utveckling själv. Vidare så hade han kontakt med säljare och installatörer för att ge teknisk support och ta emot feedback.
+                        {t(
+                          @lang,
+                          "I rollen arbetade Daniel tillsammans med produktägaren med att bryta ner förfrågningar på nya funktioner till tekniska krav. Han gjorde grövre tidsestimat, förberedde arbete genom att designa grafiska gränssnitt och undanröjde hinder för teamet. Han stöttade sina kollegor, planerade och delade ut arbetsuppgifter, samt testade och kodgranskade vad de gjort. Daniel ansvarade för nya releaser av mjukvaran. Han samarbetade med teamledaren för embedded-systemet och de designade tillsammans API:er för systemen. Daniel reproducerade och lokaliserade även buggar från testarna. Han gjorde också viss utveckling själv. Vidare så hade han kontakt med säljare och installatörer för att ge teknisk support och ta emot feedback."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -763,28 +872,40 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
 
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Systemutvecklare .NET
+                      {t(@lang, "Systemutvecklare .NET")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Från grunden bygga en Windows-applikation, i ett team med 2-7 st utvecklare, för deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover.
+                        {t(
+                          @lang,
+                          "Från grunden bygga en Windows-applikation, i ett team med 2-7 st utvecklare, för deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel byggde tillsammans med sina kollegor från grunden en Windows-baserad WPF-applikation. Som insatt i hur mikroskopets inbyggda system fungerade, så kunde han onboarda kollegor in i teamet och bidra till integrationen. I.o.m. att teamet varierade mycket i storlek så var Daniel en viktig person för projektet. Daniel tog även mycket ansvar för releaser av mjukvaran. Han arbetade också med att implementera automatiska tester i form av enhets- och GUI-tester.
+                        {t(
+                          @lang,
+                          "Daniel byggde tillsammans med sina kollegor från grunden en Windows-baserad WPF-applikation. Som insatt i hur mikroskopets inbyggda system fungerade, så kunde han onboarda kollegor in i teamet och bidra till integrationen. I.o.m. att teamet varierade mycket i storlek så var Daniel en viktig person för projektet. Daniel tog även mycket ansvar för releaser av mjukvaran. Han arbetade också med att implementera automatiska tester i form av enhets- och GUI-tester."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -809,28 +930,40 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
 
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Systemutvecklare C++
+                      {t(@lang, "Systemutvecklare C++")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Vidareutveckla tillsammans med 2 st kollegor ett inbyggt (embedded) system i deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover.
+                        {t(
+                          @lang,
+                          "Vidareutveckla tillsammans med 2 st kollegor ett inbyggt (embedded) system i deras då kommande produkt CELLCYTE X, som är ett mikroskop som forskare kan schemalägga till att ta foton av cellprover."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel arbetade med det inbyggda systemet som körde Linux (ARM) och var byggt med Yocto. Han vidareutvecklade en C++17-applikation där den mesta av logiken fanns. Bland annat implementerade han persistering av experimentdata i en SQLite-databas med stöd för automatiska uppdateringar av databasschemat. Daniel arbetade även med funktionalitet som var implementerad i Python-skript. Samt arbetade han med kalibrering av hårdvaran och gjorde ändringar i dess 3D-skrivarmjukvara som var skriven i C och baserad på Marlin Firmware. I teamet arbetade de testdrivet med krav på hög nivå av kodtäckning av enhetstester.
+                        {t(
+                          @lang,
+                          "Daniel arbetade med det inbyggda systemet som körde Linux (ARM) och var byggt med Yocto. Han vidareutvecklade en C++17-applikation där den mesta av logiken fanns. Bland annat implementerade han persistering av experimentdata i en SQLite-databas med stöd för automatiska uppdateringar av databasschemat. Daniel arbetade även med funktionalitet som var implementerad i Python-skript. Samt arbetade han med kalibrering av hårdvaran och gjorde ändringar i dess 3D-skrivarmjukvara som var skriven i C och baserad på Marlin Firmware. I teamet arbetade de testdrivet med krav på hög nivå av kodtäckning av enhetstester."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -859,7 +992,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -875,7 +1008,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_avarn.png"
-                    alt="AVARN Security logga"
+                    alt={t(@lang, "AVARN Security logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -887,7 +1020,7 @@ defmodule Kalyna.HomePage do
                   Avarn Security
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Väktare • Behovsanställd • 2020–2021
+                  {t(@lang, "Väktare • Behovsanställd • 2020–2021")}
                 </p>
               </div>
               
@@ -896,7 +1029,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-7')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -922,7 +1055,10 @@ defmodule Kalyna.HomePage do
               >
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <p class="text-slate-600 dark:text-slate-200 text-sm">
-                    Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid.
+                    {t(
+                      @lang,
+                      "Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid."
+                    )}
                   </p>
                 </div>
               </div>
@@ -935,7 +1071,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_labgruppen.png"
-                    alt="Lab Gruppen logga"
+                    alt={t(@lang, "Lab Gruppen logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -947,7 +1083,7 @@ defmodule Kalyna.HomePage do
                   Lab Gruppen
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Konsultuppdrag • 2020–2020
+                  {t(@lang, "Systemutvecklare • Konsultuppdrag • 2020–2020")}
                 </p>
               </div>
               
@@ -956,7 +1092,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-8')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -983,19 +1119,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel och 2 st kollegor hjälpte kunden med att porta en mjukvarulösning för ett inbyggt system utvecklad i C och assembler till att fungera på en annan hårdvaruplattform med en annan DSP (signalprocessor).
+                        {t(
+                          @lang,
+                          "Daniel och 2 st kollegor hjälpte kunden med att porta en mjukvarulösning för ett inbyggt system utvecklad i C och assembler till att fungera på en annan hårdvaruplattform med en annan DSP (signalprocessor)."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel utvecklade möjligheten att kunna föra över konfigurationsdata från Linux (ARM-processorkärna) till DSP:ns processorkärna, vilket gjorde det möjligt att styra saker som ljudvolym och equalizer-inställningar.
+                        {t(
+                          @lang,
+                          "Daniel utvecklade möjligheten att kunna föra över konfigurationsdata från Linux (ARM-processorkärna) till DSP:ns processorkärna, vilket gjorde det möjligt att styra saker som ljudvolym och equalizer-inställningar."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1010,7 +1158,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -1026,7 +1174,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_mentice.svg"
-                    alt="Mentice logga"
+                    alt={t(@lang, "Mentice logga")}
                     class="w-full h-full object-contain"
                   />
                 </div>
@@ -1038,7 +1186,7 @@ defmodule Kalyna.HomePage do
                   Mentice
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Lead-utvecklare • Konsultuppdrag • 2017–2019
+                  {t(@lang, "Lead-utvecklare • Konsultuppdrag • 2017–2019")}
                 </p>
               </div>
               
@@ -1047,7 +1195,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-9')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -1074,22 +1222,34 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      iOS-app
+                      {t(@lang, "iOS-app")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Utveckla en iPad-app för demonstration av kliniska instrument för endovaskulär kirurgi. Till en början var Daniel ensam iOS-utvecklare i projektet, och i 2 st uppföljningsprojekt var han lead-utvecklare för 2 st kollegor.
+                        {t(
+                          @lang,
+                          "Utveckla en iPad-app för demonstration av kliniska instrument för endovaskulär kirurgi. Till en början var Daniel ensam iOS-utvecklare i projektet, och i 2 st uppföljningsprojekt var han lead-utvecklare för 2 st kollegor."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel implementerade en simulering av en operation med 3D-modeller av kirurgiska instrument. Han integrerade även stöd för att använda ett fysiskt instrument till att genomföra utvalda moment under operationen, där instrumentet kommunicerade med iPaden via Bluetooth (BLE). Projektet mottogs väl av kunden och ledde till 2 st uppföljningsprojekt, i vilka Daniel var lead-utvecklare tillsammans med 2 st kollegor.
+                        {t(
+                          @lang,
+                          "Daniel implementerade en simulering av en operation med 3D-modeller av kirurgiska instrument. Han integrerade även stöd för att använda ett fysiskt instrument till att genomföra utvalda moment under operationen, där instrumentet kommunicerade med iPaden via Bluetooth (BLE). Projektet mottogs väl av kunden och ledde till 2 st uppföljningsprojekt, i vilka Daniel var lead-utvecklare tillsammans med 2 st kollegor."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1111,27 +1271,39 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Webb-app
+                      {t(@lang, "Webb-app")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel var lead-utvecklare i ett team tillsammans med 2 st utvecklare, där han planerade och tillsammans med dem implementerade en ny version av en webbapplikation där läkare kunde starta övningar i en kirurgisimulator och se resultat från tidigare övningstillfällen. I den nya versionen implementerade de stöd för mer avancerad metrikinsamling, jämförelse av resultaten mot benchmarks, flerspråksstöd, samt möjligheten att kunna konfigurera simulatorövningarna.
+                        {t(
+                          @lang,
+                          "Daniel var lead-utvecklare i ett team tillsammans med 2 st utvecklare, där han planerade och tillsammans med dem implementerade en ny version av en webbapplikation där läkare kunde starta övningar i en kirurgisimulator och se resultat från tidigare övningstillfällen. I den nya versionen implementerade de stöd för mer avancerad metrikinsamling, jämförelse av resultaten mot benchmarks, flerspråksstöd, samt möjligheten att kunna konfigurera simulatorövningarna."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel deltog i hela kedjan, från krav till implementation. I början av projektet formulerade Daniel arbetspaket och tidsestimat, ritade GUI-mockups och gjorde ER-diagram över den nya databasmodellen. Kunden var nöjd med planen, och därefter utförde Daniel också en stor del av implementationen tillsammans med sina 2 st kollegor. Han jobbade med både backend och frontend, och hade regelbundet möten med kunden för att ta emot feedback. Kunden var i slutet av projektet väldigt nöjd med resultatet.
+                        {t(
+                          @lang,
+                          "Daniel deltog i hela kedjan, från krav till implementation. I början av projektet formulerade Daniel arbetspaket och tidsestimat, ritade GUI-mockups och gjorde ER-diagram över den nya databasmodellen. Kunden var nöjd med planen, och därefter utförde Daniel också en stor del av implementationen tillsammans med sina 2 st kollegor. Han jobbade med både backend och frontend, och hade regelbundet möten med kunden för att ta emot feedback. Kunden var i slutet av projektet väldigt nöjd med resultatet."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1154,7 +1326,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -1170,7 +1342,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_consilium.svg"
-                    alt="Consilium Marine & Safety logga"
+                    alt={t(@lang, "Consilium Marine & Safety logga")}
                     class="w-full h-full object-contain"
                   />
                 </div>
@@ -1182,7 +1354,10 @@ defmodule Kalyna.HomePage do
                   Consilium Marine & Safety
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
+                  {t(
+                    @lang,
+                    "Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020"
+                  )}
                 </p>
               </div>
               
@@ -1191,7 +1366,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-10')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -1218,22 +1393,34 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Windows-baserat konfigurationsprogram
+                      {t(@lang, "Windows-baserat konfigurationsprogram")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Teamledare för 2 st kollegor i ett projekt där Daniel planerade och utförde en omskrivning av ett konfigurationsprogram som användes till att konfigurera övervakningssystem som upptäcker gasläckage ombord på fraktfartyg.
+                        {t(
+                          @lang,
+                          "Teamledare för 2 st kollegor i ett projekt där Daniel planerade och utförde en omskrivning av ett konfigurationsprogram som användes till att konfigurera övervakningssystem som upptäcker gasläckage ombord på fraktfartyg."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel deltog i hela kedjan, från krav till implementation. Daniel utförde en förstudie innefattande formuleringar av arbetspaket, tidsestimat och GUI-mockups. Daniel var därefter ansvarig för arkitekturen av mjukvaran, kommunikation med kunden och mycket av implementationen. Daniel fördelade ut arbetsuppgifter till sina kollegor, och testade och kodgranskade vad de utvecklat. Övervakningssystemet hade sin egen parser i C++ för att packa och läsa konfigurationsdata, som Daniel integrerade i C#/WPF-applikationen. Vidare så arbetade Daniel testdrivet med hjälp av automatiska tester i form av enhets- och GUI-tester. Slutligen stod Daniel även för överlämningen när Consilium tog över underhållet av applikationen.
+                        {t(
+                          @lang,
+                          "Daniel deltog i hela kedjan, från krav till implementation. Daniel utförde en förstudie innefattande formuleringar av arbetspaket, tidsestimat och GUI-mockups. Daniel var därefter ansvarig för arkitekturen av mjukvaran, kommunikation med kunden och mycket av implementationen. Daniel fördelade ut arbetsuppgifter till sina kollegor, och testade och kodgranskade vad de utvecklat. Övervakningssystemet hade sin egen parser i C++ för att packa och läsa konfigurationsdata, som Daniel integrerade i C#/WPF-applikationen. Vidare så arbetade Daniel testdrivet med hjälp av automatiska tester i form av enhets- och GUI-tester. Slutligen stod Daniel även för överlämningen när Consilium tog över underhållet av applikationen."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1257,27 +1444,39 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Windows-baserat brandlarmshanteringssystem
+                      {t(@lang, "Windows-baserat brandlarmshanteringssystem")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Ensamt ansvarig för underhåll och vidareutveckling av en stor Windows-applikation hos Consilium som kördes på bryggan på fartyg. Applikationen visualiserade alla branddetektorer ombord på fartygets däck och deras statusar.
+                        {t(
+                          @lang,
+                          "Ensamt ansvarig för underhåll och vidareutveckling av en stor Windows-applikation hos Consilium som kördes på bryggan på fartyg. Applikationen visualiserade alla branddetektorer ombord på fartygets däck och deras statusar."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel implementerade ny funktionalitet, förbättrade användargränssnittet och prestandan, löste buggar och bidrog med teknisk support. Applikationens gränssnitt var byggd med C# och WPF, medan lagret som kommunicerade med brandsystemen var byggd med C++. Daniel vidareutvecklade också en simulator som användes till att spela upp och simulera trafik från ett brandsystem, vilket var användbart vid testning och demonstration av applikationen. Kunden uppskattade stort Daniels hjälp vid behov även på kvällar och helger. Applikationen hade en gammal föregångare (byggd i C++ med MFC och Visual C++ 6) som fortfarande användes på en del fartyg som Daniel också hjälpte till att buggfixa vid behov.
+                        {t(
+                          @lang,
+                          "Daniel implementerade ny funktionalitet, förbättrade användargränssnittet och prestandan, löste buggar och bidrog med teknisk support. Applikationens gränssnitt var byggd med C# och WPF, medan lagret som kommunicerade med brandsystemen var byggd med C++. Daniel vidareutvecklade också en simulator som användes till att spela upp och simulera trafik från ett brandsystem, vilket var användbart vid testning och demonstration av applikationen. Kunden uppskattade stort Daniels hjälp vid behov även på kvällar och helger. Applikationen hade en gammal föregångare (byggd i C++ med MFC och Visual C++ 6) som fortfarande användes på en del fartyg som Daniel också hjälpte till att buggfixa vid behov."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1306,27 +1505,39 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
                     <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                      Webbaserat produktlivscykelsystem
+                      {t(@lang, "Webbaserat produktlivscykelsystem")}
                     </h4>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Ensamt ansvarig för underhåll och vidareutveckling av Consiliums instans av Aras Innovator, som är ett PLM-system som används till deras produkter inom brand- och gassäkerhet. I PLM-systemet fanns produkternas komponenter, dokument, ändringshistorik och mjukvara dokumenterat.
+                        {t(
+                          @lang,
+                          "Ensamt ansvarig för underhåll och vidareutveckling av Consiliums instans av Aras Innovator, som är ett PLM-system som används till deras produkter inom brand- och gassäkerhet. I PLM-systemet fanns produkternas komponenter, dokument, ändringshistorik och mjukvara dokumenterat."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h5>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Arbetet var på både frontend- och backend-nivå, och Daniel utvecklade nya funktioner relaterade till presentation av data, export av data och behörighetsnivåer. Daniel utförde också uppdateringar av Aras Innovator till nya versioner.
+                        {t(
+                          @lang,
+                          "Arbetet var på både frontend- och backend-nivå, och Daniel utvecklade nya funktioner relaterade till presentation av data, export av data och behörighetsnivåer. Daniel utförde också uppdateringar av Aras Innovator till nya versioner."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
+                      <h5 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h5>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1350,7 +1561,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -1366,7 +1577,7 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_ericsson.svg"
-                    alt="Ericsson logga"
+                    alt={t(@lang, "Ericsson logga")}
                     class="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -1378,7 +1589,7 @@ defmodule Kalyna.HomePage do
                   Ericsson
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Anställd • 2015–2016
+                  {t(@lang, "Systemutvecklare • Anställd • 2015–2016")}
                 </p>
               </div>
               
@@ -1387,7 +1598,7 @@ defmodule Kalyna.HomePage do
                 onclick="toggleCompany('company-11')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <span>Visa mer</span>
+                <span>{t(@lang, "Visa mer")}</span>
                 <div class="expand-icon transition-transform duration-300">
                   <svg
                     class="w-4 h-4 text-slate-500"
@@ -1414,19 +1625,31 @@ defmodule Kalyna.HomePage do
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Uppdrag")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Ensamt ansvarig för att porta en avancerad Excel-arbetsbok med cirka 30 länkade arbetsblad till Python. Arbetsboken uppskattade belastningen på företagets servrar givet en mobiloperatörs trafiklast, vilket användes för att skapa underlag till offerter till dem.
+                        {t(
+                          @lang,
+                          "Ensamt ansvarig för att porta en avancerad Excel-arbetsbok med cirka 30 länkade arbetsblad till Python. Arbetsboken uppskattade belastningen på företagets servrar givet en mobiloperatörs trafiklast, vilket användes för att skapa underlag till offerter till dem."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Nytta")}
+                      </h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Daniel jobbade självständigt med portningsarbetet. Samtidigt implementerade han mer avancerad modellering som inte var möjlig att implementera i Excel. Han byggde även ett grafiskt webbaserat gränssnitt.
+                        {t(
+                          @lang,
+                          "Daniel jobbade självständigt med portningsarbetet. Samtidigt implementerade han mer avancerad modellering som inte var möjlig att implementera i Excel. Han byggde även ett grafiskt webbaserat gränssnitt."
+                        )}
                       </p>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
+                      <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                        {t(@lang, "Tekniker")}
+                      </h4>
                       <div class="flex flex-wrap gap-2">
                         <span
                           :for={
@@ -1451,7 +1674,7 @@ defmodule Kalyna.HomePage do
                           }
                           class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                         >
-                          {technology}
+                          {t(@lang, technology)}
                         </span>
                       </div>
                     </div>
@@ -1482,7 +1705,7 @@ defmodule Kalyna.HomePage do
                 const otherIcon = otherButton.querySelector('.expand-icon');
                 const otherText = otherButton.querySelector('span');
                 if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
-                if (otherText) otherText.textContent = 'Visa mer';
+                if (otherText) otherText.textContent = document.documentElement.lang === 'en' ? 'Show more' : 'Visa mer';
               }
             });
             
@@ -1490,11 +1713,11 @@ defmodule Kalyna.HomePage do
             if (isExpanded) {
               content.style.maxHeight = '0px';
               if (icon) icon.style.transform = 'rotate(0deg)';
-              if (buttonText) buttonText.textContent = 'Visa mer';
+              if (buttonText) buttonText.textContent = document.documentElement.lang === 'en' ? 'Show more' : 'Visa mer';
             } else {
               content.style.maxHeight = content.scrollHeight + 'px';
               if (icon) icon.style.transform = 'rotate(180deg)';
-              if (buttonText) buttonText.textContent = 'Visa mindre';
+              if (buttonText) buttonText.textContent = document.documentElement.lang === 'en' ? 'Show less' : 'Visa mindre';
             }
           }
         </script>
@@ -1504,7 +1727,7 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
-            Vad en tidigare kollega säger
+            {t(@lang, "Vad en tidigare kollega säger")}
           </h2>
           <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 relative">
             <!-- Quote Icon -->
@@ -1516,10 +1739,13 @@ defmodule Kalyna.HomePage do
 
             <div class="pt-8">
               <blockquote class="text-xl md:text-2xl text-slate-700 dark:text-slate-200 leading-relaxed mb-8 italic">
-                ”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”
+                {t(
+                  @lang,
+                  "”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”"
+                )}
               </blockquote>
               <div class="font-semibold text-slate-900 dark:text-white text-lg">
-                — Citat från tidigare kollega.
+                {t(@lang, "— Citat från tidigare kollega.")}
               </div>
             </div>
           </div>
@@ -1533,36 +1759,49 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile2.jpg"
-                alt="Profilbild"
+                alt={t(@lang, "Profilbild")}
                 class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg mb-6"
               />
             </div>
             <div class="md:col-span-2">
               <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
-                Utanför jobbet
+                {t(@lang, "Utanför jobbet")}
               </h2>
               <p class="mb-6 text-slate-600 dark:text-slate-200">
-                När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj.
+                {t(
+                  @lang,
+                  "När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj."
+                )}
               </p>
               <div class="grid md:grid-cols-2 gap-6 mt-8">
                 <div>
                   <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
-                    Personliga intressen
+                    {t(@lang, "Personliga intressen")}
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-center text-slate-600 dark:text-slate-200">
-                      <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span> Sparande och finans
+                      <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>{t(
+                        @lang,
+                        "Sparande och finans"
+                      )}
                     </li>
                     <li class="flex items-center text-slate-600 dark:text-slate-200">
-                      <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-                      Self-hosting, Linux och öppen källkod
+                      <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>{t(
+                        @lang,
+                        "Self-hosting, Linux och öppen källkod"
+                      )}
                     </li>
                     <li class="flex items-center text-slate-600 dark:text-slate-200">
-                      <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
-                      Funktionell programmering (Elixir)
+                      <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>{t(
+                        @lang,
+                        "Funktionell programmering (Elixir)"
+                      )}
                     </li>
                     <li class="flex items-center text-slate-600 dark:text-slate-200">
-                      <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span> Träning och hälsa
+                      <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>{t(
+                        @lang,
+                        "Träning och hälsa"
+                      )}
                     </li>
                   </ul>
                 </div>
@@ -1578,23 +1817,26 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 px-4 py-10 rounded-lg bg-[#d9d4fc] dark:bg-[#5e0228]">
               <img
                 src="/images/kvadrat-logo.svg"
-                alt="Kvadrat logga"
+                alt={t(@lang, "Kvadrat logga")}
                 class="max-w-full max-h-full object-contain dark:brightness-0 dark:invert"
               />
             </div>
             <div class="md:col-span-2">
               <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
-                Del av Kvadrat
+                {t(@lang, "Del av Kvadrat")}
               </h2>
               <p class="text-slate-600 dark:text-slate-200 mb-4">
-                Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling.
+                {t(
+                  @lang,
+                  "Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling."
+                )}
               </p>
               <a
                 href="https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/"
                 target="_blank"
                 class="bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 px-6 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-medium inline-block"
               >
-                Se min profil
+                {t(@lang, "Se min profil")}
               </a>
             </div>
           </div>
@@ -1604,9 +1846,14 @@ defmodule Kalyna.HomePage do
     <!-- Contact Section -->
       <section id="contact" class="px-6 py-16 bg-white dark:bg-slate-800">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Kontakta mig</h2>
+          <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">
+            {t(@lang, "Kontakta mig")}
+          </h2>
           <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto">
-            Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett anledning.
+            {t(
+              @lang,
+              "Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett anledning."
+            )}
           </p>
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <!-- Email -->
@@ -1627,7 +1874,7 @@ defmodule Kalyna.HomePage do
                   </path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-slate-900 dark:text-white mb-2">E-post</h3>
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-2">{t(@lang, "E-post")}</h3>
               <a
                 href="mailto:daniel.jonsson@kalyna.se"
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors break-all"
@@ -1654,7 +1901,7 @@ defmodule Kalyna.HomePage do
                   </path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Telefon</h3>
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-2">{t(@lang, "Telefon")}</h3>
               <a
                 href="tel:+46707329868"
                 class="text-green-600 dark:text-green-300 hover:text-green-700 dark:hover:text-blue-400 transition-colors"
@@ -1663,7 +1910,7 @@ defmodule Kalyna.HomePage do
               </a>
             </div>
             
-            <!-- Mastodon -->
+    <!-- Mastodon -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
                 <svg
@@ -1681,10 +1928,10 @@ defmodule Kalyna.HomePage do
                 rel="me"
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
               >
-                Följ mig på Mastodon
+                {t(@lang, "Följ mig på Mastodon")}
               </a>
             </div>
-    <!-- LinkedIn -->
+            <!-- LinkedIn -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
                 <svg
@@ -1702,7 +1949,7 @@ defmodule Kalyna.HomePage do
                 target="_blank"
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
               >
-                Se profil
+                {t(@lang, "Se profil")}
               </a>
             </div>
           </div>
@@ -1713,7 +1960,7 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
-            Innehåll & community
+            {t(@lang, "Innehåll & community")}
           </h2>
           <div class="grid md:grid-cols-2 gap-8">
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
@@ -1722,15 +1969,17 @@ defmodule Kalyna.HomePage do
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Blogg</h3>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                {t(@lang, "Blogg")}
+              </h3>
               <p class="text-slate-600 dark:text-slate-200 mb-4">
-                Personliga tankar om livet och teknik i textformat.
+                {t(@lang, "Personliga tankar om livet och teknik i textformat.")}
               </p>
               <a
                 href="https://www.danopcode.com/"
                 class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block"
               >
-                Läs artiklar
+                {t(@lang, "Läs artiklar")}
               </a>
             </div>
 
@@ -1742,14 +1991,14 @@ defmodule Kalyna.HomePage do
               </div>
               <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">YouTube</h3>
               <p class="text-slate-600 dark:text-slate-200 mb-4">
-                Personliga tankar om livet och teknik i videoformat.
+                {t(@lang, "Personliga tankar om livet och teknik i videoformat.")}
               </p>
               <a
                 href="https://www.youtube.com/@DanOpcode"
                 target="_blank"
                 class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium inline-block"
               >
-                Titta på videos
+                {t(@lang, "Titta på videos")}
               </a>
             </div>
           </div>
@@ -1769,22 +2018,31 @@ defmodule Kalyna.HomePage do
             </div>
             <div class="md:col-span-2">
               <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
-                Om Kalyna
+                {t(@lang, "Om Kalyna")}
               </h2>
               <p class="text-slate-600 dark:text-slate-200 leading-relaxed text-lg mb-4">
-                “Kalyna“ är det ukrainska ordet “Калина“ skrivet med latinska bokstäver. Калина är en växt som på svenska översätts till <a
+                {t(
+                  @lang,
+                  "“Kalyna“ är det ukrainska ordet “Калина“ skrivet med latinska bokstäver. Калина är en växt som på svenska översätts till"
+                )}{" "}<a
                   href="https://sv.wikipedia.org/wiki/Skogsolvon"
-                  title="Wikipedia-artikel om skogsolvon."
+                  title={t(@lang, "Wikipedia-artikel om skogsolvon.")}
                   class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-                >skogsolvon</a>. Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är “<a
+                >{t(@lang, "skogsolvon")}</a>{t(
+                  @lang,
+                  ". Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är “"
+                )}<a
                   href="https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen"
-                  title="Wikipedia-artikel om sången 'Ett rött olvon vid ängen'."
+                  title={t(@lang, "Wikipedia-artikel om sången 'Ett rött olvon vid ängen'.")}
                   class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-                >Ett rött olvon vid ängen</a>“ som skrevs 1914; “Ой у лузі червона калина“ är dess originaltitel och <a
+                >{t(@lang, "Ett rött olvon vid ängen")}</a>{t(
+                  @lang,
+                  "“ som skrevs 1914; “Ой у лузі червона калина“ är dess originaltitel och"
+                )}{" "}<a
                   href="https://www.youtube.com/watch?v=EV_vT0Vud5Q"
-                  title="En grupp personer som sjunger sången 'Ой у лузі червона калина'."
+                  title={t(@lang, "En grupp personer som sjunger sången 'Ой у лузі червона калина'.")}
                   class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-                >sjungs fortfarande</a>.
+                >{t(@lang, "sjungs fortfarande")}</a>.
               </p>
             </div>
           </div>
@@ -1795,38 +2053,38 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-16 bg-slate-100 dark:bg-slate-900">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
-            Bolagsinformation
+            {t(@lang, "Bolagsinformation")}
           </h2>
           <div class="max-w-2xl mx-auto">
             <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg">
               <div class="space-y-4 text-slate-600 dark:text-slate-200 mb-8">
                 <div class="flex justify-between">
-                  <span class="font-medium">Juridiskt namn:</span>
+                  <span class="font-medium">{t(@lang, "Juridiskt namn:")}</span>
                   <span>Kalyna Solutions AB</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="font-medium">Organisationsnummer:</span>
+                  <span class="font-medium">{t(@lang, "Organisationsnummer:")}</span>
                   <span>559386-8457</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="font-medium">VAT-nummer:</span>
+                  <span class="font-medium">{t(@lang, "VAT-nummer:")}</span>
                   <span>SE559386845701</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="font-medium">Plats:</span>
-                  <span>Stockholm, Sverige</span>
+                  <span class="font-medium">{t(@lang, "Plats:")}</span>
+                  <span>{t(@lang, "Stockholm, Sverige")}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="font-medium">Skattestatus:</span>
+                  <span class="font-medium">{t(@lang, "Skattestatus:")}</span>
                   <span class="text-green-600 dark:text-green-400 font-medium">
-                    Godkänd för F-skatt
+                    {t(@lang, "Godkänd för F-skatt")}
                   </span>
                 </div>
               </div>
 
               <div class="pt-6 border-t border-slate-200 dark:border-slate-600">
                 <h4 class="font-semibold text-slate-900 dark:text-white mb-4 text-center">
-                  Tillgänglighet
+                  {t(@lang, "Tillgänglighet")}
                 </h4>
                 <div class="space-y-3 text-slate-600 dark:text-slate-200">
                   <div class="flex items-center justify-center">
@@ -1851,7 +2109,7 @@ defmodule Kalyna.HomePage do
                       >
                       </path>
                     </svg>
-                    <span>Projekt på plats i Stockholmsområdet</span>
+                    <span>{t(@lang, "Projekt på plats i Stockholmsområdet")}</span>
                   </div>
                   <div class="flex items-center justify-center">
                     <svg
@@ -1868,7 +2126,7 @@ defmodule Kalyna.HomePage do
                       >
                       </path>
                     </svg>
-                    <span>Remote-projekt</span>
+                    <span>{t(@lang, "Remote-projekt")}</span>
                   </div>
                 </div>
               </div>

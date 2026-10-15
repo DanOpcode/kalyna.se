@@ -1,6 +1,9 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
+    "Tema" => "Theme",
+    "Ljust" => "Light",
+    "Mörkt" => "Dark",
     "DevOps • 2026–pågående" => "DevOps • 2026–present",
     "Jag arbetar med DevOps hos Carmenta." => "I work with DevOps at Carmenta.",
     "Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps." =>
@@ -196,7 +199,6 @@ defmodule Kalyna.Translations do
       "Software developer • Consulting assignment • 2022–2025",
     "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans." =>
       "Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We built a variety of applications in a cross-functional team.",
-    "Växla mörkt läge" => "Toggle dark mode",
     "REST API:er" => "REST APIs"
   }
 

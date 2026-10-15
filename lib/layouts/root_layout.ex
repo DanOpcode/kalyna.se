@@ -8,6 +8,8 @@ defmodule Kalyna.RootLayout do
     <html lang="sv">
       <head>
         <meta charset="utf-8" />
+        <script src="/js/theme.js">
+        </script>
         <meta http_equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

@@ -35,7 +35,12 @@ mix format
 ### Testing
 ```bash
 mix test
+npm ci
+npx playwright install chromium
+npm test
 ```
+
+ExUnit checks restored content in templates and committed output. Playwright builds the production site and tests both languages, experience cards, contact links, images, responsive layout, and theme preferences on desktop and mobile Chromium.
 
 ### Create New Post
 ```bash

@@ -26,3 +26,9 @@ tableau_new-*.tar
 /tmp/
 
 .elixir_ls/
+
+# Browser test dependencies and artifacts.
+/node_modules/
+/playwright-report/
+/test-results/
+/.playwright-cli/

@@ -2,7 +2,7 @@ defmodule Kalyna.SocialMetadataTest do
   use ExUnit.Case, async: true
 
   @origin "https://www.kalyna.se"
-  @image "#{@origin}/images/favicon-512x512.png"
+  @image "#{@origin}/images/social-card.png"
 
   for lang <- ["sv", "en"], source <- [:template, :published] do
     test "#{lang} #{source} has consistent sharing metadata" do
@@ -29,24 +29,28 @@ defmodule Kalyna.SocialMetadataTest do
       assert metadata["og:image"] == @image
       assert metadata["twitter:image"] == @image
       assert metadata["og:image:type"] == "image/png"
-      assert metadata["og:image:width"] == "512"
-      assert metadata["og:image:height"] == "512"
+      assert metadata["og:image:width"] == "1200"
+      assert metadata["og:image:height"] == "630"
       assert metadata["og:title"] == "#{title} | Kalyna Solutions AB"
       assert metadata["twitter:title"] == metadata["og:title"]
       assert metadata["twitter:description"] == metadata["og:description"]
       assert metadata["description"] == metadata["og:description"]
       assert metadata["og:image:alt"] == metadata["twitter:image:alt"]
-      assert metadata["twitter:card"] == "summary"
+      assert metadata["twitter:card"] == "summary_large_image"
       assert metadata["twitter:creator"] == "@DanOpcode"
       assert metadata["og:locale"] == if(lang == "en", do: "en_GB", else: "sv_SE")
       assert metadata["og:locale:alternate"] == if(lang == "en", do: "sv_SE", else: "en_GB")
 
       if lang == "en" do
         assert metadata["og:description"] =~ "Independent consultant"
-        assert metadata["og:image:alt"] == "Company logo for Kalyna Solutions AB."
+
+        assert metadata["og:image:alt"] ==
+                 "Kalyna Solutions AB: full-stack development in Stockholm, with kalyna berries and circuit traces above the skyline."
       else
         assert metadata["og:description"] =~ "Egenkonsult"
-        assert metadata["og:image:alt"] == "Företagslogotyp för Kalyna Solutions AB."
+
+        assert metadata["og:image:alt"] ==
+                 "Kalyna Solutions AB: fullstack-utveckling i Stockholm, med kalynabär och kretsbanor över stadens silhuett."
       end
 
       refute html =~ "raw.githubusercontent.com"
@@ -73,11 +77,11 @@ defmodule Kalyna.SocialMetadataTest do
   end
 
   test "the deployed preview image matches its declared dimensions" do
-    source = File.read!(Path.expand("../extra/images/favicon-512x512.png", __DIR__))
-    deployed = File.read!(Path.expand("../docs/images/favicon-512x512.png", __DIR__))
+    source = File.read!(Path.expand("../extra/images/social-card.png", __DIR__))
+    deployed = File.read!(Path.expand("../docs/images/social-card.png", __DIR__))
     assert source == deployed
     assert <<137, 80, 78, 71, 13, 10, 26, 10, _::binary>> = deployed
-    assert <<_::binary-size(16), 512::32, 512::32, _::binary>> = deployed
+    assert <<_::binary-size(16), 1200::32, 630::32, _::binary>> = deployed
   end
 
   defp render(page) do

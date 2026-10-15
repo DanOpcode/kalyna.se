@@ -22,7 +22,7 @@ defmodule Kalyna.RootLayout do
           assigns.page[:description] ||
             t(lang, "Egenkonsult i Stockholm som erbjuder fullstack-utveckling."),
         canonical_url: URI.merge(base_url, permalink) |> URI.to_string(),
-        social_image_url: URI.merge(base_url, "/images/favicon-512x512.png") |> URI.to_string(),
+        social_image_url: URI.merge(base_url, "/images/social-card.png") |> URI.to_string(),
         locale: if(lang == "en", do: "en_GB", else: "sv_SE"),
         alternate_locale: if(lang == "en", do: "sv_SE", else: "en_GB"),
         translated_homepage: permalink in ["/", "/en/"],
@@ -76,16 +76,32 @@ defmodule Kalyna.RootLayout do
         <meta :if={@translated_homepage} property="og:locale:alternate" content={@alternate_locale} />
         <meta property="og:image" content={@social_image_url} />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content={t(@lang, "Företagslogotyp för Kalyna Solutions AB.")} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content={
+            t(
+              @lang,
+              "Kalyna Solutions AB: fullstack-utveckling i Stockholm, med kalynabär och kretsbanor över stadens silhuett."
+            )
+          }
+        />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@DanOpcode" />
         <meta name="twitter:title" content={@title} />
         <meta name="twitter:description" content={@description} />
         <meta name="twitter:image" content={@social_image_url} />
-        <meta name="twitter:image:alt" content={t(@lang, "Företagslogotyp för Kalyna Solutions AB.")} />
+        <meta
+          name="twitter:image:alt"
+          content={
+            t(
+              @lang,
+              "Kalyna Solutions AB: fullstack-utveckling i Stockholm, med kalynabär och kretsbanor över stadens silhuett."
+            )
+          }
+        />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />

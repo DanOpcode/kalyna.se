@@ -174,6 +174,8 @@ defmodule Kalyna.Translations do
     "agila metoder (Scrum)" => "agile methods (Scrum)",
     "Profilbild" => "Portrait",
     "Kalyna Solutions AB logga" => "Kalyna Solutions AB logo",
+    "Kalyna Solutions AB: fullstack-utveckling i Stockholm, med kalynabär och kretsbanor över stadens silhuett." =>
+      "Kalyna Solutions AB: full-stack development in Stockholm, with kalyna berries and circuit traces above the skyline.",
     "Egenkonsult i Stockholm som erbjuder fullstack-utveckling." =>
       "Independent consultant in Stockholm offering full-stack development.",
     "Företagslogotyp för Kalyna Solutions AB." => "Company logo for Kalyna Solutions AB.",

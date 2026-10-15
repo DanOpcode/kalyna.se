@@ -173,11 +173,11 @@ defmodule Kalyna.HomePage do
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
-                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
+                <div class="w-70 h-24 p-2 rounded-lg bg-[#1a2b39] flex items-center justify-center">
                   <img
                     src="/images/company_logo_carmenta.svg"
                     alt={t(@lang, "Carmenta logga")}
-                    class="max-w-full max-h-full object-contain brightness-0"
+                    class="max-w-full max-h-full object-contain"
                   />
                 </div>
               </div>

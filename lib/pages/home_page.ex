@@ -59,6 +59,8 @@ defmodule Kalyna.HomePage do
         <div class="flex items-center justify-center mb-8">
           <img
             src="/images/logo.png"
+            width="64"
+            height="58"
             alt={t(@lang, "Kalyna Solutions AB logga")}
             class="w-16 mr-4"
           />
@@ -92,6 +94,8 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile1.jpg"
+                width="192"
+                height="192"
                 alt={t(@lang, "Profilbild")}
                 class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
               />
@@ -177,6 +181,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_carmenta.svg"
+                    width="512"
+                    height="94"
+                    loading="lazy"
                     alt={t(@lang, "Carmenta logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -268,6 +275,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_imy.png"
+                    width="330"
+                    height="60"
+                    loading="lazy"
                     alt={t(@lang, "IMY logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -378,6 +388,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_reit.svg"
+                    width="161"
+                    height="59"
+                    loading="lazy"
                     alt={t(@lang, "Re:it logga")}
                     class="max-w-full max-h-full object-contain brightness-0"
                   />
@@ -490,6 +503,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_altero.png"
+                    width="429"
+                    height="223"
+                    loading="lazy"
                     alt={t(@lang, "Altero Consulting logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -600,6 +616,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_idagree.jpg"
+                    width="200"
+                    height="200"
+                    loading="lazy"
                     alt={t(@lang, "IdAgree logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -713,6 +732,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_carnegie.png"
+                    width="320"
+                    height="112"
+                    loading="lazy"
                     alt={t(@lang, "Carnegie Investment Bank logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -839,6 +861,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_cellink.png"
+                    width="812"
+                    height="172"
+                    loading="lazy"
                     alt={t(@lang, "Cellink logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -1077,6 +1102,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_avarn.png"
+                    width="264"
+                    height="72"
+                    loading="lazy"
                     alt={t(@lang, "AVARN Security logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -1140,6 +1168,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_labgruppen.png"
+                    width="1809"
+                    height="155"
+                    loading="lazy"
                     alt={t(@lang, "Lab Gruppen logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -1243,6 +1274,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_mentice.svg"
+                    width="1529"
+                    height="253"
+                    loading="lazy"
                     alt={t(@lang, "Mentice logga")}
                     class="w-full h-full object-contain"
                   />
@@ -1411,6 +1445,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_consilium.svg"
+                    width="187"
+                    height="32"
+                    loading="lazy"
                     alt={t(@lang, "Consilium Marine & Safety logga")}
                     class="w-full h-full object-contain"
                   />
@@ -1646,6 +1683,9 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_ericsson.svg"
+                    width="214"
+                    height="45"
+                    loading="lazy"
                     alt={t(@lang, "Ericsson logga")}
                     class="max-w-full max-h-full object-contain"
                   />
@@ -1828,6 +1868,9 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile2.jpg"
+                width="192"
+                height="192"
+                loading="lazy"
                 alt={t(@lang, "Profilbild")}
                 class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg mb-6"
               />
@@ -1886,6 +1929,9 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 px-4 py-10 rounded-lg bg-[#d9d4fc] dark:bg-[#5e0228]">
               <img
                 src="/images/kvadrat-logo.svg"
+                width="838"
+                height="158"
+                loading="lazy"
                 alt={t(@lang, "Kvadrat logga")}
                 class="max-w-full max-h-full object-contain dark:brightness-0 dark:invert"
               />
@@ -2081,6 +2127,9 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/kalyna.jpg"
+                width="248"
+                height="248"
+                loading="lazy"
                 alt="Kalyna (viburnum) flower"
                 class="w-48 h-48 lg:w-62 lg:h-62 rounded-full mx-auto object-cover shadow-lg border-4 border-white/20 dark:border-white/30"
               />

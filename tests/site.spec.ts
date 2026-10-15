@@ -16,6 +16,7 @@ for (const language of ['sv', 'en']) {
     await expect(portraits).toHaveCount(2);
     for (const [index, portrait] of (await portraits.all()).entries()) {
       await expect(portrait).toHaveAttribute('src', `/images/profile${index + 1}.jpg`);
+      await portrait.scrollIntoViewIfNeeded();
       await expect(portrait).toBeVisible();
       await expect.poll(() => portrait.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
     }

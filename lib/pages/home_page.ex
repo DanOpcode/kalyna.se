@@ -2024,6 +2024,7 @@ defmodule Kalyna.HomePage do
               </a>
             </div>
             
+    <a href="https://mastodon.social/@DanOpcode" rel="me" class="text-blue-600 dark:text-blue-300 underline">Följ mig på Mastodon</a>
     <!-- LinkedIn -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">

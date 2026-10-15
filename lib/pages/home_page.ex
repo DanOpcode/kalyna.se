@@ -264,7 +264,7 @@ defmodule Kalyna.HomePage do
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
-                <div class="w-70 h-24 p-2 rounded-lg flex items-center justify-center">
+                <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_imy.png"
                     alt={t(@lang, "IMY logga")}

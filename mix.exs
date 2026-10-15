@@ -34,6 +34,7 @@ defmodule Kalyna.MixProject do
 
   defp aliases do
     [
+      "tableau.server": ["kalyna.server"],
       build: ["tableau.build", "tailwind default --minify"]
     ]
   end

@@ -17,7 +17,7 @@ This repository is hosted on GitHub. Use `git` to push branches and `gh` to mana
 mix deps.get
 mix tableau.server
 ```
-Server runs at http://localhost:4999 with live reload enabled.
+Server runs at http://localhost:4000 with live reload enabled.
 
 ### Production Build
 ```bash

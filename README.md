@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Once you bootstrap and enter your project, fetch your dependencies and start the build server. The server is available at http://localhost:4999
+Once you bootstrap and enter your project, fetch your dependencies and start the build server. The server is available at http://localhost:4000
 
 ```shell
 cd kalyna

@@ -60,8 +60,8 @@ Creates a new markdown post in `_posts/` with proper frontmatter.
 ### Content Structure
 - **Posts**: Markdown files in `_posts/` (published) and `_drafts/` (dev only)
 - **Pages**: Markdown files in `_pages/` (published) and `_wip/` (dev only)
-- **Assets**: CSS in `assets/css/`, output to `_site/css/`
-- **Generated Site**: Output in `_site/` directory
+- **Assets**: CSS in `assets/css/`, output to `docs/css/`
+- **Generated Site**: Output in `docs/` directory
 
 ### Extensions Enabled
 - Page Extension (static pages)
@@ -72,7 +72,7 @@ Creates a new markdown post in `_posts/` with proper frontmatter.
 
 ### Styling
 - TailwindCSS v4.1.0 configured to watch `assets/css/site.css`
-- CSS output to `_site/css/site.css`
+- CSS output to `docs/css/site.css`
 - Live reload in development mode
 
 ### Development Features

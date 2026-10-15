@@ -47,8 +47,8 @@ defmodule Kalyna.HomePage do
           </svg>
         </button>
       </div>
-      
-    <!-- Hero Section -->
+
+      <!-- Hero Section -->
       <section class="px-6 py-20 max-w-4xl mx-auto text-center">
         <div class="flex items-center justify-center mb-8">
           <img
@@ -78,8 +78,8 @@ defmodule Kalyna.HomePage do
           </a>
         </div>
       </section>
-      
-    <!-- About Section -->
+
+      <!-- About Section -->
       <section id="about" class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <div class="grid md:grid-cols-3 gap-12 items-center">
@@ -108,8 +108,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Technologies Section -->
+
+      <!-- Technologies Section -->
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">
@@ -145,8 +145,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Professional Experience Section -->
+
+      <!-- Professional Experience Section -->
       <section class="px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
@@ -156,13 +156,16 @@ defmodule Kalyna.HomePage do
             Företag jag arbetat med.
           </p>
           <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-
             <!-- Company 1 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-                  <img src="/images/company_logo_carmenta.svg" alt="Carmenta logga" class="max-w-full max-h-full object-contain brightness-0" />
+                  <img
+                    src="/images/company_logo_carmenta.svg"
+                    alt="Carmenta logga"
+                    class="max-w-full max-h-full object-contain brightness-0"
+                  />
                 </div>
               </div>
               <!-- Content -->
@@ -173,25 +176,46 @@ defmodule Kalyna.HomePage do
                 <p class="text-slate-600 dark:text-slate-200">DevOps • 2026–pågående</p>
               </div>
               <!-- Expand Button -->
-              <button onclick="toggleCompany('company-1')" class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+              <button
+                onclick="toggleCompany('company-1')"
+                class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              >
                 <span>Visa mer</span>
                 <div class="expand-icon transition-transform duration-300">
-                  <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  <svg
+                    class="w-4 h-4 text-slate-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    >
+                    </path>
                   </svg>
                 </div>
               </button>
               <!-- Expandable Content -->
-              <div id="content-company-1" class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div
+                id="content-company-1"
+                class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
                 <div class="pt-4 border-t border-slate-200 mt-4">
                   <div class="space-y-6">
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
-                      <p class="text-slate-600 dark:text-slate-200 text-sm">Jag arbetar med DevOps hos Carmenta.</p>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Jag arbetar med DevOps hos Carmenta.
+                      </p>
                     </div>
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Nytta</h4>
-                      <p class="text-slate-600 dark:text-slate-200 text-sm">Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps.</p>
+                      <p class="text-slate-600 dark:text-slate-200 text-sm">
+                        Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps.
+                      </p>
                     </div>
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
@@ -219,8 +243,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Integritetsskyddsmyndigheten
@@ -229,8 +253,8 @@ defmodule Kalyna.HomePage do
                   DevOps • Konsultuppdrag • 2024–2026
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-2')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -253,8 +277,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-2"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -276,44 +300,27 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET Core
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API:er
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "Blazor",
+                              "Azure DevOps",
+                              "ASP.NET Core",
+                              "Entity Framework",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "REST API:er",
+                              "Git",
+                              "agila metoder (Scrum)",
+                              "Visual Studio",
+                              "Windows 10"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -321,8 +328,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 3 -->
+
+            <!-- Company 3 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -334,16 +341,16 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">Re:it</h3>
                 <p class="text-slate-600 dark:text-slate-200">
                   Lead-utvecklare • Konsultuppdrag • 2023–pågående
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-3')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -366,8 +373,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-3"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -389,56 +396,31 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          BankID
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JWT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 11
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Blazor",
+                              "Azure",
+                              "Azure DevOps",
+                              "Entity Framework",
+                              "BankID",
+                              "JWT",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "Windows 11",
+                              "Visual Studio",
+                              "agila metoder (Scrum)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -446,8 +428,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 4 -->
+
+            <!-- Company 4 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -459,8 +441,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Altero Consulting
@@ -469,8 +451,8 @@ defmodule Kalyna.HomePage do
                   Systemutvecklare • Konsultuppdrag • 2022–2025
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-4')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -493,8 +475,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-4"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -516,53 +498,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Integration Services (SSIS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 11
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visma
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "SQL",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "SQL Server Integration Services (SSIS)",
+                              "C#",
+                              ".NET Framework",
+                              "Python",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "Windows 10",
+                              "Windows 11",
+                              "Windows Server",
+                              "Visual Studio",
+                              "Visma",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -570,8 +529,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 5 -->
+
+            <!-- Company 5 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -583,16 +542,16 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">IdAgree</h3>
                 <p class="text-slate-600 dark:text-slate-200">
                   Systemutvecklare • Medgrundare • 2024–2024
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-5')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -615,8 +574,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-5"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -638,59 +597,32 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure App Service
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure SQL Database
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GitHub
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GitHub Actions
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Rider
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Blazor",
+                              "Azure",
+                              "Azure App Service",
+                              "Azure SQL Database",
+                              "Entity Framework",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "HTML",
+                              "CSS",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "GitHub",
+                              "GitHub Actions",
+                              "Rider"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -698,8 +630,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 6 -->
+
+            <!-- Company 6 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -711,8 +643,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Carnegie Investment Bank
@@ -721,8 +653,8 @@ defmodule Kalyna.HomePage do
                   Systemutvecklare, scrum-master • Anställd • 2021–2022
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-6')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -745,8 +677,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-6"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -768,92 +700,43 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Telerik UI for WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          xUnit.net
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Bootstrap
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          RabbitMQ
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          gRPC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          FIX
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          QuickFIX
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          mikrotjänster
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (SAFe)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Entity Framework",
+                              "SQL",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "WPF",
+                              "Telerik UI for WPF",
+                              "xUnit.net",
+                              "Azure DevOps",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "Bootstrap",
+                              "Python",
+                              "RabbitMQ",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "gRPC",
+                              "FIX",
+                              "QuickFIX",
+                              "Git",
+                              "Windows 10",
+                              "Windows Server",
+                              "Visual Studio",
+                              "mikrotjänster",
+                              "agila metoder (SAFe)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -861,8 +744,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 7 -->
+
+            <!-- Company 7 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -874,16 +757,16 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">Cellink</h3>
                 <p class="text-slate-600 dark:text-slate-200">
                   Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-7')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -906,8 +789,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-7"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -930,65 +813,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Prism
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSTest
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Confluence
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AWS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Figma
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "Prism",
+                              "MSTest",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "Azure DevOps",
+                              "Jira",
+                              "Confluence",
+                              "Python",
+                              "AWS",
+                              "Balsamiq",
+                              "Figma",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Scrum)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1011,53 +863,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Prism
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSTest
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Microsoft UI Automation
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "Prism",
+                              "MSTest",
+                              "Microsoft UI Automation",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "Azure DevOps",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1080,65 +909,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++17
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GCC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Google Test (gtest)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Yocto
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Linux
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CMake
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jenkins
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Marlin Firmware
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio Code
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C++17",
+                              "GCC",
+                              "Google Test (gtest)",
+                              "Yocto",
+                              "Linux",
+                              "CMake",
+                              "Jenkins",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "SQL",
+                              "SQLite",
+                              "Python",
+                              "C",
+                              "Marlin Firmware",
+                              "Jira",
+                              "Git",
+                              "Visual Studio Code",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1146,8 +944,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 8 -->
+
+            <!-- Company 8 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1159,8 +957,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Avarn Security
@@ -1169,8 +967,8 @@ defmodule Kalyna.HomePage do
                   Väktare • Behovsanställd • 2020–2021
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-8')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -1193,8 +991,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-8"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -1206,8 +1004,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 9 -->
+
+            <!-- Company 9 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1219,8 +1017,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Lab Gruppen
@@ -1229,8 +1027,8 @@ defmodule Kalyna.HomePage do
                   Systemutvecklare • Konsultuppdrag • 2020–2020
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-9')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -1253,8 +1051,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-9"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -1276,23 +1074,20 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Linux
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          realtidsoperativsystem
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Eclipse
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C",
+                              "Linux",
+                              "realtidsoperativsystem",
+                              "Jira",
+                              "Eclipse",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1300,8 +1095,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 10 -->
+
+            <!-- Company 10 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1313,8 +1108,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Mentice
@@ -1323,8 +1118,8 @@ defmodule Kalyna.HomePage do
                   Lead-utvecklare • Konsultuppdrag • 2017–2019
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-10')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -1347,8 +1142,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-10"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -1373,44 +1168,27 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Swift
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          UIKit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SceneKit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          OpenGL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          BLE
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blender
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GIMP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SolidWorks
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Xcode
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Swift",
+                              "UIKit",
+                              "SceneKit",
+                              "OpenGL",
+                              "BLE",
+                              "Blender",
+                              "GIMP",
+                              "SolidWorks",
+                              "Python",
+                              "Jira",
+                              "Git",
+                              "Xcode",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1432,47 +1210,28 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Django
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          jQuery
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          jQuery UI
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Java
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio Code
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Python",
+                              "Django",
+                              "SQLite",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "jQuery",
+                              "jQuery UI",
+                              "JSON",
+                              "Java",
+                              "Balsamiq",
+                              "Windows 10",
+                              "Visual Studio Code",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1480,8 +1239,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 11 -->
+
+            <!-- Company 11 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1493,8 +1252,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Consilium Marine & Safety
@@ -1503,8 +1262,8 @@ defmodule Kalyna.HomePage do
                   Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-11')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -1527,8 +1286,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-11"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -1553,50 +1312,29 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AvalonEdit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          NUnit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Microsoft UI Automation
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSVC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "AvalonEdit",
+                              "NUnit",
+                              "Microsoft UI Automation",
+                              "C++",
+                              "MSVC",
+                              "API",
+                              "Balsamiq",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1618,65 +1356,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WCF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++14
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSVC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Modbus
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MFC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AutoCAD
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          VirtualBox
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 7
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual C++ 6.0
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "WCF",
+                              "Entity Framework",
+                              "C++14",
+                              "MSVC",
+                              "Modbus",
+                              "MFC",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "AutoCAD",
+                              "Jira",
+                              "Git",
+                              "VirtualBox",
+                              "Windows 7",
+                              "Windows 10",
+                              "Visual Studio",
+                              "Visual C++ 6.0",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1698,50 +1405,29 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Aras Innovator
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "Aras Innovator",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "HTTP",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Windows Server",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1749,8 +1435,8 @@ defmodule Kalyna.HomePage do
                 </div>
               </div>
             </div>
-            
-    <!-- Company 12 -->
+
+            <!-- Company 12 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->
               <div class="flex justify-center mb-4">
@@ -1762,8 +1448,8 @@ defmodule Kalyna.HomePage do
                   />
                 </div>
               </div>
-              
-    <!-- Content -->
+
+              <!-- Content -->
               <div class="text-center mb-4">
                 <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   Ericsson
@@ -1772,8 +1458,8 @@ defmodule Kalyna.HomePage do
                   Systemutvecklare • Anställd • 2015–2016
                 </p>
               </div>
-              
-    <!-- Expand Button -->
+
+              <!-- Expand Button -->
               <button
                 onclick="toggleCompany('company-12')"
                 class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
@@ -1796,8 +1482,8 @@ defmodule Kalyna.HomePage do
                   </svg>
                 </div>
               </button>
-              
-    <!-- Expandable Content -->
+
+              <!-- Expandable Content -->
               <div
                 id="content-company-12"
                 class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
@@ -1819,53 +1505,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Pandas
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Flask
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Pywin32
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Named pipe
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Excel
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Bootstrap
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 7
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          PyCharm
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Python",
+                              "Pandas",
+                              "Flask",
+                              "Pywin32",
+                              "Named pipe",
+                              "SQLite",
+                              "SQL",
+                              "Excel",
+                              "HTML",
+                              "CSS",
+                              "Bootstrap",
+                              "JSON",
+                              "Git",
+                              "Windows 7",
+                              "PyCharm",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1913,8 +1576,8 @@ defmodule Kalyna.HomePage do
           }
         </script>
       </section>
-      
-    <!-- Testimonial Section -->
+
+      <!-- Testimonial Section -->
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
@@ -1939,8 +1602,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Personal Section -->
+
+      <!-- Personal Section -->
       <section class="px-6 py-16">
         <div class="max-w-4xl mx-auto">
           <div class="grid md:grid-cols-3 gap-12 items-center">
@@ -2014,8 +1677,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Contact Section -->
+
+      <!-- Contact Section -->
       <section id="contact" class="px-6 py-16 bg-white dark:bg-slate-800">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Kontakta mig</h2>
@@ -2049,8 +1712,8 @@ defmodule Kalyna.HomePage do
                 daniel@kalyna.se
               </a>
             </div>
-            
-    <!-- Phone -->
+
+            <!-- Phone -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
                 <svg
@@ -2076,18 +1739,27 @@ defmodule Kalyna.HomePage do
                 +46 70 732 98 68
               </a>
             </div>
-            
+
             <!-- Mastodon -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg
+                  class="w-6 h-6 text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
                   <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
                 </svg>
               </div>
               <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Mastodon</h3>
-              <a href="https://mastodon.social/@DanOpcode" rel="me" class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">Följ mig på Mastodon</a>
+              <a
+                href="https://mastodon.social/@DanOpcode"
+                rel="me"
+                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+              >Följ mig på Mastodon</a>
             </div>
-    <!-- LinkedIn -->
+            <!-- LinkedIn -->
             <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
               <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
                 <svg
@@ -2111,8 +1783,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Content & Community Section -->
+
+      <!-- Content & Community Section -->
       <section class="px-6 py-16">
         <div class="max-w-7xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
@@ -2158,8 +1830,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- About Kalyna Section -->
+
+      <!-- About Kalyna Section -->
       <section class="px-6 py-16 bg-white dark:bg-slate-800">
         <div class="max-w-4xl mx-auto">
           <div class="grid md:grid-cols-3 gap-12 items-center">
@@ -2193,8 +1865,8 @@ defmodule Kalyna.HomePage do
           </div>
         </div>
       </section>
-      
-    <!-- Company Information Section -->
+
+      <!-- Company Information Section -->
       <section class="px-6 py-16 bg-slate-100 dark:bg-slate-900">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">

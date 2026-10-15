@@ -42,4 +42,3 @@ defmodule Mix.Tasks.Kalyna.Gen.Post do
     Mix.shell().info("Succesfully created #{file_path}!")
   end
 end
-

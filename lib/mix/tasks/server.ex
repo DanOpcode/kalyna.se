@@ -12,11 +12,12 @@ defmodule Mix.Tasks.Kalyna.Server do
     Code.put_compiler_option(:ignore_module_conflict, true)
     Mix.Task.run("app.start", ["--preload-modules"])
 
-    children = [
-      WebDevUtils.FileSystem,
-      {Bandit, scheme: :http, plug: TableauDevServer.Router, port: 4000},
-      WebDevUtils.CodeReloader
-    ] ++ TableauDevServer.ServerSupervisor.asset_children()
+    children =
+      [
+        WebDevUtils.FileSystem,
+        {Bandit, scheme: :http, plug: TableauDevServer.Router, port: 4000},
+        WebDevUtils.CodeReloader
+      ] ++ TableauDevServer.ServerSupervisor.asset_children()
 
     {:ok, _pid} = Supervisor.start_link(children, strategy: :one_for_one)
     Mix.shell().info("Development server: http://localhost:4000")

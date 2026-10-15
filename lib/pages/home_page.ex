@@ -223,44 +223,27 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET Core
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API:er
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "Blazor",
+                              "Azure DevOps",
+                              "ASP.NET Core",
+                              "Entity Framework",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "REST API:er",
+                              "Git",
+                              "agila metoder (Scrum)",
+                              "Visual Studio",
+                              "Windows 10"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -336,56 +319,31 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          BankID
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JWT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 11
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Blazor",
+                              "Azure",
+                              "Azure DevOps",
+                              "Entity Framework",
+                              "BankID",
+                              "JWT",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "Windows 11",
+                              "Visual Studio",
+                              "agila metoder (Scrum)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -463,53 +421,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Integration Services (SSIS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 11
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visma
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "SQL",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "SQL Server Integration Services (SSIS)",
+                              "C#",
+                              ".NET Framework",
+                              "Python",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "Windows 10",
+                              "Windows 11",
+                              "Windows Server",
+                              "Visual Studio",
+                              "Visma",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -585,59 +520,32 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blazor
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure App Service
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure SQL Database
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GitHub
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GitHub Actions
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Rider
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Blazor",
+                              "Azure",
+                              "Azure App Service",
+                              "Azure SQL Database",
+                              "Entity Framework",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "HTML",
+                              "CSS",
+                              "HTTP",
+                              "REST API",
+                              "Git",
+                              "GitHub",
+                              "GitHub Actions",
+                              "Rider"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -715,92 +623,43 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          ASP.NET
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Telerik UI for WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          xUnit.net
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Bootstrap
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          RabbitMQ
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          gRPC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          FIX
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          QuickFIX
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          mikrotjänster
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (SAFe)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET",
+                              "ASP.NET",
+                              "Entity Framework",
+                              "SQL",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "WPF",
+                              "Telerik UI for WPF",
+                              "xUnit.net",
+                              "Azure DevOps",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "Bootstrap",
+                              "Python",
+                              "RabbitMQ",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "gRPC",
+                              "FIX",
+                              "QuickFIX",
+                              "Git",
+                              "Windows 10",
+                              "Windows Server",
+                              "Visual Studio",
+                              "mikrotjänster",
+                              "agila metoder (SAFe)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -877,65 +736,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Prism
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSTest
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Confluence
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AWS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Figma
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Scrum)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "Prism",
+                              "MSTest",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "Azure DevOps",
+                              "Jira",
+                              "Confluence",
+                              "Python",
+                              "AWS",
+                              "Balsamiq",
+                              "Figma",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Scrum)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -958,53 +786,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Prism
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSTest
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Microsoft UI Automation
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Azure DevOps
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "Prism",
+                              "MSTest",
+                              "Microsoft UI Automation",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "Azure DevOps",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1027,65 +832,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++17
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GCC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Google Test (gtest)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Yocto
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Linux
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CMake
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jenkins
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MQTT
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          REST API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Marlin Firmware
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio Code
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C++17",
+                              "GCC",
+                              "Google Test (gtest)",
+                              "Yocto",
+                              "Linux",
+                              "CMake",
+                              "Jenkins",
+                              "MQTT",
+                              "JSON",
+                              "HTTP",
+                              "REST API",
+                              "SQL",
+                              "SQLite",
+                              "Python",
+                              "C",
+                              "Marlin Firmware",
+                              "Jira",
+                              "Git",
+                              "Visual Studio Code",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1223,23 +997,20 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Linux
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          realtidsoperativsystem
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Eclipse
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C",
+                              "Linux",
+                              "realtidsoperativsystem",
+                              "Jira",
+                              "Eclipse",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1320,44 +1091,27 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Swift
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          UIKit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SceneKit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          OpenGL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          BLE
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Blender
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          GIMP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SolidWorks
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Xcode
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Swift",
+                              "UIKit",
+                              "SceneKit",
+                              "OpenGL",
+                              "BLE",
+                              "Blender",
+                              "GIMP",
+                              "SolidWorks",
+                              "Python",
+                              "Jira",
+                              "Git",
+                              "Xcode",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1379,47 +1133,28 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Django
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          jQuery
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          jQuery UI
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Java
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio Code
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Python",
+                              "Django",
+                              "SQLite",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "jQuery",
+                              "jQuery UI",
+                              "JSON",
+                              "Java",
+                              "Balsamiq",
+                              "Windows 10",
+                              "Visual Studio Code",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1500,50 +1235,29 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AvalonEdit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          NUnit
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Microsoft UI Automation
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSVC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          API
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Balsamiq
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "AvalonEdit",
+                              "NUnit",
+                              "Microsoft UI Automation",
+                              "C++",
+                              "MSVC",
+                              "API",
+                              "Balsamiq",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1565,65 +1279,34 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WPF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          WCF
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Entity Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C++14
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MSVC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Modbus
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          MFC
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          AutoCAD
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          VirtualBox
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 7
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual C++ 6.0
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "WPF",
+                              "WCF",
+                              "Entity Framework",
+                              "C++14",
+                              "MSVC",
+                              "Modbus",
+                              "MFC",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "AutoCAD",
+                              "Jira",
+                              "Git",
+                              "VirtualBox",
+                              "Windows 7",
+                              "Windows 10",
+                              "Visual Studio",
+                              "Visual C++ 6.0",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1645,50 +1328,29 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h5 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h5>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          C#
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          .NET Framework
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Aras Innovator
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JavaScript
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTTP
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL Server Management Studio (SSMS)
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Jira
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 10
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows Server
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Visual Studio
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "C#",
+                              ".NET Framework",
+                              "Aras Innovator",
+                              "HTML",
+                              "CSS",
+                              "JavaScript",
+                              "HTTP",
+                              "SQL Server",
+                              "SQL Server Management Studio (SSMS)",
+                              "Jira",
+                              "Git",
+                              "Windows 10",
+                              "Windows Server",
+                              "Visual Studio",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>
@@ -1766,53 +1428,30 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Tekniker</h4>
                       <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Python
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Pandas
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Flask
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Pywin32
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Named pipe
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQLite
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          SQL
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Excel
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          HTML
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          CSS
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Bootstrap
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          JSON
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Git
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          Windows 7
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          PyCharm
-                        </span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          agila metoder (Kanban)
+                        <span
+                          :for={
+                            technology <- [
+                              "Python",
+                              "Pandas",
+                              "Flask",
+                              "Pywin32",
+                              "Named pipe",
+                              "SQLite",
+                              "SQL",
+                              "Excel",
+                              "HTML",
+                              "CSS",
+                              "Bootstrap",
+                              "JSON",
+                              "Git",
+                              "Windows 7",
+                              "PyCharm",
+                              "agila metoder (Kanban)"
+                            ]
+                          }
+                          class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
+                        >
+                          {technology}
                         </span>
                       </div>
                     </div>

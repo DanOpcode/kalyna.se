@@ -4,7 +4,7 @@ defmodule Kalyna.PostLayout do
 
   def template(assigns) do
     ~H"""
-    <%= {:safe, render(@inner_content)} %>
+    {Phoenix.HTML.raw(render(@inner_content))}
     """
   end
 end

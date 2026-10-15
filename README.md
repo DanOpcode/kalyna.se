@@ -37,3 +37,15 @@ git add docs/
 ```
 
 Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
+
+## Tests
+
+Run the Elixir regression tests with `mix test`. Run browser tests with:
+
+```shell
+npm ci
+npx playwright install chromium
+npm test
+```
+
+Playwright builds the production site and starts a temporary static server on port 4100. Desktop and mobile Chromium tests cover both languages, contact links, experience cards, JPEG/image loading, the Carmenta logo, mobile overflow, and system/light/dark preferences (including blocked storage). Failed tests retain traces in `test-results/`. Use `npm run test:ui` for the interactive runner.

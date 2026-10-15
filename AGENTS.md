@@ -6,6 +6,10 @@ This file provides guidance to coding agents when working with code in this repo
 
 This is a static website built with Tableau, an Elixir-based static site generator. The project uses Phoenix LiveView components for templating and TailwindCSS for styling.
 
+## GitHub
+
+This repository is hosted on GitHub. Use `git` to push branches and `gh` to manage issues and pull requests.
+
 ## Common Commands
 
 ### Development Server

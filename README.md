@@ -26,3 +26,14 @@ Running your build with `MIX_ENV=prod` is important so that the live reload JS s
 ```shell
 MIX_ENV=prod mix build
 ```
+
+## Publishing to GitHub Pages
+
+GitHub Pages publishes the committed `docs/` directory on `main`. The Pages deployment does not run Tableau or Tailwind. After changing templates, content or styles, rebuild and include the generated files in the same pull request:
+
+```shell
+MIX_ENV=prod mix build
+git add docs/
+```
+
+Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.

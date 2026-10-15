@@ -25,6 +25,8 @@ MIX_ENV=prod mix build
 ```
 This runs the `build` alias which executes `tableau.build` and `tailwind default --minify`.
 
+GitHub Pages publishes committed `docs/` files from `main`; it does not run the Elixir build. After source or asset changes, run the production build and include the generated `docs/` changes in the PR.
+
 ### Code Formatting
 ```bash
 mix format

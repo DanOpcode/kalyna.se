@@ -46,10 +46,8 @@ config :tableau, Tableau.PostExtension, enabled: true
 config :tableau, Tableau.DataExtension, enabled: true
 config :tableau, Tableau.SitemapExtension, enabled: true
 
-config :tableau, Tableau.RSSExtension,
-  enabled: true,
-  title: "kalyna",
-  description: "My beautiful website"
+# Enable a feed when the site publishes posts.
+config :tableau, Tableau.RSSExtension, enabled: false
 
 config :elixir, :time_zone_database, Tz.TimeZoneDatabase
 

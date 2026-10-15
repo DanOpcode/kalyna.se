@@ -154,6 +154,14 @@ defmodule Kalyna.HomePage do
             Företag jag arbetat med.
           </p>
           <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
+            <article class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 text-center">
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                <a href="https://carmenta.com/" class="underline">Carmenta</a>
+              </h3>
+              <p class="text-slate-600 dark:text-slate-200 mb-4">DevOps • 2026–pågående</p>
+              <p class="text-slate-600 dark:text-slate-200 mb-4">Jag arbetar med DevOps hos Carmenta.</p>
+              <p class="text-slate-600 dark:text-slate-200">.NET • C# • Docker • Linux • Windows</p>
+            </article>
             <!-- Company 1 -->
             <div class="company-item bg-white dark:bg-slate-700 rounded-lg shadow-sm p-6 transition-all duration-300">
               <!-- Logo Row -->

@@ -1990,10 +1990,10 @@ defmodule Kalyna.HomePage do
               </div>
               <h3 class="font-semibold text-slate-900 dark:text-white mb-2">E-post</h3>
               <a
-                href="mailto:daniel.jonsson@kalyna.se"
+                href="mailto:daniel@kalyna.se"
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors break-all"
               >
-                daniel.jonsson@kalyna.se
+                daniel@kalyna.se
               </a>
             </div>
             

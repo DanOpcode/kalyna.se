@@ -173,7 +173,7 @@ defmodule Kalyna.HomePage do
                   Integritetsskyddsmyndigheten
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  DevOps • Konsultuppdrag • 2024–pågående
+                  DevOps • Konsultuppdrag • 2024–2026
                 </p>
               </div>
               
@@ -211,7 +211,7 @@ defmodule Kalyna.HomePage do
                     <div>
                       <h4 class="font-semibold text-slate-900 dark:text-white mb-3">Uppdrag</h4>
                       <p class="text-slate-600 dark:text-slate-200 text-sm">
-                        Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetar med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team bygger vi diverse applikationer tillsammans.
+                        Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans.
                       </p>
                     </div>
                     <div>
@@ -413,7 +413,7 @@ defmodule Kalyna.HomePage do
                   Altero Consulting
                 </h3>
                 <p class="text-slate-600 dark:text-slate-200">
-                  Systemutvecklare • Konsultuppdrag • 2022–pågående
+                  Systemutvecklare • Konsultuppdrag • 2022–2025
                 </p>
               </div>
               

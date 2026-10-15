@@ -27,7 +27,30 @@ defmodule Kalyna.RootLayout do
         alternate_locale: if(lang == "en", do: "sv_SE", else: "en_GB"),
         translated_homepage: permalink in ["/", "/en/"],
         swedish_url: URI.merge(base_url, "/") |> URI.to_string(),
-        english_url: URI.merge(base_url, "/en/") |> URI.to_string()
+        english_url: URI.merge(base_url, "/en/") |> URI.to_string(),
+        structured_data:
+          Jason.encode!(%{
+            "@context" => "https://schema.org",
+            "@graph" => [
+              %{
+                "@type" => "Organization",
+                "@id" => "#{base_url}/#organization",
+                "name" => "Kalyna Solutions AB",
+                "url" => "#{base_url}/",
+                "logo" => URI.merge(base_url, "/images/favicon-512x512.png") |> URI.to_string(),
+                "email" => "daniel@kalyna.se"
+              },
+              %{
+                "@type" => "WebSite",
+                "@id" => "#{base_url}/#website",
+                "name" => "Kalyna Solutions AB",
+                "url" => "#{base_url}/",
+                "inLanguage" => ["sv", "en"],
+                "publisher" => %{"@id" => "#{base_url}/#organization"}
+              }
+            ]
+          })
+          |> String.replace("<", "\\u003c")
       })
 
     ~H"""
@@ -76,6 +99,9 @@ defmodule Kalyna.RootLayout do
         <link :if={@translated_homepage} rel="alternate" hreflang="sv" href={@swedish_url} />
         <link :if={@translated_homepage} rel="alternate" hreflang="en" href={@english_url} />
         <link :if={@translated_homepage} rel="alternate" hreflang="x-default" href={@swedish_url} />
+        <script :if={@translated_homepage} type="application/ld+json">
+          <%= Phoenix.HTML.raw(@structured_data) %>
+        </script>
         <link rel="stylesheet" href="/css/site.css" />
       </head>
 

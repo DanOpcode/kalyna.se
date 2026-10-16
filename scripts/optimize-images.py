@@ -1,6 +1,6 @@
-"""Regenerate homepage WebP assets with Pillow 12.2.0.
+"""Regenerate homepage WebP assets with the dev-machine supplied Pillow.
 
-Install Pillow in a virtualenv, then run this script from any directory.
+Run with python3 from any directory; no project-local installation is needed.
 Original images are retained as the editable source assets.
 """
 from pathlib import Path
@@ -14,7 +14,7 @@ sources = list(images.iterdir()) + list((ROOT / "assets/logo-sources").glob("*")
 for source in sorted(sources):
     if source.suffix not in {".png", ".jpg"}:
         continue
-    if not (source.stem.startswith(("profile", "company_logo")) or source.stem == "logo"):
+    if not (source.stem.startswith(("profile", "company_logo")) or source.stem in {"logo", "kalyna"}):
         continue
     with Image.open(source) as original:
         image = ImageOps.exif_transpose(original)

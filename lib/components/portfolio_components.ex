@@ -283,9 +283,9 @@ defmodule Kalyna.PortfolioComponents do
             </p>
             <div class="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h4 class="font-semibold text-slate-900 dark:text-white mb-3">
+                <h3 class="font-semibold text-slate-900 dark:text-white mb-3">
                   {t(@lang, "Personliga intressen")}
-                </h4>
+                </h3>
                 <ul class="space-y-2">
                   <li class="flex items-center text-slate-600 dark:text-slate-200">
                     <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>{t(
@@ -426,7 +426,7 @@ defmodule Kalyna.PortfolioComponents do
             <h3 class="font-semibold text-slate-900 dark:text-white mb-2">{t(@lang, "Telefon")}</h3>
             <a
               href="tel:+46707329868"
-              class="text-green-600 dark:text-green-300 hover:text-green-700 dark:hover:text-blue-400 transition-colors"
+              class="text-green-700 dark:text-green-300 hover:text-green-800 dark:hover:text-blue-400 transition-colors"
             >
               +46 70 732 98 68
             </a>
@@ -562,21 +562,21 @@ defmodule Kalyna.PortfolioComponents do
               )}{" "}<a
                 href="https://sv.wikipedia.org/wiki/Skogsolvon"
                 title={t(@lang, "Wikipedia-artikel om skogsolvon.")}
-                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
               >{t(@lang, "skogsolvon")}</a>{t(
                 @lang,
                 ". Det är en anrik symbol för Ukraina med lång tradition, och dess bär symboliserar hemlandet. Skogsolvon dyker i Ukraina upp i sånger, konst, broderi och poesi. En numera välkänd sång är “"
               )}<a
                 href="https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen"
                 title={t(@lang, "Wikipedia-artikel om sången 'Ett rött olvon vid ängen'.")}
-                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
               >{t(@lang, "Ett rött olvon vid ängen")}</a>{t(
                 @lang,
                 "“ som skrevs 1914; “Ой у лузі червона калина“ är dess originaltitel och"
               )}{" "}<a
                 href="https://www.youtube.com/watch?v=EV_vT0Vud5Q"
                 title={t(@lang, "En grupp personer som sjunger sången 'Ой у лузі червона калина'.")}
-                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+                class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
               >{t(@lang, "sjungs fortfarande")}</a>.
             </p>
           </div>
@@ -616,16 +616,16 @@ defmodule Kalyna.PortfolioComponents do
               </div>
               <div class="flex justify-between">
                 <span class="font-medium">{t(@lang, "Skattestatus:")}</span>
-                <span class="text-green-600 dark:text-green-400 font-medium">
+                <span class="text-green-700 dark:text-green-400 font-medium">
                   {t(@lang, "Godkänd för F-skatt")}
                 </span>
               </div>
             </div>
 
             <div class="pt-6 border-t border-slate-200 dark:border-slate-600">
-              <h4 class="font-semibold text-slate-900 dark:text-white mb-4 text-center">
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-4 text-center">
                 {t(@lang, "Tillgänglighet")}
-              </h4>
+              </h3>
               <div class="space-y-3 text-slate-600 dark:text-slate-200">
                 <div class="flex items-center justify-center">
                   <svg

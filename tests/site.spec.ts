@@ -133,30 +133,21 @@ test('theme remains usable when storage is blocked', async ({ page }) => {
   await expect(page.locator('html')).not.toHaveClass('dark');
 });
 
-test('saved theme applies before the stylesheet finishes loading', async ({ page }) => {
+test('page styles and saved theme work without external CSS or theme requests', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'light' });
   await page.addInitScript(() => localStorage.setItem('theme', 'dark'));
-  let releaseStylesheet!: () => void;
-  const stylesheetReady = new Promise<void>(resolve => { releaseStylesheet = resolve; });
-  await page.route('**/css/site.css', async route => {
-    await stylesheetReady;
-    await route.continue();
+  const requests: string[] = [];
+  await page.route(/\/(css\/site\.css|js\/theme\.js)$/, async route => {
+    requests.push(route.request().url());
+    await route.abort();
   });
-  const scripts: string[] = [];
-  page.on('request', request => {
-    if (request.resourceType() === 'script') scripts.push(request.url());
-  });
-  try {
-    await page.goto('/', { waitUntil: 'commit' });
-    await expect(page.locator('html')).toHaveClass('dark');
-    expect(scripts.filter(url => url.endsWith('/js/theme.js'))).toEqual([]);
-  } finally {
-    releaseStylesheet();
-  }
-  await page.waitForLoadState('load');
+  await page.goto('/');
+  await expect(page.locator('html')).toHaveClass('dark');
   await expect(page.locator('#theme-preference')).toHaveValue('dark');
+  await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toHaveCSS('color', 'rgb(255, 255, 255)');
+  await expect(page.locator('img[src="/images/profile1.webp"]')).toHaveAttribute('fetchpriority', 'high');
+  expect(requests).toEqual([]);
 });
-
 
 test('portraits choose appropriately sized images on 2x screens', async ({ browser, baseURL }) => {
   const context = await browser.newContext({ baseURL, viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
@@ -171,4 +162,15 @@ test('portraits choose appropriately sized images on 2x screens', async ({ brows
   } finally {
     await context.close();
   }
+});
+
+test.describe('without JavaScript', () => {
+  test.use({ javaScriptEnabled: false });
+  test('both languages retain their production styles', async ({ page }) => {
+    for (const path of ['/', '/en/']) {
+      await page.goto(path);
+      await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toHaveCSS('font-size', '48px');
+      await expect(page.locator('link[rel="stylesheet"]')).toHaveCount(0);
+    }
+  });
 });

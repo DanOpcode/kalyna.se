@@ -10,14 +10,15 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 images = ROOT / "extra/images"
 original_total = optimized_total = 0
-for source in sorted(images.iterdir()):
+sources = list(images.iterdir()) + list((ROOT / "assets/logo-sources").glob("*"))
+for source in sorted(sources):
     if source.suffix not in {".png", ".jpg"}:
         continue
     if not (source.stem.startswith(("profile", "company_logo")) or source.stem == "logo"):
         continue
     with Image.open(source) as original:
         image = ImageOps.exif_transpose(original)
-        targets = [(source.with_suffix(".webp"), image)]
+        targets = [((images / source.name).with_suffix(".webp"), image)]
         if source.stem.startswith("profile"):
             # Portraits display at 192 CSS pixels. Supply real detail at up to
             # 3x density from the same square crop, without upscaling.
@@ -35,7 +36,13 @@ for source in sorted(images.iterdir()):
             # twice that resolution for high-density screens; never upscale.
             image.thumbnail((528, 160), Image.Resampling.LANCZOS)
         for target, derivative in targets:
-            derivative.save(target, "WEBP", quality=85, method=6)
+            if source.stem == "company_logo_altero":
+                # This flat-colour logo needs only a small palette. Retain
+                # antialiased edges with 64 colours and encode it losslessly.
+                derivative = derivative.quantize(colors=64).convert("RGBA")
+                derivative.save(target, "WEBP", lossless=True, method=6)
+            else:
+                derivative.save(target, "WEBP", quality=85, method=6)
     before = source.stat().st_size
     after = sum(target.stat().st_size for target, _ in targets)
     original_total += before

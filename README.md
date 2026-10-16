@@ -36,7 +36,8 @@ MIX_ENV=prod mix build
 git add docs/
 ```
 
-Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
+Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. Production builds remove the intermediate CSS file after embedding it in the HTML;
+do not commit a separate `docs/css/site.css`. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
 
 ## Tests
 
@@ -53,7 +54,8 @@ Playwright builds the production site and starts a temporary static server on po
 ## Homepage performance
 
 The homepage uses committed WebP derivatives of the original PNG/JPEG images in
-`extra/images/`. Regenerate them after replacing an original:
+`extra/images/` (portraits and site logo) and `assets/logo-sources/` (company logos).
+Regenerate them after replacing an original:
 
 ```shell
 python3 -m venv /tmp/kalyna-image-tools
@@ -65,11 +67,20 @@ MIX_ENV=prod mix build
 Portrait sources remain JPEGs and must be square and at least 576 × 576 pixels.
 The script generates 192, 384, and 576 pixel WebP versions; the homepage uses
 `srcset` to choose a version for its 192-pixel portrait boxes on 1×, 2×, and 3× screens.
-Company logos retain up to twice their displayed resolution (528 × 160 pixels),
-without upscaling smaller originals. SVGs and social preview images are unchanged.
+Company logos use original SVG artwork when available. Otherwise, the image
+optimizer creates WebP derivatives of the retained PNG/JPEG originals, bounded to
+528 × 160 pixels without upscaling. Company raster sources remain outside the
+published site in `assets/logo-sources/`.
+Social preview images are unchanged.
 The root layout embeds `assets/js/theme.js` at build time so the saved theme applies
-before first paint without a blocking JavaScript request. The shared stylesheet
-remains external so browsers can cache it across pages.
+before first paint without a blocking JavaScript request. The production build embeds the freshly minified stylesheet after Tailwind
+finishes, then removes `docs/css/site.css` from the production output after all
+pages are written successfully. Development still uses the external
+stylesheet for live reload. Inlining adds the CSS to each page response and trades
+cross-page stylesheet caching for faster first rendering on this small site.
+
+See [the company logo audit](notes/company-logos.md) for original vector sources
+and the raster fallbacks.
 
 The cache lifetimes and injected `cdn-cgi` email decoding script reported in issue
 #52 are controlled by the hosting/CDN configuration, outside the static build.

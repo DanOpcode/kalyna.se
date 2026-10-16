@@ -48,4 +48,27 @@ npx playwright install chromium
 npm test
 ```
 
-Playwright builds the production site and starts a temporary static server on port 4100. Desktop and mobile Chromium tests cover both languages, contact links, experience cards, JPEG/image loading, the Carmenta logo, mobile overflow, and system/light/dark preferences (including blocked storage). Failed tests retain traces in `test-results/`. Use `npm run test:ui` for the interactive runner.
+Playwright builds the production site and starts a temporary static server on port 4100. Desktop and mobile Chromium tests cover both languages, contact links, experience cards, image loading, the Carmenta logo, mobile overflow, and system/light/dark preferences (including blocked storage). Failed tests retain traces in `test-results/`. Use `npm run test:ui` for the interactive runner.
+
+## Homepage performance
+
+The homepage uses committed WebP derivatives of the original PNG/JPEG images in
+`extra/images/`. Regenerate them after replacing an original:
+
+```shell
+python3 -m venv /tmp/kalyna-image-tools
+/tmp/kalyna-image-tools/bin/pip install Pillow==12.2.0
+/tmp/kalyna-image-tools/bin/python scripts/optimize-images.py
+MIX_ENV=prod mix build
+```
+
+Company logos retain up to twice their displayed resolution (528 × 160 pixels),
+without upscaling smaller originals. SVGs and social preview images are unchanged.
+The root layout embeds `assets/js/theme.js` at build time so the saved theme applies
+before first paint without a blocking JavaScript request. The shared stylesheet
+remains external so browsers can cache it across pages.
+
+The cache lifetimes and injected `cdn-cgi` email decoding script reported in issue
+#52 are controlled by the hosting/CDN configuration, outside the static build.
+Review those settings separately. If extending asset cache lifetimes, use versioned
+asset URLs or a cache invalidation strategy so updates reach returning visitors.

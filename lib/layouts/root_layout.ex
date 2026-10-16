@@ -4,6 +4,10 @@ defmodule Kalyna.RootLayout do
 
   import Kalyna.Translations, only: [t: 2]
 
+  # Keep theme selection before first paint without a blocking network request.
+  @external_resource Path.expand("../../assets/js/theme.js", __DIR__)
+  @theme_script File.read!(@external_resource)
+
   def template(assigns) do
     lang = Map.get(assigns.page, :lang, "sv")
     permalink = Map.get(assigns.page, :permalink, "/")
@@ -17,6 +21,7 @@ defmodule Kalyna.RootLayout do
     assigns =
       Map.merge(assigns, %{
         lang: lang,
+        theme_script: @theme_script,
         title: title,
         description:
           assigns.page[:description] ||
@@ -58,7 +63,8 @@ defmodule Kalyna.RootLayout do
     <html lang={@lang}>
       <head>
         <meta charset="utf-8" />
-        <script src="/js/theme.js">
+        <script>
+          <%= Phoenix.HTML.raw(@theme_script) %>
         </script>
         <meta http_equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

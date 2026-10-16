@@ -58,7 +58,7 @@ defmodule Kalyna.HomePage do
       <section class="px-6 py-20 max-w-4xl mx-auto text-center">
         <div class="flex items-center justify-center mb-8">
           <img
-            src="/images/logo.png"
+            src="/images/logo.webp"
             width="64"
             height="58"
             alt={t(@lang, "Kalyna Solutions AB logga")}
@@ -93,7 +93,7 @@ defmodule Kalyna.HomePage do
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 text-center">
               <img
-                src="/images/profile1.jpg"
+                src="/images/profile1.webp"
                 width="192"
                 height="192"
                 alt={t(@lang, "Profilbild")}
@@ -274,7 +274,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_imy.png"
+                    src="/images/company_logo_imy.webp"
                     width="330"
                     height="60"
                     loading="lazy"
@@ -502,7 +502,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_altero.png"
+                    src="/images/company_logo_altero.webp"
                     width="429"
                     height="223"
                     loading="lazy"
@@ -615,7 +615,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_idagree.jpg"
+                    src="/images/company_logo_idagree.webp"
                     width="200"
                     height="200"
                     loading="lazy"
@@ -731,7 +731,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_carnegie.png"
+                    src="/images/company_logo_carnegie.webp"
                     width="320"
                     height="112"
                     loading="lazy"
@@ -860,7 +860,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_cellink.png"
+                    src="/images/company_logo_cellink.webp"
                     width="812"
                     height="172"
                     loading="lazy"
@@ -1101,7 +1101,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_avarn.png"
+                    src="/images/company_logo_avarn.webp"
                     width="264"
                     height="72"
                     loading="lazy"
@@ -1167,7 +1167,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_labgruppen.png"
+                    src="/images/company_logo_labgruppen.webp"
                     width="1809"
                     height="155"
                     loading="lazy"
@@ -1867,7 +1867,7 @@ defmodule Kalyna.HomePage do
           <div class="grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-1 text-center">
               <img
-                src="/images/profile2.jpg"
+                src="/images/profile2.webp"
                 width="192"
                 height="192"
                 loading="lazy"

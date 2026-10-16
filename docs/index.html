@@ -2,7 +2,30 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8">
-    <script src="/js/theme.js">
+    <script>
+      (() => {
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch { /* Storage may be disabled. */ }
+  window.themePreference = ['dark', 'light'].includes(saved) ? saved : 'system';
+  const apply = () => {
+    const dark = window.themePreference === 'dark' ||
+      (window.themePreference === 'system' && media.matches);
+    document.documentElement.classList.toggle('dark', dark);
+    document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+  };
+  window.setTheme = (preference) => {
+    window.themePreference = ['dark', 'light'].includes(preference) ? preference : 'system';
+    try {
+      if (window.themePreference === 'system') localStorage.removeItem('theme');
+      else localStorage.setItem('theme', window.themePreference);
+    } catch { /* Theme selection still works when storage is unavailable. */ }
+    apply();
+  };
+  media.addEventListener('change', apply);
+  apply();
+})();
+
     </script>
     <meta http_equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +98,7 @@
   <!-- Hero Section -->
   <section class="px-6 py-20 max-w-4xl mx-auto text-center">
     <div class="flex items-center justify-center mb-8">
-      <img src="/images/logo.png" width="64" height="58" alt="Kalyna Solutions AB logga" class="w-16 mr-4">
+      <img src="/images/logo.webp" width="64" height="58" alt="Kalyna Solutions AB logga" class="w-16 mr-4">
       <h1 class="text-5xl font-bold text-slate-900 dark:text-white">
         Kalyna Solutions AB
       </h1>
@@ -98,7 +121,7 @@
     <div class="max-w-4xl mx-auto">
       <div class="grid md:grid-cols-3 gap-12 items-center">
         <div class="md:col-span-1 text-center">
-          <img src="/images/profile1.jpg" width="192" height="192" alt="Profilbild" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
+          <img src="/images/profile1.webp" width="192" height="192" alt="Profilbild" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg">
         </div>
         <div class="md:col-span-2">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">
@@ -244,7 +267,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_imy.png" width="330" height="60" loading="lazy" alt="IMY logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_imy.webp" width="330" height="60" loading="lazy" alt="IMY logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -428,7 +451,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_altero.png" width="429" height="223" loading="lazy" alt="Altero Consulting logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_altero.webp" width="429" height="223" loading="lazy" alt="Altero Consulting logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -523,7 +546,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_idagree.jpg" width="200" height="200" loading="lazy" alt="IdAgree logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_idagree.webp" width="200" height="200" loading="lazy" alt="IdAgree logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -620,7 +643,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_carnegie.png" width="320" height="112" loading="lazy" alt="Carnegie Investment Bank logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_carnegie.webp" width="320" height="112" loading="lazy" alt="Carnegie Investment Bank logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -741,7 +764,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_cellink.png" width="812" height="172" loading="lazy" alt="Cellink logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_cellink.webp" width="812" height="172" loading="lazy" alt="Cellink logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -973,7 +996,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_avarn.png" width="264" height="72" loading="lazy" alt="AVARN Security logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_avarn.webp" width="264" height="72" loading="lazy" alt="AVARN Security logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -1013,7 +1036,7 @@
           <!-- Logo Row -->
           <div class="flex justify-center mb-4">
             <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
-              <img src="/images/company_logo_labgruppen.png" width="1809" height="155" loading="lazy" alt="Lab Gruppen logga" class="max-w-full max-h-full object-contain">
+              <img src="/images/company_logo_labgruppen.webp" width="1809" height="155" loading="lazy" alt="Lab Gruppen logga" class="max-w-full max-h-full object-contain">
             </div>
           </div>
 
@@ -1616,7 +1639,7 @@
     <div class="max-w-4xl mx-auto">
       <div class="grid md:grid-cols-3 gap-12 items-center">
         <div class="md:col-span-1 text-center">
-          <img src="/images/profile2.jpg" width="192" height="192" loading="lazy" alt="Profilbild" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg mb-6">
+          <img src="/images/profile2.webp" width="192" height="192" loading="lazy" alt="Profilbild" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg mb-6">
         </div>
         <div class="md:col-span-2">
           <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center md:text-left">

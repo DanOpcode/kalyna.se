@@ -50,6 +50,9 @@ for source in sorted(sources):
 
     for target, resize in targets:
         encoding = ["-quality", "85", "-define", "webp:method=6"]
+        if source.stem == "logo":
+            # Keep colour quality unchanged; quantize transparency to reduce size.
+            encoding += ["-define", "webp:alpha-quality=70"]
         if source.stem == "company_logo_altero":
             # Preserve the flat-colour logo with a small, lossless palette.
             encoding = ["+dither", "-colors", "64", "-define", "webp:lossless=true",

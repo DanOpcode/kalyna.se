@@ -17,13 +17,27 @@ for source in sorted(images.iterdir()):
         continue
     with Image.open(source) as original:
         image = ImageOps.exif_transpose(original)
-        # Company logos display inside a 264 x 80 CSS-pixel box. Keep up to
-        # twice that resolution for high-density screens; never upscale.
-        if source.stem.startswith("company_logo"):
+        targets = [(source.with_suffix(".webp"), image)]
+        if source.stem.startswith("profile"):
+            # Portraits display at 192 CSS pixels. Supply real detail at up to
+            # 3x density from the same square crop, without upscaling.
+            if image.width != image.height or image.width < 576:
+                raise ValueError(f"{source.name} must be square and at least 576px wide")
+            targets = []
+            for width in (192, 384, 576):
+                portrait = image.copy()
+                portrait.thumbnail((width, width), Image.Resampling.LANCZOS)
+                suffix = "" if width == 192 else f"-{width}"
+                target = source.with_name(f"{source.stem}{suffix}.webp")
+                targets.append((target, portrait))
+        elif source.stem.startswith("company_logo"):
+            # Company logos display inside a 264 x 80 CSS-pixel box. Keep up to
+            # twice that resolution for high-density screens; never upscale.
             image.thumbnail((528, 160), Image.Resampling.LANCZOS)
-        target = source.with_suffix(".webp")
-        image.save(target, "WEBP", quality=85, method=6)
-    before, after = source.stat().st_size, target.stat().st_size
+        for target, derivative in targets:
+            derivative.save(target, "WEBP", quality=85, method=6)
+    before = source.stat().st_size
+    after = sum(target.stat().st_size for target, _ in targets)
     original_total += before
     optimized_total += after
     print(f"{source.name}: {before:,} -> {after:,} bytes")

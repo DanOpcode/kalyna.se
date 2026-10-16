@@ -1,4 +1,27 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Locator } from '@playwright/test';
+
+async function expectPortraitResource(portrait: Locator, index: number, density: number) {
+  await portrait.scrollIntoViewIfNeeded();
+  await expect(portrait).toBeVisible();
+  await expect.poll(() => portrait.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+  const resource = await portrait.evaluate(async (image: HTMLImageElement) => {
+    // naturalWidth on a srcset image is density-corrected. Decode the chosen
+    // file separately to check its actual pixel dimensions.
+    const selected = new Image();
+    selected.src = image.currentSrc;
+    await selected.decode();
+    return { url: image.currentSrc, width: selected.naturalWidth, height: selected.naturalHeight };
+  });
+  const width = Math.min(3, Math.ceil(density)) * 192;
+  const suffix = width === 192 ? '' : `-${width}`;
+  expect(new URL(resource.url).pathname).toBe(`/images/profile${index + 1}${suffix}.webp`);
+  expect(resource.width).toBe(width);
+  expect(resource.height).toBe(width);
+  const response = await portrait.page().request.get(resource.url);
+  expect(response.status()).toBe(200);
+  expect(response.headers()['content-type']).toContain('image/webp');
+  expect((await response.body()).length).toBeLessThan(50 * 1024);
+}
 
 for (const language of ['sv', 'en']) {
   test(`${language}: content, navigation and image loading`, async ({ page }) => {
@@ -24,9 +47,9 @@ for (const language of ['sv', 'en']) {
     await expect(portraits).toHaveCount(2);
     for (const [index, portrait] of (await portraits.all()).entries()) {
       await expect(portrait).toHaveAttribute('src', `/images/profile${index + 1}.webp`);
-      await portrait.scrollIntoViewIfNeeded();
-      await expect(portrait).toBeVisible();
-      await expect.poll(() => portrait.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+      await expect(portrait).toHaveAttribute('sizes', '192px');
+      await expect(portrait).toHaveAttribute('srcset', `/images/profile${index + 1}.webp 192w, /images/profile${index + 1}-384.webp 384w, /images/profile${index + 1}-576.webp 576w`);
+      await expectPortraitResource(portrait, index, await page.evaluate(() => window.devicePixelRatio));
     }
     const logo = page.getByRole('img', { name: /Carmenta/ });
     await expect(logo).toHaveCSS('filter', 'none');
@@ -132,4 +155,20 @@ test('saved theme applies before the stylesheet finishes loading', async ({ page
   }
   await page.waitForLoadState('load');
   await expect(page.locator('#theme-preference')).toHaveValue('dark');
+});
+
+
+test('portraits choose appropriately sized images on 2x screens', async ({ browser, baseURL }) => {
+  const context = await browser.newContext({ baseURL, viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+  try {
+    const page = await context.newPage();
+    await page.goto('/en/');
+    const portraits = page.locator('img[src^="/images/profile"]');
+    await expect(portraits).toHaveCount(2);
+    for (const [index, portrait] of (await portraits.all()).entries()) {
+      await expectPortraitResource(portrait, index, 2);
+    }
+  } finally {
+    await context.close();
+  }
 });

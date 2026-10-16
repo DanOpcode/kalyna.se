@@ -864,8 +864,8 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_cellink.svg"
-                    width="812"
-                    height="172"
+                    width="1512"
+                    height="319"
                     loading="lazy"
                     alt={t(@lang, "Cellink logga")}
                     class="max-w-full max-h-full object-contain"

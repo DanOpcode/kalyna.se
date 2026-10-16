@@ -17,7 +17,6 @@ ROOT = Path(__file__).resolve().parents[1]
 PALETTES = {
     "altero": [(41, 69, 106)],
     "avarn": [(45, 45, 45), (88, 197, 202)],
-    "cellink": [(0, 0, 0)],
     "idagree": [(105, 115, 140), (190, 194, 159), (249, 203, 107)],
     "labgruppen": [(6, 38, 45)],
 }

@@ -21,7 +21,7 @@ defmodule Kalyna.PerformanceTest do
       for [_, source] <- sources, do: assert(String.ends_with?(source, ".svg"))
     end
 
-    for name <- ~w(altero avarn cellink idagree labgruppen) do
+    for name <- ~w(altero avarn idagree labgruppen) do
       svg = File.read!(Path.expand("../docs/images/company_logo_#{name}.svg", __DIR__))
       assert svg =~ "<path"
       refute svg =~ ~r/<(?:image|script|text)\b|data:image|href=/

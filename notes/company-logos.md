@@ -14,13 +14,13 @@ engagement; a current rebrand is not automatically the same artwork.
 | IMY | Downloaded the [official full logo SVG](https://www.imy.se/Static/dist/d8f11c23f74e7124c698.svg), including the agency name. Changed only its white fill (`#FFFFFF`) to `#003b49`, matching the previous raster logo. |
 | Altero Consulting | Matching vector not found on the [official site](https://www.alteroconsulting.com/). Traced the retained PNG in its original blue (`#29456a`). |
 | AVARN Security | Matching vector not found on the [official site](https://www.avarnsecurity.se/). Traced the retained PNG, including the turquoise symbol, dark wordmark and Security tagline. |
-| CELLINK | The [official site](https://www.cellink.com/) exposed raster CELLINK artwork and unrelated BICO vectors. Traced the retained black CELLINK / A BICO COMPANY logo. |
+| CELLINK | Replaced the trace with the official full CELLINK / A BICO COMPANY SVG supplied by the owner in [PR #55](https://github.com/DanOpcode/kalyna.se/pull/55#issuecomment-6210255965). [Original attachment](https://github.com/user-attachments/assets/f7ffd46b-f658-4b47-b403-d750926d3485). Changed only the white fill to black for the white logo card. Excluded from the tracing script so regeneration preserves this artwork. |
 | Lab Gruppen | [Official downloads](https://www.labgruppen.com/) returned HTTP 403. Traced the retained PNG in its original dark teal (`#06262d`). |
 | IdAgree | Candidate domains failed DNS resolution or timed out. Traced the retained JPEG using its three original flat colours. |
 
 ## Traced artwork
 
-The five traces above are approximations of the retained raster artwork, not
+The four traces above are approximations of the retained raster artwork, not
 company-supplied vector masters. All twelve company logos now use SVGs. The traces
 contain filled vector paths, including letter outlines, with no embedded bitmaps,
 external fonts, or scripts. Brand colours, transparent backgrounds, relative

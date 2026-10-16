@@ -66,7 +66,7 @@ MIX_ENV=prod mix build
 Portrait sources remain JPEGs and must be square and at least 576 × 576 pixels.
 The script generates 192, 384, and 576 pixel WebP versions; the homepage uses
 `srcset` to choose a version for its 192-pixel portrait boxes on 1×, 2×, and 3× screens.
-All company logos use SVGs. Five are traced from retained raster artwork; see
+All company logos use SVGs. Four are traced from retained raster artwork; see
 the regeneration instructions in [the company logo audit](notes/company-logos.md).
 Social preview images are unchanged.
 The root layout embeds `assets/js/theme.js` at build time so the saved theme applies

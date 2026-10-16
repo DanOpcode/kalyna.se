@@ -94,6 +94,8 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile1.webp"
+                srcset="/images/profile1.webp 192w, /images/profile1-384.webp 384w, /images/profile1-576.webp 576w"
+                sizes="192px"
                 width="192"
                 height="192"
                 alt={t(@lang, "Profilbild")}
@@ -1868,6 +1870,8 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile2.webp"
+                srcset="/images/profile2.webp 192w, /images/profile2-384.webp 384w, /images/profile2-576.webp 576w"
+                sizes="192px"
                 width="192"
                 height="192"
                 loading="lazy"

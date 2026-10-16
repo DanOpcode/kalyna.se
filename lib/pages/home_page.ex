@@ -278,8 +278,8 @@ defmodule Kalyna.HomePage do
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
                     src="/images/company_logo_imy.svg"
-                    width="265"
-                    height="100"
+                    width="1567"
+                    height="284"
                     loading="lazy"
                     alt={t(@lang, "IMY logga")}
                     class="max-w-full max-h-full object-contain"

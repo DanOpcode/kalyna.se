@@ -59,8 +59,8 @@ Playwright builds the production site and starts a temporary static server on po
 
 The homepage uses committed WebP derivatives of the original PNG/JPEG images in
 `extra/images/` (portraits and site logo) and `assets/logo-sources/` (company logos).
-The dev-machine VM supplies Python and Pillow, so no virtualenv or package install
-is needed. Regenerate them after replacing an original:
+The dev-machine VM supplies Python and ImageMagick 7 (`magick`); the script uses
+only Python’s standard library, so no virtualenv or Python packages are needed. Regenerate them after replacing an original:
 
 ```shell
 python3 scripts/optimize-images.py

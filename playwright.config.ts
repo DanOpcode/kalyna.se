@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from 'playwright/test';
 
 export default defineConfig({
   testDir: './tests',
@@ -7,7 +7,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? 'github' : 'list',
-  use: { baseURL: 'http://127.0.0.1:4100', trace: 'retain-on-failure' },
+  use: { channel: 'chromium', baseURL: 'http://127.0.0.1:4100', trace: 'retain-on-failure' },
   webServer: {
     command: 'MIX_ENV=prod mix build && python3 -m http.server 4100 --bind 127.0.0.1 --directory docs',
     url: 'http://127.0.0.1:4100',

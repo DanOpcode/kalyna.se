@@ -1,4 +1,4 @@
-import { test, expect, type Locator } from '@playwright/test';
+import { test, expect, type Locator } from 'playwright/test';
 
 async function expectPortraitResource(portrait: Locator, index: number, density: number) {
   await portrait.scrollIntoViewIfNeeded();

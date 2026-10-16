@@ -205,3 +205,50 @@ for (const density of [1, 1.5, 2, 3]) {
     }
   });
 }
+
+for (const language of ['sv', 'en']) {
+  for (const theme of ['light', 'dark']) {
+    test(`${language} ${theme}: accessible headings, inline links and green text`, async ({ page }) => {
+      await page.goto(language === 'en' ? '/en/' : '/');
+      await page.locator('#theme-preference').selectOption(theme);
+      const levels = await page.locator('h1,h2,h3,h4,h5,h6').evaluateAll(headings =>
+        headings.map(heading => Number(heading.tagName.slice(1))));
+      expect(levels[0]).toBe(1);
+      for (let i = 1; i < levels.length; i++) {
+        expect(levels[i]).toBeLessThanOrEqual(levels[i - 1] + 1);
+      }
+      const inlineLinks = page.locator('p a[href*="wikipedia"], p a[href*="youtube"]');
+      await expect(inlineLinks).toHaveCount(3);
+      for (const link of await inlineLinks.all()) {
+        await expect(link).toHaveCSS('text-decoration-line', 'underline');
+      }
+      const greenText = page.locator('span').filter({
+        hasText: /^\s*(Godkänd för F-skatt|Approved for Swedish F-tax)\s*$/,
+      }).or(page.locator('a[href^="tel:"]'));
+      await expect(greenText).toHaveCount(2);
+      for (const element of await greenText.all()) {
+        const ratio = await element.evaluate(el => {
+          // Canvas resolves computed colors including Tailwind's OKLCH values to sRGB.
+          const context = document.createElement('canvas').getContext('2d')!;
+          function luminance(color: string) {
+            context.clearRect(0, 0, 1, 1);
+            context.fillStyle = color;
+            context.fillRect(0, 0, 1, 1);
+            const rgb = Array.from(context.getImageData(0, 0, 1, 1).data).slice(0, 3)
+              .map(value => value / 255)
+              .map(value => value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4);
+            return rgb[0] * 0.2126 + rgb[1] * 0.7152 + rgb[2] * 0.0722;
+          }
+          let background: Element | null = el;
+          while (background && getComputedStyle(background).backgroundColor === 'rgba(0, 0, 0, 0)') {
+            background = background.parentElement;
+          }
+          const foreground = luminance(getComputedStyle(el).color);
+          const backdrop = luminance(getComputedStyle(background!).backgroundColor);
+          return (Math.max(foreground, backdrop) + 0.05) / (Math.min(foreground, backdrop) + 0.05);
+        });
+        expect(ratio).toBeGreaterThanOrEqual(4.5);
+      }
+    });
+  }
+}

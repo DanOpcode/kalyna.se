@@ -36,7 +36,8 @@ MIX_ENV=prod mix build
 git add docs/
 ```
 
-Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
+Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. Production builds remove the intermediate CSS file after embedding it in the HTML;
+do not commit a separate `docs/css/site.css`. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
 
 ## Tests
 
@@ -70,7 +71,8 @@ the regeneration instructions in [the company logo audit](notes/company-logos.md
 Social preview images are unchanged.
 The root layout embeds `assets/js/theme.js` at build time so the saved theme applies
 before first paint without a blocking JavaScript request. The production build embeds the freshly minified stylesheet after Tailwind
-finishes, removing the blocking CSS request. Development still uses the external
+finishes, then removes `docs/css/site.css` from the production output after all
+pages are written successfully. Development still uses the external
 stylesheet for live reload. Inlining adds the CSS to each page response and trades
 cross-page stylesheet caching for faster first rendering on this small site.
 

@@ -41,13 +41,13 @@ do not commit a separate `docs/css/site.css`. The custom domain comes from `extr
 
 ## Tests
 
-Run the Elixir regression tests with `mix test`. Run browser tests with:
+Run the Elixir regression tests with `mix test`. In [dev-machine](https://gitlab.com/DanOpcode/dev-machine), run browser tests with:
 
 ```shell
-npm ci
-npx playwright install chromium
 npm test
 ```
+
+The test launcher resolves the current mise-managed `@playwright/cli` installation and uses its bundled Playwright test runner and matching Chromium. The VM updates them daily; this project has no Playwright version pin, npm dependencies, or browser installation step. If upgrading an existing checkout, remove its old `node_modules/` directory once to avoid loading the previous project runner. Tests use full Chromium in headless mode, matching the VM’s `--no-shell` installation. Run `npm test -- --list` to list tests and report the active Playwright version.
 
 Playwright builds the production site and starts a temporary static server on port 4100. Desktop and mobile Chromium tests cover both languages, contact links, experience cards, image loading, the Carmenta logo, mobile overflow, and system/light/dark preferences (including blocked storage). Failed tests retain traces in `test-results/`. Use `npm run test:ui` for the interactive runner.
 

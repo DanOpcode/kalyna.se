@@ -23,7 +23,7 @@ for (const language of ['sv', 'en']) {
     const portraits = page.locator('img[src^="/images/profile"]');
     await expect(portraits).toHaveCount(2);
     for (const [index, portrait] of (await portraits.all()).entries()) {
-      await expect(portrait).toHaveAttribute('src', `/images/profile${index + 1}.jpg`);
+      await expect(portrait).toHaveAttribute('src', `/images/profile${index + 1}.webp`);
       await portrait.scrollIntoViewIfNeeded();
       await expect(portrait).toBeVisible();
       await expect.poll(() => portrait.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
@@ -108,4 +108,28 @@ test('theme remains usable when storage is blocked', async ({ page }) => {
   await expect(page.locator('html')).toHaveClass('dark');
   await page.locator('#theme-preference').selectOption('light');
   await expect(page.locator('html')).not.toHaveClass('dark');
+});
+
+test('saved theme applies before the stylesheet finishes loading', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.addInitScript(() => localStorage.setItem('theme', 'dark'));
+  let releaseStylesheet!: () => void;
+  const stylesheetReady = new Promise<void>(resolve => { releaseStylesheet = resolve; });
+  await page.route('**/css/site.css', async route => {
+    await stylesheetReady;
+    await route.continue();
+  });
+  const scripts: string[] = [];
+  page.on('request', request => {
+    if (request.resourceType() === 'script') scripts.push(request.url());
+  });
+  try {
+    await page.goto('/', { waitUntil: 'commit' });
+    await expect(page.locator('html')).toHaveClass('dark');
+    expect(scripts.filter(url => url.endsWith('/js/theme.js'))).toEqual([]);
+  } finally {
+    releaseStylesheet();
+  }
+  await page.waitForLoadState('load');
+  await expect(page.locator('#theme-preference')).toHaveValue('dark');
 });

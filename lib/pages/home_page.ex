@@ -14,32 +14,32 @@ defmodule Kalyna.HomePage do
 
     ~H"""
     <div class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      <nav
-        aria-label="Language / Språk"
-        class="flex justify-center gap-4 px-4 pt-6 text-slate-900 dark:text-white"
-      >
-        <a
-          href="/"
-          lang="sv"
-          hreflang="sv"
-          aria-current={if @lang == "sv", do: "page"}
-          class="underline"
+      <div class="flex items-center justify-center gap-2 sm:gap-4 px-2 pt-6 text-xs sm:text-base">
+        <nav
+          aria-label="Language / Språk"
+          class="h-12 flex items-center gap-2 sm:gap-4 px-2 sm:px-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg shadow-lg"
         >
-          🇸🇪 Svenska
-        </a>
-        <a
-          href="/en/"
-          lang="en"
-          hreflang="en"
-          aria-current={if @lang == "en", do: "page"}
-          class="underline"
-        >
-          🇬🇧 English
-        </a>
-      </nav>
-      <!-- Theme preference -->
-      <div class="flex justify-center mt-4">
-        <label class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg p-3 shadow-lg flex items-center gap-2">
+          <a
+            href="/"
+            lang="sv"
+            hreflang="sv"
+            aria-current={if @lang == "sv", do: "page"}
+            class="underline whitespace-nowrap"
+          >
+            🇸🇪 Svenska
+          </a>
+          <a
+            href="/en/"
+            lang="en"
+            hreflang="en"
+            aria-current={if @lang == "en", do: "page"}
+            class="underline whitespace-nowrap"
+          >
+            🇬🇧 English
+          </a>
+        </nav>
+        <!-- Theme preference -->
+        <label class="h-12 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg px-2 sm:px-3 shadow-lg flex items-center gap-2">
           <span>{t(@lang, "Tema")}</span>
           <select
             id="theme-preference"

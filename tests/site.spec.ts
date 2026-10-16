@@ -174,3 +174,34 @@ test.describe('without JavaScript', () => {
     }
   });
 });
+
+for (const density of [1, 1.5, 2, 3]) {
+  test(`hero logo supplies enough detail at ${density}x density`, async ({ browser, baseURL }) => {
+    const context = await browser.newContext({ baseURL, deviceScaleFactor: density });
+    try {
+      const page = await context.newPage();
+      for (const path of ['/', '/en/']) {
+        await page.goto(path);
+        const logo = page.locator('img[src="/images/logo.webp"]');
+        await expect(logo).toBeVisible();
+        const resource = await logo.evaluate(async (image: HTMLImageElement) => {
+          await image.decode();
+          const selected = new Image();
+          selected.src = image.currentSrc;
+          await selected.decode();
+          return { url: image.currentSrc, width: selected.naturalWidth, height: selected.naturalHeight,
+            displayedWidth: image.getBoundingClientRect().width, displayedHeight: image.getBoundingClientRect().height };
+        });
+        const width = density <= 1 ? 64 : density <= 2 ? 128 : 192;
+        const suffix = width === 64 ? '' : `-${width}`;
+        expect(new URL(resource.url).pathname).toBe(`/images/logo${suffix}.webp`);
+        expect(resource.width).toBe(width);
+        expect(resource.width).toBeGreaterThanOrEqual(resource.displayedWidth * density);
+        expect(resource.height).toBeGreaterThanOrEqual(resource.displayedHeight * density - 1);
+        expect(resource.displayedWidth).toBeCloseTo(64, 0);
+      }
+    } finally {
+      await context.close();
+    }
+  });
+}

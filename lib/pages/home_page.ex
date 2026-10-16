@@ -505,7 +505,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_altero.webp"
+                    src="/images/company_logo_altero.svg"
                     width="429"
                     height="223"
                     loading="lazy"
@@ -618,7 +618,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_idagree.webp"
+                    src="/images/company_logo_idagree.svg"
                     width="200"
                     height="200"
                     loading="lazy"
@@ -863,7 +863,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_cellink.webp"
+                    src="/images/company_logo_cellink.svg"
                     width="812"
                     height="172"
                     loading="lazy"
@@ -1104,7 +1104,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_avarn.webp"
+                    src="/images/company_logo_avarn.svg"
                     width="264"
                     height="72"
                     loading="lazy"
@@ -1170,7 +1170,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_labgruppen.webp"
+                    src="/images/company_logo_labgruppen.svg"
                     width="1809"
                     height="155"
                     loading="lazy"

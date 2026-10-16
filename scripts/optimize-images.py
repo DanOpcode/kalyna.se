@@ -13,7 +13,7 @@ original_total = optimized_total = 0
 for source in sorted(images.iterdir()):
     if source.suffix not in {".png", ".jpg"}:
         continue
-    if not (source.stem.startswith(("profile", "company_logo")) or source.stem == "logo"):
+    if not (source.stem.startswith("profile") or source.stem == "logo"):
         continue
     with Image.open(source) as original:
         image = ImageOps.exif_transpose(original)
@@ -30,18 +30,8 @@ for source in sorted(images.iterdir()):
                 suffix = "" if width == 192 else f"-{width}"
                 target = source.with_name(f"{source.stem}{suffix}.webp")
                 targets.append((target, portrait))
-        elif source.stem.startswith("company_logo"):
-            # Company logos display inside a 264 x 80 CSS-pixel box. Keep up to
-            # twice that resolution for high-density screens; never upscale.
-            image.thumbnail((528, 160), Image.Resampling.LANCZOS)
         for target, derivative in targets:
-            if source.stem == "company_logo_altero":
-                # This flat-colour logo needs only a small palette. Retain
-                # antialiased edges with 64 colours and encode it losslessly.
-                derivative = derivative.quantize(colors=64).convert("RGBA")
-                derivative.save(target, "WEBP", lossless=True, method=6)
-            else:
-                derivative.save(target, "WEBP", quality=85, method=6)
+            derivative.save(target, "WEBP", quality=85, method=6)
     before = source.stat().st_size
     after = sum(target.stat().st_size for target, _ in targets)
     original_total += before

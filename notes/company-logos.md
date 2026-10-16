@@ -12,43 +12,20 @@ engagement; a current rebrand is not automatically the same artwork.
 | Ericsson | Already SVG: `company_logo_ericsson.svg`. |
 | Carnegie | Replaced raster with the matching historical red wordmark from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carnegie_Investment_Bank_logo.svg), which attributes the artwork to Carnegie Investment Bank and the source to carnegie.se. Download: https://upload.wikimedia.org/wikipedia/commons/a/a1/Carnegie_Investment_Bank_logo.svg. Current carnegie.se serves a different DNB Carnegie brand. |
 | IMY | Downloaded the [official full logo SVG](https://www.imy.se/Static/dist/d8f11c23f74e7124c698.svg), including the agency name. Changed only its white fill (`#FFFFFF`) to `#003b49`, matching the previous raster logo. |
-| Altero Consulting | Matching vector not found on the [official site](https://www.alteroconsulting.com/). Traced the retained PNG in its original blue (`#29456a`). |
-| AVARN Security | Matching vector not found on the [official site](https://www.avarnsecurity.se/). Traced the retained PNG, including the turquoise symbol, dark wordmark and Security tagline. |
-| CELLINK | Replaced the trace with the official full CELLINK / A BICO COMPANY SVG supplied by the owner in [PR #55](https://github.com/DanOpcode/kalyna.se/pull/55#issuecomment-6210255965). [Original attachment](https://github.com/user-attachments/assets/f7ffd46b-f658-4b47-b403-d750926d3485). Changed only the white fill to black for the white logo card. Excluded from the tracing script so regeneration preserves this artwork. |
-| Lab Gruppen | [Official downloads](https://www.labgruppen.com/) returned HTTP 403. Traced the retained PNG in its original dark teal (`#06262d`). |
-| IdAgree | Candidate domains failed DNS resolution or timed out. Traced the retained JPEG using its three original flat colours. |
+| Altero Consulting | Matching vector not found on the [official site](https://www.alteroconsulting.com/). Retained the original PNG and serve its optimized WebP derivative. |
+| AVARN Security | Matching vector not found on the [official site](https://www.avarnsecurity.se/). Retained the original PNG and serve its WebP derivative, including the symbol, wordmark and Security tagline. |
+| CELLINK | Use the official full CELLINK / A BICO COMPANY SVG supplied by the owner in [PR #55](https://github.com/DanOpcode/kalyna.se/pull/55#issuecomment-6210255965). [Original attachment](https://github.com/user-attachments/assets/f7ffd46b-f658-4b47-b403-d750926d3485). Changed only the white fill to black for the white logo card. |
+| Lab Gruppen | [Official downloads](https://www.labgruppen.com/) returned HTTP 403. Retained the original PNG and serve its optimized WebP derivative. |
+| IdAgree | Candidate domains failed DNS resolution or timed out. Retained the original JPEG and serve its optimized WebP derivative. |
 
-## Traced artwork
+## Raster fallbacks
 
-The four traces above are approximations of the retained raster artwork, not
-company-supplied vector masters. All twelve company logos now use SVGs. The traces
-contain filled vector paths, including letter outlines, with no embedded bitmaps,
-external fonts, or scripts. Brand colours, transparent backgrounds, relative
-placement and source aspect ratios are retained. Small details reflect the quality
-of the source rasters; original vector artwork would still be preferable.
+Use original SVG artwork when available. Otherwise, retain the original PNG/JPEG
+in `assets/logo-sources/` and generate a WebP in `extra/images/` using
+`scripts/optimize-images.py`. The homepage serves the WebP; the source originals
+are not published. Do not trace raster artwork into SVGs.
 
-The low-resolution originals are upsampled before colour classification to retain
-antialiased edges. Each flat colour is traced separately with Potrace curves, then
-SVGO removes redundant path data. Original PNG/JPEG sources live in
-`assets/logo-sources/` and are not published. Obsolete raster logo files have been
-removed from `extra/` and `docs/`.
-
-Regenerate with Python and Node/npm available:
-
-```shell
-python3 -m venv /tmp/kalyna-logo-tools
-/tmp/kalyna-logo-tools/bin/pip install -r scripts/requirements-logo-tracing.txt
-/tmp/kalyna-logo-tools/bin/python scripts/trace-logos.py
-MIX_ENV=prod mix build
-```
-
-The script invokes the pinned SVGO 4.0.0 using `npx`; the first run downloads it.
-The existing image optimizer only generates the portrait and site-logo WebPs.
-Traces are not guaranteed to be smaller than compressed WebPs; the reason for
-these replacements is scalable vector rendering. Compare the artwork before
-changing thresholds or replacing a source.
-
-Originals on the left, optimized traces on the right, rendered up to 2× display
-size (smaller originals are not enlarged):
-
-![Original raster logos beside their vector traces](logo-trace-comparison.png)
+The company derivatives are bounded to 528 × 160 pixels, without upscaling, for
+up to 2× their displayed size. Altero uses a 64-colour palette with lossless WebP
+encoding; the other raster logos use quality 85 WebP encoding. See the README
+for regeneration commands.

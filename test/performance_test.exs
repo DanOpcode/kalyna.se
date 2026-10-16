@@ -13,18 +13,23 @@ defmodule Kalyna.PerformanceTest do
     end
   end
 
-  test "all company logos use SVGs and traced logos contain only vector paths" do
+  test "company logos use original SVGs or WebP raster fallbacks" do
+    raster_names = ~w(altero avarn idagree labgruppen)
+
     for relative <- ["index.html", "en/index.html"] do
       html = File.read!(Path.expand("../docs/#{relative}", __DIR__))
-      sources = Regex.scan(~r/src="(\/images\/company_logo_[^"]+)"/, html)
+      sources = Regex.scan(~r/src="(\/images\/company_logo_([^".]+)\.[^"]+)"/, html)
       assert length(sources) == 12
-      for [_, source] <- sources, do: assert(String.ends_with?(source, ".svg"))
+
+      for [_, source, name] <- sources do
+        extension = if name in raster_names, do: ".webp", else: ".svg"
+        assert String.ends_with?(source, extension)
+        assert File.exists?(Path.expand("../docs#{source}", __DIR__))
+      end
     end
 
-    for name <- ~w(altero avarn idagree labgruppen) do
-      svg = File.read!(Path.expand("../docs/images/company_logo_#{name}.svg", __DIR__))
-      assert svg =~ "<path"
-      refute svg =~ ~r/<(?:image|script|text)\b|data:image|href=/
+    for name <- raster_names do
+      refute File.exists?(Path.expand("../docs/images/company_logo_#{name}.svg", __DIR__))
     end
   end
 end

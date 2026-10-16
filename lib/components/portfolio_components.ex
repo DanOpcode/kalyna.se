@@ -543,7 +543,7 @@ defmodule Kalyna.PortfolioComponents do
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="md:col-span-1 text-center">
             <img
-              src="/images/kalyna.jpg"
+              src="/images/kalyna.webp"
               width="248"
               height="248"
               loading="lazy"

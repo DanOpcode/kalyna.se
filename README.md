@@ -11,6 +11,10 @@ mix deps.get
 mix tableau.server
 ```
 
+On dev-machine, the filesystem watcher uses the supplied `inotifywait` on Linux;
+Watchman is not required. Live reload watches Elixir templates, published and draft
+Markdown, CSS/JavaScript, and files in `extra/` (including images).
+
 ## Draft Posts and WIP Pages
 
 Posts and pages that are not ready for production can be saved to the `_drafts` and `_wip` directories respectively.
@@ -55,12 +59,11 @@ Playwright builds the production site and starts a temporary static server on po
 
 The homepage uses committed WebP derivatives of the original PNG/JPEG images in
 `extra/images/` (portraits and site logo) and `assets/logo-sources/` (company logos).
-Regenerate them after replacing an original:
+The dev-machine VM supplies Python and ImageMagick 7 (`magick`); the script uses
+only Python’s standard library, so no virtualenv or Python packages are needed. Regenerate them after replacing an original:
 
 ```shell
-python3 -m venv /tmp/kalyna-image-tools
-/tmp/kalyna-image-tools/bin/pip install Pillow==12.2.0
-/tmp/kalyna-image-tools/bin/python scripts/optimize-images.py
+python3 scripts/optimize-images.py
 MIX_ENV=prod mix build
 ```
 
@@ -71,6 +74,7 @@ Company logos use original SVG artwork when available. Otherwise, the image
 optimizer creates WebP derivatives of the retained PNG/JPEG originals, bounded to
 528 × 160 pixels without upscaling. Company raster sources remain outside the
 published site in `assets/logo-sources/`.
+The Kalyna flower also uses a WebP derivative, preserving the JPEG original.
 Social preview images are unchanged.
 The root layout embeds `assets/js/theme.js` at build time so the saved theme applies
 before first paint without a blocking JavaScript request. The production build embeds the freshly minified stylesheet after Tailwind

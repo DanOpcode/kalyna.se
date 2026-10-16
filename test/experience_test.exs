@@ -18,8 +18,10 @@ defmodule Kalyna.ExperienceTest do
             File.read!(Path.expand("../docs/#{relative}", __DIR__))
         end
 
-      [_, imy] = Regex.run(~r/<!-- Company 2 -->(.*?)<!-- Company 3 -->/s, html)
-      [_, altero] = Regex.run(~r/<!-- Company 4 -->(.*?)<!-- Company 5 -->/s, html)
+      cards = Regex.split(~r/<div\s+id="company-\d+"/, html) |> tl()
+      assert length(cards) == 12
+      imy = Enum.at(cards, 1)
+      altero = Enum.at(cards, 3)
       assert imy =~ "2024–2026"
       assert altero =~ "2022–2025"
       refute html =~ "2024–pågående"
@@ -27,7 +29,7 @@ defmodule Kalyna.ExperienceTest do
       refute html =~ "2022–pågående"
       refute html =~ "2022–present"
 
-      [_, carmenta] = Regex.run(~r/<!-- Company 1 -->(.*?)<!-- Company 2 -->/s, html)
+      carmenta = hd(cards)
       assert carmenta =~ "https://carmenta.com/"
       assert carmenta =~ "/images/company_logo_carmenta.svg"
       assert carmenta =~ if(lang == "en", do: "2026–present", else: "2026–pågående")

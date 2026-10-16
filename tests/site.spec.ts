@@ -6,6 +6,14 @@ for (const language of ['sv', 'en']) {
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(language === 'en' ? '/en/' : '/');
     await expect(page.locator('html')).toHaveAttribute('lang', language);
+    const languageSettings = await page.getByRole('navigation', { name: 'Language / Språk' }).boundingBox();
+    const themeSettings = await page.locator('label').filter({ has: page.locator('#theme-preference') }).boundingBox();
+    expect(languageSettings).not.toBeNull();
+    expect(themeSettings).not.toBeNull();
+    expect(languageSettings!.height).toBe(themeSettings!.height);
+    expect(languageSettings!.y).toBe(themeSettings!.y);
+    expect(languageSettings!.x + languageSettings!.width).toBeLessThan(themeSettings!.x);
+
     await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: 'daniel@kalyna.se' })).toHaveAttribute('href', 'mailto:daniel@kalyna.se');
     await expect(page.getByRole('link', { name: /Mastodon/ })).toHaveAttribute('rel', 'me');

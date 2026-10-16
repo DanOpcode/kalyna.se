@@ -94,6 +94,7 @@ defmodule Kalyna.HomePage do
             <div class="md:col-span-1 text-center">
               <img
                 src="/images/profile1.webp"
+                fetchpriority="high"
                 srcset="/images/profile1.webp 192w, /images/profile1-384.webp 384w, /images/profile1-576.webp 576w"
                 sizes="192px"
                 width="192"
@@ -733,7 +734,7 @@ defmodule Kalyna.HomePage do
               <div class="flex justify-center mb-4">
                 <div class="w-70 h-24 p-2 rounded-lg bg-white flex items-center justify-center">
                   <img
-                    src="/images/company_logo_carnegie.webp"
+                    src="/images/company_logo_carnegie.svg"
                     width="320"
                     height="112"
                     loading="lazy"

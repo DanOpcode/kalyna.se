@@ -68,8 +68,14 @@ The script generates 192, 384, and 576 pixel WebP versions; the homepage uses
 Company logos retain up to twice their displayed resolution (528 × 160 pixels),
 without upscaling smaller originals. SVGs and social preview images are unchanged.
 The root layout embeds `assets/js/theme.js` at build time so the saved theme applies
-before first paint without a blocking JavaScript request. The shared stylesheet
-remains external so browsers can cache it across pages.
+before first paint without a blocking JavaScript request. The production build embeds the freshly minified stylesheet after Tailwind
+finishes, removing the blocking CSS request. Development still uses the external
+stylesheet for live reload. Inlining adds the CSS to each page response and trades
+cross-page stylesheet caching for faster first rendering on this small site.
+
+See [the company logo audit](notes/company-logos.md) for vector sources and the
+remaining artwork needed. The Altero derivative uses a 64-colour palette with
+lossless WebP encoding to reduce its size further.
 
 The cache lifetimes and injected `cdn-cgi` email decoding script reported in issue
 #52 are controlled by the hosting/CDN configuration, outside the static build.

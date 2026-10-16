@@ -35,7 +35,13 @@ for source in sorted(images.iterdir()):
             # twice that resolution for high-density screens; never upscale.
             image.thumbnail((528, 160), Image.Resampling.LANCZOS)
         for target, derivative in targets:
-            derivative.save(target, "WEBP", quality=85, method=6)
+            if source.stem == "company_logo_altero":
+                # This flat-colour logo needs only a small palette. Retain
+                # antialiased edges with 64 colours and encode it losslessly.
+                derivative = derivative.quantize(colors=64).convert("RGBA")
+                derivative.save(target, "WEBP", lossless=True, method=6)
+            else:
+                derivative.save(target, "WEBP", quality=85, method=6)
     before = source.stat().st_size
     after = sum(target.stat().st_size for target, _ in targets)
     original_total += before

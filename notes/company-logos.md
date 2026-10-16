@@ -11,14 +11,14 @@ engagement; a current rebrand is not automatically the same artwork.
 | Consilium | Already SVG: `company_logo_consilium.svg`. |
 | Ericsson | Already SVG: `company_logo_ericsson.svg`. |
 | Carnegie | Replaced raster with the matching historical red wordmark from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carnegie_Investment_Bank_logo.svg), which attributes the artwork to Carnegie Investment Bank and the source to carnegie.se. Download: https://upload.wikimedia.org/wikipedia/commons/a/a1/Carnegie_Investment_Bank_logo.svg. Current carnegie.se serves a different DNB Carnegie brand. |
-| IMY | [Official site](https://www.imy.se/) exposes `/Static/images/IMY_Logo.svg`, a white standalone symbol, not the full dark symbol and text in use here. [Press downloads](https://www.imy.se/press/pressbilder/) list JPG/PNG. Retained full logo. |
+| IMY | [Official site](https://www.imy.se/) exposes `/Static/images/IMY_Logo.svg`, a white standalone IMY symbol. Downloaded this vector and changed only its fill from white to `#003b49`, matching the previous raster logo, as requested. The SVG omits the agency name beside the symbol; the card retains the full agency name. |
 | Altero Consulting | [Official site](https://www.alteroconsulting.com/) (also alteroconsulting.se) serves the matching logo as PNG. No matching vector found. Reduced the existing WebP from 16,740 to 5,400 bytes using a 64-colour palette with lossless WebP encoding; checked appearance against the original. |
 | AVARN Security | [Official Swedish site](https://www.avarnsecurity.se/) uses an animated symbol plus raster wordmark (`/Static/gfx/logo-only-text.png`). [Identity page](https://www.avarnsecurity.se/om-oss/vision-och-identitet/) did not expose a matching downloadable vector. Retained full logo. |
 | CELLINK | [Official site](https://www.cellink.com/) serves raster CELLINK wordmarks; the SVG references found were BICO investor logos. Retained the existing CELLINK / A BICO COMPANY artwork. |
 | Lab Gruppen | Checked [official website](https://www.labgruppen.com/) and its downloads endpoint; automated downloads returned HTTP 403. No verified matching vector retrieved. Retained current logo. |
 | IdAgree | Tried idagree.se (DNS failure) and idagree.com (timeout). No verified vector retrieved. Retained current logo. |
 
-For the remaining six raster logos, an original SVG, AI, EPS, or vector PDF from
+For the remaining five raster logos, an original SVG, AI, EPS, or vector PDF from
 the company/designer is the best source. AI/EPS/vector PDF can be converted to SVG
 with lettering outlined and a tight viewBox. A high-resolution raster can be
 traced, but small lettering and curves need manual correction and visual approval.

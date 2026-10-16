@@ -31,6 +31,17 @@ for source in sorted(sources):
                 suffix = "" if width == 192 else f"-{width}"
                 target = source.with_name(f"{source.stem}{suffix}.webp")
                 targets.append((target, portrait))
+        elif source.stem == "logo":
+            # The hero logo displays at 64 CSS pixels. Generate each density
+            # directly from the full-resolution original, without upscaling.
+            if image.width < 192:
+                raise ValueError("logo.png must be at least 192px wide")
+            targets = []
+            for width in (64, 128, 192):
+                height = round(image.height * width / image.width)
+                logo = image.resize((width, height), Image.Resampling.LANCZOS)
+                suffix = "" if width == 64 else f"-{width}"
+                targets.append((images / f"logo{suffix}.webp", logo))
         elif source.stem.startswith("company_logo"):
             # Company logos display inside a 264 x 80 CSS-pixel box. Keep up to
             # twice that resolution for high-density screens; never upscale.

@@ -96,6 +96,8 @@ defmodule Kalyna.PortfolioComponents do
       <div class="flex items-center justify-center mb-8">
         <img
           src="/images/logo.webp"
+          srcset="/images/logo.webp 64w, /images/logo-128.webp 128w, /images/logo-192.webp 192w"
+          sizes="64px"
           width="64"
           height="58"
           alt={t(@lang, "Kalyna Solutions AB logga")}

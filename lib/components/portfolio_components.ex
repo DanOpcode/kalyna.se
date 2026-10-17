@@ -191,7 +191,7 @@ defmodule Kalyna.PortfolioComponents do
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 items-center relative">
         <div>
           <p class="font-mono text-xs uppercase tracking-widest text-cyan-300 mb-5">
-            {t(@lang, "ETT AV MINA PROJEKT")}
+            {t(@lang, "Ett av mina projekt")}
           </p>
           <h2 id="daily-diff-title" class="text-4xl sm:text-5xl font-bold tracking-tight mb-5">
             Daily Diff

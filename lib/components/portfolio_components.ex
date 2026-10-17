@@ -55,10 +55,10 @@ defmodule Kalyna.PortfolioComponents do
       <!-- About Section -->
       <.about lang={@lang} />
 
-      <.daily_diff lang={@lang} />
-
       <!-- Technologies Section -->
       <.expertise lang={@lang} />
+
+      <.daily_diff lang={@lang} />
 
       <!-- Professional Experience Section -->
       <.experience lang={@lang} />
@@ -191,7 +191,7 @@ defmodule Kalyna.PortfolioComponents do
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 items-center relative">
         <div>
           <p class="font-mono text-xs uppercase tracking-widest text-cyan-300 mb-5">
-            {t(@lang, "Ett projekt av mig / Daily Diff")}
+            {t(@lang, "ETT AV MINA PROJEKT")}
           </p>
           <h2 id="daily-diff-title" class="text-4xl sm:text-5xl font-bold tracking-tight mb-5">
             Daily Diff
@@ -202,14 +202,14 @@ defmodule Kalyna.PortfolioComponents do
           <p class="text-slate-300 leading-relaxed mb-8">
             {t(
               @lang,
-              "Hacker News, Lobsters och Programming.dev i en samlad nyhetsöversikt. Ett sidoprojekt inspirerat av text-tv, byggt för att göra det enkelt att hänga med."
+              "Hacker News, Lobsters och Programming.dev i en samlad nyhetsöversikt. Byggt för att göra det enkelt att hänga med i de mest uppröstade och diskuterade nyheterna."
             )}
           </p>
           <a
             href="https://news.kalyna.se/"
             class="inline-flex items-center justify-center gap-3 rounded-lg bg-cyan-300 text-slate-950 px-6 py-3 font-bold hover:bg-cyan-200 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
           >
-            {t(@lang, "Läs dagens upplaga")}
+            {t(@lang, "Läs senaste nyheterna")}
             <svg
               aria-hidden="true"
               class="w-5 h-5"

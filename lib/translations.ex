@@ -1,12 +1,12 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
-    "Ett projekt av mig / Daily Diff" => "A project by me / Daily Diff",
+    "ETT AV MINA PROJEKT" => "ONE OF MY PROJECTS",
     "Din dagliga dos tekniknyheter. För dig som bygger." =>
       "Your daily patch of tech news for people who build.",
-    "Hacker News, Lobsters och Programming.dev i en samlad nyhetsöversikt. Ett sidoprojekt inspirerat av text-tv, byggt för att göra det enkelt att hänga med." =>
-      "Hacker News, Lobsters and Programming.dev in one daily digest. A side project inspired by teletext, built to make keeping up simple.",
-    "Läs dagens upplaga" => "Read today’s edition",
+    "Hacker News, Lobsters och Programming.dev i en samlad nyhetsöversikt. Byggt för att göra det enkelt att hänga med i de mest uppröstade och diskuterade nyheterna." =>
+      "Hacker News, Lobsters and Programming.dev in one daily digest. Built to make it easy to keep up with the most upvoted and discussed news.",
+    "Läs senaste nyheterna" => "Read the latest news",
     "Besök Daily Diff" => "Visit Daily Diff",
     "Daily Diff – en synthwave-solnedgång över ett lysande cyanblått rutnät." =>
       "Daily Diff — a synthwave sunset above a glowing cyan grid.",

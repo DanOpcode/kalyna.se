@@ -14,11 +14,12 @@ if magick is None:
     raise SystemExit("ImageMagick 7 (magick) is required; dev-machine supplies it.")
 
 original_total = optimized_total = 0
-sources = list(images.iterdir()) + list((ROOT / "assets/logo-sources").glob("*"))
+sources = (list(images.iterdir()) + list((ROOT / "assets/logo-sources").glob("*"))
+           + list((ROOT / "assets/image-sources").glob("*")))
 for source in sorted(sources):
     if source.suffix not in {".png", ".jpg"}:
         continue
-    if not (source.stem.startswith(("profile", "company_logo")) or source.stem in {"logo", "kalyna"}):
+    if not (source.stem.startswith(("profile", "company_logo")) or source.stem in {"logo", "kalyna", "daily-diff"}):
         continue
 
     # Measure after applying EXIF orientation, just as in the conversion below.
@@ -44,6 +45,13 @@ for source in sorted(sources):
         for size in (64, 128, 192):
             suffix = "" if size == 64 else f"-{size}"
             targets.append((images / f"logo{suffix}.webp", ["-resize", f"{size}x>"]))
+    elif source.stem == "daily-diff":
+        # Two-column desktop card and full-width mobile artwork, including HiDPI.
+        # The 1200px original caps resolution; never upscale.
+        targets = []
+        for size in (480, 768, 1200):
+            suffix = "" if size == 480 else f"-{size}"
+            targets.append((images / f"daily-diff{suffix}.webp", ["-resize", f"{size}x>"]))
     elif source.stem.startswith("company_logo"):
         # Keep twice the 264 x 80 CSS-pixel display size; never upscale.
         targets = [(targets[0][0], ["-resize", "528x160>"])]

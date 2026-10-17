@@ -228,7 +228,9 @@ defmodule Kalyna.PortfolioComponents do
           class="block rounded-xl border border-fuchsia-400/30 overflow-hidden shadow-2xl shadow-fuchsia-500/15 md:-rotate-2 hover:rotate-0 transition-transform motion-reduce:transform-none motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
         >
           <img
-            src="/images/daily-diff.jpg"
+            src="/images/daily-diff.webp"
+            srcset="/images/daily-diff.webp 480w, /images/daily-diff-768.webp 768w, /images/daily-diff-1200.webp 1200w"
+            sizes="(min-width: 1024px) 484px, (min-width: 768px) calc((100vw - 88px) / 2), calc(100vw - 48px)"
             width="1200"
             height="630"
             loading="lazy"

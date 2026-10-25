@@ -45,12 +45,15 @@ do not commit a separate `docs/css/site.css`. The custom domain comes from `extr
 
 ## Agent discovery and content
 
-The production build generates `/index.md` and `/en/index.md` from the rendered
-portfolio HTML, preserving headings, experience, links and image descriptions
-while omitting navigation, theme controls and scripts. Each homepage advertises
-its Markdown alternate and `/llms.txt` in its HTML head. Python 3 (standard
-library only) is required for this build step. Test the converter with
-`python3 scripts/test_agent_content.py`.
+Tableau's `Kalyna.AgentContentExtension` generates `/index.md` and `/en/index.md`
+directly from shared Elixir content during every Tableau build, including the
+development server. `Kalyna.PortfolioContent` holds the portfolio copy, links,
+images and Markdown document structure; the HTML components use the same copy
+and links. Assignment details come from `Kalyna.Experience` in both formats,
+and both use `Kalyna.Translations` for English. `Kalyna.PortfolioMarkdown` renders
+the Markdown without reading or converting HTML. Each homepage advertises its
+Markdown alternate and `/llms.txt` in its HTML head. No Python step or additional
+dependency is needed for agent content generation. Run `mix test` to validate it.
 
 `extra/robots.txt` publishes Content Signals allowing search, AI input and AI
 training. These are usage preferences; compliance depends on the crawler.
@@ -61,7 +64,7 @@ portfolio-reading skill. The build publishes it with a v0.2.0 discovery index
 at `/.well-known/agent-skills/index.json` and computes its SHA-256 digest from
 the published bytes. Edit the source skill, then rebuild to refresh the digest.
 See the [discovery proposal](https://github.com/cloudflare/agent-skills-discovery-rfc).
-The build writes `docs/.nojekyll` so Pages serves Markdown and dot-directories
+The extension writes `docs/.nojekyll` so Pages serves Markdown and dot-directories
 unchanged instead of processing them with Jekyll.
 
 The following scanner checks do not apply to the current public static portfolio:

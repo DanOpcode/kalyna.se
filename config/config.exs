@@ -46,6 +46,7 @@ config :tableau, Tableau.PageExtension, enabled: true
 config :tableau, Tableau.PostExtension, enabled: true
 config :tableau, Tableau.DataExtension, enabled: true
 config :tableau, Tableau.SitemapExtension, enabled: true
+config :tableau, Kalyna.AgentContentExtension, enabled: true
 
 # Enable a feed when the site publishes posts.
 config :tableau, Tableau.RSSExtension, enabled: false

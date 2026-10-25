@@ -4,7 +4,9 @@
 
 Expertise in software development and technical leadership.
 
-[Contact me](<https://www.kalyna.se/en/#contact>) [Read more](<https://www.kalyna.se/en/#about>)
+[Contact me](<https://www.kalyna.se/en/#contact>)
+
+[Read more](<https://www.kalyna.se/en/#about>)
 
 ![Portrait](<https://www.kalyna.se/images/profile1.webp>)
 
@@ -66,7 +68,7 @@ I contribute experience in software development and DevOps.
 
 #### Technologies
 
-.NET  C#  Docker  Linux  Windows
+.NET, C#, Docker, Linux, Windows
 
 ![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
@@ -84,7 +86,7 @@ I improve development processes by optimising Azure DevOps workflows and contrib
 
 #### Technologies
 
-C#  .NET  Blazor  Azure DevOps  ASP.NET Core  Entity Framework  SQL Server  SQL Server Management Studio (SSMS)  REST APIs  Git  agile methods (Scrum)  Visual Studio  Windows 10
+C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST APIs, Git, agile methods (Scrum), Visual Studio, Windows 10
 
 ![Re:it logo](<https://www.kalyna.se/images/company_logo_reit.svg>)
 
@@ -102,7 +104,7 @@ I contribute through hands-on development, implementation decisions and support 
 
 #### Technologies
 
-C#  .NET  ASP.NET  Blazor  Azure  Azure DevOps  Entity Framework  BankID  JWT  SQL Server  SQL Server Management Studio (SSMS)  HTTP  REST API  Git  Windows 11  Visual Studio  agile methods (Scrum)
+C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, Windows 11, Visual Studio, agile methods (Scrum)
 
 ![Altero Consulting logo](<https://www.kalyna.se/images/company_logo_altero.webp>)
 
@@ -120,7 +122,7 @@ Working with a project manager, I developed a solution that automatically consol
 
 #### Technologies
 
-SQL  SQL Server  SQL Server Management Studio (SSMS)  SQL Server Integration Services (SSIS)  C#  .NET Framework  Python  HTTP  REST API  Git  Windows 10  Windows 11  Windows Server  Visual Studio  Visma  agile methods (Kanban)
+SQL, SQL Server, SQL Server Management Studio (SSMS), SQL Server Integration Services (SSIS), C#, .NET Framework, Python, HTTP, REST API, Git, Windows 10, Windows 11, Windows Server, Visual Studio, Visma, agile methods (Kanban)
 
 ![IdAgree logo](<https://www.kalyna.se/images/company_logo_idagree.webp>)
 
@@ -138,7 +140,7 @@ I built a web service from scratch and set up its production environment and con
 
 #### Technologies
 
-C#  .NET  ASP.NET  Blazor  Azure  Azure App Service  Azure SQL Database  Entity Framework  SQL Server  SQL Server Management Studio (SSMS)  HTML  CSS  HTTP  REST API  Git  GitHub  GitHub Actions  Rider
+C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), HTML, CSS, HTTP, REST API, Git, GitHub, GitHub Actions, Rider
 
 ![Carnegie Investment Bank logo](<https://www.kalyna.se/images/company_logo_carnegie.svg>)
 
@@ -156,7 +158,7 @@ Daniel worked as both software developer and scrum master, representing the team
 
 #### Technologies
 
-C#  .NET  ASP.NET  Entity Framework  SQL  SQL Server  SQL Server Management Studio (SSMS)  WPF  Telerik UI for WPF  xUnit.net  Azure DevOps  HTML  CSS  JavaScript  Bootstrap  Python  RabbitMQ  JSON  HTTP  REST API  gRPC  FIX  QuickFIX  Git  Windows 10  Windows Server  Visual Studio  microservices  agile methods (SAFe)
+C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Studio (SSMS), WPF, Telerik UI for WPF, xUnit.net, Azure DevOps, HTML, CSS, JavaScript, Bootstrap, Python, RabbitMQ, JSON, HTTP, REST API, gRPC, FIX, QuickFIX, Git, Windows 10, Windows Server, Visual Studio, microservices, agile methods (SAFe)
 
 ![Cellink logo](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
@@ -176,7 +178,7 @@ Daniel worked with the product owner to turn feature requests into technical req
 
 ##### Technologies
 
-C#  .NET Framework  WPF  Prism  MSTest  MQTT  JSON  HTTP  REST API  Azure DevOps  Jira  Confluence  Python  AWS  Balsamiq  Figma  Git  Windows 10  Visual Studio  agile methods (Scrum)
+C#, .NET Framework, WPF, Prism, MSTest, MQTT, JSON, HTTP, REST API, Azure DevOps, Jira, Confluence, Python, AWS, Balsamiq, Figma, Git, Windows 10, Visual Studio, agile methods (Scrum)
 
 #### .NET software developer
 
@@ -190,7 +192,7 @@ Daniel and his colleagues built a Windows-based WPF application from scratch. Hi
 
 ##### Technologies
 
-C#  .NET Framework  WPF  Prism  MSTest  Microsoft UI Automation  MQTT  JSON  HTTP  REST API  Azure DevOps  Jira  Git  Windows 10  Visual Studio  agile methods (Kanban)
+C#, .NET Framework, WPF, Prism, MSTest, Microsoft UI Automation, MQTT, JSON, HTTP, REST API, Azure DevOps, Jira, Git, Windows 10, Visual Studio, agile methods (Kanban)
 
 #### C++ software developer
 
@@ -204,7 +206,7 @@ Daniel worked on an embedded Linux (ARM) system built with Yocto, extending the 
 
 ##### Technologies
 
-C++17  GCC  Google Test (gtest)  Yocto  Linux  CMake  Jenkins  MQTT  JSON  HTTP  REST API  SQL  SQLite  Python  C  Marlin Firmware  Jira  Git  Visual Studio Code  agile methods (Kanban)
+C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP, REST API, SQL, SQLite, Python, C, Marlin Firmware, Jira, Git, Visual Studio Code, agile methods (Kanban)
 
 ![AVARN Security logo](<https://www.kalyna.se/images/company_logo_avarn.webp>)
 
@@ -230,7 +232,7 @@ Daniel implemented configuration data transfer from Linux on the ARM processor c
 
 #### Technologies
 
-C  Linux  real-time operating systems  Jira  Eclipse  agile methods (Kanban)
+C, Linux, real-time operating systems, Jira, Eclipse, agile methods (Kanban)
 
 ![Mentice logo](<https://www.kalyna.se/images/company_logo_mentice.svg>)
 
@@ -250,7 +252,7 @@ Daniel implemented a surgical simulation with 3D models of surgical instruments.
 
 ##### Technologies
 
-Swift  UIKit  SceneKit  OpenGL  BLE  Blender  GIMP  SolidWorks  Python  Jira  Git  Xcode  agile methods (Kanban)
+Swift, UIKit, SceneKit, OpenGL, BLE, Blender, GIMP, SolidWorks, Python, Jira, Git, Xcode, agile methods (Kanban)
 
 #### Web app
 
@@ -264,7 +266,7 @@ Daniel participated from requirements through implementation. He defined work pa
 
 ##### Technologies
 
-Python  Django  SQLite  HTML  CSS  JavaScript  jQuery  jQuery UI  JSON  Java  Balsamiq  Windows 10  Visual Studio Code  agile methods (Kanban)
+Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Balsamiq, Windows 10, Visual Studio Code, agile methods (Kanban)
 
 ![Consilium Marine & Safety logo](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
@@ -284,7 +286,7 @@ Daniel worked from requirements through implementation, conducting a feasibility
 
 ##### Technologies
 
-C#  .NET Framework  WPF  AvalonEdit  NUnit  Microsoft UI Automation  C++  MSVC  API  Balsamiq  Jira  Git  Windows 10  Visual Studio  agile methods (Kanban)
+C#, .NET Framework, WPF, AvalonEdit, NUnit, Microsoft UI Automation, C++, MSVC, API, Balsamiq, Jira, Git, Windows 10, Visual Studio, agile methods (Kanban)
 
 #### Windows fire alarm management system
 
@@ -298,7 +300,7 @@ Daniel added features, improved the interface and performance, fixed bugs and pr
 
 ##### Technologies
 
-C#  .NET Framework  WPF  WCF  Entity Framework  C++14  MSVC  Modbus  MFC  SQL Server  SQL Server Management Studio (SSMS)  AutoCAD  Jira  Git  VirtualBox  Windows 7  Windows 10  Visual Studio  Visual C++ 6.0  agile methods (Kanban)
+C#, .NET Framework, WPF, WCF, Entity Framework, C++14, MSVC, Modbus, MFC, SQL Server, SQL Server Management Studio (SSMS), AutoCAD, Jira, Git, VirtualBox, Windows 7, Windows 10, Visual Studio, Visual C++ 6.0, agile methods (Kanban)
 
 #### Web-based product lifecycle management system
 
@@ -312,7 +314,7 @@ Daniel worked on both frontend and backend, adding features for data presentatio
 
 ##### Technologies
 
-C#  .NET Framework  Aras Innovator  HTML  CSS  JavaScript  HTTP  SQL Server  SQL Server Management Studio (SSMS)  Jira  Git  Windows 10  Windows Server  Visual Studio  agile methods (Kanban)
+C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL Server Management Studio (SSMS), Jira, Git, Windows 10, Windows Server, Visual Studio, agile methods (Kanban)
 
 ![Ericsson logo](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 
@@ -330,7 +332,7 @@ Daniel independently carried out the migration and implemented more advanced mod
 
 #### Technologies
 
-Python  Pandas  Flask  Pywin32  Named pipe  SQLite  SQL  Excel  HTML  CSS  Bootstrap  JSON  Git  Windows 7  PyCharm  agile methods (Kanban)
+Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Bootstrap, JSON, Git, Windows 7, PyCharm, agile methods (Kanban)
 
 ## What a former colleague says
 
@@ -409,7 +411,7 @@ VAT number: SE559386845701
 
 Location: Stockholm, Sweden
 
-Tax status:  Approved for Swedish F-tax
+Tax status: Approved for Swedish F-tax
 
 ### Availability
 

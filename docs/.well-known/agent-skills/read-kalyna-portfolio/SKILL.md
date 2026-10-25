@@ -11,7 +11,7 @@ Use the published Markdown for the requested language:
 - English: https://www.kalyna.se/en/index.md
 - Content index: https://www.kalyna.se/llms.txt
 
-The Markdown is generated from the same pages as the public website. Use it to
+The Markdown and HTML are generated from shared portfolio content. Use it to
 answer questions about Daniel Jonsson's experience and Kalyna Solutions AB.
 Keep assignment dates and roles intact when summarizing experience. The contact
 section contains public contact channels; it does not establish current

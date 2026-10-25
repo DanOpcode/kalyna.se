@@ -37,8 +37,7 @@ defmodule Kalyna.MixProject do
       build: [
         "tableau.build",
         "tailwind default --minify",
-        "kalyna.inline_css",
-        "kalyna.agent_content"
+        "kalyna.inline_css"
       ]
     ]
   end

@@ -3,6 +3,57 @@ defmodule Kalyna.AgentContentTest do
 
   @root Path.expand("..", __DIR__)
 
+  @tag :tmp_dir
+  test "Tableau generates agent resources without intermediate HTML", %{tmp_dir: output} do
+    token = %{
+      site: %{
+        config: %{
+          out_dir: output,
+          include_dir: Path.join(@root, "extra"),
+          url: "https://example.test"
+        }
+      }
+    }
+
+    assert {:ok, ^token} = Kalyna.AgentContentExtension.post_write(token)
+    refute File.exists?(Path.join(output, "index.html"))
+    assert File.read!(Path.join(output, "index.md")) =~ "## Ett av mina projekt"
+    english = File.read!(Path.join(output, "en/index.md"))
+    assert english =~ "## One of my projects\n\n### Daily Diff"
+    assert english =~ "https://example.test/en/#contact"
+    assert File.read!(Path.join(output, "llms.txt")) =~ "https://example.test/en/index.md"
+    assert File.exists?(Path.join(output, ".well-known/agent-skills/index.json"))
+    assert File.exists?(Path.join(output, ".nojekyll"))
+  end
+
+  test "Markdown preserves literal formatting characters and inline links" do
+    blocks = [
+      {:heading, 2, [{:literal, "A [literal] *heading*"}]},
+      {:paragraph, ["Read ", {:link, "/details", [{:literal, "the details"}]}, "."]},
+      {:list, [[{:literal, "C#/.NET"}], [{:literal, "Elixir"}]]}
+    ]
+
+    markdown = Kalyna.PortfolioMarkdown.render_blocks(blocks, "en", "https://example.test")
+    assert markdown =~ ~S(## A \[literal\] \*heading\*)
+    assert markdown =~ "Read [the details](<https://example.test/details>)."
+    assert markdown =~ "- C#/.NET\n- Elixir"
+  end
+
+  test "Markdown reads every assignment and technology from shared experience data" do
+    for lang <- ["sv", "en"] do
+      markdown = Kalyna.PortfolioMarkdown.render(lang, "https://www.kalyna.se")
+
+      for company <- Kalyna.Experience.companies(), project <- company.projects do
+        assert markdown =~ Kalyna.Translations.t(lang, project.assignment)
+        assert markdown =~ Kalyna.Translations.t(lang, project.benefit)
+
+        for technology <- project.technologies do
+          assert markdown =~ Kalyna.Translations.t(lang, technology)
+        end
+      end
+    end
+  end
+
   test "both languages publish Markdown with experience and contact links" do
     for {directory, heading} <- [{"", "Om Daniel Jonsson"}, {"en/", "About Daniel Jonsson"}] do
       html = File.read!(Path.join(@root, "docs/#{directory}index.html"))

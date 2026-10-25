@@ -39,7 +39,6 @@ defmodule Kalyna.PortfolioComponents do
           <select
             id="theme-preference"
             aria-label={copy(@lang, :theme_label)}
-            onchange="setTheme(this.value)"
             class="bg-white dark:bg-slate-800 rounded"
           >
             <option value="system">System</option>
@@ -89,10 +88,6 @@ defmodule Kalyna.PortfolioComponents do
       <!-- Company Information Section -->
       <.company_information lang={@lang} />
     </div>
-
-    <script>
-      document.getElementById('theme-preference').value = window.themePreference;
-    </script>
     """
   end
 

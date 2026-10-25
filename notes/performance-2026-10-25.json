@@ -1,0 +1,519 @@
+{
+  "date": "2026-10-25",
+  "context": "Single-run lab measurements; no field data. Local Python HTTP server has no compression/cache policy; public run is pre-PR production.",
+  "runs": [
+    {
+      "label": "sv-mobile",
+      "url": "http://127.0.0.1:4101/",
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "fetchTime": "2026-10-25T22:26:56.956Z",
+      "settings": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "performanceScore": 100,
+      "runtimeError": null,
+      "warnings": [],
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1275.5801969650051,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 1576.1603939300103,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 1275.5801969650051,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 219907,
+          "unit": "byte"
+        },
+        "bootup-time": {
+          "value": 16.239999999999995,
+          "unit": "millisecond"
+        }
+      },
+      "lcp": "main#main > div.min-h-screen > section.px-6 > p.text-xl",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:4101/",
+          "bytes": 124672,
+          "type": "Document"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/logo-128.webp",
+          "bytes": 5432,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/profile1-384.webp",
+          "bytes": 23243,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/daily-diff-768.webp",
+          "bytes": 46379,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_carmenta.svg",
+          "bytes": 7341,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_imy.svg",
+          "bytes": 10281,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/favicon-32x32.png",
+          "bytes": 2559,
+          "type": "Other"
+        }
+      ]
+    },
+    {
+      "label": "en-desktop",
+      "url": "http://127.0.0.1:4101/en/",
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "fetchTime": "2026-10-25T22:27:25.761Z",
+      "settings": {
+        "formFactor": "desktop",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "performanceScore": 100,
+      "runtimeError": null,
+      "warnings": [],
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 300.8600330339318,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 341.7200660678636,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 300.8600330339318,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 279046,
+          "unit": "byte"
+        },
+        "bootup-time": {
+          "value": 0,
+          "unit": "millisecond"
+        }
+      },
+      "lcp": "div.grid > div.md:col-span-2 > div.text-slate-600 > p",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:4101/en/",
+          "bytes": 122410,
+          "type": "Document"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/logo.webp",
+          "bytes": 2400,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/profile1.webp",
+          "bytes": 9878,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/daily-diff-768.webp",
+          "bytes": 46379,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_carmenta.svg",
+          "bytes": 7341,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_imy.svg",
+          "bytes": 10281,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_reit.svg",
+          "bytes": 28224,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_altero.webp",
+          "bytes": 4934,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_idagree.webp",
+          "bytes": 1738,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_carnegie.svg",
+          "bytes": 8641,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_cellink.svg",
+          "bytes": 3386,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_avarn.webp",
+          "bytes": 4750,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_labgruppen.webp",
+          "bytes": 4336,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_mentice.svg",
+          "bytes": 13269,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_consilium.svg",
+          "bytes": 5923,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/company_logo_ericsson.svg",
+          "bytes": 2597,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4101/images/favicon-32x32.png",
+          "bytes": 2559,
+          "type": "Other"
+        }
+      ]
+    },
+    {
+      "label": "live-mobile",
+      "url": "https://www.kalyna.se/",
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "fetchTime": "2026-10-25T22:27:46.161Z",
+      "settings": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "performanceScore": 99.0,
+      "runtimeError": null,
+      "warnings": [],
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1403.644,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 1403.644,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.04197624515610553,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 2172.097317151642,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 124817,
+          "unit": "byte"
+        },
+        "bootup-time": {
+          "value": 19.583999999999993,
+          "unit": "millisecond"
+        }
+      },
+      "lcp": "div.min-h-screen > section.px-6 > div.flex > h1.text-5xl",
+      "requests": [
+        {
+          "url": "https://www.kalyna.se/",
+          "bytes": 23200,
+          "type": "Document"
+        },
+        {
+          "url": "https://www.kalyna.se/images/logo-128.webp",
+          "bytes": 5632,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/profile1-384.webp",
+          "bytes": 23529,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/daily-diff-768.webp",
+          "bytes": 46631,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/company_logo_carmenta.svg",
+          "bytes": 2882,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/company_logo_imy.svg",
+          "bytes": 3804,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/company_logo_reit.svg",
+          "bytes": 16034,
+          "type": "Image"
+        },
+        {
+          "url": "https://www.kalyna.se/images/favicon-32x32.png",
+          "bytes": 3105,
+          "type": "Other"
+        }
+      ]
+    }
+  ],
+  "generated": {
+    "index.html": {
+      "bytes": 124483,
+      "sha256": "b7041a11e8715083b84e67d26545bc48601ee123076202a9c0f1b8848326a75d",
+      "inlineCssBytes": 29469
+    },
+    "en/index.html": {
+      "bytes": 122221,
+      "sha256": "d2f5265c518f35060d0c11336b50c9f21c29161e5adfe73a232de0c65a281ba7",
+      "inlineCssBytes": 29469
+    }
+  },
+  "edgeTool": "curl 8.18.0; actual GETs with explicit Accept-Encoding; downloaded encoded body size",
+  "edgeResponses": [
+    {
+      "url": "https://www.kalyna.se/",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 21314,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "br"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/",
+      "encodingRequested": "gzip",
+      "status": 200,
+      "downloadBytes": 21354,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/",
+      "encodingRequested": "identity",
+      "status": 200,
+      "downloadBytes": 122787,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/en/",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 19945,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "br"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/en/",
+      "encodingRequested": "gzip",
+      "status": 200,
+      "downloadBytes": 20262,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/en/",
+      "encodingRequested": "identity",
+      "status": 200,
+      "downloadBytes": 120505,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/index.md",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 7856,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "br"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/en/index.md",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 6665,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "max-age=600",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "br"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/images/profile1.webp",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 9690,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "max-age=2678400",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "EXPIRED"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/images/social-card.png",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 999552,
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "max-age=2678400",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "MISS"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/robots.txt",
+      "encodingRequested": "br",
+      "status": 200,
+      "downloadBytes": 105,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "max-age=14400",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "EXPIRED",
+        "content-encoding": "br"
+      }
+    },
+    {
+      "url": "https://www.kalyna.se/no-such-quality-check-20261025",
+      "encodingRequested": "br",
+      "status": 404,
+      "downloadBytes": 5086,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "vary": "Accept-Encoding",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "br"
+      }
+    }
+  ]
+}

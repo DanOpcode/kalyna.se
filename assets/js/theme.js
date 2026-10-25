@@ -19,4 +19,10 @@
   };
   media.addEventListener('change', apply);
   apply();
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('theme-preference');
+    if (!select) return;
+    select.value = window.themePreference;
+    select.addEventListener('change', () => window.setTheme(select.value));
+  }, { once: true });
 })();

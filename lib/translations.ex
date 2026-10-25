@@ -1,7 +1,7 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
-    "Ett av mina projekt" => "ONE OF MY PROJECTS",
+    "Ett av mina projekt" => "One of my projects",
     "Din dagliga dos tekniknyheter. För dig som bygger." =>
       "Your daily patch of tech news for people who build.",
     "Hacker News, Lobsters och Programming.dev i en samlad nyhetsöversikt. Byggt för att göra det enkelt att hänga med i de mest uppröstade och diskuterade nyheterna." =>

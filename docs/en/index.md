@@ -34,9 +34,9 @@ I have an analytical mind, enjoy solving complex problems and quickly become pro
 - Windows
 - Web
 
-ONE OF MY PROJECTS
+## One of my projects
 
-## Daily Diff
+### Daily Diff
 
 Your daily patch of tech news for people who build.
 

@@ -180,7 +180,7 @@ defmodule Kalyna.PortfolioComponents do
     ~H"""
     <section
       id="daily-diff"
-      aria-labelledby="daily-diff-title"
+      aria-labelledby="daily-diff-heading"
       class="px-6 py-16 sm:py-20 bg-[#160e26] text-white relative overflow-hidden"
     >
       <div
@@ -190,12 +190,12 @@ defmodule Kalyna.PortfolioComponents do
       </div>
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 items-center relative">
         <div>
-          <p class="font-mono text-xs uppercase tracking-widest text-cyan-300 mb-5">
+          <h2 id="daily-diff-heading" class="text-3xl font-bold text-cyan-300 mb-5">
             {t(@lang, "Ett av mina projekt")}
-          </p>
-          <h2 id="daily-diff-title" class="text-4xl sm:text-5xl font-bold tracking-tight mb-5">
-            Daily Diff
           </h2>
+          <h3 id="daily-diff-title" class="text-2xl sm:text-3xl font-bold tracking-tight mb-5">
+            Daily Diff
+          </h3>
           <p class="text-2xl sm:text-3xl font-semibold leading-tight text-white mb-5">
             {t(@lang, "Din dagliga dos tekniknyheter. För dig som bygger.")}
           </p>

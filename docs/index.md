@@ -34,9 +34,9 @@ Jag har ett analytiskt sinne, är duktig på att lösa komplexa uppgifter och ä
 - Windows
 - Webb
 
-Ett av mina projekt
+## Ett av mina projekt
 
-## Daily Diff
+### Daily Diff
 
 Din dagliga dos tekniknyheter. För dig som bygger.
 

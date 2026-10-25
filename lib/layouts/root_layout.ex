@@ -52,7 +52,24 @@ defmodule Kalyna.RootLayout do
                 "name" => "Kalyna Solutions AB",
                 "url" => "#{base_url}/",
                 "inLanguage" => ["sv", "en"],
-                "publisher" => %{"@id" => "#{base_url}/#organization"}
+                "publisher" => %{"@id" => "#{base_url}/#organization"},
+                "about" => %{"@id" => "#{base_url}/#daniel-jonsson"}
+              },
+              %{
+                "@type" => "Person",
+                "@id" => "#{base_url}/#daniel-jonsson",
+                "name" => "Daniel Jonsson",
+                "url" => "#{base_url}/#about",
+                "jobTitle" => Kalyna.PortfolioContent.copy(lang, :developer_role),
+                "worksFor" => %{"@id" => "#{base_url}/#organization"},
+                "image" =>
+                  URI.merge(base_url, Kalyna.PortfolioContent.value(:portrait_one_src))
+                  |> URI.to_string(),
+                "sameAs" =>
+                  Enum.map(
+                    [:kvadrat_profile_url, :mastodon_url, :linkedin_url],
+                    &Kalyna.PortfolioContent.value/1
+                  )
               }
             ]
           })

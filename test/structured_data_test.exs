@@ -1,13 +1,16 @@
 defmodule Kalyna.StructuredDataTest do
   use ExUnit.Case, async: true
 
-  test "published homepages identify the company and website with a shared publisher" do
-    for path <- ["/", "/en/"] do
+  test "published homepages link Daniel, his company, and the website" do
+    for {path, role} <- [{"/", "Systemutvecklare"}, {"/en/", "Software developer"}] do
       html = File.read!(Path.expand("../docs#{path}index.html", __DIR__))
       [_, json] = Regex.run(~r/<script type="application\/ld\+json">(.*?)<\/script>/s, html)
       data = Jason.decode!(json)
       assert data["@context"] == "https://schema.org"
-      [organization, website] = data["@graph"]
+      graph = Map.new(data["@graph"], &{&1["@type"], &1})
+      organization = Map.fetch!(graph, "Organization")
+      website = Map.fetch!(graph, "WebSite")
+      person = Map.fetch!(graph, "Person")
       assert organization["@type"] == "Organization"
       assert organization["name"] == "Kalyna Solutions AB"
       assert organization["url"] == "https://www.kalyna.se/"
@@ -15,6 +18,21 @@ defmodule Kalyna.StructuredDataTest do
       assert website["@type"] == "WebSite"
       assert website["publisher"]["@id"] == organization["@id"]
       assert website["inLanguage"] == ["sv", "en"]
+      assert person["@id"] == "https://www.kalyna.se/#daniel-jonsson"
+      assert person["name"] == "Daniel Jonsson"
+      assert person["jobTitle"] == role
+      assert person["url"] == "https://www.kalyna.se/#about"
+      assert person["image"] == "https://www.kalyna.se/images/profile1.webp"
+      assert person["worksFor"] == %{"@id" => organization["@id"]}
+      assert website["about"] == %{"@id" => person["@id"]}
+
+      assert person["sameAs"] == [
+               "https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/",
+               "https://mastodon.social/@DanOpcode",
+               "https://linkedin.com/in/DanOpcode"
+             ]
+
+      for profile <- person["sameAs"], do: assert(html =~ ~s(href="#{profile}"))
     end
   end
 

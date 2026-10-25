@@ -32,3 +32,6 @@ tableau_new-*.tar
 /playwright-report/
 /test-results/
 /.playwright-cli/
+
+# Python build and test helpers.
+__pycache__/

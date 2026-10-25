@@ -1,0 +1,8 @@
+# Kalyna Solutions AB
+
+> Daniel Jonsson's software development consultancy in Stockholm, Sweden.
+
+## Portfolio
+
+- [Svenska](https://www.kalyna.se/index.md): Erfarenhet, expertis och kontaktuppgifter.
+- [English](https://www.kalyna.se/en/index.md): Experience, expertise and contact details.

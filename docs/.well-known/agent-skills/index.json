@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "read-kalyna-portfolio",
+      "type": "skill-md",
+      "description": "Find Daniel Jonsson's consulting experience, technical expertise, and contact details on the Kalyna Solutions AB portfolio.",
+      "url": "/.well-known/agent-skills/read-kalyna-portfolio/SKILL.md",
+      "digest": "sha256:48ac4c8a8d9f4727ae414675f5356a8ccea228ba500fff55aa057485568efa08"
+    }
+  ]
+}

@@ -43,6 +43,15 @@ git add docs/
 Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. Production builds remove the intermediate CSS file after embedding it in the HTML;
 do not commit a separate `docs/css/site.css`. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
 
+## Agent content
+
+Tableau generates Markdown pages and discovery files automatically. Edit portfolio
+copy and links in `lib/portfolio_content.ex`, experience in `lib/experience.ex`,
+and English translations in `lib/translations.ex`. Content Signals live in
+`extra/robots.txt`; the published skill lives in `extra/.well-known/agent-skills/`.
+Rebuild with `MIX_ENV=prod mix build` and include the generated `docs/` changes.
+Keep `docs/.nojekyll` so GitHub Pages publishes these files unchanged.
+
 ## Tests
 
 Run the Elixir regression tests with `mix test`. In [dev-machine](https://gitlab.com/DanOpcode/dev-machine), run browser tests with:

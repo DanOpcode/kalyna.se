@@ -31,6 +31,7 @@ defmodule Kalyna.RootLayout do
         locale: if(lang == "en", do: "en_GB", else: "sv_SE"),
         alternate_locale: if(lang == "en", do: "sv_SE", else: "en_GB"),
         translated_homepage: permalink in ["/", "/en/"],
+        markdown_url: URI.merge(base_url, permalink <> "index.md") |> URI.to_string(),
         swedish_url: URI.merge(base_url, "/") |> URI.to_string(),
         english_url: URI.merge(base_url, "/en/") |> URI.to_string(),
         structured_data:
@@ -71,6 +72,8 @@ defmodule Kalyna.RootLayout do
 
         <title>{@title}</title>
         <link rel="canonical" href={@canonical_url} />
+        <link :if={@translated_homepage} rel="alternate" type="text/markdown" href={@markdown_url} />
+        <link rel="describedby" type="text/plain" href="/llms.txt" />
         <meta name="description" content={@description} />
 
         <meta property="og:type" content="website" />

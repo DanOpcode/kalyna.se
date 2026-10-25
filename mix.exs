@@ -34,7 +34,11 @@ defmodule Kalyna.MixProject do
 
   defp aliases do
     [
-      build: ["tableau.build", "tailwind default --minify", "kalyna.inline_css"]
+      build: [
+        "tableau.build",
+        "tailwind default --minify",
+        "kalyna.inline_css"
+      ]
     ]
   end
 end

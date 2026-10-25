@@ -9,7 +9,7 @@ defmodule Kalyna.ExperienceComponents do
     assigns = assign(assigns, :companies, Kalyna.Experience.companies())
 
     ~H"""
-    <section class="px-6 py-16">
+    <section id="experience" class="px-6 py-16">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
           {t(@lang, "Professionell erfarenhet")}
@@ -31,43 +31,6 @@ defmodule Kalyna.ExperienceComponents do
           />
         </div>
       </div>
-
-      <script>
-        function toggleCompany(itemId) {
-          const content = document.getElementById('content-' + itemId);
-          if (!content) return;
-          
-          const card = content.closest('.company-item');
-          const button = card.querySelector('button');
-          const icon = button.querySelector('.expand-icon');
-          const buttonText = button.querySelector('span');
-          const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
-          
-          // Close all other expanded items
-          document.querySelectorAll('.company-content').forEach(item => {
-            if (item.id !== 'content-' + itemId) {
-              item.style.maxHeight = '0px';
-              const otherCard = item.closest('.company-item');
-              const otherButton = otherCard.querySelector('button');
-              const otherIcon = otherButton.querySelector('.expand-icon');
-              const otherText = otherButton.querySelector('span');
-              if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
-              if (otherText) otherText.textContent = document.documentElement.lang === 'en' ? 'Show more' : 'Visa mer';
-            }
-          });
-          
-          // Toggle current item
-          if (isExpanded) {
-            content.style.maxHeight = '0px';
-            if (icon) icon.style.transform = 'rotate(0deg)';
-            if (buttonText) buttonText.textContent = document.documentElement.lang === 'en' ? 'Show more' : 'Visa mer';
-          } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
-            if (icon) icon.style.transform = 'rotate(180deg)';
-            if (buttonText) buttonText.textContent = document.documentElement.lang === 'en' ? 'Show less' : 'Visa mindre';
-          }
-        }
-      </script>
     </section>
     """
   end
@@ -94,7 +57,7 @@ defmodule Kalyna.ExperienceComponents do
             width={@logo.width}
             height={@logo.height}
             loading="lazy"
-            alt={t(@lang, @logo.alt)}
+            alt=""
             class={[
               "object-contain",
               if(@logo.fill, do: "w-full h-full", else: "max-w-full max-h-full"),
@@ -113,42 +76,31 @@ defmodule Kalyna.ExperienceComponents do
         </h3>
         <p class="text-slate-600 dark:text-slate-200">{t(@lang, @summary)}</p>
       </div>
-      <!-- Expand Button -->
-      <button
-        onclick={"toggleCompany('#{@id}')"}
-        class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
-      >
-        <span>{t(@lang, "Visa mer")}</span>
-        <div class="expand-icon transition-transform duration-300">
-          <svg
-            class="w-4 h-4 text-slate-500"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            >
-            </path>
-          </svg>
-        </div>
-      </button>
-      <div
-        id={"content-#{@id}"}
-        class="company-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-      >
-        <div class="pt-4 border-t border-slate-200 mt-4">
-          <p :if={@description} class="text-slate-600 dark:text-slate-200 text-sm">
-            {t(@lang, @description)}
-          </p>
-          <div :if={@projects != []} class="space-y-6">
-            <.experience_project :for={project <- @projects} lang={@lang} project={project} />
+      <details class="experience-details" name="experience">
+        <summary class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-white py-3 px-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer">
+          <span>{t(@lang, "Om arbetet hos")} {t(@lang, @name)}</span>
+          <span class="expand-icon" aria-hidden="true">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </span>
+        </summary>
+        <div id={"content-#{@id}"} class="company-content">
+          <div class="pt-4 border-t border-slate-200 mt-4">
+            <p :if={@description} class="text-slate-600 dark:text-slate-200 text-sm">
+              {t(@lang, @description)}
+            </p>
+            <div :if={@projects != []} class="space-y-6">
+              <.experience_project :for={project <- @projects} lang={@lang} project={project} />
+            </div>
           </div>
         </div>
-      </div>
+      </details>
     </div>
     """
   end

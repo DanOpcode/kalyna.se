@@ -20,9 +20,21 @@ defmodule Kalyna.StructuredDataTest do
       assert website["inLanguage"] == ["sv", "en"]
       assert person["@id"] == "https://www.kalyna.se/#daniel-jonsson"
       assert person["name"] == "Daniel Jonsson"
+      assert person["alternateName"] == "DanOpcode"
+      assert is_binary(person["description"])
+      assert organization["legalName"] == Kalyna.PortfolioContent.value(:company_name)
+      assert organization["vatID"] == Kalyna.PortfolioContent.value(:company_vat)
+      assert organization["telephone"] == Kalyna.PortfolioContent.value(:phone_number)
+      ids = Enum.map(data["@graph"], & &1["@id"])
+      assert length(Enum.uniq(ids)) == length(ids)
+
+      for node <- data["@graph"], {_key, %{"@id" => reference}} <- node do
+        assert reference in ids
+      end
+
       assert person["jobTitle"] == role
       assert person["url"] == "https://www.kalyna.se/#about"
-      assert person["image"] == "https://www.kalyna.se/images/profile1.webp"
+      assert person["image"] == "https://www.kalyna.se/images/profile1-576.webp"
       assert person["worksFor"] == %{"@id" => organization["@id"]}
       assert website["about"] == %{"@id" => person["@id"]}
 

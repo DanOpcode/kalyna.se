@@ -9,10 +9,10 @@ defmodule Kalyna.PortfolioComponents do
   def portfolio(assigns) do
     ~H"""
     <div class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      <div class="flex items-center justify-center gap-2 sm:gap-4 px-2 pt-6 text-xs sm:text-base">
+      <div class="settings-row flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-2 pt-6 text-xs sm:text-base">
         <nav
           aria-label="Language / Språk"
-          class="h-12 flex items-center gap-2 sm:gap-4 px-2 sm:px-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg shadow-lg"
+          class="min-h-12 flex flex-wrap items-center gap-2 sm:gap-4 px-2 sm:px-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg shadow-lg"
         >
           <a
             href="/"
@@ -34,12 +34,11 @@ defmodule Kalyna.PortfolioComponents do
           </a>
         </nav>
         <!-- Theme preference -->
-        <label class="h-12 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg px-2 sm:px-3 shadow-lg flex items-center gap-2">
+        <label class="min-h-12 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 rounded-lg px-2 sm:px-3 shadow-lg flex items-center gap-2">
           <span>{copy(@lang, :theme_label)}</span>
           <select
             id="theme-preference"
             aria-label={copy(@lang, :theme_label)}
-            onchange="setTheme(this.value)"
             class="bg-white dark:bg-slate-800 rounded"
           >
             <option value="system">System</option>
@@ -49,6 +48,12 @@ defmodule Kalyna.PortfolioComponents do
         </label>
       </div>
 
+      <nav aria-label={if @lang == "en", do: "Sections", else: "Avsnitt"} class="section-nav">
+        <a href="#expertise">{copy(@lang, :expertise_heading)}</a>
+        <a href="#experience">{if @lang == "en", do: "Experience", else: "Erfarenhet"}</a>
+        <a href="#about">{copy(@lang, :about_heading)}</a>
+        <a href="#contact">{copy(@lang, :contact_heading)}</a>
+      </nav>
       <!-- Hero Section -->
       <.hero lang={@lang} />
 
@@ -83,10 +88,6 @@ defmodule Kalyna.PortfolioComponents do
       <!-- Company Information Section -->
       <.company_information lang={@lang} />
     </div>
-
-    <script>
-      document.getElementById('theme-preference').value = window.themePreference;
-    </script>
     """
   end
 
@@ -103,9 +104,9 @@ defmodule Kalyna.PortfolioComponents do
           width="64"
           height="58"
           alt={copy(@lang, :logo_alt)}
-          class="w-16 mr-4"
+          class="w-16 mr-4 shrink-0"
         />
-        <h1 class="text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white">
           {copy(@lang, :company_name)}
         </h1>
       </div>
@@ -203,6 +204,7 @@ defmodule Kalyna.PortfolioComponents do
             {copy(@lang, :daily_diff_read_label)}
             <svg
               aria-hidden="true"
+              focusable="false"
               class="w-5 h-5"
               viewBox="0 0 24 24"
               fill="none"
@@ -238,7 +240,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def expertise(assigns) do
     ~H"""
-    <section class="px-6 py-16">
+    <section id="expertise" class="px-6 py-16">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">
           {copy(@lang, :expertise_heading)}
@@ -292,7 +294,13 @@ defmodule Kalyna.PortfolioComponents do
         <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 relative">
           <!-- Quote Icon -->
           <div class="absolute top-6 left-6 text-blue-200 dark:text-blue-200">
-            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="w-12 h-12"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
             </svg>
           </div>
@@ -390,7 +398,7 @@ defmodule Kalyna.PortfolioComponents do
               width="838"
               height="158"
               loading="lazy"
-              alt={copy(@lang, :kvadrat_logo_alt)}
+              alt=""
               class="max-w-full max-h-full object-contain dark:brightness-0 dark:invert"
             />
           </div>
@@ -432,6 +440,8 @@ defmodule Kalyna.PortfolioComponents do
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 class="w-6 h-6 text-blue-600"
                 fill="none"
                 stroke="currentColor"
@@ -461,6 +471,8 @@ defmodule Kalyna.PortfolioComponents do
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 class="w-6 h-6 text-green-600"
                 fill="none"
                 stroke="currentColor"
@@ -490,10 +502,11 @@ defmodule Kalyna.PortfolioComponents do
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 class="w-6 h-6 text-blue-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
               >
                 <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
               </svg>
@@ -513,6 +526,8 @@ defmodule Kalyna.PortfolioComponents do
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 class="w-6 h-6 text-blue-600"
                 fill="#0072b1"
                 stroke="currentColor"
@@ -550,7 +565,13 @@ defmodule Kalyna.PortfolioComponents do
         <div class="grid md:grid-cols-2 gap-8">
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-8 h-8 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
               </svg>
             </div>
@@ -570,7 +591,13 @@ defmodule Kalyna.PortfolioComponents do
 
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-8 h-8 text-red-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
             </div>
@@ -616,7 +643,7 @@ defmodule Kalyna.PortfolioComponents do
               {copy(@lang, :kalyna_heading)}
             </h2>
             <p class="text-slate-600 dark:text-slate-200 leading-relaxed text-lg mb-4">
-              {copy(@lang, :kalyna_intro)}{" "}<a
+              <.ukrainian_text text={copy(@lang, :kalyna_intro)} />{" "}<a
                 href={value(:plant_url)}
                 title={copy(@lang, :plant_link_title)}
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
@@ -624,7 +651,7 @@ defmodule Kalyna.PortfolioComponents do
                 href={value(:song_url)}
                 title={copy(@lang, :song_link_title)}
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
-              >{copy(@lang, :song_link_label)}</a>{copy(@lang, :song_history)}{" "}<a
+              >{copy(@lang, :song_link_label)}</a><.ukrainian_text text={copy(@lang, :song_history)} />{" "}<a
                 href={value(:song_video_url)}
                 title={copy(@lang, :song_video_title)}
                 class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors underline underline-offset-2"
@@ -680,6 +707,8 @@ defmodule Kalyna.PortfolioComponents do
               <div class="space-y-3 text-slate-600 dark:text-slate-200">
                 <div class="flex items-center justify-center">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     class="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3"
                     fill="none"
                     stroke="currentColor"
@@ -704,6 +733,8 @@ defmodule Kalyna.PortfolioComponents do
                 </div>
                 <div class="flex items-center justify-center">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     class="w-5 h-5 text-green-600 dark:text-green-400 mr-3"
                     fill="none"
                     stroke="currentColor"
@@ -725,6 +756,22 @@ defmodule Kalyna.PortfolioComponents do
         </div>
       </div>
     </section>
+    """
+  end
+
+  attr(:text, :string, required: true)
+
+  defp ukrainian_text(assigns) do
+    parts =
+      Regex.split(~r/(Ой у лузі червона калина|Калина)/u, assigns.text, include_captures: true)
+      |> Enum.map(fn text ->
+        {text, if(Regex.match?(~r/[А-Яа-яІіЇїЄє]/u, text), do: "uk")}
+      end)
+
+    assigns = assign(assigns, :parts, parts)
+
+    ~H"""
+    <span :for={{text, lang} <- @parts} lang={lang}>{text}</span>
     """
   end
 end

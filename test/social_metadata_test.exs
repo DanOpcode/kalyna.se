@@ -11,8 +11,8 @@ defmodule Kalyna.SocialMetadataTest do
 
       title =
         if lang == "en",
-          do: "Full-stack developer in Stockholm",
-          else: "Fullstack-utvecklare i Stockholm"
+          do: "Daniel Jonsson – software developer in Stockholm",
+          else: "Daniel Jonsson – systemutvecklare i Stockholm"
 
       html =
         case unquote(source) do
@@ -31,7 +31,10 @@ defmodule Kalyna.SocialMetadataTest do
       assert metadata["og:image:type"] == "image/png"
       assert metadata["og:image:width"] == "1200"
       assert metadata["og:image:height"] == "630"
-      assert metadata["og:title"] == "#{title} | Kalyna Solutions AB"
+
+      assert metadata["og:title"] ==
+               "#{String.replace(title, "&", "&amp;")} | Kalyna Solutions AB"
+
       assert metadata["twitter:title"] == metadata["og:title"]
       assert metadata["twitter:description"] == metadata["og:description"]
       assert metadata["description"] == metadata["og:description"]
@@ -42,12 +45,17 @@ defmodule Kalyna.SocialMetadataTest do
       assert metadata["og:locale:alternate"] == if(lang == "en", do: "sv_SE", else: "en_GB")
 
       if lang == "en" do
-        assert metadata["og:description"] =~ "Independent consultant"
+        assert metadata["og:description"] =~
+                 if(unquote(source) == :template,
+                   do: "Independent consultant",
+                   else: "Daniel Jonsson"
+                 )
 
         assert metadata["og:image:alt"] ==
                  "Kalyna Solutions AB: full-stack development in Stockholm, with kalyna berries and circuit traces above the skyline."
       else
-        assert metadata["og:description"] =~ "Egenkonsult"
+        assert metadata["og:description"] =~
+                 if(unquote(source) == :template, do: "Egenkonsult", else: "Daniel Jonsson")
 
         assert metadata["og:image:alt"] ==
                  "Kalyna Solutions AB: fullstack-utveckling i Stockholm, med kalynabär och kretsbanor över stadens silhuett."

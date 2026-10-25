@@ -52,7 +52,7 @@ defmodule Kalyna.Experience do
             assignment:
               "Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans.",
             benefit:
-              "Jag driver förbättringar i våra utvecklingsprocesser genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattar även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten.",
+              "Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattade även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten.",
             technologies: [
               "C#",
               ".NET",

@@ -33,7 +33,7 @@ defmodule Kalyna.ExperienceTest do
       assert carmenta =~ "https://carmenta.com/"
       assert carmenta =~ "/images/company_logo_carmenta.svg"
       assert carmenta =~ if(lang == "en", do: "2026–present", else: "2026–pågående")
-      assert carmenta =~ if(lang == "en", do: "Show more", else: "Visa mer")
+      assert carmenta =~ if(lang == "en", do: "Work at", else: "Om arbetet hos")
       assert carmenta =~ "content-company-1"
 
       for technology <- [".NET", "C#", "Docker", "Linux", "Windows"] do

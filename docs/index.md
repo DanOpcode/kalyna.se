@@ -2,7 +2,7 @@
 
 # Kalyna Solutions AB
 
-Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.
+Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.
 
 [Kontakta mig](<https://www.kalyna.se/#contact>)
 

@@ -7,7 +7,7 @@ defmodule Kalyna.PortfolioContent do
     dark_label: "Mörkt",
     logo_alt: "Kalyna Solutions AB logga",
     tagline:
-      "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.",
+      "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.",
     contact_heading: "Kontakta mig",
     learn_more_label: "Läs mer",
     portrait_alt: "Daniel Jonsson",

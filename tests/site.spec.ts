@@ -71,7 +71,7 @@ for (const language of ['sv', 'en']) {
     await expect(cards).toHaveCount(12);
     for (let index = 0; index < 12; index++) {
       await expect(cards.nth(index).locator('.company-content')).toHaveAttribute('id', `content-company-${index + 1}`);
-      await expect(cards.nth(index).locator('summary')).toContainText(language === 'en' ? 'Show more' : 'Visa mer');
+      await expect(cards.nth(index).locator('summary')).toContainText(language === 'en' ? 'Work at' : 'Om arbetet hos');
     }
     for (const card of await cards.all()) {
       const summary = card.locator('summary');

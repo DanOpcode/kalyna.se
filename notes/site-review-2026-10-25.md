@@ -37,7 +37,7 @@ Scope: branch starts at main 65783bb. Shared Elixir content/components remain au
 With NVDA + Firefox or VoiceOver + Safari, for each language and both themes:
 
 1. Tab from page start: skip link appears; Enter reaches main. Read title, H1, introduction and landmarks.
-2. Navigate summaries: hear “Visa mer om [company]” / “Show more about [company]”, collapsed. Enter and Space open; hear expanded. Read the panel, then close. Closed prose must disappear from reading/navigation. Open another company and confirm previous state updates. Tab/Shift+Tab retains logical focus without hidden stops.
+2. Navigate summaries: hear “Om arbetet hos [company]” / “Work at [company]”, collapsed. Enter and Space open; hear expanded. Read the panel, then close. Closed prose must disappear from reading/navigation. Open another company and confirm previous state updates. Tab/Shift+Tab retains logical focus without hidden stops.
 3. Read the Kalyna section: Ukrainian words/title use Ukrainian pronunciation where the installed voice supports it. Check portrait and linked project names.
 4. Tab through every link/select/summary in both directions, including section anchors; confirm visible, unobscured focus. Set theme using keyboard, switch language and reload.
 5. Use actual browser 400% zoom at 1280px and 200% text-only enlargement. Repeat spacing overrides and open the longest Consilium/Cellink cards; inspect after resize. Check no overlap/clipping/lost actions. Print preview all companies in Safari/Firefox too.
@@ -55,7 +55,7 @@ Carmenta remains deliberately factual and brief. Needed to expand it: approved a
 
 Personal/family/travel copy is unchanged: no authoritative newer owner statement exists in this repository. Owner should confirm whether annual travel, family wording, dates/current assignments, contact/profile URLs and the network description remain current.
 
-Do not create near-duplicate service/profile pages from this one-page portfolio. A future useful bilingual service page could explain C#/.NET maintenance/migrations, fullstack integrations and DevOps delivery, each with confirmed scope, process, typical deliverables and a real project example. Substantial Cellink/Consilium case studies could use existing assignment/contribution material as a starting point, but need owner-approved problem context, constraints, individual contribution, current disclosure permission, and demonstrable outcomes. Add translated navigation, self-canonicals and sitemap URLs only when publishing distinct substantial pages.
+Do not create near-duplicate service/profile pages from this one-page portfolio. A future useful bilingual service page could explain software maintenance/migrations, fullstack integrations and DevOps delivery, each with confirmed scope, process, typical deliverables and a real project example. Substantial Cellink/Consilium case studies could use existing assignment/contribution material as a starting point, but need owner-approved problem context, constraints, individual contribution, current disclosure permission, and demonstrable outcomes. Add translated navigation, self-canonicals and sitemap URLs only when publishing distinct substantial pages.
 
 ## Hosting follow-up (not applied)
 
@@ -86,3 +86,12 @@ Google documents [WebSite for site-name preferences](https://developers.google.c
 A standalone Person graph does not guarantee a person card, knowledge panel or rich result. Schema validity, supported-feature eligibility, indexing and actual display are separate. Rich Results Test does not cover every Schema.org type or site-name markup; “No eligible items” alone does not invalidate Person data. There is no verified evidence from this audit that ChatGPT consumes this graph or gives it extra visibility. Markdown and llms.txt are optional retrieval aids, not Google requirements or ranking promises.
 
 For the separate DanOpcode blog, recommend a future owner-reviewed sameAs identity link from its existing Person author to https://www.kalyna.se/#daniel-jonsson (and/or an author url to https://www.kalyna.se/#about). Keep the blog's own established author ID. No change to that repository is included here.
+
+
+## Owner review adjustments
+
+The opening and metadata now emphasize software/fullstack development, DevOps and technical leadership without foregrounding C#/.NET. Existing detailed biography and assignment technology lists retain factual language experience.
+
+Disclosure labels now visibly say “Om arbetet hos [company]” / “Work at [company]”, instead of generic “Visa mer” plus hidden context. Native summary is the disclosure's label, not a required prose synopsis.
+
+Company and Kvadrat logos retain empty alternatives because adjacent headings identify them; duplicating those names adds no information. The site-brand logo and linked project image retain useful alternatives.

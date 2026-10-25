@@ -35,7 +35,7 @@ Requests used curl's own identity or normal browser/Lighthouse user agents, not 
 
 ## Performance measurements
 
-Lighthouse **13.5.0**, temporary npm-exec installation outside the project, using existing VM Chromium **155.0.8059.12**. No separate Playwright/browser installation, project package or dependency upgrade. Exact settings, timestamps, request lists and tested URLs: [compact evidence JSON](performance-2026-10-25.json). HTML hashes identify the measured build; a subsequent formatter removed one blank line without changing behavior.
+Lighthouse **13.5.0**, temporary npm-exec installation outside the project, using existing VM Chromium **155.0.8059.12**. No separate Playwright/browser installation, project package or dependency upgrade. Exact settings, timestamps, request lists and tested URLs: [compact evidence JSON](performance-2026-10-25.json). HTML hashes identify the measured PR snapshot before the later owner-requested introduction and disclosure-label revisions; these scores are historical measurements, not a fresh measurement of the revised copy.
 
 | Single-navigation run | Performance | FCP | LCP | CLS | TBT |
 | --- | --- | --- | --- | --- | --- |

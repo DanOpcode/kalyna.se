@@ -78,7 +78,7 @@ defmodule Kalyna.ExperienceComponents do
       </div>
       <details class="experience-details" name="experience">
         <summary class="w-full bg-slate-50 dark:bg-slate-600 hover:bg-slate-100 dark:hover:bg-slate-500 text-slate-700 dark:text-white py-3 px-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer">
-          <span>{t(@lang, "Visa mer")}<span class="sr-only">{" "}{t(@lang, "om")} {t(@lang, @name)}</span></span>
+          <span>{t(@lang, "Om arbetet hos")} {t(@lang, @name)}</span>
           <span class="expand-icon" aria-hidden="true">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path

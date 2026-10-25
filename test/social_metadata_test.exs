@@ -11,8 +11,8 @@ defmodule Kalyna.SocialMetadataTest do
 
       title =
         if lang == "en",
-          do: "Daniel Jonsson – C#/.NET, full-stack & DevOps in Stockholm",
-          else: "Daniel Jonsson – C#/.NET, fullstack & DevOps i Stockholm"
+          do: "Daniel Jonsson – software developer in Stockholm",
+          else: "Daniel Jonsson – systemutvecklare i Stockholm"
 
       html =
         case unquote(source) do

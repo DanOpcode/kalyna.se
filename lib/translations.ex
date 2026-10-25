@@ -1,13 +1,13 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
-    "om" => "about",
+    "Om arbetet hos" => "Work at",
     "Hoppa till innehållet" => "Skip to content",
     "Se min LinkedIn-profil" => "View my LinkedIn profile",
     "Se min profil hos Kvadrat" => "View my Kvadrat profile",
     "Skogsolvon i blom" => "Viburnum in bloom",
-    "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans." =>
-      "I am Daniel Jonsson, a software developer and consultant through Kalyna Solutions AB in Stockholm. I help companies with C#/.NET, full-stack development, DevOps and technical team leadership, on site in the Stockholm area or remotely.",
+    "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans." =>
+      "I am Daniel Jonsson, a software developer and consultant through Kalyna Solutions AB in Stockholm. I help companies with full-stack development, DevOps and technical team leadership, on site in the Stockholm area or remotely.",
     "Ett av mina projekt" => "One of my projects",
     "Din dagliga dos tekniknyheter. För dig som bygger." =>
       "Your daily patch of tech news for people who build.",

@@ -1,9 +1,9 @@
 defmodule Kalyna.HomePage do
   use Tableau.Page,
     layout: Kalyna.RootLayout,
-    title: "Daniel Jonsson – C#/.NET, fullstack & DevOps i Stockholm",
+    title: "Daniel Jonsson – systemutvecklare i Stockholm",
     description:
-      "Daniel Jonsson, konsult genom Kalyna Solutions AB i Stockholm. C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning på plats eller på distans.",
+      "Daniel Jonsson, konsult genom Kalyna Solutions AB i Stockholm. Fullstack-utveckling, DevOps och teknisk teamledning på plats eller på distans.",
     permalink: "/",
     lang: "sv"
 

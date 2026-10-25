@@ -67,7 +67,15 @@ defmodule Kalyna.RootLayout do
                   |> URI.to_string(),
                 "sameAs" =>
                   Enum.map(
-                    [:kvadrat_profile_url, :mastodon_url, :linkedin_url],
+                    [
+                      :kvadrat_profile_url,
+                      :mastodon_url,
+                      :linkedin_url,
+                      :youtube_url,
+                      :x_url,
+                      :github_url,
+                      :blog_url
+                    ],
                     &Kalyna.PortfolioContent.value/1
                   )
               }

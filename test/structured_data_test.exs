@@ -29,10 +29,16 @@ defmodule Kalyna.StructuredDataTest do
       assert person["sameAs"] == [
                "https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/",
                "https://mastodon.social/@DanOpcode",
-               "https://linkedin.com/in/DanOpcode"
+               "https://linkedin.com/in/DanOpcode",
+               "https://www.youtube.com/@DanOpcode",
+               "https://x.com/DanOpcode",
+               "https://github.com/DanOpcode",
+               "https://www.danopcode.com/"
              ]
 
-      for profile <- person["sameAs"], do: assert(html =~ ~s(href="#{profile}"))
+      for key <- [:kvadrat_profile_url, :mastodon_url, :linkedin_url, :youtube_url, :blog_url] do
+        assert html =~ ~s(href="#{Kalyna.PortfolioContent.value(key)}")
+      end
     end
   end
 

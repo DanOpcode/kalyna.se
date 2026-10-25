@@ -43,57 +43,14 @@ git add docs/
 Review the generated diff before committing. Keep `config :tableau, :config, out_dir: "docs"`, the Tailwind output (`docs/css/site.css`), and the GitHub Pages source (`main`, `/docs`) aligned. Production builds remove the intermediate CSS file after embedding it in the HTML;
 do not commit a separate `docs/css/site.css`. The custom domain comes from `extra/CNAME`, which the build copies to `docs/CNAME`.
 
-## Agent discovery and content
+## Agent content
 
-Tableau's `Kalyna.AgentContentExtension` generates `/index.md` and `/en/index.md`
-directly from shared Elixir content during every Tableau build, including the
-development server. `Kalyna.PortfolioContent` holds the portfolio copy, links,
-images and Markdown document structure; the HTML components use the same copy
-and links. Assignment details come from `Kalyna.Experience` in both formats,
-and both use `Kalyna.Translations` for English. `Kalyna.PortfolioMarkdown` renders
-the Markdown without reading or converting HTML. Each homepage advertises its
-Markdown alternate and `/llms.txt` in its HTML head. No Python step or additional
-dependency is needed for agent content generation. Run `mix test` to validate it.
-
-`extra/robots.txt` publishes Content Signals allowing search, AI input and AI
-training. These are usage preferences; compliance depends on the crawler.
-See [Content Signals](https://contentsignals.org/).
-
-`extra/.well-known/agent-skills/read-kalyna-portfolio/SKILL.md` provides a
-portfolio-reading skill. The build publishes it with a v0.2.0 discovery index
-at `/.well-known/agent-skills/index.json` and computes its SHA-256 digest from
-the published bytes. Edit the source skill, then rebuild to refresh the digest.
-See the [discovery proposal](https://github.com/cloudflare/agent-skills-discovery-rfc).
-The extension writes `docs/.nojekyll` so Pages serves Markdown and dot-directories
-unchanged instead of processing them with Jekyll.
-
-The following scanner checks do not apply to the current public static portfolio:
-
-| Feature | Reason it is not published |
-| --- | --- |
-| API catalog / OpenAPI | The site exposes no API to describe. |
-| Auth.md / OAuth discovery | There is no agent registration, login, or credential provisioning service. |
-| A2A Agent Card | There is no running A2A agent or protocol endpoint. |
-| MCP Server Card | There is no MCP server or transport endpoint. |
-| HTTP Link response headers | GitHub Pages offers no repository configuration for custom response headers. HTML discovery links are published instead. |
-| Markdown content negotiation | GitHub Pages cannot switch a response based on the Accept header. Use the separate Markdown URLs. |
-
-Publishing placeholder cards would advertise unsupported services. GitHub Pages
-also cannot set `application/linkset+json` on an extensionless API catalog file.
-An edge proxy or a different host would be needed for custom HTTP headers and
-content negotiation; none is required for the implemented static features.
-
-After deployment, validate the public site with:
-
-```shell
-curl -X POST https://isitagentready.com/api/scan \
-  -H 'Content-Type: application/json' \
-  --data '{"url":"https://www.kalyna.se"}'
-```
-
-This scans the deployed site, so it cannot validate local changes before they
-are published. Markdown alternates do not satisfy a content-negotiation check,
-and unsupported service checks should not be expected to pass.
+Tableau generates Markdown pages and discovery files automatically. Edit portfolio
+copy and links in `lib/portfolio_content.ex`, experience in `lib/experience.ex`,
+and English translations in `lib/translations.ex`. Content Signals live in
+`extra/robots.txt`; the published skill lives in `extra/.well-known/agent-skills/`.
+Rebuild with `MIX_ENV=prod mix build` and include the generated `docs/` changes.
+Keep `docs/.nojekyll` so GitHub Pages publishes these files unchanged.
 
 ## Tests
 

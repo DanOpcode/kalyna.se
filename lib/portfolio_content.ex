@@ -107,6 +107,8 @@ defmodule Kalyna.PortfolioContent do
     mastodon_url: "https://mastodon.social/@DanOpcode",
     linkedin_heading: "LinkedIn",
     linkedin_url: "https://linkedin.com/in/DanOpcode",
+    github_url: "https://github.com/DanOpcode",
+    x_url: "https://x.com/DanOpcode",
     blog_url: "https://www.danopcode.com/",
     youtube_heading: "YouTube",
     youtube_url: "https://www.youtube.com/@DanOpcode",

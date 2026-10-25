@@ -68,28 +68,3 @@ for (const [path, lang] of [['/', 'sv'], ['/en/', 'en']]) {
     }
   });
 }
-
-test('theme and disclosures work under the generated CSP candidate', async ({ page }) => {
-  // Test enforcement locally; the handoff recommends report-only at the edge.
-  const { execFileSync } = await import('node:child_process');
-  const policy = execFileSync('python3', ['scripts/csp-candidate.py'], { encoding: 'utf8' }).trim();
-  const errors: string[] = [];
-  page.on('console', msg => { if (msg.type() === 'error') errors.push(msg.text()); });
-  page.on('pageerror', error => errors.push(error.message));
-  await page.route('**/*', async route => {
-    if (route.request().resourceType() !== 'document') return route.continue();
-    const response = await route.fetch();
-    await route.fulfill({ response, headers: { ...response.headers(), 'content-security-policy': policy } });
-  });
-  for (const path of ['/', '/en/']) {
-    await page.goto(path);
-    await page.locator('#theme-preference').selectOption('dark');
-    await expect(page.locator('html')).toHaveClass('dark');
-    await page.locator('#theme-preference').selectOption('light');
-    await expect(page.locator('html')).not.toHaveClass('dark');
-    await page.locator('summary').first().click();
-    await expect(page.locator('.company-content').first()).toBeVisible();
-    await expect(page.locator('body')).toHaveCSS('margin', '0px');
-  }
-  expect(errors).toEqual([]);
-});

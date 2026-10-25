@@ -44,7 +44,10 @@ defmodule Kalyna.RootLayout do
                 "name" => "Kalyna Solutions AB",
                 "url" => "#{base_url}/",
                 "logo" => URI.merge(base_url, "/images/favicon-512x512.png") |> URI.to_string(),
-                "email" => "daniel@kalyna.se"
+                "email" => Kalyna.PortfolioContent.value(:email_address),
+                "legalName" => Kalyna.PortfolioContent.value(:company_name),
+                "vatID" => Kalyna.PortfolioContent.value(:company_vat),
+                "telephone" => Kalyna.PortfolioContent.value(:phone_number)
               },
               %{
                 "@type" => "WebSite",
@@ -59,11 +62,13 @@ defmodule Kalyna.RootLayout do
                 "@type" => "Person",
                 "@id" => "#{base_url}/#daniel-jonsson",
                 "name" => "Daniel Jonsson",
+                "alternateName" => "DanOpcode",
+                "description" => Kalyna.PortfolioContent.copy(lang, :tagline),
                 "url" => "#{base_url}/#about",
                 "jobTitle" => Kalyna.PortfolioContent.copy(lang, :developer_role),
                 "worksFor" => %{"@id" => "#{base_url}/#organization"},
                 "image" =>
-                  URI.merge(base_url, Kalyna.PortfolioContent.value(:portrait_one_src))
+                  URI.merge(base_url, "/images/profile1-576.webp")
                   |> URI.to_string(),
                 "sameAs" =>
                   Enum.map(
@@ -92,7 +97,6 @@ defmodule Kalyna.RootLayout do
         <script>
           <%= Phoenix.HTML.raw(@theme_script) %>
         </script>
-        <meta http_equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>{@title}</title>
@@ -156,7 +160,8 @@ defmodule Kalyna.RootLayout do
       </head>
 
       <body>
-        <main>
+        <a class="skip-link" href="#main">{t(@lang, "Hoppa till innehållet")}</a>
+        <main id="main" tabindex="-1">
           {render(@inner_content)}
         </main>
       </body>

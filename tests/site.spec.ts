@@ -51,7 +51,7 @@ for (const language of ['sv', 'en']) {
       await expect(portrait).toHaveAttribute('srcset', `/images/profile${index + 1}.webp 192w, /images/profile${index + 1}-384.webp 384w, /images/profile${index + 1}-576.webp 576w`);
       await expectPortraitResource(portrait, index, await page.evaluate(() => window.devicePixelRatio));
     }
-    const logo = page.getByRole('img', { name: /Carmenta/ });
+    const logo = page.locator('#company-1 img');
     await expect(logo).toHaveCSS('filter', 'none');
     await expect(logo.locator('..')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
     await expect(page.locator('body')).toHaveJSProperty('scrollWidth', await page.locator('body').evaluate(el => el.clientWidth));
@@ -71,26 +71,25 @@ for (const language of ['sv', 'en']) {
     await expect(cards).toHaveCount(12);
     for (let index = 0; index < 12; index++) {
       await expect(cards.nth(index).locator('.company-content')).toHaveAttribute('id', `content-company-${index + 1}`);
-      await expect(cards.nth(index).getByRole('button')).toHaveAttribute('onclick', `toggleCompany('company-${index + 1}')`);
+      await expect(cards.nth(index).locator('summary')).toContainText(language === 'en' ? 'Show more' : 'Visa mer');
     }
-    await expect(cards.first().getByRole('img', { name: /Carmenta/ })).toBeVisible();
-    const more = language === 'en' ? 'Show more' : 'Visa mer';
-    const less = language === 'en' ? 'Show less' : 'Visa mindre';
-    const first = page.locator('.company-item').filter({ has: page.locator('#content-company-1') }).getByRole('button');
-    await first.click();
-    await expect(first).toHaveText(less);
-    await expect(cards.first().getByText(language === 'en' ? 'I work with DevOps at Carmenta.' : 'Jag arbetar med DevOps hos Carmenta.', { exact: true })).toBeVisible();
-    for (const technology of ['.NET', 'C#', 'Docker', 'Linux', 'Windows']) {
-      await expect(cards.first().getByText(technology, { exact: true })).toBeVisible();
+    for (const card of await cards.all()) {
+      const summary = card.locator('summary');
+      const panel = card.locator('.company-content');
+      await expect(panel).not.toBeVisible();
+      await summary.focus();
+      await page.keyboard.press('Enter');
+      await expect(card.locator('details')).toHaveAttribute('open', '');
+      await expect(panel).toBeVisible();
+      await expect(summary).toBeFocused();
+      await page.keyboard.press('Space');
+      await expect(panel).not.toBeVisible();
+      await summary.click();
+      await expect(panel).toBeVisible();
     }
-    const panel = page.locator('#content-company-1');
-    await expect.poll(() => panel.evaluate(el => el.clientHeight)).toBeGreaterThan(0);
-    await page.getByRole('button', { name: more, exact: true }).first().click();
-    await expect(first).toHaveText(more);
-    await expect.poll(() => panel.evaluate(el => el.clientHeight)).toBe(0);
-    const open = page.getByRole('button', { name: less, exact: true });
-    await open.click();
-    await expect(page.getByRole('button', { name: less, exact: true })).toHaveCount(0);
+    await page.locator('#company-1 summary').click();
+    await expect(page.locator('#company-12 .company-content')).not.toBeVisible();
+
   });
 }
 
@@ -101,7 +100,7 @@ test('theme follows the system and remembers explicit choices across languages',
   const select = page.locator('#theme-preference');
   await expect(select).toHaveValue('system');
   await expect(html).toHaveClass('dark');
-  await expect(page.getByRole('img', { name: /Carmenta/ }).locator('..')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(page.locator('#company-1 img').locator('..')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
   await page.emulateMedia({ colorScheme: 'light' });
   await expect(html).not.toHaveClass('dark');
   await select.selectOption('dark');
@@ -169,7 +168,7 @@ test.describe('without JavaScript', () => {
   test('both languages retain their production styles', async ({ page }) => {
     for (const path of ['/', '/en/']) {
       await page.goto(path);
-      await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toHaveCSS('font-size', '48px');
+      await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toHaveCSS('font-size', (page.viewportSize()?.width ?? 1280) < 640 ? '30px' : '48px');
       await expect(page.locator('link[rel="stylesheet"]')).toHaveCount(0);
     }
   });

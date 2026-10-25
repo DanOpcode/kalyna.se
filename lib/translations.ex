@@ -1,6 +1,13 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
+    "om" => "about",
+    "Hoppa till innehållet" => "Skip to content",
+    "Se min LinkedIn-profil" => "View my LinkedIn profile",
+    "Se min profil hos Kvadrat" => "View my Kvadrat profile",
+    "Skogsolvon i blom" => "Viburnum in bloom",
+    "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans." =>
+      "I am Daniel Jonsson, a software developer and consultant through Kalyna Solutions AB in Stockholm. I help companies with C#/.NET, full-stack development, DevOps and technical team leadership, on site in the Stockholm area or remotely.",
     "Ett av mina projekt" => "One of my projects",
     "Din dagliga dos tekniknyheter. För dig som bygger." =>
       "Your daily patch of tech news for people who build.",
@@ -45,8 +52,8 @@ defmodule Kalyna.Translations do
     "Visa mer" => "Show more",
     "Uppdrag" => "Assignment",
     "Nytta" => "Contribution",
-    "Jag driver förbättringar i våra utvecklingsprocesser genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattar även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten." =>
-      "I improve development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involves programming in C# and .NET, reviewing code and working with business stakeholders.",
+    "Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattade även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten." =>
+      "I improved development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involved programming in C# and .NET, reviewing code and working with business stakeholders.",
     "Tekniker" => "Technologies",
     "Lead-utvecklare • Konsultuppdrag • 2023–pågående" =>
       "Lead developer • Consulting assignment • 2023–present",

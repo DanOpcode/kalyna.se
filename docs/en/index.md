@@ -2,13 +2,13 @@
 
 # Kalyna Solutions AB
 
-Expertise in software development and technical leadership.
+I am Daniel Jonsson, a software developer and consultant through Kalyna Solutions AB in Stockholm. I help companies with C#/.NET, full-stack development, DevOps and technical team leadership, on site in the Stockholm area or remotely.
 
 [Contact me](<https://www.kalyna.se/en/#contact>)
 
 [Read more](<https://www.kalyna.se/en/#about>)
 
-![Portrait](<https://www.kalyna.se/images/profile1.webp>)
+![Daniel Jonsson](<https://www.kalyna.se/images/profile1.webp>)
 
 ## About Daniel Jonsson
 
@@ -82,7 +82,7 @@ Developer at the Swedish Authority for Privacy Protection (IMY), working on DevO
 
 #### Contribution
 
-I improve development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involves programming in C# and .NET, reviewing code and working with business stakeholders.
+I improved development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involved programming in C# and .NET, reviewing code and working with business stakeholders.
 
 #### Technologies
 
@@ -340,7 +340,7 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 — Quote from a former colleague (translated from Swedish).
 
-![Portrait](<https://www.kalyna.se/images/profile2.webp>)
+![Daniel Jonsson](<https://www.kalyna.se/images/profile2.webp>)
 
 ## Outside work
 
@@ -359,7 +359,7 @@ When I am not coding, I am a family man, married to my wonderful wife and a prou
 
 Member of Kvadrat, Sweden's largest network of independent consultants helping companies and organisations change, with specialists in software development, digitalisation, information management, leadership and organisational and business development.
 
-[View my profile](<https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/>)
+[View my Kvadrat profile](<https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/>)
 
 ## Contact me
 
@@ -379,7 +379,7 @@ Do you have a need, a thought or an idea? You are welcome to contact me for any 
 
 ### LinkedIn
 
-[View profile](<https://linkedin.com/in/DanOpcode>)
+[View my LinkedIn profile](<https://linkedin.com/in/DanOpcode>)
 
 ## Content & community
 
@@ -395,7 +395,7 @@ Personal thoughts on life and technology in video form.
 
 [Watch videos](<https://www.youtube.com/@DanOpcode>)
 
-![Kalyna (viburnum) flower](<https://www.kalyna.se/images/kalyna.webp>)
+![Viburnum in bloom](<https://www.kalyna.se/images/kalyna.webp>)
 
 ## About Kalyna
 

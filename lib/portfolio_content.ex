@@ -6,10 +6,11 @@ defmodule Kalyna.PortfolioContent do
     light_label: "Ljust",
     dark_label: "Mörkt",
     logo_alt: "Kalyna Solutions AB logga",
-    tagline: "Expertis inom mjukvaruutveckling och teknisk ledning.",
+    tagline:
+      "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med C#/.NET, fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.",
     contact_heading: "Kontakta mig",
     learn_more_label: "Läs mer",
-    portrait_alt: "Profilbild",
+    portrait_alt: "Daniel Jonsson",
     about_heading: "Om Daniel Jonsson",
     about_background:
       "Jag är en systemutvecklare med 10+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i informationsteknik från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system.",
@@ -47,13 +48,13 @@ defmodule Kalyna.PortfolioContent do
     network_heading: "Del av Kvadrat",
     network_description:
       "Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling.",
-    kvadrat_profile_label: "Se min profil",
+    kvadrat_profile_label: "Se min profil hos Kvadrat",
     contact_description:
       "Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett anledning.",
     email_heading: "E-post",
     phone_heading: "Telefon",
     mastodon_label: "Följ mig på Mastodon",
-    linkedin_label: "Se profil",
+    linkedin_label: "Se min LinkedIn-profil",
     community_heading: "Innehåll & community",
     blog_heading: "Blogg",
     blog_description: "Personliga tankar om livet och teknik i textformat.",
@@ -112,7 +113,7 @@ defmodule Kalyna.PortfolioContent do
     blog_url: "https://www.danopcode.com/",
     youtube_heading: "YouTube",
     youtube_url: "https://www.youtube.com/@DanOpcode",
-    kalyna_image_alt: "Kalyna (viburnum) flower",
+    kalyna_image_alt: "Skogsolvon i blom",
     kalyna_image_src: "/images/kalyna.webp",
     plant_url: "https://sv.wikipedia.org/wiki/Skogsolvon",
     song_url: "https://sv.wikipedia.org/wiki/Ett_r%C3%B6tt_olvon_vid_%C3%A4ngen",

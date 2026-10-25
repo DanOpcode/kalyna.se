@@ -1,3 +1,51 @@
 @import "tailwindcss";
 @source not "../../tests";
 @custom-variant dark (&:where(.dark *));
+
+html { scroll-padding-block: 1.5rem; }
+body { margin: 0; }
+main, section, .company-item { min-width: 0; }
+a, p, h1, h2, h3, h4, h5, span { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 4px; }
+.dark :focus-visible { outline-color: #67e8f9; }
+.skip-link {
+  position: absolute; top: .5rem; left: .5rem; z-index: 10;
+  padding: .75rem 1rem; background: #fff; color: #0f172a;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+.section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.5rem; padding: 1.5rem; }
+.section-nav a { text-decoration: underline; padding-block: .5rem; color: #1d4ed8; }
+.dark .section-nav a { color: #93c5fd; }
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+details[open] > summary .expand-icon { transform: rotate(180deg); }
+.company-item { align-self: start; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+@media print {
+  details::details-content { display: block; content-visibility: visible; }
+  details > .company-content { display: block !important; }
+  .company-item { break-inside: avoid; }
+  summary, .section-nav, .skip-link { display: none !important; }
+}
+@media (forced-colors: active) {
+  :focus-visible { outline-color: Highlight; }
+  summary, select { border: 1px solid ButtonText; }
+}
+
+/* Text links are recognizable without relying on hue. */
+#contact a { text-decoration: underline; text-underline-offset: .2em; display: inline-block; padding-block: .25rem; }
+#daily-diff :focus-visible { outline-color: #67e8f9; }
+
+/* Allow content and controls to reflow when text is enlarged. */
+.grid > *, .flex > * { min-width: 0; }
+li { overflow-wrap: anywhere; }
+.settings-row > * { max-width: 100%; }
+.settings-row label { flex-wrap: wrap; padding-block: .5rem; }
+.settings-row select { max-width: 100%; min-height: 1.75rem; }
+img { max-width: 100%; }
+img[src^="/images/profile"] { height: auto; aspect-ratio: 1; }
+body { overflow-wrap: anywhere; }
+.expand-icon { flex-shrink: 0; }

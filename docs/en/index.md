@@ -359,7 +359,7 @@ When I am not coding, I am a family man, married to my wonderful wife and a prou
 
 Member of Kvadrat, Sweden's largest network of independent consultants helping companies and organisations change, with specialists in software development, digitalisation, information management, leadership and organisational and business development.
 
-[View my Kvadrat profile](<https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/>)
+[View my Kvadrat profile](<https://anlita.kvadrat.se/daniel-jonsson>)
 
 ## Contact me
 

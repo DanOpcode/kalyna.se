@@ -39,7 +39,7 @@ defmodule Kalyna.StructuredDataTest do
       assert website["about"] == %{"@id" => person["@id"]}
 
       assert person["sameAs"] == [
-               "https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/",
+               "https://anlita.kvadrat.se/daniel-jonsson",
                "https://mastodon.social/@DanOpcode",
                "https://linkedin.com/in/DanOpcode",
                "https://www.youtube.com/@DanOpcode",

@@ -99,7 +99,7 @@ defmodule Kalyna.PortfolioContent do
     daily_diff_image_src: "/images/daily-diff.webp",
     portrait_two_src: "/images/profile2.webp",
     kvadrat_logo_src: "/images/kvadrat-logo.svg",
-    kvadrat_profile_url: "https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/",
+    kvadrat_profile_url: "https://anlita.kvadrat.se/daniel-jonsson",
     email_url: "mailto:daniel@kalyna.se",
     email_address: "daniel@kalyna.se",
     phone_url: "tel:+46707329868",

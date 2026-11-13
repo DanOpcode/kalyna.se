@@ -359,7 +359,7 @@ När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt 
 
 Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling.
 
-[Se min profil hos Kvadrat](<https://www.kvadrat.se/anlita-kvadrat/hitta-konsult/daniel-jonsson/>)
+[Se min profil hos Kvadrat](<https://anlita.kvadrat.se/daniel-jonsson>)
 
 ## Kontakta mig
 

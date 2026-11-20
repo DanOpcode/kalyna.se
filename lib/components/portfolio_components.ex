@@ -124,7 +124,7 @@ defmodule Kalyna.PortfolioComponents do
           </h1>
         </div>
       </div>
-      <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-xl text-slate-600 dark:text-slate-200 max-w-2xl mx-auto leading-relaxed">
         {copy(@lang, :tagline)}
       </p>
       <p class="print-masthead print-contact">
@@ -132,20 +132,6 @@ defmodule Kalyna.PortfolioComponents do
         <span>{copy(@lang, :phone_number)}</span>
         <a href={if @lang == "en", do: "https://kalyna.se/en/", else: "https://kalyna.se/"}>kalyna.se</a>
       </p>
-      <div class="hero-actions flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href={value(:contact_fragment)}
-          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
-        >
-          {copy(@lang, :contact_heading)}
-        </a>
-        <a
-          href={value(:about_fragment)}
-          class="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 px-8 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-medium"
-        >
-          {copy(@lang, :learn_more_label)}
-        </a>
-      </div>
     </section>
     """
   end

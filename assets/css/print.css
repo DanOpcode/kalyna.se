@@ -19,7 +19,7 @@
   }
 
   .skip-link,
-  .portfolio :is(.settings-row, .section-nav, .hero-actions, summary, svg[aria-hidden="true"]) {
+  .portfolio :is(.settings-row, .section-nav, summary, svg[aria-hidden="true"]) {
     display: none !important;
   }
 

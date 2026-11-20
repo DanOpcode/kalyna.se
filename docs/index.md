@@ -417,7 +417,7 @@ Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för 
 - Sparande och finans
 - Self-hosting, Linux och öppen källkod
 - Funktionell programmering (Elixir)
-- Träning och hälsa, särskilt löpning
+- Löpning, träning och hälsa
 
 ![Kvadrat logga](<https://www.kalyna.se/images/kvadrat-logo.svg>)
 

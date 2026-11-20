@@ -417,7 +417,7 @@ I’m married and a dad to two daughters. Every year we travel to Ukraine to vis
 - Saving and finance
 - Self-hosting, Linux and open source
 - Functional programming (Elixir)
-- Exercise and health, especially running
+- Running, exercise and health
 
 ![Kvadrat logo](<https://www.kalyna.se/images/kvadrat-logo.svg>)
 

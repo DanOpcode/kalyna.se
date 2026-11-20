@@ -90,7 +90,7 @@ I contribute through hands-on development, implementation decisions and support 
 
 #### Technologies
 
-C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, Windows 11, Visual Studio, agile methods (Scrum)
+C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, GitHub, GitHub Actions, Windows 11, Visual Studio, Rider, ChatGPT Codex, Claude Code, agentic development, agile methods (Scrum)
 
 ![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
@@ -110,7 +110,7 @@ I improved development processes by optimising Azure DevOps workflows and contri
 
 #### Technologies
 
-C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST APIs, Git, agile methods (Scrum), Visual Studio, Windows 10
+C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST APIs, Git, ChatGPT, agile methods (Scrum), Visual Studio, Windows 10
 
 ![Altero Consulting logo](<https://www.kalyna.se/images/company_logo_altero.webp>)
 

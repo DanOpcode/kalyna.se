@@ -81,8 +81,14 @@ defmodule Kalyna.Experience do
               "HTTP",
               "REST API",
               "Git",
+              "GitHub",
+              "GitHub Actions",
               "Windows 11",
               "Visual Studio",
+              "Rider",
+              "ChatGPT Codex",
+              "Claude Code",
+              "agentisk utveckling",
               "agila metoder (Scrum)"
             ]
           }
@@ -121,6 +127,7 @@ defmodule Kalyna.Experience do
               "SQL Server Management Studio (SSMS)",
               "REST API:er",
               "Git",
+              "ChatGPT",
               "agila metoder (Scrum)",
               "Visual Studio",
               "Windows 10"

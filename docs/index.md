@@ -236,7 +236,7 @@ Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig p
 
 ![Lab Gruppen logga](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
 
-### [Lab Gruppen](<https://labgruppen.com/en>)
+### [Lab Gruppen](<https://labgruppen.com/>)
 
 Systemutvecklare • Konsultuppdrag • 2020–2020
 

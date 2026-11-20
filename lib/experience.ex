@@ -399,7 +399,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-9",
         name: "Lab Gruppen",
-        url: "https://labgruppen.com/en",
+        url: "https://labgruppen.com/",
         summary: "Systemutvecklare • Konsultuppdrag • 2020–2020",
         logo: %{
           src: "/images/company_logo_labgruppen.webp",

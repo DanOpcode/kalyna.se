@@ -236,7 +236,7 @@ Worked as an on-call security guard. Avarn's planners offered shifts when staff 
 
 ![Lab Gruppen logo](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
 
-### [Lab Gruppen](<https://labgruppen.com/en>)
+### [Lab Gruppen](<https://labgruppen.com/>)
 
 Software developer • Consulting assignment • 2020–2020
 

@@ -256,3 +256,39 @@ for (const language of ['sv', 'en']) {
     });
   }
 }
+
+test('suggests English without redirecting and remembers dismissal', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { value: ['fr-FR', 'en-GB', 'sv-SE'] });
+  });
+  await page.goto('/');
+  const suggestion = page.getByRole('complementary', { name: 'Language suggestion' });
+  await expect(suggestion).toBeVisible();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'sv');
+  await suggestion.getByRole('button', { name: 'Stay in Swedish' }).click();
+  await expect(suggestion).toBeHidden();
+  await expect(page.getByRole('link', { name: '🇸🇪 Svenska' })).toBeFocused();
+  await page.reload();
+  await expect(suggestion).toBeHidden();
+});
+
+test('switches to English on request and respects a later switch back', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { value: ['de-DE'] });
+  });
+  await page.goto('/');
+  await page.getByRole('link', { name: 'Switch to English' }).click();
+  await expect(page).toHaveURL('/en/');
+  await expect(page.locator('#language-suggestion')).toBeHidden();
+  await page.getByRole('link', { name: '🇸🇪 Svenska' }).click();
+  await expect(page).toHaveURL('/');
+  await expect(page.locator('#language-suggestion')).toBeHidden();
+});
+
+test('keeps the suggestion hidden when Swedish ranks above English', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { value: ['fi-FI', 'sv-FI', 'en-GB'] });
+  });
+  await page.goto('/');
+  await expect(page.locator('#language-suggestion')).toBeHidden();
+});

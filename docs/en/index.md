@@ -116,7 +116,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 Software developer • Consulting assignment • 2022–2025
 
-Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.
+Altero Consulting advises on organizational development, manages projects for administrative functions, and helps businesses outsource finance operations.
 
 #### Assignment
 

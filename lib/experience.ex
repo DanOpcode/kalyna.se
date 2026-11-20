@@ -141,7 +141,7 @@ defmodule Kalyna.Experience do
           monochrome: false
         },
         description:
-          "Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data.",
+          "Altero Consulting erbjuder rådgivning inom organisationsutveckling, leder projekt inom administration och hjälper företag att lägga ut ekonomifunktioner.",
         projects: [
           %{
             title: nil,

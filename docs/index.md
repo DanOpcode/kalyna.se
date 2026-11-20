@@ -116,7 +116,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 Systemutvecklare • Konsultuppdrag • 2022–2025
 
-Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data.
+Altero Consulting erbjuder rådgivning inom organisationsutveckling, leder projekt inom administration och hjälper företag att lägga ut ekonomifunktioner.
 
 #### Uppdrag
 

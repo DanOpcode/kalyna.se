@@ -28,8 +28,8 @@ defmodule Kalyna.Translations do
       "The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.",
     "Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden." =>
       "Re:it helps organizations digitize their operations with tailored online services, system integrations, and workflow automation.",
-    "Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data." =>
-      "Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.",
+    "Altero Consulting erbjuder rådgivning inom organisationsutveckling, leder projekt inom administration och hjälper företag att lägga ut ekonomifunktioner." =>
+      "Altero Consulting advises on organizational development, manages projects for administrative functions, and helps businesses outsource finance operations.",
     "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor." =>
       "IdAgree develops a service for creating digital receipts for second-hand purchases.",
     "Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys." =>

@@ -385,9 +385,16 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description:
-          "Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid.",
-        projects: []
+        description: "Avarn Security erbjuder bevakning, larmtjänster och säkerhetsteknik.",
+        projects: [
+          %{
+            title: nil,
+            assignment:
+              "Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid.",
+            benefit: nil,
+            technologies: []
+          }
+        ]
       },
       %{
         id: "company-9",
@@ -402,7 +409,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Lab Gruppen utvecklar professionella effektförstärkare för turnéer och fasta ljudinstallationer.",
         projects: [
           %{
             title: nil,

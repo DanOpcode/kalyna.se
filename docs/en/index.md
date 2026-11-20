@@ -228,6 +228,10 @@ C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP,
 
 Security guard • On-call employee • 2020–2021
 
+Avarn Security provides guarding, alarm services, and security technology.
+
+#### Assignment
+
 Worked as an on-call security guard. Avarn's planners offered shifts when staff were needed, so the duties varied. Assignments included night shifts outside a hospital's emergency ambulance entrance, at an outdoor swimming pool and on a construction site, evening shifts in shopping centres, and daytime guarding outside a detention centre.
 
 ![Lab Gruppen logo](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
@@ -235,6 +239,8 @@ Worked as an on-call security guard. Avarn's planners offered shifts when staff 
 ### Lab Gruppen
 
 Software developer • Consulting assignment • 2020–2020
+
+Lab Gruppen develops professional power amplifiers for touring and fixed sound installations.
 
 #### Assignment
 

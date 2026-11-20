@@ -15,6 +15,16 @@ defmodule Kalyna.Translations do
       "I conducted feasibility studies and estimated effort for new projects. I designed and built applications from scratch, added features to existing products, and independently maintained large legacy applications. I handled client communication directly on my projects. I planned and assigned work for junior colleagues and reviewed what they delivered. I also handled the technical questions in some job interviews and helped new colleagues set up their development environments.",
     "inbyggda system" => "embedded systems",
     "webbutveckling" => "web development",
+    "Vem håller ihop det tekniska?" => "Who keeps the technical work on track?",
+    "I ett litet produktteam är det ofta samma personer som ska bygga nästa version, stötta kollegorna och fatta beslut om hur systemet ska utvecklas. När nästa leverans tar all tid blir de större teknikfrågorna lätt liggande. Under tiden behöver teamet bygga vidare på beslut som ännu inte är fattade." =>
+      "In a small product team, the same people often build the next release, support their teammates and decide how the system should evolve. When the next release takes up all their time, bigger technical questions can get put off. Meanwhile, the team has to keep building before those decisions are settled.",
+    "Jag går in i teamet och tar ansvar för att reda ut de frågorna och få besluten på plats. Tillsammans med er avgör jag vad som behöver lösas nu, vad som kan vänta och hur vi delar upp arbetet. Sedan är jag med och bygger. Beroende på var teamet behöver mig kan jag jobba med allt från arkitektur och utveckling till tester och driftsättning." =>
+      "I join your team and take responsibility for working through those questions and making sure decisions are made. Together we work out what to tackle now, what can wait and how to break up the work. Then I help build it. I can work wherever the team needs me, from architecture and development to testing and deployment.",
+    "Prata med mig om ert team" => "Talk to me about your team",
+    "Exempel från Consilium" => "Example from Consilium",
+    "Jag tog fram arkitekturen för ett konfigurationsverktyg, höll i kunddialogen och byggde stora delar av verktyget tillsammans med teamet. Jag var med från förstudien till överlämningen." =>
+      "I designed the architecture for a configuration tool, led discussions with the client and built much of the tool with the team. I was involved from the initial study through to handover.",
+    "Läs om uppdraget hos Consilium" => "Read about the Consilium assignment",
     "Hoppa till innehållet" => "Skip to content",
     "Se min LinkedIn-profil" => "View my LinkedIn profile",
     "Se min profil hos Kvadrat" => "View my Kvadrat profile",

@@ -8,6 +8,20 @@ I am Daniel Jonsson, a software developer and consultant through Kalyna Solution
 
 [Read more](<https://www.kalyna.se/en/#about>)
 
+## Who keeps the technical work on track?
+
+In a small product team, the same people often build the next release, support their teammates and decide how the system should evolve. When the next release takes up all their time, bigger technical questions can get put off. Meanwhile, the team has to keep building before those decisions are settled.
+
+I join your team and take responsibility for working through those questions and making sure decisions are made. Together we work out what to tackle now, what can wait and how to break up the work. Then I help build it. I can work wherever the team needs me, from architecture and development to testing and deployment.
+
+[Talk to me about your team](<https://www.kalyna.se/en/#contact>)
+
+### Example from Consilium
+
+I designed the architecture for a configuration tool, led discussions with the client and built much of the tool with the team. I was involved from the initial study through to handover.
+
+[Read about the Consilium assignment](<https://www.kalyna.se/en/#company-11>)
+
 ![Daniel Jonsson](<https://www.kalyna.se/images/profile1.webp>)
 
 ## About Daniel Jonsson

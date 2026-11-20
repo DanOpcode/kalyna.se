@@ -45,7 +45,7 @@ defmodule Kalyna.Experience do
         ]
       },
       %{
-        id: "company-3",
+        id: "company-2",
         name: "Re:it",
         url: nil,
         summary: "Lead-utvecklare • Konsultuppdrag • 2023–pågående",
@@ -89,7 +89,7 @@ defmodule Kalyna.Experience do
         ]
       },
       %{
-        id: "company-2",
+        id: "company-3",
         name: "Integritetsskyddsmyndigheten",
         url: nil,
         summary: "DevOps • Konsultuppdrag • 2024–2026",

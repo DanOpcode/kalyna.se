@@ -45,7 +45,7 @@ defmodule Kalyna.ExperienceTest do
         |> List.flatten()
         |> Enum.map(&String.to_integer/1)
 
-      assert panel_numbers == [1, 3, 2 | Enum.to_list(4..12)]
+      assert panel_numbers == Enum.to_list(1..12)
     end
   end
 end

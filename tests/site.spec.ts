@@ -70,7 +70,7 @@ for (const language of ['sv', 'en']) {
     const cards = page.locator('.company-item');
     await expect(cards).toHaveCount(12);
     await expect(cards.nth(1).locator('h3')).toHaveText('Re:it');
-    await expect(cards.nth(2)).toHaveAttribute('id', 'company-2');
+    await expect(cards.nth(2)).toHaveAttribute('id', 'company-3');
     for (const card of await cards.all()) {
       const id = await card.getAttribute('id');
       await expect(card.locator('.company-content')).toHaveAttribute('id', `content-${id}`);

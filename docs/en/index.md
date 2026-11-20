@@ -72,26 +72,6 @@ My work includes on-site deployment at customer locations, integration testing, 
 
 .NET, C#, Docker, Podman, Linux, Windows, Visual Studio, Ansible, VMware, WSL, SQL, PostgreSQL, GitLab, agile methods (Scrum)
 
-![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
-
-### Swedish Authority for Privacy Protection
-
-DevOps • Consulting assignment • 2024–2026
-
-The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.
-
-#### Assignment
-
-Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We built a variety of applications in a cross-functional team.
-
-#### Contribution
-
-I improved development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involved programming in C# and .NET, reviewing code and working with business stakeholders.
-
-#### Technologies
-
-C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST APIs, Git, agile methods (Scrum), Visual Studio, Windows 10
-
 ![Re:it logo](<https://www.kalyna.se/images/company_logo_reit.svg>)
 
 ### Re:it
@@ -111,6 +91,26 @@ I contribute through hands-on development, implementation decisions and support 
 #### Technologies
 
 C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, Windows 11, Visual Studio, agile methods (Scrum)
+
+![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
+
+### Swedish Authority for Privacy Protection
+
+DevOps • Consulting assignment • 2024–2026
+
+The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.
+
+#### Assignment
+
+Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We built a variety of applications in a cross-functional team.
+
+#### Contribution
+
+I improved development processes by optimising Azure DevOps workflows and contributing to technical decisions. My role also involved programming in C# and .NET, reviewing code and working with business stakeholders.
+
+#### Technologies
+
+C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST APIs, Git, agile methods (Scrum), Visual Studio, Windows 10
 
 ![Altero Consulting logo](<https://www.kalyna.se/images/company_logo_altero.webp>)
 

@@ -20,7 +20,7 @@ defmodule Kalyna.ExperienceTest do
 
       cards = Regex.split(~r/<div\s+id="company-\d+"/, html) |> tl()
       assert length(cards) == 12
-      imy = Enum.at(cards, 1)
+      imy = Enum.at(cards, 2)
       altero = Enum.at(cards, 3)
       assert imy =~ "2024–2026"
       assert altero =~ "2022–2025"

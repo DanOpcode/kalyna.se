@@ -7,7 +7,7 @@ defmodule Kalyna.Experience do
         id: "company-1",
         name: "Carmenta",
         url: "https://carmenta.com/",
-        summary: "DevOps • 2026–pågående",
+        summary: "DevOps • Konsultuppdrag • 2026–pågående",
         logo: %{
           src: "/images/company_logo_carmenta.svg",
           width: 512,

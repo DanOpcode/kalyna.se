@@ -56,7 +56,7 @@ Företag jag arbetat med.
 
 ### [Carmenta](<https://carmenta.com/>)
 
-DevOps • 2026–pågående
+DevOps • Konsultuppdrag • 2026–pågående
 
 #### Uppdrag
 

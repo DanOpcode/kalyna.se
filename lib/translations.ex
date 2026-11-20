@@ -20,7 +20,7 @@ defmodule Kalyna.Translations do
     "Tema" => "Theme",
     "Ljust" => "Light",
     "Mörkt" => "Dark",
-    "DevOps • 2026–pågående" => "DevOps • 2026–present",
+    "DevOps • Konsultuppdrag • 2026–pågående" => "DevOps • Consulting assignment • 2026–present",
     "Jag arbetar med DevOps på Windows och Linux, där jag arbetar med pipelines, kontinuerlig integration (CI) och containrar med Docker och Podman. Jag arbetar också med fullstackutveckling i C# och .NET med tyngdpunkt på backend." =>
       "I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.",
     "Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning." =>

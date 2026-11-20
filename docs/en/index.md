@@ -56,7 +56,7 @@ Companies I have worked with.
 
 ### [Carmenta](<https://carmenta.com/>)
 
-DevOps • 2026–present
+DevOps • Consulting assignment • 2026–present
 
 #### Assignment
 

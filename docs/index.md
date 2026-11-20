@@ -410,7 +410,7 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Utanför jobbet
 
-Jag är gift och pappa till två döttrar. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.
+Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för att besöka min frus familj. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.
 
 ### Personliga intressen
 

@@ -192,8 +192,8 @@ defmodule Kalyna.Translations do
     "— Citat från tidigare kollega." =>
       "— Quote from a former colleague (translated from Swedish).",
     "Utanför jobbet" => "Outside work",
-    "Jag är gift och pappa till två döttrar. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster." =>
-      "I’m married and a dad to two daughters. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.",
+    "Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för att besöka min frus familj. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster." =>
+      "I’m married and a dad to two daughters. Every year we travel to Ukraine to visit my wife’s family. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.",
     "Personliga intressen" => "Personal interests",
     "Sparande och finans" => "Saving and finance",
     "Self-hosting, Linux och öppen källkod" => "Self-hosting, Linux and open source",

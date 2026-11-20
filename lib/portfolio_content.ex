@@ -48,7 +48,7 @@ defmodule Kalyna.PortfolioContent do
     testimonial_attribution: "— Citat från tidigare kollega.",
     personal_heading: "Utanför jobbet",
     personal_background:
-      "Jag är gift och pappa till två döttrar. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.",
+      "Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för att besöka min frus familj. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.",
     interests_heading: "Personliga intressen",
     finance_interest: "Sparande och finans",
     self_hosting_interest: "Self-hosting, Linux och öppen källkod",

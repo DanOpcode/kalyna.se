@@ -410,7 +410,7 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Outside work
 
-I’m married and a dad to two daughters. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.
+I’m married and a dad to two daughters. Every year we travel to Ukraine to visit my wife’s family. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.
 
 ### Personal interests
 

@@ -17,7 +17,13 @@ for (const lang of ['sv', 'en']) {
     await expect(page.locator('body')).toHaveJSProperty('scrollWidth', 320);
     await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
     await expect(page.locator('body')).toHaveJSProperty('scrollWidth', 320);
-    await page.emulateMedia({ media: 'print' });
+    await page.reload();
+    await expect(page.locator('details[open]')).toHaveCount(0);
+    await page.emulateMedia({ media: 'print', colorScheme: 'dark' });
+    await expect(page.locator('.print-contact')).toBeVisible();
+    await expect(page.locator('.settings-row')).toBeHidden();
+    await expect(page.locator('.section-nav')).toBeHidden();
+    for (const summary of await page.locator('summary').all()) await expect(summary).toBeHidden();
     for (const panel of await page.locator('.company-content').all()) await expect(panel).toBeVisible();
     await context.close();
   });

@@ -48,12 +48,12 @@ defmodule Kalyna.PortfolioContent do
     testimonial_attribution: "— Citat från tidigare kollega.",
     personal_heading: "Utanför jobbet",
     personal_background:
-      "När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj.",
+      "Jag är gift och pappa till två döttrar. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.",
     interests_heading: "Personliga intressen",
     finance_interest: "Sparande och finans",
     self_hosting_interest: "Self-hosting, Linux och öppen källkod",
     elixir_interest: "Funktionell programmering (Elixir)",
-    health_interest: "Träning och hälsa",
+    health_interest: "Löpning",
     kvadrat_logo_alt: "Kvadrat logga",
     network_heading: "Del av Kvadrat",
     network_description:

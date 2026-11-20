@@ -410,14 +410,14 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Outside work
 
-When I am not coding, I am a family man, married to my wonderful wife and a proud father to our daughter. Every year we travel to Ukraine, even during the war, to visit my wife's family.
+I’m married and a dad to two daughters. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.
 
 ### Personal interests
 
 - Saving and finance
 - Self-hosting, Linux and open source
 - Functional programming (Elixir)
-- Exercise and health
+- Running
 
 ![Kvadrat logo](<https://www.kalyna.se/images/kvadrat-logo.svg>)
 

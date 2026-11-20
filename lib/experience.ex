@@ -56,7 +56,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet.",
         projects: [
           %{
             title: nil,
@@ -95,7 +96,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: true
         },
-        description: nil,
+        description:
+          "Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans.",
         projects: [
           %{
             title: nil,
@@ -138,7 +140,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data.",
         projects: [
           %{
             title: nil,
@@ -179,7 +182,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor.",
         projects: [
           %{
             title: nil,
@@ -223,7 +227,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering.",
         projects: [
           %{
             title: nil,
@@ -278,7 +283,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier.",
         projects: [
           %{
             title: "Teamledare",
@@ -427,7 +433,7 @@ defmodule Kalyna.Experience do
           fill: true,
           monochrome: false
         },
-        description: nil,
+        description: "Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning.",
         projects: [
           %{
             title: "iOS-app",
@@ -489,7 +495,8 @@ defmodule Kalyna.Experience do
           fill: true,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg.",
         projects: [
           %{
             title: "Windows-baserat konfigurationsprogram",
@@ -583,7 +590,7 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description: "Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer.",
         projects: [
           %{
             title: nil,

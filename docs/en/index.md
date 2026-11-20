@@ -76,6 +76,8 @@ My work includes on-site deployment at customer locations, integration testing, 
 
 DevOps • Consulting assignment • 2024–2026
 
+The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.
+
 #### Assignment
 
 Developer at the Swedish Authority for Privacy Protection (IMY), working on DevOps pipelines, application infrastructure and release management. We built a variety of applications in a cross-functional team.
@@ -93,6 +95,8 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 ### Re:it
 
 Lead developer • Consulting assignment • 2023–present
+
+Re:it develops applications in cross-functional teams with a focus on quality and continuous delivery.
 
 #### Assignment
 
@@ -112,6 +116,8 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 Software developer • Consulting assignment • 2022–2025
 
+Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.
+
 #### Assignment
 
 Develop a solution that consolidates data into a data warehouse.
@@ -129,6 +135,8 @@ SQL, SQL Server, SQL Server Management Studio (SSMS), SQL Server Integration Ser
 ### IdAgree
 
 Software developer • Co-founder • 2024–2024
+
+IdAgree develops a service for creating digital receipts for second-hand purchases.
 
 #### Assignment
 
@@ -148,6 +156,8 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 Software developer, scrum master • Employee • 2021–2022
 
+Carnegie is an investment bank with IT systems for integration, stock trading, and internal securities management.
+
 #### Assignment
 
 Developed integrations between back-office and trading systems, as well as internal applications used by brokers to manage customers' securities portfolios, in a team of four to five developers.
@@ -165,6 +175,8 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 ### Cellink
 
 Team leader, software developer • Consulting assignment • 2019–2021
+
+CELLINK develops instruments and software for bioprinting and laboratory automation.
 
 #### Team leader
 
@@ -240,6 +252,8 @@ C, Linux, real-time operating systems, Jira, Eclipse, agile methods (Kanban)
 
 Lead developer • Consulting assignment • 2017–2019
 
+Mentice develops medical simulators and software for clinical training.
+
 #### iOS app
 
 ##### Assignment
@@ -273,6 +287,8 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 ### Consilium Marine & Safety
 
 Team leader, lead developer, software developer • Consulting assignment • 2016–2020
+
+Consilium develops fire and gas detection systems and software for ships.
 
 #### Windows configuration application
 
@@ -321,6 +337,8 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 ### Ericsson
 
 Software developer • Employee • 2015–2016
+
+Ericsson builds network solutions and tools for telecommunications operators.
 
 #### Assignment
 

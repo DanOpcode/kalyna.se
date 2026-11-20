@@ -24,6 +24,24 @@ defmodule Kalyna.Translations do
       "I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.",
     "Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning." =>
       "My work includes on-site deployment at customer locations, integration testing, and development of web administration tools and installers. I also work on container management, installation, and logging.",
+    "Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet." =>
+      "The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.",
+    "Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans." =>
+      "Re:it develops applications in cross-functional teams with a focus on quality and continuous delivery.",
+    "Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data." =>
+      "Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.",
+    "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor." =>
+      "IdAgree develops a service for creating digital receipts for second-hand purchases.",
+    "Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering." =>
+      "Carnegie is an investment bank with IT systems for integration, stock trading, and internal securities management.",
+    "CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier." =>
+      "CELLINK develops instruments and software for bioprinting and laboratory automation.",
+    "Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning." =>
+      "Mentice develops medical simulators and software for clinical training.",
+    "Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg." =>
+      "Consilium develops fire and gas detection systems and software for ships.",
+    "Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer." =>
+      "Ericsson builds network solutions and tools for telecommunications operators.",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

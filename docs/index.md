@@ -76,6 +76,8 @@ Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationst
 
 DevOps • Konsultuppdrag • 2024–2026
 
+Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet.
+
 #### Uppdrag
 
 Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans.
@@ -93,6 +95,8 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 ### Re:it
 
 Lead-utvecklare • Konsultuppdrag • 2023–pågående
+
+Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans.
 
 #### Uppdrag
 
@@ -112,6 +116,8 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 Systemutvecklare • Konsultuppdrag • 2022–2025
 
+Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data.
+
 #### Uppdrag
 
 Utveckla en lösning som sammanställer data till ett datalager.
@@ -129,6 +135,8 @@ SQL, SQL Server, SQL Server Management Studio (SSMS), SQL Server Integration Ser
 ### IdAgree
 
 Systemutvecklare • Medgrundare • 2024–2024
+
+IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor.
 
 #### Uppdrag
 
@@ -148,6 +156,8 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 Systemutvecklare, scrum-master • Anställd • 2021–2022
 
+Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering.
+
 #### Uppdrag
 
 Vidareutveckling av integration mellan back office- och börshandelssystem, samt av system som används internt av mäklare för hantering av kunders värdepappersportföljer, i ett team med totalt 4-5 st utvecklare.
@@ -165,6 +175,8 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 ### Cellink
 
 Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021
+
+CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier.
 
 #### Teamledare
 
@@ -240,6 +252,8 @@ C, Linux, realtidsoperativsystem, Jira, Eclipse, agila metoder (Kanban)
 
 Lead-utvecklare • Konsultuppdrag • 2017–2019
 
+Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning.
+
 #### iOS-app
 
 ##### Uppdrag
@@ -273,6 +287,8 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 ### Consilium Marine & Safety
 
 Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
+
+Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg.
 
 #### Windows-baserat konfigurationsprogram
 
@@ -321,6 +337,8 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 ### Ericsson
 
 Systemutvecklare • Anställd • 2015–2016
+
+Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer.
 
 #### Uppdrag
 

@@ -483,7 +483,7 @@ defmodule Kalyna.PortfolioComponents do
         <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto">
           {copy(@lang, :contact_description)}
         </p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <!-- Email -->
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
@@ -513,6 +513,34 @@ defmodule Kalyna.PortfolioComponents do
             >
               {copy(@lang, :email_address)}
             </a>
+            <details class="group mt-3 text-sm text-slate-700 dark:text-slate-200">
+              <summary class="mx-auto flex w-fit cursor-pointer list-none items-center gap-1 rounded px-2 py-1 hover:underline">
+                {copy(@lang, :gpg_heading)}
+                <svg
+                  aria-hidden="true"
+                  class="size-3 group-open:rotate-180"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="m4 6 4 4 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p class="mt-2">
+                {copy(@lang, :gpg_fingerprint_label)}
+                <code class="block leading-relaxed">{value(:gpg_fingerprint)}</code>
+              </p>
+              <ul class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
+                <li :for={server <- [:openpgp, :ubuntu, :mailvelope]}>
+                  <a
+                    href={value(:"gpg_#{server}_url")}
+                    class="text-blue-600 underline dark:text-blue-300"
+                  >
+                    {value(:"gpg_#{server}_label")}
+                  </a>
+                </li>
+              </ul>
+            </details>
           </div>
 
           <!-- Phone -->
@@ -546,30 +574,6 @@ defmodule Kalyna.PortfolioComponents do
             </a>
           </div>
 
-          <!-- Mastodon -->
-          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
-            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                class="w-6 h-6 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
-              </svg>
-            </div>
-            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
-              {copy(@lang, :mastodon_heading)}
-            </h3>
-            <a
-              href={value(:mastodon_url)}
-              rel="me"
-              class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-            >
-              {copy(@lang, :mastodon_label)}
-            </a>
-          </div>
           <!-- LinkedIn -->
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
@@ -593,6 +597,79 @@ defmodule Kalyna.PortfolioComponents do
               class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
             >
               {copy(@lang, :linkedin_label)}
+            </a>
+          </div>
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path
+                  d="M12 3a9 9 0 0 0-8.3 12.5L3 21l5.5-.7A9 9 0 1 0 12 3Z"
+                  stroke-dasharray="2 2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 7a5 5 0 0 0-4.6 7L7 17l3-.4A5 5 0 1 0 12 7Z" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
+              {copy(@lang, :signal_heading)}
+            </h3>
+            <p class="text-slate-700 dark:text-slate-200">{value(:signal_username)}</p>
+          </div>
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m3 10 18-7-4 18-6-5-3 3v-6l-5-3Zm5 3 13-10m-10 13 10-13" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
+              {copy(@lang, :telegram_heading)}
+            </h3>
+            <a
+              href={value(:telegram_url)}
+              class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+            >{value(:telegram_username)}</a>
+          </div>
+          <!-- Mastodon -->
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-6 h-6 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
+              {copy(@lang, :mastodon_heading)}
+            </h3>
+            <a
+              href={value(:mastodon_url)}
+              rel="me"
+              class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+            >
+              {copy(@lang, :mastodon_label)}
             </a>
           </div>
         </div>

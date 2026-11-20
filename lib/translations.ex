@@ -208,6 +208,8 @@ defmodule Kalyna.Translations do
       "Do you have a need, a thought or an idea? You are welcome to contact me for any reason.",
     "E-post" => "Email",
     "Telefon" => "Phone",
+    "Publik GPG-nyckel" => "GPG public key",
+    "Fingeravtryck" => "Fingerprint",
     "Följ mig på Mastodon" => "Follow me on Mastodon",
     "Se profil" => "View profile",
     "Innehåll & community" => "Content & community",

@@ -447,6 +447,22 @@ Do you have a need, a thought or an idea? You are welcome to contact me for any 
 
 [View my LinkedIn profile](<https://linkedin.com/in/DanOpcode>)
 
+### Signal
+
+DanOpcode.01
+
+### Telegram
+
+[@DanOpcode](<https://t.me/DanOpcode>)
+
+### GPG public key
+
+Fingerprint: B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35
+
+- [keys.openpgp.org](<https://keys.openpgp.org/vks/v1/by-fingerprint/B94F1E8215E408604E02B35ED724EEFED54E4E35>)
+- [Ubuntu](<https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
+- [Mailvelope](<https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
+
 ## Content & community
 
 ### Blog

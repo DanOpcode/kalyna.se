@@ -596,6 +596,63 @@ defmodule Kalyna.PortfolioComponents do
             </a>
           </div>
         </div>
+        <ul class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-slate-700 dark:text-slate-200">
+          <li class="flex items-center gap-2">
+            <svg
+              aria-hidden="true"
+              class="size-5 text-blue-600 dark:text-blue-300"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path
+                d="M12 3a9 9 0 0 0-8.3 12.5L3 21l5.5-.7A9 9 0 1 0 12 3Z"
+                stroke-dasharray="2 2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path d="M12 7a5 5 0 0 0-4.6 7L7 17l3-.4A5 5 0 1 0 12 7Z" stroke-linejoin="round" />
+            </svg>
+            <span>{copy(@lang, :signal_heading)} <strong>{value(:signal_username)}</strong></span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg
+              aria-hidden="true"
+              class="size-5 text-blue-600 dark:text-blue-300"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m3 10 18-7-4 18-6-5-3 3v-6l-5-3Zm5 3 13-10m-10 13 10-13" />
+            </svg>
+            <span>
+              {copy(@lang, :telegram_heading)}
+              <a href={value(:telegram_url)} class="text-blue-600 underline dark:text-blue-300">
+                {value(:telegram_username)}
+              </a>
+            </span>
+          </li>
+        </ul>
+        <details class="mx-auto mt-3 w-fit max-w-full text-sm text-slate-700 dark:text-slate-200">
+          <summary class="mx-auto w-fit cursor-pointer px-2 py-1">
+            {copy(@lang, :gpg_heading)}
+          </summary>
+          <p class="mt-2">
+            {copy(@lang, :gpg_fingerprint_label)}
+            <code class="block">{value(:gpg_fingerprint)}</code>
+          </p>
+          <ul class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
+            <li :for={server <- [:openpgp, :ubuntu, :mailvelope]}>
+              <a href={value(:"gpg_#{server}_url")} class="text-blue-600 underline dark:text-blue-300">
+                {value(:"gpg_#{server}_label")}
+              </a>
+            </li>
+          </ul>
+        </details>
       </div>
     </section>
     """

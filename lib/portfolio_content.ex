@@ -63,6 +63,8 @@ defmodule Kalyna.PortfolioContent do
       "Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett anledning.",
     email_heading: "E-post",
     phone_heading: "Telefon",
+    gpg_heading: "Publik GPG-nyckel",
+    gpg_fingerprint_label: "Fingeravtryck",
     mastodon_label: "Följ mig på Mastodon",
     linkedin_label: "Se min LinkedIn-profil",
     community_heading: "Innehåll & community",
@@ -113,6 +115,21 @@ defmodule Kalyna.PortfolioContent do
     email_address: "daniel@kalyna.se",
     phone_url: "tel:+46707329868",
     phone_number: "+46 70 732 98 68",
+    signal_heading: "Signal",
+    signal_username: "DanOpcode.01",
+    telegram_heading: "Telegram",
+    telegram_username: "@DanOpcode",
+    telegram_url: "https://t.me/DanOpcode",
+    gpg_fingerprint: "B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35",
+    gpg_openpgp_label: "keys.openpgp.org",
+    gpg_openpgp_url:
+      "https://keys.openpgp.org/vks/v1/by-fingerprint/B94F1E8215E408604E02B35ED724EEFED54E4E35",
+    gpg_ubuntu_label: "Ubuntu",
+    gpg_ubuntu_url:
+      "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",
+    gpg_mailvelope_label: "Mailvelope",
+    gpg_mailvelope_url:
+      "https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",
     mastodon_heading: "Mastodon",
     mastodon_url: "https://mastodon.social/@DanOpcode",
     linkedin_heading: "LinkedIn",
@@ -211,7 +228,19 @@ defmodule Kalyna.PortfolioContent do
        {:heading, 3, [:mastodon_heading]},
        {:paragraph, [{:link, :mastodon_url, [:mastodon_label]}]},
        {:heading, 3, [:linkedin_heading]},
-       {:paragraph, [{:link, :linkedin_url, [:linkedin_label]}]}
+       {:paragraph, [{:link, :linkedin_url, [:linkedin_label]}]},
+       {:heading, 3, [:signal_heading]},
+       {:paragraph, [:signal_username]},
+       {:heading, 3, [:telegram_heading]},
+       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]},
+       {:heading, 3, [:gpg_heading]},
+       {:paragraph, [:gpg_fingerprint_label, ": ", :gpg_fingerprint]},
+       {:list,
+        [
+          [{:link, :gpg_openpgp_url, [:gpg_openpgp_label]}],
+          [{:link, :gpg_ubuntu_url, [:gpg_ubuntu_label]}],
+          [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}]
+        ]}
      ]},
     {:community,
      [

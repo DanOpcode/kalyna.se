@@ -42,6 +42,8 @@ defmodule Kalyna.Translations do
       "Consilium develops fire and gas detection systems for the maritime, energy, and rail sectors.",
     "Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät." =>
       "Ericsson develops mobile network hardware, software, and services that help telecommunications operators worldwide build and run their networks.",
+    "Carmenta utvecklar geospatial mjukvara för försvarsindustrin som visualiserar och analyserar geografisk information i realtid." =>
+      "Carmenta develops geospatial software for the defense industry that visualizes and analyzes geographic information in real time.",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

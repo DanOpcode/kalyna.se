@@ -12,7 +12,7 @@ I am Daniel Jonsson, a software developer and consultant through Kalyna Solution
 
 ## About Daniel Jonsson
 
-I am a software developer with over 10 years of professional experience across several programming languages. I have primarily worked with C#/.NET, with extensive experience in JavaScript, C++, Python, Swift, HTML and CSS. I started programming at the age of nine and hold a master's degree in information technology from Chalmers University of Technology. My professional experience spans Windows, Linux, the web, iOS and embedded systems.
+I am a software developer with 11+ years of professional experience across several programming languages. I have primarily worked with C#/.NET, with extensive experience in JavaScript, C++, Python, Swift, HTML and CSS. I started programming at the age of nine and hold a master's degree in information technology from Chalmers University of Technology. My professional experience spans Windows, Linux, the web, iOS and embedded systems.
 
 I have an analytical mind, enjoy solving complex problems and quickly become productive in new systems. I understand people, work well in a team and listen carefully to my customers and colleagues.
 

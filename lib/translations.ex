@@ -24,6 +24,24 @@ defmodule Kalyna.Translations do
       "I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.",
     "Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning." =>
       "My work includes on-site deployment at customer locations, integration testing, and development of web administration tools and installers. I also work on container management, installation, and logging.",
+    "Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet." =>
+      "The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.",
+    "Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden." =>
+      "Re:it helps organizations digitize their operations with tailored online services, system integrations, and workflow automation.",
+    "Altero Consulting erbjuder rådgivning inom organisationsutveckling, leder projekt inom administration och hjälper företag att lägga ut ekonomifunktioner." =>
+      "Altero Consulting advises on organizational development, manages projects for administrative functions, and helps businesses outsource finance operations.",
+    "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor." =>
+      "IdAgree develops a service for creating digital receipts for second-hand purchases.",
+    "Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys." =>
+      "Carnegie is a Nordic investment bank that advises on mergers, acquisitions, and capital raising and provides equity trading and research services.",
+    "CELLINK utvecklar 3D-bioprintrar och biobläck för forskning inom bland annat vävnadsteknik, läkemedelsutveckling och regenerativ medicin." =>
+      "CELLINK develops 3D bioprinters and bioinks for research in areas such as tissue engineering, drug discovery, and regenerative medicine.",
+    "Mentice utvecklar simulatorer för bildstyrda, minimalinvasiva ingrepp och hjälper vårdpersonal att öva på procedurer i en realistisk miljö." =>
+      "Mentice develops simulators for image-guided, minimally invasive procedures, giving clinicians a realistic environment in which to practice.",
+    "Consilium utvecklar system för brand- och gasdetektering inom sjöfart, energi och järnväg." =>
+      "Consilium develops fire and gas detection systems for the maritime, energy, and rail sectors.",
+    "Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät." =>
+      "Ericsson develops mobile network hardware, software, and services that help telecommunications operators worldwide build and run their networks.",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

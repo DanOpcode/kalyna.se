@@ -56,7 +56,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet.",
         projects: [
           %{
             title: nil,
@@ -95,7 +96,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: true
         },
-        description: nil,
+        description:
+          "Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden.",
         projects: [
           %{
             title: nil,
@@ -138,7 +140,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Altero Consulting erbjuder rådgivning inom organisationsutveckling, leder projekt inom administration och hjälper företag att lägga ut ekonomifunktioner.",
         projects: [
           %{
             title: nil,
@@ -179,7 +182,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor.",
         projects: [
           %{
             title: nil,
@@ -223,7 +227,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys.",
         projects: [
           %{
             title: nil,
@@ -278,7 +283,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "CELLINK utvecklar 3D-bioprintrar och biobläck för forskning inom bland annat vävnadsteknik, läkemedelsutveckling och regenerativ medicin.",
         projects: [
           %{
             title: "Teamledare",
@@ -427,7 +433,8 @@ defmodule Kalyna.Experience do
           fill: true,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Mentice utvecklar simulatorer för bildstyrda, minimalinvasiva ingrepp och hjälper vårdpersonal att öva på procedurer i en realistisk miljö.",
         projects: [
           %{
             title: "iOS-app",
@@ -489,7 +496,8 @@ defmodule Kalyna.Experience do
           fill: true,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Consilium utvecklar system för brand- och gasdetektering inom sjöfart, energi och järnväg.",
         projects: [
           %{
             title: "Windows-baserat konfigurationsprogram",
@@ -583,7 +591,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät.",
         projects: [
           %{
             title: nil,

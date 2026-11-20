@@ -14,12 +14,12 @@ defmodule Kalyna.PerformanceTest do
   end
 
   test "company logos use original SVGs or WebP raster fallbacks" do
-    raster_names = ~w(altero avarn idagree labgruppen)
+    raster_names = ~w(altero aqc avarn bitaddict idagree labgruppen)
 
     for relative <- ["index.html", "en/index.html"] do
       html = File.read!(Path.expand("../docs/#{relative}", __DIR__))
       sources = Regex.scan(~r/src="(\/images\/company_logo_([^".]+)\.[^"]+)"/, html)
-      assert length(sources) == 12
+      assert length(sources) == 14
 
       for [_, source, name] <- sources do
         extension = if name in raster_names, do: ".webp", else: ".svg"

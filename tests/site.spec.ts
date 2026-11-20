@@ -68,9 +68,10 @@ for (const language of ['sv', 'en']) {
   test(`${language}: expand and collapse experience`, async ({ page }) => {
     await page.goto(language === 'en' ? '/en/' : '/');
     const cards = page.locator('.company-item');
-    await expect(cards).toHaveCount(12);
-    for (let index = 0; index < 12; index++) {
-      await expect(cards.nth(index).locator('.company-content')).toHaveAttribute('id', `content-company-${index + 1}`);
+    await expect(cards).toHaveCount(14);
+    for (let index = 1; index <= 14; index++) {
+      await expect(page.locator(`#company-${index} .company-content`))
+        .toHaveAttribute('id', `content-company-${index}`);
     }
     for (const card of await cards.all()) {
       const summary = card.locator('summary');

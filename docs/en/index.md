@@ -172,6 +172,14 @@ Daniel worked as both software developer and scrum master, representing the team
 
 C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Studio (SSMS), WPF, Telerik UI for WPF, xUnit.net, Azure DevOps, HTML, CSS, JavaScript, Bootstrap, Python, RabbitMQ, JSON, HTTP, REST API, gRPC, FIX, QuickFIX, Git, Windows 10, Windows Server, Visual Studio, microservices, agile methods (SAFe)
 
+![AQC Sweden AB logo](<https://www.kalyna.se/images/company_logo_aqc.webp>)
+
+### [AQC Sweden AB](<https://www.aqc.se/>)
+
+Consultant • Full-time • 2021–2021
+
+AQC employed me for part of my assignment at CELLINK.
+
 ![Cellink logo](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
 ### [Cellink](<https://www.cellink.com/>)
@@ -339,6 +347,26 @@ Daniel worked on both frontend and backend, adding features for data presentatio
 ##### Technologies
 
 C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL Server Management Studio (SSMS), Jira, Git, Windows 10, Windows Server, Visual Studio, agile methods (Kanban)
+
+![Bit Addict logo](<https://www.kalyna.se/images/company_logo_bitaddict.webp>)
+
+### [Bit Addict](<https://bitaddict.se/>)
+
+Consultant • Full-time • 2016–2020
+
+Bit Addict is a software development consultancy.
+
+#### Assignment
+
+I worked as a developer, lead developer, or technical lead on client projects in fire and gas safety, medical simulation, professional audio, and biotechnology. Depending on the assignment, I worked independently or as part of a team, sometimes across about five projects at once. I worked in Gothenburg from 2016 through 2019 and remotely from Stockholm in 2020. During my time at Bit Addict, the company grew from six to 25 people.
+
+#### Contribution
+
+I conducted feasibility studies and estimated effort for new projects. I designed and built applications from scratch, added features to existing products, and independently maintained large legacy applications. I handled client communication directly on my projects. I planned and assigned work for junior colleagues and reviewed what they delivered. I also handled the technical questions in some job interviews and helped new colleagues set up their development environments.
+
+#### Technologies
+
+C, C#, C++, Java, JavaScript, Python, Swift, Windows, iOS, embedded systems, web development
 
 ![Ericsson logo](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 

@@ -272,6 +272,22 @@ defmodule Kalyna.Experience do
         ]
       },
       %{
+        id: "company-13",
+        name: "AQC Sweden AB",
+        url: "https://www.aqc.se/",
+        summary: "Konsult • Anställd • 2021–2021",
+        logo: %{
+          src: "/images/company_logo_aqc.webp",
+          width: 313,
+          height: 150,
+          alt: "AQC Sweden AB logga",
+          fill: false,
+          monochrome: false
+        },
+        description: "Jag var anställd av AQC under en del av mitt uppdrag hos CELLINK.",
+        projects: []
+      },
+      %{
         id: "company-7",
         name: "Cellink",
         url: "https://www.cellink.com/",
@@ -583,6 +599,43 @@ defmodule Kalyna.Experience do
               "Windows Server",
               "Visual Studio",
               "agila metoder (Kanban)"
+            ]
+          }
+        ]
+      },
+      %{
+        id: "company-14",
+        name: "Bit Addict",
+        url: "https://bitaddict.se/",
+        summary: "Konsult • Anställd • 2016–2020",
+        logo: %{
+          src: "/images/company_logo_bitaddict.webp",
+          width: 250,
+          height: 74,
+          alt: "Bit Addict logga",
+          fill: false,
+          monochrome: false
+        },
+        description: "Bit Addict är ett konsultbolag inom mjukvaruutveckling.",
+        projects: [
+          %{
+            title: nil,
+            assignment:
+              "Jag arbetade som utvecklare, lead-utvecklare eller teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik. Beroende på uppdrag arbetade jag självständigt eller i team, ibland med omkring fem projekt parallellt. Jag arbetade i Göteborg från 2016 till och med 2019 och på distans från Stockholm under 2020. Under min tid på Bit Addict växte företaget från sex till 25 personer.",
+            benefit:
+              "Jag genomförde förstudier och tog fram tidsestimat för nya projekt. Jag utformade arkitekturen och byggde applikationer från grunden, utvecklade nya funktioner i befintliga produkter och ansvarade på egen hand för underhållet av större äldre applikationer. Jag ansvarade för den direkta kundkontakten i de projekt där jag arbetade. Jag planerade arbetet för juniora kollegor, fördelade uppgifter och granskade deras arbete. Jag höll också i de tekniska frågorna vid vissa anställningsintervjuer och hjälpte nya kollegor att komma igång med sina utvecklingsmiljöer.",
+            technologies: [
+              "C",
+              "C#",
+              "C++",
+              "Java",
+              "JavaScript",
+              "Python",
+              "Swift",
+              "Windows",
+              "iOS",
+              "inbyggda system",
+              "webbutveckling"
             ]
           }
         ]

@@ -93,7 +93,7 @@ defmodule Kalyna.ExperienceComponents do
           </span>
         </summary>
         <div id={"content-#{@id}"} class="company-content">
-          <div class="pt-4 border-t border-slate-200 mt-4">
+          <div class="pt-4 border-t border-slate-200 mt-4 space-y-6">
             <p :if={@description} class="text-slate-600 dark:text-slate-200 text-sm">
               {t(@lang, @description)}
             </p>

@@ -44,8 +44,9 @@ defmodule Kalyna.AgentContentTest do
       markdown = Kalyna.PortfolioMarkdown.render(lang, "https://www.kalyna.se")
 
       for company <- Kalyna.Experience.companies(), project <- company.projects do
-        assert markdown =~ Kalyna.Translations.t(lang, project.assignment)
-        assert markdown =~ Kalyna.Translations.t(lang, project.benefit)
+        for text <- [project.assignment, project.benefit], text do
+          assert markdown =~ Kalyna.Translations.t(lang, text)
+        end
 
         for technology <- project.technologies do
           assert markdown =~ Kalyna.Translations.t(lang, technology)

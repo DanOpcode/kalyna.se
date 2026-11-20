@@ -228,6 +228,10 @@ C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP,
 
 Väktare • Behovsanställd • 2020–2021
 
+Avarn Security erbjuder bevakning, larmtjänster och säkerhetsteknik.
+
+#### Uppdrag
+
 Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig pass när de var i behov av personal, vilket innebar att mina uppgifter kunde skilja sig från ett pass till ett annat. Som exempel så har jag jobbat natt utanför ambulansinfarten till akuten på ett sjukhus, jobbat natt på ett utomhusbad och på en byggarbetsplats, jobbat kvällspass i shoppingcentrum, och vaktat utanför ett förvar under dagtid.
 
 ![Lab Gruppen logga](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
@@ -235,6 +239,8 @@ Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig p
 ### Lab Gruppen
 
 Systemutvecklare • Konsultuppdrag • 2020–2020
+
+Lab Gruppen utvecklar professionella effektförstärkare för turnéer och fasta ljudinstallationer.
 
 #### Uppdrag
 

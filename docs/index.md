@@ -72,26 +72,6 @@ Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationst
 
 .NET, C#, Docker, Podman, Linux, Windows, Visual Studio, Ansible, VMware, WSL, SQL, PostgreSQL, GitLab, agila metoder (Scrum)
 
-![IMY logga](<https://www.kalyna.se/images/company_logo_imy.svg>)
-
-### Integritetsskyddsmyndigheten
-
-DevOps • Konsultuppdrag • 2024–2026
-
-Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet.
-
-#### Uppdrag
-
-Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans.
-
-#### Nytta
-
-Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattade även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten.
-
-#### Tekniker
-
-C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST API:er, Git, agila metoder (Scrum), Visual Studio, Windows 10
-
 ![Re:it logga](<https://www.kalyna.se/images/company_logo_reit.svg>)
 
 ### Re:it
@@ -111,6 +91,26 @@ Jag bidrar till projektet genom att arbeta nära koden, vara med i de beslut som
 #### Tekniker
 
 C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, Windows 11, Visual Studio, agila metoder (Scrum)
+
+![IMY logga](<https://www.kalyna.se/images/company_logo_imy.svg>)
+
+### Integritetsskyddsmyndigheten
+
+DevOps • Konsultuppdrag • 2024–2026
+
+Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet.
+
+#### Uppdrag
+
+Utvecklare hos Integritetsskyddsmyndigheten (IMY), där jag arbetade med DevOps-pipelines, applikationsinfrastruktur och releasehantering. I ett tvärfunktionellt team byggde vi diverse applikationer tillsammans.
+
+#### Nytta
+
+Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattade även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten.
+
+#### Tekniker
+
+C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST API:er, Git, agila metoder (Scrum), Visual Studio, Windows 10
 
 ![Altero Consulting logga](<https://www.kalyna.se/images/company_logo_altero.webp>)
 

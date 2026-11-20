@@ -69,8 +69,11 @@ for (const language of ['sv', 'en']) {
     await page.goto(language === 'en' ? '/en/' : '/');
     const cards = page.locator('.company-item');
     await expect(cards).toHaveCount(12);
-    for (let index = 0; index < 12; index++) {
-      await expect(cards.nth(index).locator('.company-content')).toHaveAttribute('id', `content-company-${index + 1}`);
+    await expect(cards.nth(1).locator('h3')).toHaveText('Re:it');
+    await expect(cards.nth(2)).toHaveAttribute('id', 'company-2');
+    for (const card of await cards.all()) {
+      const id = await card.getAttribute('id');
+      await expect(card.locator('.company-content')).toHaveAttribute('id', `content-${id}`);
     }
     for (const card of await cards.all()) {
       const summary = card.locator('summary');

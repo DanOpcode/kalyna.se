@@ -252,7 +252,7 @@ C, Linux, realtidsoperativsystem, Jira, Eclipse, agila metoder (Kanban)
 
 Lead-utvecklare • Konsultuppdrag • 2017–2019
 
-Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning.
+Mentice utvecklar simulatorer för bildstyrda, minimalinvasiva ingrepp och hjälper vårdpersonal att öva på procedurer i en realistisk miljö.
 
 #### iOS-app
 

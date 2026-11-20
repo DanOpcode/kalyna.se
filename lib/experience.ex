@@ -433,7 +433,8 @@ defmodule Kalyna.Experience do
           fill: true,
           monochrome: false
         },
-        description: "Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning.",
+        description:
+          "Mentice utvecklar simulatorer för bildstyrda, minimalinvasiva ingrepp och hjälper vårdpersonal att öva på procedurer i en realistisk miljö.",
         projects: [
           %{
             title: "iOS-app",

@@ -252,7 +252,7 @@ C, Linux, real-time operating systems, Jira, Eclipse, agile methods (Kanban)
 
 Lead developer • Consulting assignment • 2017–2019
 
-Mentice develops medical simulators and software for clinical training.
+Mentice develops simulators for image-guided, minimally invasive procedures, giving clinicians a realistic environment in which to practice.
 
 #### iOS app
 

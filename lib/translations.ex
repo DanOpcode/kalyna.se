@@ -47,7 +47,6 @@ defmodule Kalyna.Translations do
     "https://www.imy.se/" => "https://www.imy.se/en/",
     "https://www.dnb.se/markets" => "https://www.dnbcarnegie.com/",
     "https://www.avarnsecurity.se/" => "https://www.avarnsecurity.com/",
-    "https://www.ericsson.com/sv/om-oss" => "https://www.ericsson.com/en",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

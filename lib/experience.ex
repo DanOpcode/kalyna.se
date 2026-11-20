@@ -590,7 +590,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-12",
         name: "Ericsson",
-        url: "https://www.ericsson.com/sv/om-oss",
+        url: "https://www.ericsson.com/en",
         summary: "Systemutvecklare • Anställd • 2015–2016",
         logo: %{
           src: "/images/company_logo_ericsson.svg",

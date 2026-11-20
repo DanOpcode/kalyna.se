@@ -233,14 +233,14 @@ defmodule Kalyna.PortfolioContent do
         ]},
        {:heading, 3, [:phone_heading]},
        {:paragraph, [{:link, :phone_url, [:phone_number]}]},
-       {:heading, 3, [:mastodon_heading]},
-       {:paragraph, [{:link, :mastodon_url, [:mastodon_label]}]},
        {:heading, 3, [:linkedin_heading]},
        {:paragraph, [{:link, :linkedin_url, [:linkedin_label]}]},
        {:heading, 3, [:signal_heading]},
        {:paragraph, [:signal_username]},
        {:heading, 3, [:telegram_heading]},
-       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]}
+       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]},
+       {:heading, 3, [:mastodon_heading]},
+       {:paragraph, [{:link, :mastodon_url, [:mastodon_label]}]}
      ]},
     {:community,
      [

@@ -447,10 +447,6 @@ Fingeravtryck: B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35
 
 [+46 70 732 98 68](<tel:+46707329868>)
 
-### Mastodon
-
-[Följ mig på Mastodon](<https://mastodon.social/@DanOpcode>)
-
 ### LinkedIn
 
 [Se min LinkedIn-profil](<https://linkedin.com/in/DanOpcode>)
@@ -462,6 +458,10 @@ DanOpcode.01
 ### Telegram
 
 [@DanOpcode](<https://t.me/DanOpcode>)
+
+### Mastodon
+
+[Följ mig på Mastodon](<https://mastodon.social/@DanOpcode>)
 
 ## Innehåll & community
 

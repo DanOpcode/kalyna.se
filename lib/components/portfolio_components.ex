@@ -58,12 +58,6 @@ defmodule Kalyna.PortfolioComponents do
         <%= Phoenix.HTML.raw(@language_preference_script) %>
       </script>
 
-      <nav aria-label={if @lang == "en", do: "Sections", else: "Avsnitt"} class="section-nav">
-        <a href="#expertise">{copy(@lang, :expertise_heading)}</a>
-        <a href="#experience">{if @lang == "en", do: "Experience", else: "Erfarenhet"}</a>
-        <a href="#about">{copy(@lang, :about_heading)}</a>
-        <a href="#contact">{copy(@lang, :contact_heading)}</a>
-      </nav>
       <!-- Hero Section -->
       <.hero lang={@lang} />
       <.leadership lang={@lang} />

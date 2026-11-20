@@ -60,15 +60,15 @@ DevOps • 2026–pågående
 
 #### Uppdrag
 
-Jag arbetar med DevOps hos Carmenta.
+Jag arbetar med DevOps på Windows och Linux, där jag arbetar med pipelines, kontinuerlig integration (CI) och containrar med Docker och Podman. Jag arbetar också med fullstackutveckling i C# och .NET med tyngdpunkt på backend.
 
 #### Nytta
 
-Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps.
+Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning.
 
 #### Tekniker
 
-.NET, C#, Docker, Linux, Windows
+.NET, C#, Docker, Podman, Linux, Windows, Visual Studio, Ansible, VMware, WSL, SQL, PostgreSQL, GitLab, agila metoder (Scrum)
 
 ![IMY logga](<https://www.kalyna.se/images/company_logo_imy.svg>)
 

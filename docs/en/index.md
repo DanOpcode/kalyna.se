@@ -60,15 +60,15 @@ DevOps • 2026–present
 
 #### Assignment
 
-I work with DevOps at Carmenta.
+I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.
 
 #### Contribution
 
-I contribute experience in software development and DevOps.
+My work includes on-site deployment at customer locations, integration testing, and development of web administration tools and installers. I also work on container management, installation, and logging.
 
 #### Technologies
 
-.NET, C#, Docker, Linux, Windows
+.NET, C#, Docker, Podman, Linux, Windows, Visual Studio, Ansible, VMware, WSL, SQL, PostgreSQL, GitLab, agile methods (Scrum)
 
 ![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
 

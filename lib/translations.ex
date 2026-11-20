@@ -21,9 +21,10 @@ defmodule Kalyna.Translations do
     "Ljust" => "Light",
     "Mörkt" => "Dark",
     "DevOps • 2026–pågående" => "DevOps • 2026–present",
-    "Jag arbetar med DevOps hos Carmenta." => "I work with DevOps at Carmenta.",
-    "Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps." =>
-      "I contribute experience in software development and DevOps.",
+    "Jag arbetar med DevOps på Windows och Linux, där jag arbetar med pipelines, kontinuerlig integration (CI) och containrar med Docker och Podman. Jag arbetar också med fullstackutveckling i C# och .NET med tyngdpunkt på backend." =>
+      "I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.",
+    "Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning." =>
+      "My work includes on-site deployment at customer locations, integration testing, and development of web administration tools and installers. I also work on container management, installation, and logging.",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

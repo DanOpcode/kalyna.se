@@ -20,14 +20,25 @@ defmodule Kalyna.Experience do
         projects: [
           %{
             title: nil,
-            assignment: "Jag arbetar med DevOps hos Carmenta.",
-            benefit: "Jag bidrar med erfarenhet inom mjukvaruutveckling och DevOps.",
+            assignment:
+              "Jag arbetar med DevOps på Windows och Linux, där jag arbetar med pipelines, kontinuerlig integration (CI) och containrar med Docker och Podman. Jag arbetar också med fullstackutveckling i C# och .NET med tyngdpunkt på backend.",
+            benefit:
+              "Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationstester och utveckling av webbaserad administration och installationsprogram. Jag arbetar även med containerhantering, installation och loggning.",
             technologies: [
               ".NET",
               "C#",
               "Docker",
+              "Podman",
               "Linux",
-              "Windows"
+              "Windows",
+              "Visual Studio",
+              "Ansible",
+              "VMware",
+              "WSL",
+              "SQL",
+              "PostgreSQL",
+              "GitLab",
+              "agila metoder (Scrum)"
             ]
           }
         ]

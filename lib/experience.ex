@@ -47,7 +47,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-2",
         name: "Re:it",
-        url: nil,
+        url: "https://reit.se/",
         summary: "Lead-utvecklare • Konsultuppdrag • 2023–pågående",
         logo: %{
           src: "/images/company_logo_reit.svg",
@@ -91,7 +91,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-3",
         name: "Integritetsskyddsmyndigheten",
-        url: nil,
+        url: "https://www.imy.se/",
         summary: "DevOps • Konsultuppdrag • 2024–2026",
         logo: %{
           src: "/images/company_logo_imy.svg",
@@ -131,7 +131,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-4",
         name: "Altero Consulting",
-        url: nil,
+        url: "https://alteroconsulting.se/",
         summary: "Systemutvecklare • Konsultuppdrag • 2022–2025",
         logo: %{
           src: "/images/company_logo_altero.webp",
@@ -218,7 +218,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-6",
         name: "Carnegie Investment Bank",
-        url: nil,
+        url: "https://www.carnegie.se/",
         summary: "Systemutvecklare, scrum-master • Anställd • 2021–2022",
         logo: %{
           src: "/images/company_logo_carnegie.svg",
@@ -274,7 +274,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-7",
         name: "Cellink",
-        url: nil,
+        url: "https://www.cellink.com/",
         summary: "Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021",
         logo: %{
           src: "/images/company_logo_cellink.svg",
@@ -375,7 +375,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-8",
         name: "Avarn Security",
-        url: nil,
+        url: "https://www.avarnsecurity.se/",
         summary: "Väktare • Behovsanställd • 2020–2021",
         logo: %{
           src: "/images/company_logo_avarn.webp",
@@ -399,7 +399,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-9",
         name: "Lab Gruppen",
-        url: nil,
+        url: "https://labgruppen.com/",
         summary: "Systemutvecklare • Konsultuppdrag • 2020–2020",
         logo: %{
           src: "/images/company_logo_labgruppen.webp",
@@ -432,7 +432,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-10",
         name: "Mentice",
-        url: nil,
+        url: "https://www.mentice.com/",
         summary: "Lead-utvecklare • Konsultuppdrag • 2017–2019",
         logo: %{
           src: "/images/company_logo_mentice.svg",
@@ -495,7 +495,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-11",
         name: "Consilium Marine & Safety",
-        url: nil,
+        url: "https://www.consiliumsafety.com/",
         summary: "Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020",
         logo: %{
           src: "/images/company_logo_consilium.svg",
@@ -590,7 +590,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-12",
         name: "Ericsson",
-        url: nil,
+        url: "https://www.ericsson.com/",
         summary: "Systemutvecklare • Anställd • 2015–2016",
         logo: %{
           src: "/images/company_logo_ericsson.svg",

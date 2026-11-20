@@ -69,7 +69,7 @@ defmodule Kalyna.ExperienceComponents do
       <div class="text-center mb-4">
         <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
           <%= if @url do %>
-            <a href={@url} class="underline">{t(@lang, @name)}</a>
+            <a href={t(@lang, @url)} class="underline">{t(@lang, @name)}</a>
           <% else %>
             {t(@lang, @name)}
           <% end %>

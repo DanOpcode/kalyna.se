@@ -6,8 +6,6 @@ Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i
 
 [Kontakta mig](<https://www.kalyna.se/#contact>)
 
-[Läs mer](<https://www.kalyna.se/#about>)
-
 ## Vem håller ihop det tekniska?
 
 I ett litet produktteam är det ofta samma personer som ska bygga nästa version, stötta kollegorna och fatta beslut om hur systemet ska utvecklas. När nästa leverans tar all tid blir de större teknikfrågorna lätt liggande. Under tiden behöver teamet bygga vidare på beslut som ännu inte är fattade.

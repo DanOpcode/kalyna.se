@@ -6,8 +6,6 @@ I am Daniel Jonsson, a software developer and consultant through Kalyna Solution
 
 [Contact me](<https://www.kalyna.se/en/#contact>)
 
-[Read more](<https://www.kalyna.se/en/#about>)
-
 ## Who keeps the technical work on track?
 
 In a small product team, the same people often build the next release, support their teammates and decide how the system should evolve. When the next release takes up all their time, bigger technical questions can get put off. Meanwhile, the team has to keep building before those decisions are settled.

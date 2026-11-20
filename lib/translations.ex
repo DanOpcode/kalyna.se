@@ -79,7 +79,6 @@ defmodule Kalyna.Translations do
     "Expertis inom mjukvaruutveckling och teknisk ledning." =>
       "Expertise in software development and technical leadership.",
     "Kontakta mig" => "Contact me",
-    "Läs mer" => "Read more",
     "Om Daniel Jonsson" => "About Daniel Jonsson",
     "Jag är en systemutvecklare med 11+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i informationsteknik från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system." =>
       "I am a software developer with 11+ years of professional experience across several programming languages. I have primarily worked with C#/.NET, with extensive experience in JavaScript, C++, Python, Swift, HTML and CSS. I started programming at the age of nine and hold a master's degree in information technology from Chalmers University of Technology. My professional experience spans Windows, Linux, the web, iOS and embedded systems.",

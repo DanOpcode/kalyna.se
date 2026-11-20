@@ -272,6 +272,23 @@ defmodule Kalyna.Experience do
         ]
       },
       %{
+        id: "company-13",
+        name: "AQC Sweden AB",
+        url: "https://www.aqc.se/",
+        summary: "Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021",
+        logo: %{
+          src: "/images/company_logo_aqc.webp",
+          width: 313,
+          height: 150,
+          alt: "AQC Sweden AB logga",
+          fill: false,
+          monochrome: false
+        },
+        description:
+          "Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X.",
+        projects: []
+      },
+      %{
         id: "company-7",
         name: "Cellink",
         url: "https://www.cellink.com/",
@@ -583,6 +600,44 @@ defmodule Kalyna.Experience do
               "Windows Server",
               "Visual Studio",
               "agila metoder (Kanban)"
+            ]
+          }
+        ]
+      },
+      %{
+        id: "company-14",
+        name: "Bit Addict",
+        url: "https://bitaddict.se/",
+        summary:
+          "Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020",
+        logo: %{
+          src: "/images/company_logo_bitaddict.webp",
+          width: 250,
+          height: 74,
+          alt: "Bit Addict logga",
+          fill: false,
+          monochrome: false
+        },
+        description: "Bit Addict är ett konsultbolag inom mjukvaruutveckling.",
+        projects: [
+          %{
+            title: nil,
+            assignment:
+              "Jag arbetade som utvecklare, lead-utvecklare och teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik, ofta i flera projekt parallellt. Jag arbetade i Göteborg till och med 2019 och på distans från Stockholm under 2020.",
+            benefit:
+              "Jag genomförde förstudier, tog fram tidsestimat och utformade arkitekturen för nya applikationer. Jag byggde mjukvara från grunden, vidareutvecklade befintliga produkter och tog självständigt ansvar för underhållet av större äldre applikationer. Jag hade direktkontakt med kunder och hjälpte nya kollegor att komma igång med arbetet och utvecklingsmiljöerna.",
+            technologies: [
+              "C",
+              "C#",
+              "C++",
+              "Java",
+              "JavaScript",
+              "Python",
+              "Swift",
+              "Windows",
+              "iOS",
+              "inbyggda system",
+              "webbutveckling"
             ]
           }
         ]

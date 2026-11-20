@@ -19,7 +19,7 @@ defmodule Kalyna.ExperienceTest do
         end
 
       cards = Regex.split(~r/<div\s+id="company-\d+"/, html) |> tl()
-      assert length(cards) == 12
+      assert length(cards) == 14
       imy = Enum.at(cards, 2)
       altero = Enum.at(cards, 3)
       assert imy =~ "2024–2026"
@@ -45,7 +45,17 @@ defmodule Kalyna.ExperienceTest do
         |> List.flatten()
         |> Enum.map(&String.to_integer/1)
 
-      assert panel_numbers == Enum.to_list(1..12)
+      assert Enum.sort(panel_numbers) == Enum.to_list(1..14)
+
+      aqc = Enum.find(cards, &String.contains?(&1, "content-company-13"))
+      assert aqc =~ ~s(href="https://www.aqc.se/")
+      assert aqc =~ "CELLCYTE X"
+      assert aqc =~ if(lang == "en", do: "Jan–Aug 2021", else: "jan.–aug. 2021")
+
+      bit_addict = Enum.find(cards, &String.contains?(&1, "content-company-14"))
+      assert bit_addict =~ ~s(href="https://bitaddict.se/")
+      assert bit_addict =~ if(lang == "en", do: "Sep 2016–Dec 2020", else: "sep. 2016–dec. 2020")
+      assert bit_addict =~ if(lang == "en", do: "embedded systems", else: "inbyggda system")
     end
   end
 end

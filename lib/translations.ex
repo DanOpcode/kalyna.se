@@ -1,6 +1,22 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
+    "Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021" =>
+      "Software Development Consultant, Team Lead at CELLINK • Full-time • Jan–Aug 2021",
+    "AQC Sweden AB logga" => "AQC Sweden AB logo",
+    "Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X." =>
+      "AQC employed me during my assignment at CELLINK, where I led a team of six colleagues developing the interface for CELLCYTE X.",
+    "Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020" =>
+      "Software Developer, Lead Developer and Technical Lead • Full-time • Sep 2016–Dec 2020",
+    "Bit Addict logga" => "Bit Addict logo",
+    "Bit Addict är ett konsultbolag inom mjukvaruutveckling." =>
+      "Bit Addict is a software development consultancy.",
+    "Jag arbetade som utvecklare, lead-utvecklare och teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik, ofta i flera projekt parallellt. Jag arbetade i Göteborg till och med 2019 och på distans från Stockholm under 2020." =>
+      "I worked as a developer, lead developer, and technical lead on client projects in fire and gas safety, medical simulation, professional audio, and biotechnology, often across several projects at once. I worked in Gothenburg through 2019 and remotely from Stockholm in 2020.",
+    "Jag genomförde förstudier, tog fram tidsestimat och utformade arkitekturen för nya applikationer. Jag byggde mjukvara från grunden, vidareutvecklade befintliga produkter och tog självständigt ansvar för underhållet av större äldre applikationer. Jag hade direktkontakt med kunder och hjälpte nya kollegor att komma igång med arbetet och utvecklingsmiljöerna." =>
+      "I conducted feasibility studies, estimated effort, and designed the architecture for new applications. I built software from scratch, extended existing products, and took ownership of maintaining large legacy applications. I worked directly with clients and helped new colleagues set up their development environments and get started on projects.",
+    "inbyggda system" => "embedded systems",
+    "webbutveckling" => "web development",
     "Hoppa till innehållet" => "Skip to content",
     "Se min LinkedIn-profil" => "View my LinkedIn profile",
     "Se min profil hos Kvadrat" => "View my Kvadrat profile",

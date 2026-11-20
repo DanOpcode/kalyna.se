@@ -172,6 +172,14 @@ Daniel var både systemutvecklare och scrum master, och representerade teamet i 
 
 C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Studio (SSMS), WPF, Telerik UI for WPF, xUnit.net, Azure DevOps, HTML, CSS, JavaScript, Bootstrap, Python, RabbitMQ, JSON, HTTP, REST API, gRPC, FIX, QuickFIX, Git, Windows 10, Windows Server, Visual Studio, mikrotjänster, agila metoder (SAFe)
 
+![AQC Sweden AB logga](<https://www.kalyna.se/images/company_logo_aqc.webp>)
+
+### [AQC Sweden AB](<https://www.aqc.se/>)
+
+Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021
+
+Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X.
+
 ![Cellink logga](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
 ### [Cellink](<https://www.cellink.com/>)
@@ -339,6 +347,26 @@ Arbetet var på både frontend- och backend-nivå, och Daniel utvecklade nya fun
 ##### Tekniker
 
 C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL Server Management Studio (SSMS), Jira, Git, Windows 10, Windows Server, Visual Studio, agila metoder (Kanban)
+
+![Bit Addict logga](<https://www.kalyna.se/images/company_logo_bitaddict.webp>)
+
+### [Bit Addict](<https://bitaddict.se/>)
+
+Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020
+
+Bit Addict är ett konsultbolag inom mjukvaruutveckling.
+
+#### Uppdrag
+
+Jag arbetade som utvecklare, lead-utvecklare och teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik, ofta i flera projekt parallellt. Jag arbetade i Göteborg till och med 2019 och på distans från Stockholm under 2020.
+
+#### Nytta
+
+Jag genomförde förstudier, tog fram tidsestimat och utformade arkitekturen för nya applikationer. Jag byggde mjukvara från grunden, vidareutvecklade befintliga produkter och tog självständigt ansvar för underhållet av större äldre applikationer. Jag hade direktkontakt med kunder och hjälpte nya kollegor att komma igång med arbetet och utvecklingsmiljöerna.
+
+#### Tekniker
+
+C, C#, C++, Java, JavaScript, Python, Swift, Windows, iOS, inbyggda system, webbutveckling
 
 ![Ericsson logga](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 

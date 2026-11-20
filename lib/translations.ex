@@ -229,6 +229,7 @@ defmodule Kalyna.Translations do
     "Tillgänglighet" => "Availability",
     "Projekt på plats i Stockholmsområdet" => "On-site projects in the Stockholm area",
     "Remote-projekt" => "Remote projects",
+    "agentisk utveckling" => "agentic development",
     "agila metoder (Scrum)" => "agile methods (Scrum)",
     "Profilbild" => "Portrait",
     "Kalyna Solutions AB logga" => "Kalyna Solutions AB logo",

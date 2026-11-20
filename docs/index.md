@@ -90,7 +90,7 @@ Jag bidrar till projektet genom att arbeta nära koden, vara med i de beslut som
 
 #### Tekniker
 
-C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, Windows 11, Visual Studio, agila metoder (Scrum)
+C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, SQL Server, SQL Server Management Studio (SSMS), HTTP, REST API, Git, GitHub, GitHub Actions, Windows 11, Visual Studio, Rider, ChatGPT Codex, Claude Code, agentisk utveckling, agila metoder (Scrum)
 
 ![IMY logga](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
@@ -110,7 +110,7 @@ Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOp
 
 #### Tekniker
 
-C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST API:er, Git, agila metoder (Scrum), Visual Studio, Windows 10
+C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL Server Management Studio (SSMS), REST API:er, Git, ChatGPT, agila metoder (Scrum), Visual Studio, Windows 10
 
 ![Altero Consulting logga](<https://www.kalyna.se/images/company_logo_altero.webp>)
 

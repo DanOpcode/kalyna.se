@@ -9,6 +9,7 @@ defmodule Kalyna.PortfolioContent do
     tagline:
       "Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i Stockholm. Jag hjälper företag med fullstack-utveckling, DevOps och teknisk teamledning, på plats i Stockholmsområdet eller på distans.",
     contact_heading: "Kontakta mig",
+    learn_more_label: "Läs mer",
     portrait_alt: "Daniel Jonsson",
     leadership_heading: "Vem håller ihop det tekniska?",
     leadership_problem:
@@ -97,6 +98,7 @@ defmodule Kalyna.PortfolioContent do
     logo_src: "/images/logo.webp",
     company_name: "Kalyna Solutions AB",
     contact_fragment: "#contact",
+    about_fragment: "#about",
     portrait_one_src: "/images/profile1.webp",
     fullstack_area: "Fullstack",
     backend_area: "Backend",
@@ -137,7 +139,9 @@ defmodule Kalyna.PortfolioContent do
      [
        {:image, :logo_alt, :logo_src},
        {:heading, 1, [:company_name]},
-       {:paragraph, [:tagline]}
+       {:paragraph, [:tagline]},
+       {:paragraph, [{:link, :contact_fragment, [:contact_heading]}]},
+       {:paragraph, [{:link, :about_fragment, [:learn_more_label]}]}
      ]},
     {:leadership,
      [

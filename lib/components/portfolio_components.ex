@@ -4,13 +4,13 @@ defmodule Kalyna.PortfolioComponents do
   import Kalyna.PortfolioContent, only: [copy: 2, value: 1]
   import Kalyna.ExperienceComponents, only: [experience: 1]
 
-  @external_resource Path.expand("../../assets/js/language-suggestion.js", __DIR__)
-  @language_suggestion_script File.read!(@external_resource)
+  @external_resource Path.expand("../../assets/js/language-preference.js", __DIR__)
+  @language_preference_script File.read!(@external_resource)
 
   attr(:lang, :string, required: true)
 
   def portfolio(assigns) do
-    assigns = assign(assigns, :language_suggestion_script, @language_suggestion_script)
+    assigns = assign(assigns, :language_preference_script, @language_preference_script)
 
     ~H"""
     <div class="portfolio min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
@@ -54,27 +54,8 @@ defmodule Kalyna.PortfolioComponents do
         </label>
       </div>
 
-      <aside
-        id="language-suggestion"
-        lang="en"
-        aria-label="Language suggestion"
-        hidden
-        class="mx-auto mt-3 w-fit max-w-[calc(100%-1rem)] rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 dark:bg-slate-800 dark:text-white"
-      >
-        <div class="flex flex-wrap items-center justify-center gap-x-3">
-          <span>Prefer to read this site in English?</span>
-          <a
-            href="/en/"
-            hreflang="en"
-            class="inline-flex min-h-8 items-center font-semibold underline"
-          >
-            Switch to English
-          </a>
-          <button type="button" class="min-h-8 cursor-pointer underline">Stay in Swedish</button>
-        </div>
-      </aside>
       <script>
-        <%= Phoenix.HTML.raw(@language_suggestion_script) %>
+        <%= Phoenix.HTML.raw(@language_preference_script) %>
       </script>
 
       <nav aria-label={if @lang == "en", do: "Sections", else: "Avsnitt"} class="section-nav">

@@ -223,6 +223,14 @@ defmodule Kalyna.PortfolioContent do
        {:paragraph, [:contact_description]},
        {:heading, 3, [:email_heading]},
        {:paragraph, [{:link, :email_url, [:email_address]}]},
+       {:heading, 4, [:gpg_heading]},
+       {:paragraph, [:gpg_fingerprint_label, ": ", :gpg_fingerprint]},
+       {:list,
+        [
+          [{:link, :gpg_openpgp_url, [:gpg_openpgp_label]}],
+          [{:link, :gpg_ubuntu_url, [:gpg_ubuntu_label]}],
+          [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}]
+        ]},
        {:heading, 3, [:phone_heading]},
        {:paragraph, [{:link, :phone_url, [:phone_number]}]},
        {:heading, 3, [:mastodon_heading]},
@@ -232,15 +240,7 @@ defmodule Kalyna.PortfolioContent do
        {:heading, 3, [:signal_heading]},
        {:paragraph, [:signal_username]},
        {:heading, 3, [:telegram_heading]},
-       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]},
-       {:heading, 3, [:gpg_heading]},
-       {:paragraph, [:gpg_fingerprint_label, ": ", :gpg_fingerprint]},
-       {:list,
-        [
-          [{:link, :gpg_openpgp_url, [:gpg_openpgp_label]}],
-          [{:link, :gpg_ubuntu_url, [:gpg_ubuntu_label]}],
-          [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}]
-        ]}
+       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]}
      ]},
     {:community,
      [

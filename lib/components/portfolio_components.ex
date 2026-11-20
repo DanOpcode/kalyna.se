@@ -483,7 +483,7 @@ defmodule Kalyna.PortfolioComponents do
         <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto">
           {copy(@lang, :contact_description)}
         </p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <!-- Email -->
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
@@ -513,6 +513,34 @@ defmodule Kalyna.PortfolioComponents do
             >
               {copy(@lang, :email_address)}
             </a>
+            <details class="group mt-3 text-sm text-slate-700 dark:text-slate-200">
+              <summary class="mx-auto flex w-fit cursor-pointer list-none items-center gap-1 rounded px-2 py-1 hover:underline">
+                {copy(@lang, :gpg_heading)}
+                <svg
+                  aria-hidden="true"
+                  class="size-3 group-open:rotate-180"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="m4 6 4 4 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p class="mt-2">
+                {copy(@lang, :gpg_fingerprint_label)}
+                <code class="block leading-relaxed">{value(:gpg_fingerprint)}</code>
+              </p>
+              <ul class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
+                <li :for={server <- [:openpgp, :ubuntu, :mailvelope]}>
+                  <a
+                    href={value(:"gpg_#{server}_url")}
+                    class="text-blue-600 underline dark:text-blue-300"
+                  >
+                    {value(:"gpg_#{server}_label")}
+                  </a>
+                </li>
+              </ul>
+            </details>
           </div>
 
           <!-- Phone -->
@@ -546,6 +574,55 @@ defmodule Kalyna.PortfolioComponents do
             </a>
           </div>
 
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path
+                  d="M12 3a9 9 0 0 0-8.3 12.5L3 21l5.5-.7A9 9 0 1 0 12 3Z"
+                  stroke-dasharray="2 2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 7a5 5 0 0 0-4.6 7L7 17l3-.4A5 5 0 1 0 12 7Z" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
+              {copy(@lang, :signal_heading)}
+            </h3>
+            <p class="text-slate-700 dark:text-slate-200">{value(:signal_username)}</p>
+          </div>
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m3 10 18-7-4 18-6-5-3 3v-6l-5-3Zm5 3 13-10m-10 13 10-13" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
+              {copy(@lang, :telegram_heading)}
+            </h3>
+            <a
+              href={value(:telegram_url)}
+              class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
+            >{value(:telegram_username)}</a>
+          </div>
           <!-- Mastodon -->
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
@@ -596,63 +673,6 @@ defmodule Kalyna.PortfolioComponents do
             </a>
           </div>
         </div>
-        <ul class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-slate-700 dark:text-slate-200">
-          <li class="flex items-center gap-2">
-            <svg
-              aria-hidden="true"
-              class="size-5 text-blue-600 dark:text-blue-300"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.7"
-            >
-              <path
-                d="M12 3a9 9 0 0 0-8.3 12.5L3 21l5.5-.7A9 9 0 1 0 12 3Z"
-                stroke-dasharray="2 2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path d="M12 7a5 5 0 0 0-4.6 7L7 17l3-.4A5 5 0 1 0 12 7Z" stroke-linejoin="round" />
-            </svg>
-            <span>{copy(@lang, :signal_heading)} <strong>{value(:signal_username)}</strong></span>
-          </li>
-          <li class="flex items-center gap-2">
-            <svg
-              aria-hidden="true"
-              class="size-5 text-blue-600 dark:text-blue-300"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m3 10 18-7-4 18-6-5-3 3v-6l-5-3Zm5 3 13-10m-10 13 10-13" />
-            </svg>
-            <span>
-              {copy(@lang, :telegram_heading)}
-              <a href={value(:telegram_url)} class="text-blue-600 underline dark:text-blue-300">
-                {value(:telegram_username)}
-              </a>
-            </span>
-          </li>
-        </ul>
-        <details class="mx-auto mt-3 w-fit max-w-full text-sm text-slate-700 dark:text-slate-200">
-          <summary class="mx-auto w-fit cursor-pointer px-2 py-1">
-            {copy(@lang, :gpg_heading)}
-          </summary>
-          <p class="mt-2">
-            {copy(@lang, :gpg_fingerprint_label)}
-            <code class="block">{value(:gpg_fingerprint)}</code>
-          </p>
-          <ul class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
-            <li :for={server <- [:openpgp, :ubuntu, :mailvelope]}>
-              <a href={value(:"gpg_#{server}_url")} class="text-blue-600 underline dark:text-blue-300">
-                {value(:"gpg_#{server}_label")}
-              </a>
-            </li>
-          </ul>
-        </details>
       </div>
     </section>
     """

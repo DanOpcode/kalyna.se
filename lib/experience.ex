@@ -131,8 +131,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-4",
         name: "Altero Consulting",
-        url:
-          "https://www.allabolag.se/foretag/altero-consulting-ab/tyres%C3%B6/redovisning-bokf%C3%B6ring/2KHVEWII5YGRY",
+        url: "https://alteroconsulting.se/",
         summary: "Systemutvecklare • Konsultuppdrag • 2022–2025",
         logo: %{
           src: "/images/company_logo_altero.webp",

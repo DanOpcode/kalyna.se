@@ -114,7 +114,7 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 
 ![Altero Consulting logga](<https://www.kalyna.se/images/company_logo_altero.webp>)
 
-### [Altero Consulting](<https://www.allabolag.se/foretag/altero-consulting-ab/tyres%C3%B6/redovisning-bokf%C3%B6ring/2KHVEWII5YGRY>)
+### [Altero Consulting](<https://alteroconsulting.se/>)
 
 Systemutvecklare • Konsultuppdrag • 2022–2025
 

@@ -26,8 +26,8 @@ defmodule Kalyna.Translations do
       "My work includes on-site deployment at customer locations, integration testing, and development of web administration tools and installers. I also work on container management, installation, and logging.",
     "Integritetsskyddsmyndigheten (IMY) är en statlig myndighet som utövar tillsyn och ger vägledning i frågor om dataskydd och personlig integritet." =>
       "The Swedish Authority for Privacy Protection (IMY) supervises compliance and provides guidance on data protection and personal privacy.",
-    "Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans." =>
-      "Re:it develops applications in cross-functional teams with a focus on quality and continuous delivery.",
+    "Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden." =>
+      "Re:it helps organizations digitize their operations with tailored online services, system integrations, and workflow automation.",
     "Altero Consulting arbetar med dataanalys och datalager för att hjälpa verksamheter att ta fram rapporter och få bättre insikt i sin data." =>
       "Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.",
     "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor." =>

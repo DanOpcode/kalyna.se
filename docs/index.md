@@ -96,7 +96,7 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 
 Lead-utvecklare • Konsultuppdrag • 2023–pågående
 
-Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans.
+Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden.
 
 #### Uppdrag
 

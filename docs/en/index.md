@@ -96,7 +96,7 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 
 Lead developer • Consulting assignment • 2023–present
 
-Re:it develops applications in cross-functional teams with a focus on quality and continuous delivery.
+Re:it helps organizations digitize their operations with tailored online services, system integrations, and workflow automation.
 
 #### Assignment
 

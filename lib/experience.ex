@@ -97,7 +97,7 @@ defmodule Kalyna.Experience do
           monochrome: true
         },
         description:
-          "Re:it utvecklar applikationer i tvärfunktionella team med fokus på kvalitet och kontinuerlig leverans.",
+          "Re:it hjälper organisationer att digitalisera sin verksamhet med anpassade e-tjänster, systemintegrationer och automatiserade arbetsflöden.",
         projects: [
           %{
             title: nil,

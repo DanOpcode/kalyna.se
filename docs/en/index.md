@@ -58,6 +58,8 @@ Companies I have worked with.
 
 DevOps • Consulting assignment • 2026–present
 
+Carmenta develops geospatial software for the defense industry that visualizes and analyzes geographic information in real time.
+
 #### Assignment
 
 I work on DevOps across Windows and Linux, working with pipelines, continuous integration (CI), and containers using Docker and Podman. I also work on full-stack development in C# and .NET with a focus on the backend.

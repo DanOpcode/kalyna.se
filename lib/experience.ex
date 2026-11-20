@@ -16,7 +16,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: nil,
+        description:
+          "Carmenta utvecklar geospatial mjukvara för försvarsindustrin som visualiserar och analyserar geografisk information i realtid.",
         projects: [
           %{
             title: nil,

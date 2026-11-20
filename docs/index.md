@@ -58,6 +58,8 @@ Företag jag arbetat med.
 
 DevOps • Konsultuppdrag • 2026–pågående
 
+Carmenta utvecklar geospatial mjukvara för försvarsindustrin som visualiserar och analyserar geografisk information i realtid.
+
 #### Uppdrag
 
 Jag arbetar med DevOps på Windows och Linux, där jag arbetar med pipelines, kontinuerlig integration (CI) och containrar med Docker och Podman. Jag arbetar också med fullstackutveckling i C# och .NET med tyngdpunkt på backend.

@@ -272,7 +272,7 @@ test('suggests English without redirecting and remembers dismissal', async ({ pa
   await expect(suggestion).toBeHidden();
 });
 
-test('switches to English on request and respects a later switch back', async ({ page }) => {
+test('remembers English across visits and respects a later switch back', async ({ page, context }) => {
   await page.addInitScript(() => {
     Object.defineProperty(navigator, 'languages', { value: ['de-DE'] });
   });
@@ -280,9 +280,19 @@ test('switches to English on request and respects a later switch back', async ({
   await page.getByRole('link', { name: 'Switch to English' }).click();
   await expect(page).toHaveURL('/en/');
   await expect(page.locator('#language-suggestion')).toBeHidden();
-  await page.getByRole('link', { name: '🇸🇪 Svenska' }).click();
-  await expect(page).toHaveURL('/');
-  await expect(page.locator('#language-suggestion')).toBeHidden();
+  const nextVisit = await context.newPage();
+  await nextVisit.goto('/?ref=test#contact');
+  await expect(nextVisit).toHaveURL('/en/?ref=test#contact');
+  await nextVisit.getByRole('link', { name: '🇸🇪 Svenska' }).click();
+  await expect(nextVisit).toHaveURL('/');
+  await nextVisit.reload();
+  await expect(nextVisit).toHaveURL('/');
+  await expect(nextVisit.locator('#language-suggestion')).toBeHidden();
+
+  await nextVisit.getByRole('link', { name: '🇬🇧 English' }).click();
+  await expect(nextVisit).toHaveURL('/en/');
+  await nextVisit.goto('/');
+  await expect(nextVisit).toHaveURL('/en/');
 });
 
 test('keeps the suggestion hidden when Swedish ranks above English', async ({ page }) => {

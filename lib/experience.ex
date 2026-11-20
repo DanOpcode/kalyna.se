@@ -228,7 +228,7 @@ defmodule Kalyna.Experience do
           monochrome: false
         },
         description:
-          "Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering.",
+          "Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys.",
         projects: [
           %{
             title: nil,
@@ -284,7 +284,7 @@ defmodule Kalyna.Experience do
           monochrome: false
         },
         description:
-          "CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier.",
+          "CELLINK utvecklar 3D-bioprintrar och biobläck för forskning inom bland annat vävnadsteknik, läkemedelsutveckling och regenerativ medicin.",
         projects: [
           %{
             title: "Teamledare",
@@ -496,7 +496,7 @@ defmodule Kalyna.Experience do
           monochrome: false
         },
         description:
-          "Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg.",
+          "Consilium utvecklar system för brand- och gasdetektering inom sjöfart, energi och järnväg.",
         projects: [
           %{
             title: "Windows-baserat konfigurationsprogram",
@@ -590,7 +590,8 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description: "Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer.",
+        description:
+          "Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät.",
         projects: [
           %{
             title: nil,

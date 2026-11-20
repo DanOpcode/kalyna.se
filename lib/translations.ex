@@ -32,16 +32,16 @@ defmodule Kalyna.Translations do
       "Altero Consulting works with data analytics and data warehousing to help organizations report on and understand their data.",
     "IdAgree utvecklar en tjänst för digitala kvitton vid köp av begagnade varor." =>
       "IdAgree develops a service for creating digital receipts for second-hand purchases.",
-    "Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering." =>
-      "Carnegie is an investment bank with IT systems for integration, stock trading, and internal securities management.",
-    "CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier." =>
-      "CELLINK develops instruments and software for bioprinting and laboratory automation.",
+    "Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys." =>
+      "Carnegie is a Nordic investment bank that advises on mergers, acquisitions, and capital raising and provides equity trading and research services.",
+    "CELLINK utvecklar 3D-bioprintrar och biobläck för forskning inom bland annat vävnadsteknik, läkemedelsutveckling och regenerativ medicin." =>
+      "CELLINK develops 3D bioprinters and bioinks for research in areas such as tissue engineering, drug discovery, and regenerative medicine.",
     "Mentice utvecklar medicinska simulatorer och mjukvara för klinisk träning." =>
       "Mentice develops medical simulators and software for clinical training.",
-    "Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg." =>
-      "Consilium develops fire and gas detection systems and software for ships.",
-    "Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer." =>
-      "Ericsson builds network solutions and tools for telecommunications operators.",
+    "Consilium utvecklar system för brand- och gasdetektering inom sjöfart, energi och järnväg." =>
+      "Consilium develops fire and gas detection systems for the maritime, energy, and rail sectors.",
+    "Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät." =>
+      "Ericsson develops mobile network hardware, software, and services that help telecommunications operators worldwide build and run their networks.",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

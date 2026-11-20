@@ -156,7 +156,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 Software developer, scrum master • Employee • 2021–2022
 
-Carnegie is an investment bank with IT systems for integration, stock trading, and internal securities management.
+Carnegie is a Nordic investment bank that advises on mergers, acquisitions, and capital raising and provides equity trading and research services.
 
 #### Assignment
 
@@ -176,7 +176,7 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 Team leader, software developer • Consulting assignment • 2019–2021
 
-CELLINK develops instruments and software for bioprinting and laboratory automation.
+CELLINK develops 3D bioprinters and bioinks for research in areas such as tissue engineering, drug discovery, and regenerative medicine.
 
 #### Team leader
 
@@ -288,7 +288,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 Team leader, lead developer, software developer • Consulting assignment • 2016–2020
 
-Consilium develops fire and gas detection systems and software for ships.
+Consilium develops fire and gas detection systems for the maritime, energy, and rail sectors.
 
 #### Windows configuration application
 
@@ -338,7 +338,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 Software developer • Employee • 2015–2016
 
-Ericsson builds network solutions and tools for telecommunications operators.
+Ericsson develops mobile network hardware, software, and services that help telecommunications operators worldwide build and run their networks.
 
 #### Assignment
 

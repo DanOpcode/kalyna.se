@@ -156,7 +156,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 Systemutvecklare, scrum-master • Anställd • 2021–2022
 
-Carnegie är en investmentbank med IT-system för integration, börshandel och intern värdepappershantering.
+Carnegie är en nordisk investmentbank som erbjuder rådgivning vid företagsförvärv och kapitalanskaffning samt tjänster inom aktiehandel och aktieanalys.
 
 #### Uppdrag
 
@@ -176,7 +176,7 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021
 
-CELLINK utvecklar instrument och mjukvara för bioprintning och automatisering i laboratorier.
+CELLINK utvecklar 3D-bioprintrar och biobläck för forskning inom bland annat vävnadsteknik, läkemedelsutveckling och regenerativ medicin.
 
 #### Teamledare
 
@@ -288,7 +288,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
 
-Consilium utvecklar system och mjukvara för att upptäcka brand och gas ombord på fartyg.
+Consilium utvecklar system för brand- och gasdetektering inom sjöfart, energi och järnväg.
 
 #### Windows-baserat konfigurationsprogram
 
@@ -338,7 +338,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 Systemutvecklare • Anställd • 2015–2016
 
-Ericsson utvecklar nätverkslösningar och verktyg för telekomoperatörer.
+Ericsson utvecklar hårdvara, mjukvara och tjänster för mobilnät och hjälper telekomoperatörer världen över att bygga och driva sina nät.
 
 #### Uppdrag
 

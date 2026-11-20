@@ -358,11 +358,11 @@ Bit Addict is a software development consultancy.
 
 #### Assignment
 
-I worked as a developer, lead developer, and technical lead on client projects in fire and gas safety, medical simulation, professional audio, and biotechnology, often across several projects at once. I worked in Gothenburg through 2019 and remotely from Stockholm in 2020.
+I worked as a developer, lead developer, or technical lead on client projects in fire and gas safety, medical simulation, professional audio, and biotechnology. Depending on the assignment, I worked independently or as part of a team, sometimes across about five projects at once. I worked in Gothenburg from 2016 through 2019 and remotely from Stockholm in 2020. During my time at Bit Addict, the company grew from six to 25 people.
 
 #### Contribution
 
-I conducted feasibility studies, estimated effort, and designed the architecture for new applications. I built software from scratch, extended existing products, and took ownership of maintaining large legacy applications. I worked directly with clients and helped new colleagues set up their development environments and get started on projects.
+I conducted feasibility studies and estimated effort for new projects. I designed and built applications from scratch, added features to existing products, and independently maintained large legacy applications. I handled client communication directly on my projects. I also led the technical questioning in some job interviews and helped new colleagues set up their development environments and get started on their assignments.
 
 #### Technologies
 

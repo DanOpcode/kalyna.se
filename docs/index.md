@@ -358,11 +358,11 @@ Bit Addict är ett konsultbolag inom mjukvaruutveckling.
 
 #### Uppdrag
 
-Jag arbetade som utvecklare, lead-utvecklare och teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik, ofta i flera projekt parallellt. Jag arbetade i Göteborg till och med 2019 och på distans från Stockholm under 2020.
+Jag arbetade som utvecklare, lead-utvecklare eller teknisk lead i kundprojekt inom brand- och gassäkerhet, medicinsk simulering, professionellt ljud och bioteknik. Beroende på uppdrag arbetade jag självständigt eller i team, ibland med omkring fem projekt parallellt. Jag arbetade i Göteborg från 2016 till och med 2019 och på distans från Stockholm under 2020. Under min tid på Bit Addict växte företaget från sex till 25 personer.
 
 #### Nytta
 
-Jag genomförde förstudier, tog fram tidsestimat och utformade arkitekturen för nya applikationer. Jag byggde mjukvara från grunden, vidareutvecklade befintliga produkter och tog självständigt ansvar för underhållet av större äldre applikationer. Jag hade direktkontakt med kunder och hjälpte nya kollegor att komma igång med arbetet och utvecklingsmiljöerna.
+Jag genomförde förstudier och tog fram tidsestimat för nya projekt. Jag utformade arkitekturen och byggde applikationer från grunden, utvecklade nya funktioner i befintliga produkter och ansvarade på egen hand för underhållet av större äldre applikationer. Jag ansvarade för den direkta kundkontakten i de projekt där jag arbetade. Jag höll också i de tekniska frågorna vid vissa anställningsintervjuer och hjälpte nya kollegor att sätta upp sina utvecklingsmiljöer och komma igång med sina arbetsuppgifter.
 
 #### Tekniker
 

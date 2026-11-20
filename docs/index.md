@@ -256,7 +256,7 @@ C, Linux, realtidsoperativsystem, Jira, Eclipse, agila metoder (Kanban)
 
 ![Mentice logga](<https://www.kalyna.se/images/company_logo_mentice.svg>)
 
-### [Mentice](<https://investor.mentice.com/sv>)
+### [Mentice](<https://www.mentice.com/>)
 
 Lead-utvecklare • Konsultuppdrag • 2017–2019
 

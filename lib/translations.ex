@@ -47,7 +47,6 @@ defmodule Kalyna.Translations do
     "https://www.imy.se/" => "https://www.imy.se/en/",
     "https://www.dnb.se/markets" => "https://www.dnbcarnegie.com/",
     "https://www.avarnsecurity.se/" => "https://www.avarnsecurity.com/",
-    "https://investor.mentice.com/sv" => "https://www.mentice.com/",
     "https://www.consiliumsafety.com/en/contact/sweden-swedish/" =>
       "https://www.consiliumsafety.com/en/contact/sweden-english/",
     "https://www.ericsson.com/sv/om-oss" => "https://www.ericsson.com/en",

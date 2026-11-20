@@ -432,7 +432,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-10",
         name: "Mentice",
-        url: "https://investor.mentice.com/sv",
+        url: "https://www.mentice.com/",
         summary: "Lead-utvecklare • Konsultuppdrag • 2017–2019",
         logo: %{
           src: "/images/company_logo_mentice.svg",

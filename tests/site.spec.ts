@@ -71,19 +71,24 @@ for (const language of ['sv', 'en']) {
     await expect(cards).toHaveCount(12);
     for (let index = 0; index < 12; index++) {
       await expect(cards.nth(index).locator('.company-content')).toHaveAttribute('id', `content-company-${index + 1}`);
-      await expect(cards.nth(index).locator('summary')).toContainText(language === 'en' ? 'Work at' : 'Om arbetet hos');
     }
     for (const card of await cards.all()) {
       const summary = card.locator('summary');
       const panel = card.locator('.company-content');
+      const company = (await card.locator('h3').innerText()).trim();
+      const showMore = language === 'en' ? 'Show more' : 'Visa mer';
+      const showLess = language === 'en' ? 'Show less' : 'Visa mindre';
       await expect(panel).not.toBeVisible();
+      await expect(summary).toHaveAccessibleName(`${showMore} — ${company}`);
       await summary.focus();
       await page.keyboard.press('Enter');
       await expect(card.locator('details')).toHaveAttribute('open', '');
       await expect(panel).toBeVisible();
       await expect(summary).toBeFocused();
+      await expect(summary).toHaveAccessibleName(`${showLess} — ${company}`);
       await page.keyboard.press('Space');
       await expect(panel).not.toBeVisible();
+      await expect(summary).toHaveAccessibleName(`${showMore} — ${company}`);
       await summary.click();
       await expect(panel).toBeVisible();
     }

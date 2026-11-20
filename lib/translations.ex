@@ -1,7 +1,6 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
-    "Om arbetet hos" => "Work at",
     "Hoppa till innehållet" => "Skip to content",
     "Se min LinkedIn-profil" => "View my LinkedIn profile",
     "Se min profil hos Kvadrat" => "View my Kvadrat profile",
@@ -51,6 +50,7 @@ defmodule Kalyna.Translations do
     "Företag jag arbetat med." => "Companies I have worked with.",
     "Integritetsskyddsmyndigheten" => "Swedish Authority for Privacy Protection",
     "Visa mer" => "Show more",
+    "Visa mindre" => "Show less",
     "Uppdrag" => "Assignment",
     "Nytta" => "Contribution",
     "Jag drev förbättringar i utvecklingsprocesserna genom att optimera Azure DevOps-arbetsflöden och bidra med viktiga tekniska beslut. Min roll innefattade även programmering i C# och .NET, deltagande i kodgranskningar och dialog med folk ur verksamheten." =>

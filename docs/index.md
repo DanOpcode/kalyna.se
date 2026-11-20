@@ -342,7 +342,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ![Ericsson logga](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 
-### [Ericsson](<https://www.ericsson.com/en>)
+### [Ericsson](<https://www.ericsson.com/>)
 
 Systemutvecklare • Anställd • 2015–2016
 

@@ -44,6 +44,13 @@ defmodule Kalyna.Translations do
       "Ericsson develops mobile network hardware, software, and services that help telecommunications operators worldwide build and run their networks.",
     "Carmenta utvecklar geospatial mjukvara för försvarsindustrin som visualiserar och analyserar geografisk information i realtid." =>
       "Carmenta develops geospatial software for the defense industry that visualizes and analyzes geographic information in real time.",
+    "https://www.imy.se/" => "https://www.imy.se/en/",
+    "https://www.dnb.se/markets" => "https://www.dnbcarnegie.com/",
+    "https://www.avarnsecurity.se/" => "https://www.avarnsecurity.com/",
+    "https://investor.mentice.com/sv" => "https://www.mentice.com/",
+    "https://www.consiliumsafety.com/en/contact/sweden-swedish/" =>
+      "https://www.consiliumsafety.com/en/contact/sweden-english/",
+    "https://www.ericsson.com/sv/om-oss" => "https://www.ericsson.com/en",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",
     "realtidsoperativsystem" => "real-time operating systems",

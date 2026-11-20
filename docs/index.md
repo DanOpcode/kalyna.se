@@ -154,7 +154,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 ![Carnegie Investment Bank logga](<https://www.kalyna.se/images/company_logo_carnegie.svg>)
 
-### [Carnegie Investment Bank](<https://www.dnbcarnegie.com/>)
+### [Carnegie Investment Bank](<https://www.dnb.se/markets>)
 
 Systemutvecklare, scrum-master • Anställd • 2021–2022
 
@@ -256,7 +256,7 @@ C, Linux, realtidsoperativsystem, Jira, Eclipse, agila metoder (Kanban)
 
 ![Mentice logga](<https://www.kalyna.se/images/company_logo_mentice.svg>)
 
-### [Mentice](<https://www.mentice.com/>)
+### [Mentice](<https://investor.mentice.com/sv>)
 
 Lead-utvecklare • Konsultuppdrag • 2017–2019
 
@@ -292,7 +292,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 ![Consilium Marine & Safety logga](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
-### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/>)
+### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/contact/sweden-swedish/>)
 
 Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
 
@@ -342,7 +342,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ![Ericsson logga](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 
-### [Ericsson](<https://www.ericsson.com/en>)
+### [Ericsson](<https://www.ericsson.com/sv/om-oss>)
 
 Systemutvecklare • Anställd • 2015–2016
 

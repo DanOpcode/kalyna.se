@@ -7,7 +7,7 @@ defmodule Kalyna.PortfolioMarkdown do
   def render(lang, base_url) do
     PortfolioContent.sections()
     |> Enum.flat_map(fn
-      {:experience, :experience} -> experience()
+      {:experience, :experience} -> experience(lang)
       {_section, blocks} -> blocks
     end)
     |> render_blocks(lang, base_url)
@@ -59,17 +59,17 @@ defmodule Kalyna.PortfolioMarkdown do
 
   defp serialize_character(character), do: "\\" <> character
 
-  defp experience do
+  defp experience(lang) do
     [
       {:heading, 2, [{:literal, "Professionell erfarenhet"}]},
       {:paragraph, [{:literal, "Företag jag arbetat med."}]}
-      | Enum.flat_map(Kalyna.Experience.companies(), &company/1)
+      | Enum.flat_map(Kalyna.Experience.companies(), &company(&1, lang))
     ]
   end
 
-  defp company(company) do
+  defp company(company, lang) do
     title = [{:literal, company.name}]
-    title = if company.url, do: [{:link, company.url, title}], else: title
+    title = if company.url, do: [{:link, t(lang, company.url), title}], else: title
 
     [
       {:image, {:literal, company.logo.alt}, company.logo.src},

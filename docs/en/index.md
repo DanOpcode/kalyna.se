@@ -94,7 +94,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 ![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
-### [Swedish Authority for Privacy Protection](<https://www.imy.se/>)
+### [Swedish Authority for Privacy Protection](<https://www.imy.se/en/>)
 
 DevOps • Consulting assignment • 2024–2026
 
@@ -224,7 +224,7 @@ C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP,
 
 ![AVARN Security logo](<https://www.kalyna.se/images/company_logo_avarn.webp>)
 
-### [Avarn Security](<https://www.avarnsecurity.se/>)
+### [Avarn Security](<https://www.avarnsecurity.com/>)
 
 Security guard • On-call employee • 2020–2021
 
@@ -292,7 +292,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 ![Consilium Marine & Safety logo](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
-### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/>)
+### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/contact/sweden-english/>)
 
 Team leader, lead developer, software developer • Consulting assignment • 2016–2020
 

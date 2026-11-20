@@ -219,7 +219,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-6",
         name: "Carnegie Investment Bank",
-        url: "https://www.dnbcarnegie.com/",
+        url: "https://www.dnb.se/markets",
         summary: "Systemutvecklare, scrum-master • Anställd • 2021–2022",
         logo: %{
           src: "/images/company_logo_carnegie.svg",
@@ -433,7 +433,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-10",
         name: "Mentice",
-        url: "https://www.mentice.com/",
+        url: "https://investor.mentice.com/sv",
         summary: "Lead-utvecklare • Konsultuppdrag • 2017–2019",
         logo: %{
           src: "/images/company_logo_mentice.svg",
@@ -496,7 +496,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-11",
         name: "Consilium Marine & Safety",
-        url: "https://www.consiliumsafety.com/en/",
+        url: "https://www.consiliumsafety.com/en/contact/sweden-swedish/",
         summary: "Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020",
         logo: %{
           src: "/images/company_logo_consilium.svg",
@@ -591,7 +591,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-12",
         name: "Ericsson",
-        url: "https://www.ericsson.com/en",
+        url: "https://www.ericsson.com/sv/om-oss",
         summary: "Systemutvecklare • Anställd • 2015–2016",
         logo: %{
           src: "/images/company_logo_ericsson.svg",

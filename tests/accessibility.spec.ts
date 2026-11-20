@@ -22,7 +22,6 @@ for (const lang of ['sv', 'en']) {
     await page.emulateMedia({ media: 'print', colorScheme: 'dark' });
     await expect(page.locator('.print-contact')).toBeVisible();
     await expect(page.locator('.settings-row')).toBeHidden();
-    await expect(page.locator('.section-nav')).toBeHidden();
     for (const summary of await page.locator('summary').all()) await expect(summary).toBeHidden();
     for (const panel of await page.locator('.company-content').all()) await expect(panel).toBeVisible();
     await context.close();

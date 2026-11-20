@@ -15,9 +15,6 @@ a, p, h1, h2, h3, h4, h5, span { overflow-wrap: anywhere; }
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: none; }
-.section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.5rem; padding: 1.5rem; }
-.section-nav a { text-decoration: underline; padding-block: .5rem; color: #1d4ed8; }
-.dark .section-nav a { color: #93c5fd; }
 summary { list-style: none; }
 summary::-webkit-details-marker { display: none; }
 details[open] > summary .expand-icon { transform: rotate(180deg); }

@@ -362,7 +362,7 @@ I worked as a developer, lead developer, or technical lead on client projects in
 
 #### Contribution
 
-I conducted feasibility studies and estimated effort for new projects. I designed and built applications from scratch, added features to existing products, and independently maintained large legacy applications. I handled client communication directly on my projects. I also led the technical questioning in some job interviews and helped new colleagues set up their development environments and get started on their assignments.
+I conducted feasibility studies and estimated effort for new projects. I designed and built applications from scratch, added features to existing products, and independently maintained large legacy applications. I handled client communication directly on my projects. I planned and assigned work for junior colleagues and reviewed what they delivered. I also handled the technical questions in some job interviews and helped new colleagues set up their development environments.
 
 #### Technologies
 

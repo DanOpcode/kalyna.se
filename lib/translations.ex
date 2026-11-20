@@ -197,7 +197,8 @@ defmodule Kalyna.Translations do
     "Personliga intressen" => "Personal interests",
     "Sparande och finans" => "Saving and finance",
     "Self-hosting, Linux och öppen källkod" => "Self-hosting, Linux and open source",
-    "Funktionell programmering (Elixir)" => "Functional programming (Elixir)",
+    "Funktionell programmering (Elixir) och AI-driven utveckling" =>
+      "Functional programming (Elixir) and AI-driven development",
     "Löpning, träning och hälsa" => "Running, exercise and health",
     "Del av Kvadrat" => "Part of Kvadrat",
     "Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling." =>

@@ -52,7 +52,7 @@ defmodule Kalyna.PortfolioContent do
     interests_heading: "Personliga intressen",
     finance_interest: "Sparande och finans",
     self_hosting_interest: "Self-hosting, Linux och öppen källkod",
-    elixir_interest: "Funktionell programmering (Elixir)",
+    elixir_interest: "Funktionell programmering (Elixir) och AI-driven utveckling",
     health_interest: "Löpning, träning och hälsa",
     kvadrat_logo_alt: "Kvadrat logga",
     network_heading: "Del av Kvadrat",

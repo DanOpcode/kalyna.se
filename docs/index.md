@@ -292,7 +292,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 ![Consilium Marine & Safety logga](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
-### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/>)
+### [Consilium Marine & Safety](<https://www.consiliumsafety.com/>)
 
 Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
 

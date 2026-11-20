@@ -495,7 +495,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-11",
         name: "Consilium Marine & Safety",
-        url: "https://www.consiliumsafety.com/en/",
+        url: "https://www.consiliumsafety.com/",
         summary: "Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020",
         logo: %{
           src: "/images/company_logo_consilium.svg",

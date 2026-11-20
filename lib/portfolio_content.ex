@@ -11,6 +11,17 @@ defmodule Kalyna.PortfolioContent do
     contact_heading: "Kontakta mig",
     learn_more_label: "Läs mer",
     portrait_alt: "Daniel Jonsson",
+    leadership_heading: "Vem håller ihop det tekniska?",
+    leadership_problem:
+      "I ett litet produktteam är det ofta samma personer som ska bygga nästa version, stötta kollegorna och fatta beslut om hur systemet ska utvecklas. När nästa leverans tar all tid blir de större teknikfrågorna lätt liggande. Under tiden behöver teamet bygga vidare på beslut som ännu inte är fattade.",
+    leadership_offer:
+      "Jag går in i teamet och tar ansvar för att reda ut de frågorna och få besluten på plats. Tillsammans med er avgör jag vad som behöver lösas nu, vad som kan vänta och hur vi delar upp arbetet. Sedan är jag med och bygger. Beroende på var teamet behöver mig kan jag jobba med allt från arkitektur och utveckling till tester och driftsättning.",
+    leadership_contact: "Prata med mig om ert team",
+    leadership_example_heading: "Exempel från Consilium",
+    leadership_example:
+      "Jag tog fram arkitekturen för ett konfigurationsverktyg, höll i kunddialogen och byggde stora delar av verktyget tillsammans med teamet. Jag var med från förstudien till överlämningen.",
+    leadership_example_link: "Läs om uppdraget hos Consilium",
+    leadership_example_fragment: "#company-11",
     about_heading: "Om Daniel Jonsson",
     about_background:
       "Jag är en systemutvecklare med 11+ års erfarenhet av mjukvaruutveckling professionellt inom flera programmeringsspråk. Framförallt har jag arbetat med C#/.NET, men har även gedigen erfarenhet av JavaScript, C++, Python, Swift, HTML och CSS. Jag började programmera som nioåring och har en civilingenjörsexamen i informationsteknik från Chalmers tekniska högskola. Plattformarna som jag har arbetat professionellt med är Windows, Linux, webben, iOS och inbyggda system.",
@@ -131,6 +142,16 @@ defmodule Kalyna.PortfolioContent do
        {:paragraph, [:tagline]},
        {:paragraph, [{:link, :contact_fragment, [:contact_heading]}]},
        {:paragraph, [{:link, :about_fragment, [:learn_more_label]}]}
+     ]},
+    {:leadership,
+     [
+       {:heading, 2, [:leadership_heading]},
+       {:paragraph, [:leadership_problem]},
+       {:paragraph, [:leadership_offer]},
+       {:paragraph, [{:link, :contact_fragment, [:leadership_contact]}]},
+       {:heading, 3, [:leadership_example_heading]},
+       {:paragraph, [:leadership_example]},
+       {:paragraph, [{:link, :leadership_example_fragment, [:leadership_example_link]}]}
      ]},
     {:about,
      [

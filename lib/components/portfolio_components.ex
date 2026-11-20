@@ -66,6 +66,7 @@ defmodule Kalyna.PortfolioComponents do
       </nav>
       <!-- Hero Section -->
       <.hero lang={@lang} />
+      <.leadership lang={@lang} />
 
       <!-- About Section -->
       <.about lang={@lang} />
@@ -144,6 +145,47 @@ defmodule Kalyna.PortfolioComponents do
         >
           {copy(@lang, :learn_more_label)}
         </a>
+      </div>
+    </section>
+    """
+  end
+
+  attr(:lang, :string, required: true)
+
+  def leadership(assigns) do
+    ~H"""
+    <section id="technical-leadership" aria-labelledby="leadership-heading" class="px-6 pb-8">
+      <div class="max-w-4xl mx-auto rounded-2xl border border-slate-200 bg-white p-6 sm:p-10 dark:border-slate-700 dark:bg-slate-800">
+        <h2
+          id="leadership-heading"
+          class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-6"
+        >
+          {copy(@lang, :leadership_heading)}
+        </h2>
+        <div class="grid gap-8 md:grid-cols-3 md:items-start">
+          <div class="space-y-4 leading-relaxed text-slate-700 dark:text-slate-200 md:col-span-2">
+            <p>{copy(@lang, :leadership_problem)}</p>
+            <p>{copy(@lang, :leadership_offer)}</p>
+            <a
+              href={value(:contact_fragment)}
+              class="inline-flex rounded-lg bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700"
+            >
+              {copy(@lang, :leadership_contact)}
+            </a>
+          </div>
+          <div class="rounded-xl bg-slate-100 p-5 text-slate-700 dark:bg-slate-900 dark:text-slate-200">
+            <h3 class="mb-3 font-semibold text-slate-900 dark:text-white">
+              {copy(@lang, :leadership_example_heading)}
+            </h3>
+            <p class="leading-relaxed">{copy(@lang, :leadership_example)}</p>
+            <a
+              href={value(:leadership_example_fragment)}
+              class="mt-4 inline-block font-medium text-blue-700 underline underline-offset-4 dark:text-blue-300"
+            >
+              {copy(@lang, :leadership_example_link)}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     """

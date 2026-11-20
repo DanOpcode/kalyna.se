@@ -8,6 +8,20 @@ Jag är Daniel Jonsson, systemutvecklare och konsult genom Kalyna Solutions AB i
 
 [Läs mer](<https://www.kalyna.se/#about>)
 
+## Vem håller ihop det tekniska?
+
+I ett litet produktteam är det ofta samma personer som ska bygga nästa version, stötta kollegorna och fatta beslut om hur systemet ska utvecklas. När nästa leverans tar all tid blir de större teknikfrågorna lätt liggande. Under tiden behöver teamet bygga vidare på beslut som ännu inte är fattade.
+
+Jag går in i teamet och tar ansvar för att reda ut de frågorna och få besluten på plats. Tillsammans med er avgör jag vad som behöver lösas nu, vad som kan vänta och hur vi delar upp arbetet. Sedan är jag med och bygger. Beroende på var teamet behöver mig kan jag jobba med allt från arkitektur och utveckling till tester och driftsättning.
+
+[Prata med mig om ert team](<https://www.kalyna.se/#contact>)
+
+### Exempel från Consilium
+
+Jag tog fram arkitekturen för ett konfigurationsverktyg, höll i kunddialogen och byggde stora delar av verktyget tillsammans med teamet. Jag var med från förstudien till överlämningen.
+
+[Läs om uppdraget hos Consilium](<https://www.kalyna.se/#company-11>)
+
 ![Daniel Jonsson](<https://www.kalyna.se/images/profile1.webp>)
 
 ## Om Daniel Jonsson

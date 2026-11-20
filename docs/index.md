@@ -74,7 +74,7 @@ Mina arbetsuppgifter omfattar driftsättning på plats hos kunder, integrationst
 
 ![Re:it logga](<https://www.kalyna.se/images/company_logo_reit.svg>)
 
-### Re:it
+### [Re:it](<https://reit.se/>)
 
 Lead-utvecklare • Konsultuppdrag • 2023–pågående
 
@@ -94,7 +94,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 ![IMY logga](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
-### Integritetsskyddsmyndigheten
+### [Integritetsskyddsmyndigheten](<https://www.imy.se/>)
 
 DevOps • Konsultuppdrag • 2024–2026
 
@@ -114,7 +114,7 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 
 ![Altero Consulting logga](<https://www.kalyna.se/images/company_logo_altero.webp>)
 
-### Altero Consulting
+### [Altero Consulting](<https://www.allabolag.se/foretag/altero-consulting-ab/tyres%C3%B6/redovisning-bokf%C3%B6ring/2KHVEWII5YGRY>)
 
 Systemutvecklare • Konsultuppdrag • 2022–2025
 
@@ -154,7 +154,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 ![Carnegie Investment Bank logga](<https://www.kalyna.se/images/company_logo_carnegie.svg>)
 
-### Carnegie Investment Bank
+### [Carnegie Investment Bank](<https://www.dnbcarnegie.com/>)
 
 Systemutvecklare, scrum-master • Anställd • 2021–2022
 
@@ -174,7 +174,7 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 ![Cellink logga](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
-### Cellink
+### [Cellink](<https://www.cellink.com/>)
 
 Teamledare, systemutvecklare • Konsultuppdrag • 2019–2021
 
@@ -224,7 +224,7 @@ C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP,
 
 ![AVARN Security logga](<https://www.kalyna.se/images/company_logo_avarn.webp>)
 
-### Avarn Security
+### [Avarn Security](<https://www.avarnsecurity.se/>)
 
 Väktare • Behovsanställd • 2020–2021
 
@@ -236,7 +236,7 @@ Behovsanställd som väktare. Planerarna på Avarn kunde ringa och erbjuda mig p
 
 ![Lab Gruppen logga](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
 
-### Lab Gruppen
+### [Lab Gruppen](<https://labgruppen.com/en>)
 
 Systemutvecklare • Konsultuppdrag • 2020–2020
 
@@ -256,7 +256,7 @@ C, Linux, realtidsoperativsystem, Jira, Eclipse, agila metoder (Kanban)
 
 ![Mentice logga](<https://www.kalyna.se/images/company_logo_mentice.svg>)
 
-### Mentice
+### [Mentice](<https://www.mentice.com/>)
 
 Lead-utvecklare • Konsultuppdrag • 2017–2019
 
@@ -292,7 +292,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 ![Consilium Marine & Safety logga](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
-### Consilium Marine & Safety
+### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/>)
 
 Teamledare, lead-utvecklare, systemutvecklare • Konsultuppdrag • 2016–2020
 
@@ -342,7 +342,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ![Ericsson logga](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 
-### Ericsson
+### [Ericsson](<https://www.ericsson.com/en>)
 
 Systemutvecklare • Anställd • 2015–2016
 

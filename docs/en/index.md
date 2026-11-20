@@ -74,7 +74,7 @@ My work includes on-site deployment at customer locations, integration testing, 
 
 ![Re:it logo](<https://www.kalyna.se/images/company_logo_reit.svg>)
 
-### Re:it
+### [Re:it](<https://reit.se/>)
 
 Lead developer • Consulting assignment • 2023–present
 
@@ -94,7 +94,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure DevOps, Entity Framework, BankID, JWT, S
 
 ![IMY logo](<https://www.kalyna.se/images/company_logo_imy.svg>)
 
-### Swedish Authority for Privacy Protection
+### [Swedish Authority for Privacy Protection](<https://www.imy.se/>)
 
 DevOps • Consulting assignment • 2024–2026
 
@@ -114,7 +114,7 @@ C#, .NET, Blazor, Azure DevOps, ASP.NET Core, Entity Framework, SQL Server, SQL 
 
 ![Altero Consulting logo](<https://www.kalyna.se/images/company_logo_altero.webp>)
 
-### Altero Consulting
+### [Altero Consulting](<https://www.allabolag.se/foretag/altero-consulting-ab/tyres%C3%B6/redovisning-bokf%C3%B6ring/2KHVEWII5YGRY>)
 
 Software developer • Consulting assignment • 2022–2025
 
@@ -154,7 +154,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 ![Carnegie Investment Bank logo](<https://www.kalyna.se/images/company_logo_carnegie.svg>)
 
-### Carnegie Investment Bank
+### [Carnegie Investment Bank](<https://www.dnbcarnegie.com/>)
 
 Software developer, scrum master • Employee • 2021–2022
 
@@ -174,7 +174,7 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 ![Cellink logo](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
-### Cellink
+### [Cellink](<https://www.cellink.com/>)
 
 Team leader, software developer • Consulting assignment • 2019–2021
 
@@ -224,7 +224,7 @@ C++17, GCC, Google Test (gtest), Yocto, Linux, CMake, Jenkins, MQTT, JSON, HTTP,
 
 ![AVARN Security logo](<https://www.kalyna.se/images/company_logo_avarn.webp>)
 
-### Avarn Security
+### [Avarn Security](<https://www.avarnsecurity.se/>)
 
 Security guard • On-call employee • 2020–2021
 
@@ -236,7 +236,7 @@ Worked as an on-call security guard. Avarn's planners offered shifts when staff 
 
 ![Lab Gruppen logo](<https://www.kalyna.se/images/company_logo_labgruppen.webp>)
 
-### Lab Gruppen
+### [Lab Gruppen](<https://labgruppen.com/en>)
 
 Software developer • Consulting assignment • 2020–2020
 
@@ -256,7 +256,7 @@ C, Linux, real-time operating systems, Jira, Eclipse, agile methods (Kanban)
 
 ![Mentice logo](<https://www.kalyna.se/images/company_logo_mentice.svg>)
 
-### Mentice
+### [Mentice](<https://www.mentice.com/>)
 
 Lead developer • Consulting assignment • 2017–2019
 
@@ -292,7 +292,7 @@ Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, jQuery UI, JSON, Java, Ba
 
 ![Consilium Marine & Safety logo](<https://www.kalyna.se/images/company_logo_consilium.svg>)
 
-### Consilium Marine & Safety
+### [Consilium Marine & Safety](<https://www.consiliumsafety.com/en/>)
 
 Team leader, lead developer, software developer • Consulting assignment • 2016–2020
 
@@ -342,7 +342,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ![Ericsson logo](<https://www.kalyna.se/images/company_logo_ericsson.svg>)
 
-### Ericsson
+### [Ericsson](<https://www.ericsson.com/en>)
 
 Software developer • Employee • 2015–2016
 

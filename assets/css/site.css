@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./print.css";
 @source not "../../tests";
 @custom-variant dark (&:where(.dark *));
 
@@ -23,12 +24,6 @@ details[open] > summary .expand-icon { transform: rotate(180deg); }
 .company-item { align-self: start; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-}
-@media print {
-  details::details-content { display: block; content-visibility: visible; }
-  details > .company-content { display: block !important; }
-  .company-item { break-inside: avoid; }
-  summary, .section-nav, .skip-link { display: none !important; }
 }
 @media (forced-colors: active) {
   :focus-visible { outline-color: Highlight; }

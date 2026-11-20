@@ -13,7 +13,7 @@ defmodule Kalyna.PortfolioComponents do
     assigns = assign(assigns, :language_suggestion_script, @language_suggestion_script)
 
     ~H"""
-    <div class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div class="portfolio min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <div class="settings-row flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-2 pt-6 text-xs sm:text-base">
         <nav
           id="language-navigation"
@@ -124,7 +124,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def hero(assigns) do
     ~H"""
-    <section class="px-6 py-20 max-w-4xl mx-auto text-center">
+    <section class="portfolio-hero px-6 py-20 max-w-4xl mx-auto text-center">
       <div class="flex items-center justify-center mb-8">
         <img
           src={value(:logo_src)}
@@ -135,14 +135,22 @@ defmodule Kalyna.PortfolioComponents do
           alt={copy(@lang, :logo_alt)}
           class="w-16 mr-4 shrink-0"
         />
-        <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white">
-          {copy(@lang, :company_name)}
-        </h1>
+        <div>
+          <p class="print-masthead">{copy(@lang, :portrait_alt)}</p>
+          <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white">
+            {copy(@lang, :company_name)}
+          </h1>
+        </div>
       </div>
       <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto leading-relaxed">
         {copy(@lang, :tagline)}
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <p class="print-masthead print-contact">
+        <a href={value(:email_url)}>{copy(@lang, :email_address)}</a>
+        <span>{copy(@lang, :phone_number)}</span>
+        <a href={if @lang == "en", do: "https://kalyna.se/en/", else: "https://kalyna.se/"}>kalyna.se</a>
+      </p>
+      <div class="hero-actions flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href={value(:contact_fragment)}
           class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors font-medium"
@@ -164,7 +172,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def about(assigns) do
     ~H"""
-    <section id="about" class="px-6 py-16">
+    <section id="about" class="print-profile px-6 py-16">
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="md:col-span-1 text-center">
@@ -315,7 +323,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def testimonial(assigns) do
     ~H"""
-    <section class="px-6 py-16">
+    <section class="print-testimonial px-6 py-16">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
           {copy(@lang, :testimonial_heading)}
@@ -352,7 +360,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def personal(assigns) do
     ~H"""
-    <section class="px-6 py-16">
+    <section class="print-profile px-6 py-16">
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="md:col-span-1 text-center">
@@ -418,7 +426,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def network(assigns) do
     ~H"""
-    <section class="px-6 py-16">
+    <section class="print-network px-6 py-16">
       <div class="max-w-4xl mx-auto rounded-lg p-10">
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="md:col-span-1 px-4 py-10 rounded-lg bg-[#d9d4fc] dark:bg-[#5e0228]">
@@ -586,7 +594,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def community(assigns) do
     ~H"""
-    <section class="px-6 py-16">
+    <section class="print-community px-6 py-16">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
           {copy(@lang, :community_heading)}
@@ -654,7 +662,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def about_kalyna(assigns) do
     ~H"""
-    <section class="px-6 py-16 bg-white dark:bg-slate-800">
+    <section class="print-profile px-6 py-16 bg-white dark:bg-slate-800">
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="md:col-span-1 text-center">
@@ -697,7 +705,7 @@ defmodule Kalyna.PortfolioComponents do
 
   def company_information(assigns) do
     ~H"""
-    <section class="px-6 py-16 bg-slate-100 dark:bg-slate-900">
+    <section class="print-company px-6 py-16 bg-slate-100 dark:bg-slate-900">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
           {copy(@lang, :company_heading)}

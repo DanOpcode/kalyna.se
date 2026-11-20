@@ -1,0 +1,156 @@
+.print-masthead { display: none; }
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm 16mm;
+
+    @bottom-left {
+      content: "Kalyna Solutions AB · kalyna.se";
+      color: #475569;
+      font: 8pt system-ui, sans-serif;
+    }
+
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      color: #475569;
+      font: 8pt system-ui, sans-serif;
+    }
+  }
+
+  .skip-link,
+  .portfolio :is(.settings-row, #language-suggestion, .section-nav, .hero-actions, summary, svg[aria-hidden="true"]) {
+    display: none !important;
+  }
+
+  .portfolio {
+    min-height: 0;
+    font: 10.5pt/1.36 system-ui, sans-serif;
+    color: #172333;
+  }
+
+  .portfolio,
+  .portfolio * {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio * { color: inherit; }
+
+  .portfolio > section {
+    max-width: none;
+    margin: 0;
+    padding: 3mm 0;
+    border-bottom: .25mm solid #ccd4de;
+    text-align: left;
+    break-inside: avoid;
+  }
+
+  .portfolio > section > div { max-width: none; }
+  .portfolio :is(h1, h2, h3, h4, h5, p, blockquote, li, a) {
+    font-size: inherit;
+    line-height: inherit;
+    text-align: left;
+  }
+  .portfolio :is(h1, h2, h3, h4, h5) { break-after: avoid; }
+  .portfolio :is(p, blockquote, li) { orphans: 2; widows: 2; }
+  .portfolio h2 { color: #194d73; font-size: 15pt; margin-bottom: 2mm; }
+  .portfolio h3 { font-size: 11pt; margin-bottom: 1mm; }
+  .portfolio p { max-width: none; margin: 0 0 1.5mm; }
+  .portfolio p:last-child { margin-bottom: 0; }
+  .portfolio a { color: #194d73; text-decoration: underline; }
+  .portfolio :is(#daily-diff, .print-network, #contact, .print-community) a[href^="https://"]:not(:has(img))::after {
+    content: attr(href);
+    display: block;
+    font-size: 9pt;
+    font-weight: normal;
+  }
+
+  .portfolio .portfolio-hero {
+    padding-top: 0;
+    border-bottom: .7mm solid #194d73;
+  }
+  .portfolio-hero > .flex { justify-content: flex-start; margin-bottom: 2mm; }
+  .portfolio-hero img { width: 13mm; }
+  .portfolio .print-masthead { display: block; }
+  .portfolio .portfolio-hero h1 { font-size: 11pt; font-weight: 500; }
+  .portfolio .portfolio-hero .print-masthead:not(.print-contact) {
+    font-size: 27pt;
+    font-weight: 700;
+    line-height: 1.08;
+    margin: 0;
+  }
+  .portfolio .print-contact { display: flex; gap: 2mm 5mm; flex-wrap: wrap; margin-top: 2mm; }
+
+  .portfolio .grid { gap: 2mm 5mm; }
+  .portfolio .print-profile > div > .grid,
+  .portfolio .print-network .grid {
+    display: grid;
+    grid-template-columns: 24mm minmax(0, 1fr);
+    align-items: start;
+  }
+  .portfolio :is(.print-profile, .print-network) .grid > * { grid-column: auto; }
+  .portfolio .print-profile img { width: 23mm; height: auto; margin: 0; border: 0; }
+  .portfolio .print-profile .space-y-6 > * { margin-block: 0 1.2mm; }
+  .portfolio .print-profile .grid .grid { display: block; margin-top: 2mm; }
+  .portfolio .print-profile li { margin-block: 0; }
+  .portfolio .print-profile li span { display: none; }
+  .portfolio .print-network :is(.rounded-lg, a) { padding: 0; border: 0; }
+  .portfolio .print-network img { filter: none; }
+
+  .portfolio #expertise .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .portfolio #expertise li { margin: 0; }
+  .portfolio #daily-diff { overflow: visible; }
+  .portfolio #daily-diff > .grid { grid-template-columns: 2fr 1fr; }
+  .portfolio #daily-diff a { display: block; padding: 0; border: 0; transform: none; rotate: none; }
+  .portfolio #daily-diff img { border-radius: 2mm; }
+
+  .portfolio #experience { break-inside: auto; }
+  .portfolio #experience > div > p { break-after: avoid; }
+  .portfolio #experience > div > .grid { display: block; }
+  .portfolio .company-item {
+    display: flow-root;
+    border-radius: 0;
+    border-top: .25mm solid #ccd4de;
+    padding: 2mm 0;
+  }
+  .portfolio .company-item > div:first-child { float: right; margin: 0 0 1mm 4mm; }
+  .portfolio .company-item > div:first-child > div { width: 20mm; height: 8mm; padding: 0; }
+  .portfolio .company-item > div:nth-child(2) {
+    margin-bottom: 1mm;
+    break-after: avoid;
+    break-inside: avoid;
+  }
+  .portfolio .experience-details::details-content { display: block; content-visibility: visible; }
+  .portfolio .company-content { display: block !important; clear: both; }
+  .portfolio .company-content > div { margin: 0; padding: 0; border: 0; }
+  .portfolio .company-content .space-y-6 > * { margin-block: 0 1.2mm; }
+  .portfolio .company-content :is(h4, h5) { margin-bottom: .5mm; }
+  .portfolio .company-content .space-y-6 > div:not(.space-y-6) { break-inside: avoid; }
+  .portfolio .company-content .flex { gap: 1mm; }
+  .portfolio .company-content .flex span {
+    border: .2mm solid #ccd4de;
+    border-radius: 1mm;
+    padding: 0 1mm;
+    font-size: 9pt;
+  }
+
+  .portfolio .print-testimonial :is(.relative, .pt-8) { padding: 0; }
+  .portfolio .print-testimonial blockquote {
+    border-left: .6mm solid #194d73;
+    padding-left: 3mm;
+    margin-bottom: 1.5mm;
+  }
+  .portfolio :is(#contact, .print-community) .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .portfolio :is(#contact, .print-community) .grid > div { padding: 0; text-align: left; }
+  .portfolio :is(#contact, .print-community) .grid > div > div:first-child { display: none; }
+  .portfolio :is(#contact, .print-community) a { display: inline-block; padding: 0; }
+  .portfolio .print-company :is(.max-w-2xl, .p-8) { max-width: none; padding: 0; }
+  .portfolio .print-company .space-y-4 { margin-bottom: 2mm; }
+  .portfolio .print-company :is(.space-y-4, .space-y-3) > div {
+    justify-content: flex-start;
+    gap: 3mm;
+    margin-block: 0;
+  }
+  .portfolio .print-company .pt-6 { padding-top: 2mm; }
+}

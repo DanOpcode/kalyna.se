@@ -49,12 +49,28 @@ defmodule Kalyna.ExperienceTest do
 
       aqc = Enum.find(cards, &String.contains?(&1, "content-company-13"))
       assert aqc =~ ~s(href="https://www.aqc.se/")
-      assert aqc =~ "CELLCYTE X"
-      assert aqc =~ if(lang == "en", do: "Jan–Aug 2021", else: "jan.–aug. 2021")
+
+      assert aqc =~
+               if(lang == "en",
+                 do: "for part of my assignment",
+                 else: "under en del av mitt uppdrag"
+               )
+
+      assert aqc =~
+               if(lang == "en",
+                 do: "Consultant • Full-time • 2021–2021",
+                 else: "Konsult • Anställd • 2021–2021"
+               )
 
       bit_addict = Enum.find(cards, &String.contains?(&1, "content-company-14"))
       assert bit_addict =~ ~s(href="https://bitaddict.se/")
-      assert bit_addict =~ if(lang == "en", do: "Sep 2016–Dec 2020", else: "sep. 2016–dec. 2020")
+
+      assert bit_addict =~
+               if(lang == "en",
+                 do: "Consultant • Full-time • 2016–2020",
+                 else: "Konsult • Anställd • 2016–2020"
+               )
+
       assert bit_addict =~ if(lang == "en", do: "embedded systems", else: "inbyggda system")
     end
   end

@@ -176,9 +176,9 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 ### [AQC Sweden AB](<https://www.aqc.se/>)
 
-Software Development Consultant, Team Lead at CELLINK • Full-time • Jan–Aug 2021
+Consultant • Full-time • 2021–2021
 
-AQC employed me during my assignment at CELLINK, where I led a team of six colleagues developing the interface for CELLCYTE X.
+AQC employed me for part of my assignment at CELLINK.
 
 ![Cellink logo](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
@@ -352,7 +352,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ### [Bit Addict](<https://bitaddict.se/>)
 
-Software Developer, Lead Developer and Technical Lead • Full-time • Sep 2016–Dec 2020
+Consultant • Full-time • 2016–2020
 
 Bit Addict is a software development consultancy.
 

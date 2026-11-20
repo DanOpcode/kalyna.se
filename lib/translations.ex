@@ -1,13 +1,11 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
-    "Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021" =>
-      "Software Development Consultant, Team Lead at CELLINK • Full-time • Jan–Aug 2021",
+    "Konsult • Anställd • 2021–2021" => "Consultant • Full-time • 2021–2021",
     "AQC Sweden AB logga" => "AQC Sweden AB logo",
-    "Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X." =>
-      "AQC employed me during my assignment at CELLINK, where I led a team of six colleagues developing the interface for CELLCYTE X.",
-    "Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020" =>
-      "Software Developer, Lead Developer and Technical Lead • Full-time • Sep 2016–Dec 2020",
+    "Jag var anställd av AQC under en del av mitt uppdrag hos CELLINK." =>
+      "AQC employed me for part of my assignment at CELLINK.",
+    "Konsult • Anställd • 2016–2020" => "Consultant • Full-time • 2016–2020",
     "Bit Addict logga" => "Bit Addict logo",
     "Bit Addict är ett konsultbolag inom mjukvaruutveckling." =>
       "Bit Addict is a software development consultancy.",

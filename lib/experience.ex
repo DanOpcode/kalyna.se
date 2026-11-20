@@ -275,7 +275,7 @@ defmodule Kalyna.Experience do
         id: "company-13",
         name: "AQC Sweden AB",
         url: "https://www.aqc.se/",
-        summary: "Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021",
+        summary: "Konsult • Anställd • 2021–2021",
         logo: %{
           src: "/images/company_logo_aqc.webp",
           width: 313,
@@ -284,8 +284,7 @@ defmodule Kalyna.Experience do
           fill: false,
           monochrome: false
         },
-        description:
-          "Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X.",
+        description: "Jag var anställd av AQC under en del av mitt uppdrag hos CELLINK.",
         projects: []
       },
       %{
@@ -608,8 +607,7 @@ defmodule Kalyna.Experience do
         id: "company-14",
         name: "Bit Addict",
         url: "https://bitaddict.se/",
-        summary:
-          "Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020",
+        summary: "Konsult • Anställd • 2016–2020",
         logo: %{
           src: "/images/company_logo_bitaddict.webp",
           width: 250,

@@ -176,9 +176,9 @@ C#, .NET, ASP.NET, Entity Framework, SQL, SQL Server, SQL Server Management Stud
 
 ### [AQC Sweden AB](<https://www.aqc.se/>)
 
-Systemutvecklingskonsult, teamledare hos CELLINK • Anställd • jan.–aug. 2021
+Konsult • Anställd • 2021–2021
 
-Jag var anställd av AQC under mitt uppdrag hos CELLINK, där jag ledde ett team på sex kollegor som utvecklade gränssnittet till CELLCYTE X.
+Jag var anställd av AQC under en del av mitt uppdrag hos CELLINK.
 
 ![Cellink logga](<https://www.kalyna.se/images/company_logo_cellink.svg>)
 
@@ -352,7 +352,7 @@ C#, .NET Framework, Aras Innovator, HTML, CSS, JavaScript, HTTP, SQL Server, SQL
 
 ### [Bit Addict](<https://bitaddict.se/>)
 
-Systemutvecklare, lead-utvecklare och teknisk lead • Anställd • sep. 2016–dec. 2020
+Konsult • Anställd • 2016–2020
 
 Bit Addict är ett konsultbolag inom mjukvaruutveckling.
 

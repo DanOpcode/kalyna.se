@@ -17,6 +17,8 @@ engagement; a current rebrand is not automatically the same artwork.
 | CELLINK | Use the official full CELLINK / A BICO COMPANY SVG supplied by the owner in [PR #55](https://github.com/DanOpcode/kalyna.se/pull/55#issuecomment-6210255965). [Original attachment](https://github.com/user-attachments/assets/f7ffd46b-f658-4b47-b403-d750926d3485). Changed only the white fill to black for the white logo card. |
 | Lab Gruppen | [Official downloads](https://www.labgruppen.com/) returned HTTP 403. Retained the original PNG and serve its optimized WebP derivative. |
 | IdAgree | Candidate domains failed DNS resolution or timed out. Retained the original JPEG and serve its optimized WebP derivative. |
+| Bit Addict | [Official full-color wordmark PNG](https://bitaddict.se/wp-content/uploads/2019/11/BIT_ADDICT_Logo_PNG_SIDE_BY_SIDE_MAIL.png) from 2019, served as WebP. |
+| AQC Sweden AB | [Official AQC wordmark PNG](https://www.aqc.se/wp-content/uploads/2022/10/aqc-logo-primary.png), served as WebP. |
 
 ## Raster fallbacks
 

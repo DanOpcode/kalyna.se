@@ -410,14 +410,14 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Utanför jobbet
 
-När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj.
+Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för att besöka min frus familj. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster.
 
 ### Personliga intressen
 
 - Sparande och finans
 - Self-hosting, Linux och öppen källkod
-- Funktionell programmering (Elixir)
-- Träning och hälsa
+- Funktionell programmering (Elixir) och AI-driven utveckling
+- Löpning, träning och hälsa
 
 ![Kvadrat logga](<https://www.kalyna.se/images/kvadrat-logo.svg>)
 

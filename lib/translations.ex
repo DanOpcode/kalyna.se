@@ -192,13 +192,14 @@ defmodule Kalyna.Translations do
     "— Citat från tidigare kollega." =>
       "— Quote from a former colleague (translated from Swedish).",
     "Utanför jobbet" => "Outside work",
-    "När jag inte kodar är jag en familjefar, gift med min underbara fru och stolt pappa till vår dotter. Varje år reser vi till Ukraina, även under kriget, för att besöka min frus familj." =>
-      "When I am not coding, I am a family man, married to my wonderful wife and a proud father to our daughter. Every year we travel to Ukraine, even during the war, to visit my wife's family.",
+    "Jag är gift och pappa till två döttrar. Varje år reser vi till Ukraina för att besöka min frus familj. Som DanOpcode skriver jag och gör videor om mjukvaruutveckling, Linux, öppen källkod och hur man driver egna tjänster." =>
+      "I’m married and a dad to two daughters. Every year we travel to Ukraine to visit my wife’s family. As DanOpcode, I write and make videos about software development, Linux, open source and self-hosting.",
     "Personliga intressen" => "Personal interests",
     "Sparande och finans" => "Saving and finance",
     "Self-hosting, Linux och öppen källkod" => "Self-hosting, Linux and open source",
-    "Funktionell programmering (Elixir)" => "Functional programming (Elixir)",
-    "Träning och hälsa" => "Exercise and health",
+    "Funktionell programmering (Elixir) och AI-driven utveckling" =>
+      "Functional programming (Elixir) and AI-driven development",
+    "Löpning, träning och hälsa" => "Running, exercise and health",
     "Del av Kvadrat" => "Part of Kvadrat",
     "Medlem i Kvadrat – Sveriges största nätverk av egenföretagare som hjälper företag och organisationer till förändring, med spetskonsulter inom systemutveckling, digitalisering, informationshantering, ledning, organisations- och verksamhetsutveckling." =>
       "Member of Kvadrat, Sweden's largest network of independent consultants helping companies and organisations change, with specialists in software development, digitalisation, information management, leadership and organisational and business development.",

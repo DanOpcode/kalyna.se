@@ -45,7 +45,7 @@ defmodule Kalyna.Translations do
     "Carmenta utvecklar geospatial mjukvara för försvarsindustrin som visualiserar och analyserar geografisk information i realtid." =>
       "Carmenta develops geospatial software for the defense industry that visualizes and analyzes geographic information in real time.",
     "https://www.imy.se/" => "https://www.imy.se/en/",
-    "https://www.dnb.se/markets" => "https://www.dnbcarnegie.com/",
+    "https://www.carnegie.se/" => "https://www.dnbcarnegie.com/",
     "https://www.avarnsecurity.se/" => "https://www.avarnsecurity.com/",
     "Carmenta logga" => "Carmenta logo",
     "mikrotjänster" => "microservices",

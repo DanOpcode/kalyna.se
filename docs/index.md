@@ -154,7 +154,7 @@ C#, .NET, ASP.NET, Blazor, Azure, Azure App Service, Azure SQL Database, Entity 
 
 ![Carnegie Investment Bank logga](<https://www.kalyna.se/images/company_logo_carnegie.svg>)
 
-### [Carnegie Investment Bank](<https://www.dnb.se/markets>)
+### [Carnegie Investment Bank](<https://www.carnegie.se/>)
 
 Systemutvecklare, scrum-master • Anställd • 2021–2022
 

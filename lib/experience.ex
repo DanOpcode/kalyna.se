@@ -218,7 +218,7 @@ defmodule Kalyna.Experience do
       %{
         id: "company-6",
         name: "Carnegie Investment Bank",
-        url: "https://www.dnb.se/markets",
+        url: "https://www.carnegie.se/",
         summary: "Systemutvecklare, scrum-master • Anställd • 2021–2022",
         logo: %{
           src: "/images/company_logo_carnegie.svg",

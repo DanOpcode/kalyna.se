@@ -30,7 +30,7 @@ for (const lang of ['sv', 'en']) {
     expect(new Set(ids).size).toBe(ids.length);
     for (const href of await page.locator('a[href^="#"]').evaluateAll(els => els.map(el => el.getAttribute('href')!.slice(1)))) expect(ids).toContain(href);
     await page.emulateMedia({ forcedColors: 'active', reducedMotion: 'reduce' });
-    const focusables = page.locator('a, select, summary');
+    const focusables = page.locator('a:visible, button:visible, select:visible, summary:visible');
     for (const element of await focusables.all()) {
       await element.focus();
       await expect(element).toBeFocused();

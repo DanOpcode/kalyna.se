@@ -435,13 +435,14 @@ Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett an
 
 [daniel@kalyna.se](<mailto:daniel@kalyna.se>)
 
-#### Publik GPG-nyckel
+#### Publik OpenPGP-nyckel
 
 Fingeravtryck: B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35
 
 - [keys.openpgp.org](<https://keys.openpgp.org/vks/v1/by-fingerprint/B94F1E8215E408604E02B35ED724EEFED54E4E35>)
 - [Ubuntu](<https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
 - [Mailvelope](<https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
+- [Hjälp med OpenPGP](<https://support.mozilla.org/en-US/kb/openpgp-thunderbird-howto-and-faq>)
 
 ### Telefon
 
@@ -459,11 +460,13 @@ DanOpcode.01
 
 [@DanOpcode](<https://t.me/DanOpcode>)
 
-### Mastodon
+## Följ mig
 
-[Följ mig på Mastodon](<https://mastodon.social/@DanOpcode>)
+### YouTube
 
-## Innehåll & community
+Personliga tankar om livet och teknik i videoformat.
+
+[Titta på videos](<https://www.youtube.com/@DanOpcode>)
 
 ### Blogg
 
@@ -471,11 +474,11 @@ Personliga tankar om livet och teknik i textformat.
 
 [Läs artiklar](<https://www.danopcode.com/>)
 
-### YouTube
+### Mastodon
 
-Personliga tankar om livet och teknik i videoformat.
+Korta inlägg om utveckling och teknik.
 
-[Titta på videos](<https://www.youtube.com/@DanOpcode>)
+[Följ mig på Mastodon](<https://mastodon.social/@DanOpcode>)
 
 ![Skogsolvon i blom](<https://www.kalyna.se/images/kalyna.webp>)
 
@@ -487,16 +490,16 @@ Personliga tankar om livet och teknik i videoformat.
 
 Juridiskt namn: Kalyna Solutions AB
 
-Organisationsnummer: 559386-8457
+Organisationsnummer: [559386-8457](<https://foretagsinfo.bolagsverket.se/sok-foretagsinformation-web/foretag/5593868457>)
 
 VAT-nummer: SE559386845701
 
 Plats: Stockholm, Sverige
 
+Säte: Lidingö kommun, Stockholms län, Sverige
+
 Skattestatus: Godkänd för F-skatt
 
-### Tillgänglighet
+### Så jobbar jag
 
-Projekt på plats i Stockholmsområdet
-
-Remote-projekt
+Jag tar uppdrag på plats i Stockholmsområdet och på distans.

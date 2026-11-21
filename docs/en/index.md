@@ -435,13 +435,14 @@ Do you have a need, a thought or an idea? You are welcome to contact me for any 
 
 [daniel@kalyna.se](<mailto:daniel@kalyna.se>)
 
-#### GPG public key
+#### OpenPGP public key
 
 Fingerprint: B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35
 
 - [keys.openpgp.org](<https://keys.openpgp.org/vks/v1/by-fingerprint/B94F1E8215E408604E02B35ED724EEFED54E4E35>)
 - [Ubuntu](<https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
 - [Mailvelope](<https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35>)
+- [OpenPGP help](<https://support.mozilla.org/en-US/kb/openpgp-thunderbird-howto-and-faq>)
 
 ### Phone
 
@@ -459,11 +460,13 @@ DanOpcode.01
 
 [@DanOpcode](<https://t.me/DanOpcode>)
 
-### Mastodon
+## Follow me
 
-[Follow me on Mastodon](<https://mastodon.social/@DanOpcode>)
+### YouTube
 
-## Content & community
+Personal thoughts on life and technology in video form.
+
+[Watch videos](<https://www.youtube.com/@DanOpcode>)
 
 ### Blog
 
@@ -471,11 +474,11 @@ Personal thoughts on life and technology in writing.
 
 [Read articles](<https://www.danopcode.com/>)
 
-### YouTube
+### Mastodon
 
-Personal thoughts on life and technology in video form.
+Short posts about software development and technology.
 
-[Watch videos](<https://www.youtube.com/@DanOpcode>)
+[Follow me on Mastodon](<https://mastodon.social/@DanOpcode>)
 
 ![Viburnum in bloom](<https://www.kalyna.se/images/kalyna.webp>)
 
@@ -487,16 +490,16 @@ Personal thoughts on life and technology in video form.
 
 Legal name: Kalyna Solutions AB
 
-Company registration number: 559386-8457
+Company registration number: [559386-8457](<https://foretagsinfo.bolagsverket.se/sok-foretagsinformation-web/foretag/5593868457>)
 
 VAT number: SE559386845701
 
 Location: Stockholm, Sweden
 
+Registered office: Lidingö Municipality, Stockholm County, Sweden
+
 Tax status: Approved for Swedish F-tax
 
-### Availability
+### How I work
 
-On-site projects in the Stockholm area
-
-Remote projects
+I take on projects on site in the Stockholm area and remotely.

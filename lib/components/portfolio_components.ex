@@ -540,6 +540,25 @@ defmodule Kalyna.PortfolioComponents do
                   </a>
                 </li>
               </ul>
+              <p class="mt-2">
+                <a
+                  href={value(:gpg_help_url)}
+                  class="inline-flex min-h-8 items-center gap-1 rounded px-2 text-blue-600 underline hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:text-blue-300 dark:hover:bg-slate-700"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="size-4"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <circle cx="10" cy="10" r="8" />
+                    <path d="M10 9v5m0-8v.25" stroke-linecap="round" />
+                  </svg>
+                  {copy(@lang, :gpg_help_label)}
+                </a>
+              </p>
             </details>
           </div>
 
@@ -648,30 +667,6 @@ defmodule Kalyna.PortfolioComponents do
               class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
             >{value(:telegram_username)}</a>
           </div>
-          <!-- Mastodon -->
-          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
-            <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                class="w-6 h-6 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
-              </svg>
-            </div>
-            <h3 class="font-semibold text-slate-900 dark:text-white mb-2">
-              {copy(@lang, :mastodon_heading)}
-            </h3>
-            <a
-              href={value(:mastodon_url)}
-              rel="me"
-              class="text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-            >
-              {copy(@lang, :mastodon_label)}
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -687,7 +682,34 @@ defmodule Kalyna.PortfolioComponents do
         <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
           {copy(@lang, :community_heading)}
         </h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
+            <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-lg flex items-center justify-center">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-8 h-8 text-red-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+              {copy(@lang, :youtube_heading)}
+            </h3>
+            <p class="text-slate-600 dark:text-slate-200 mb-4">
+              {copy(@lang, :youtube_description)}
+            </p>
+            <a
+              href={value(:youtube_url)}
+              target="_blank"
+              class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium inline-block"
+            >
+              {copy(@lang, :youtube_label)}
+            </a>
+          </div>
+
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
               <svg
@@ -715,29 +737,29 @@ defmodule Kalyna.PortfolioComponents do
           </div>
 
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
-            <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-lg flex items-center justify-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
               <svg
                 aria-hidden="true"
                 focusable="false"
-                class="w-8 h-8 text-red-600"
+                class="w-8 h-8 text-blue-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
               </svg>
             </div>
             <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
-              {copy(@lang, :youtube_heading)}
+              {copy(@lang, :mastodon_heading)}
             </h3>
             <p class="text-slate-600 dark:text-slate-200 mb-4">
-              {copy(@lang, :youtube_description)}
+              {copy(@lang, :mastodon_description)}
             </p>
             <a
-              href={value(:youtube_url)}
-              target="_blank"
-              class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium inline-block"
+              href={value(:mastodon_url)}
+              rel="me"
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block"
             >
-              {copy(@lang, :youtube_label)}
+              {copy(@lang, :mastodon_label)}
             </a>
           </div>
         </div>
@@ -807,7 +829,12 @@ defmodule Kalyna.PortfolioComponents do
               </div>
               <div class="flex justify-between">
                 <span class="font-medium">{copy(@lang, :registration_label)}</span>
-                <span>{copy(@lang, :company_registration)}</span>
+                <a
+                  href={value(:company_registration_url)}
+                  class="text-blue-600 underline dark:text-blue-300"
+                >
+                  {copy(@lang, :company_registration)}
+                </a>
               </div>
               <div class="flex justify-between">
                 <span class="font-medium">{copy(@lang, :vat_label)}</span>
@@ -816,6 +843,10 @@ defmodule Kalyna.PortfolioComponents do
               <div class="flex justify-between">
                 <span class="font-medium">{copy(@lang, :location_label)}</span>
                 <span>{copy(@lang, :company_location)}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">{copy(@lang, :registered_office_label)}</span>
+                <span>{copy(@lang, :registered_office)}</span>
               </div>
               <div class="flex justify-between">
                 <span class="font-medium">{copy(@lang, :tax_label)}</span>
@@ -829,53 +860,9 @@ defmodule Kalyna.PortfolioComponents do
               <h3 class="font-semibold text-slate-900 dark:text-white mb-4 text-center">
                 {copy(@lang, :availability_heading)}
               </h3>
-              <div class="space-y-3 text-slate-600 dark:text-slate-200">
-                <div class="flex items-center justify-center">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    class="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    >
-                    </path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    >
-                    </path>
-                  </svg>
-                  <span>{copy(@lang, :onsite_availability)}</span>
-                </div>
-                <div class="flex items-center justify-center">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    class="w-5 h-5 text-green-600 dark:text-green-400 mr-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
-                    >
-                    </path>
-                  </svg>
-                  <span>{copy(@lang, :remote_availability)}</span>
-                </div>
-              </div>
+              <p class="text-center text-slate-600 dark:text-slate-200">
+                {copy(@lang, :availability_description)}
+              </p>
             </div>
           </div>
         </div>

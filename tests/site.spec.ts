@@ -24,7 +24,7 @@ async function expectPortraitResource(portrait: Locator, index: number, density:
 }
 
 for (const language of ['sv', 'en']) {
-  test(`${language}: content, navigation and image loading`, async ({ page }) => {
+  test(`${language}: content, navigation and image loading`, async ({ page, isMobile }) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(language === 'en' ? '/en/' : '/');
@@ -40,6 +40,18 @@ for (const language of ['sv', 'en']) {
     await expect(page.getByRole('heading', { name: 'Kalyna Solutions AB', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: 'daniel@kalyna.se' })).toHaveAttribute('href', 'mailto:daniel@kalyna.se');
     await expect(page.getByRole('link', { name: /Mastodon/ })).toHaveAttribute('rel', 'me');
+    if (!isMobile) {
+      const cards = page.locator('#contact h3').locator('..');
+      await expect(cards).toHaveCount(5);
+      const [first, second, third, fourth, fifth] = await cards.evaluateAll(elements =>
+        elements.map(element => element.getBoundingClientRect().toJSON()),
+      );
+      expect(first.top).toBe(second.top);
+      expect(second.top).toBe(third.top);
+      expect(fourth.top).toBeGreaterThan(first.bottom);
+      expect(fourth.top).toBe(fifth.top);
+      expect((fourth.left + fifth.right) / 2).toBeCloseTo((first.left + third.right) / 2, 1);
+    }
     await expect(page.getByRole('link', { name: 'Carmenta', exact: true })).toHaveAttribute('href', 'https://carmenta.com/');
     await expect(page.getByText('2024–2026', { exact: false })).toBeVisible();
     await expect(page.getByText('2022–2025', { exact: false })).toBeVisible();

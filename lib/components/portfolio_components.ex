@@ -523,7 +523,7 @@ defmodule Kalyna.PortfolioComponents do
         <p class="text-xl text-slate-600 dark:text-slate-200 mb-8 max-w-2xl mx-auto">
           {copy(@lang, :contact_description)}
         </p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-6 lg:*:col-span-2 lg:[&>:nth-child(4)]:col-start-2 gap-6 max-w-4xl mx-auto">
           <!-- Email -->
           <div class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
             <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">

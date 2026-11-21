@@ -93,6 +93,17 @@ defmodule Kalyna.PortfolioComponents do
 
       <!-- Company Information Section -->
       <.company_information lang={@lang} />
+
+      <footer class="flex justify-center px-4 pb-8 pt-4">
+        <img
+          src="/images/logo-viking.svg"
+          alt=""
+          width="112"
+          height="112"
+          loading="lazy"
+          class="dark:invert"
+        />
+      </footer>
     </div>
     """
   end

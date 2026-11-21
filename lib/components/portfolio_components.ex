@@ -543,7 +543,7 @@ defmodule Kalyna.PortfolioComponents do
               <p class="mt-2">
                 <a
                   href={value(:gpg_help_url)}
-                  class="inline-flex min-h-8 items-center gap-1 rounded px-2 text-blue-600 underline hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:text-blue-300 dark:hover:bg-slate-700"
+                  class="openpgp-help-link min-h-8 items-center gap-1 rounded px-2 text-blue-600 underline hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:text-blue-300 dark:hover:bg-slate-700"
                 >
                   <svg
                     aria-hidden="true"

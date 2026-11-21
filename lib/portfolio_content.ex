@@ -63,11 +63,13 @@ defmodule Kalyna.PortfolioContent do
       "Har du några behov, tankar eller idéer? Du får gärna kontakta mig oavsett anledning.",
     email_heading: "E-post",
     phone_heading: "Telefon",
-    gpg_heading: "Publik GPG-nyckel",
+    gpg_heading: "Publik OpenPGP-nyckel",
     gpg_fingerprint_label: "Fingeravtryck",
+    gpg_help_label: "Hjälp med OpenPGP",
+    mastodon_description: "Korta inlägg om utveckling och teknik.",
     mastodon_label: "Följ mig på Mastodon",
     linkedin_label: "Se min LinkedIn-profil",
-    community_heading: "Innehåll & community",
+    community_heading: "Följ mig",
     blog_heading: "Blogg",
     blog_description: "Personliga tankar om livet och teknik i textformat.",
     blog_label: "Läs artiklar",
@@ -91,11 +93,12 @@ defmodule Kalyna.PortfolioContent do
     vat_label: "VAT-nummer:",
     location_label: "Plats:",
     company_location: "Stockholm, Sverige",
+    registered_office_label: "Säte:",
+    registered_office: "Lidingö kommun, Stockholms län, Sverige",
     tax_label: "Skattestatus:",
     company_tax_status: "Godkänd för F-skatt",
-    availability_heading: "Tillgänglighet",
-    onsite_availability: "Projekt på plats i Stockholmsområdet",
-    remote_availability: "Remote-projekt",
+    availability_heading: "Så jobbar jag",
+    availability_description: "Jag tar uppdrag på plats i Stockholmsområdet och på distans.",
     logo_src: "/images/logo.webp",
     company_name: "Kalyna Solutions AB",
     contact_fragment: "#contact",
@@ -120,6 +123,7 @@ defmodule Kalyna.PortfolioContent do
     telegram_heading: "Telegram",
     telegram_username: "@DanOpcode",
     telegram_url: "https://t.me/DanOpcode",
+    gpg_help_url: "https://support.mozilla.org/en-US/kb/openpgp-thunderbird-howto-and-faq",
     gpg_fingerprint: "B94F 1E82 15E4 0860 4E02 B35E D724 EEFE D54E 4E35",
     gpg_openpgp_label: "keys.openpgp.org",
     gpg_openpgp_url:
@@ -146,6 +150,8 @@ defmodule Kalyna.PortfolioContent do
     song_video_url: "https://www.youtube.com/watch?v=EV_vT0Vud5Q",
     full_stop: ".",
     company_registration: "559386-8457",
+    company_registration_url:
+      "https://foretagsinfo.bolagsverket.se/sok-foretagsinformation-web/foretag/5593868457",
     company_vat: "SE559386845701"
   }
 
@@ -229,7 +235,8 @@ defmodule Kalyna.PortfolioContent do
         [
           [{:link, :gpg_openpgp_url, [:gpg_openpgp_label]}],
           [{:link, :gpg_ubuntu_url, [:gpg_ubuntu_label]}],
-          [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}]
+          [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}],
+          [{:link, :gpg_help_url, [:gpg_help_label]}]
         ]},
        {:heading, 3, [:phone_heading]},
        {:paragraph, [{:link, :phone_url, [:phone_number]}]},
@@ -238,19 +245,20 @@ defmodule Kalyna.PortfolioContent do
        {:heading, 3, [:signal_heading]},
        {:paragraph, [:signal_username]},
        {:heading, 3, [:telegram_heading]},
-       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]},
-       {:heading, 3, [:mastodon_heading]},
-       {:paragraph, [{:link, :mastodon_url, [:mastodon_label]}]}
+       {:paragraph, [{:link, :telegram_url, [:telegram_username]}]}
      ]},
     {:community,
      [
        {:heading, 2, [:community_heading]},
+       {:heading, 3, [:youtube_heading]},
+       {:paragraph, [:youtube_description]},
+       {:paragraph, [{:link, :youtube_url, [:youtube_label]}]},
        {:heading, 3, [:blog_heading]},
        {:paragraph, [:blog_description]},
        {:paragraph, [{:link, :blog_url, [:blog_label]}]},
-       {:heading, 3, [:youtube_heading]},
-       {:paragraph, [:youtube_description]},
-       {:paragraph, [{:link, :youtube_url, [:youtube_label]}]}
+       {:heading, 3, [:mastodon_heading]},
+       {:paragraph, [:mastodon_description]},
+       {:paragraph, [{:link, :mastodon_url, [:mastodon_label]}]}
      ]},
     {:about_kalyna,
      [
@@ -273,13 +281,14 @@ defmodule Kalyna.PortfolioContent do
      [
        {:heading, 2, [:company_heading]},
        {:paragraph, [:legal_name_label, " ", :company_name]},
-       {:paragraph, [:registration_label, " ", :company_registration]},
+       {:paragraph,
+        [:registration_label, " ", {:link, :company_registration_url, [:company_registration]}]},
        {:paragraph, [:vat_label, " ", :company_vat]},
        {:paragraph, [:location_label, " ", :company_location]},
+       {:paragraph, [:registered_office_label, " ", :registered_office]},
        {:paragraph, [:tax_label, " ", :company_tax_status]},
        {:heading, 3, [:availability_heading]},
-       {:paragraph, [:onsite_availability]},
-       {:paragraph, [:remote_availability]}
+       {:paragraph, [:availability_description]}
      ]}
   ]
 

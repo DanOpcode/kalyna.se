@@ -17,7 +17,7 @@ defmodule Kalyna.ExperienceComponents do
         <p class="text-slate-600 dark:text-slate-200 text-center mb-12 max-w-2xl mx-auto">
           {t(@lang, "Företag jag arbetat med.")}
         </p>
-        <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           <.experience_card
             :for={company <- @companies}
             lang={@lang}

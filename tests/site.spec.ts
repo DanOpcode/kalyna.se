@@ -23,6 +23,14 @@ async function expectPortraitResource(portrait: Locator, index: number, density:
   expect((await response.body()).length).toBeLessThan(50 * 1024);
 }
 
+test('company cards use two columns at 1022px', async ({ page, isMobile }) => {
+  test.skip(isMobile, 'This viewport check uses desktop Chromium.');
+  await page.setViewportSize({ width: 1022, height: 800 });
+  await page.goto('/');
+  const grid = page.locator('#experience .grid').first();
+  await expect(grid).toHaveCSS('grid-template-columns', /^\d+(?:\.\d+)?px \d+(?:\.\d+)?px$/);
+});
+
 for (const language of ['sv', 'en']) {
   test(`${language}: content, navigation and image loading`, async ({ page, isMobile }) => {
     const errors: string[] = [];

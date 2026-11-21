@@ -400,6 +400,14 @@ Daniel independently carried out the migration and implemented more advanced mod
 
 Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Bootstrap, JSON, Git, Windows 7, PyCharm, agile methods (Kanban)
 
+## Architecture your team can build on
+
+When I design an architecture, I start with what the system needs to do and how the team will work with it. Which parts does the team need to be able to change independently? What do we actually need to build now? My experience in full-stack development and DevOps helps me make those trade-offs and then help build the solution.
+
+### AI agents in development
+
+I also use AI agents for clearly scoped tasks, such as mapping dependencies, building a prototype or writing tests. I review the results based on how they fit into the system and what colleagues will need to understand and change later.
+
 ## What a former colleague says
 
 > “Daniel was a developer on many consulting projects, some of them with me. He took considerable responsibility for planning, leadership and delivery, as well as direct customer contact. He was widely regarded, including by management, as a Swiss Army knife who could be sent into any software project and shine.”

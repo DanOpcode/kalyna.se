@@ -1,6 +1,12 @@
 defmodule Kalyna.Translations do
   @moduledoc "English copy for the shared Swedish/English site template."
   @english %{
+    "Arkitektur som teamet kan bygga vidare på" => "Architecture your team can build on",
+    "När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Var behöver vi kunna göra ändringar oberoende av varandra? Vilka fel behöver bli synliga direkt? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen." =>
+      "When I design an architecture, I start with what the system needs to do and how the team will work with it. Where do we need to be able to make changes independently? Which failures do we need to see right away? What do we actually need to build now? My experience in full-stack development and DevOps helps me make those trade-offs and then help build the solution.",
+    "AI-agenter i utvecklingen" => "AI agents in development",
+    "I det arbetet använder jag också AI-agenter för avgränsade uppgifter, till exempel att kartlägga beroenden, ta fram en prototyp eller skriva tester. Jag bedömer resultatet utifrån hur det passar in i systemet och vad kollegorna behöver kunna förstå och ändra senare." =>
+      "I also use AI agents for clearly scoped tasks, such as mapping dependencies, building a prototype or writing tests. I review the results based on how they fit into the system and what colleagues will need to understand and change later.",
     "Konsult • Anställd • 2021–2021" => "Consultant • Full-time • 2021–2021",
     "AQC Sweden AB logga" => "AQC Sweden AB logo",
     "Jag var anställd av AQC under en del av mitt uppdrag hos CELLINK." =>

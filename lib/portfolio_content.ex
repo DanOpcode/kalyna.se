@@ -42,6 +42,12 @@ defmodule Kalyna.PortfolioContent do
     areas_heading: "Områden",
     platforms_heading: "Plattformar",
     web_platform: "Webb",
+    architecture_heading: "Arkitektur som teamet kan bygga vidare på",
+    architecture_approach:
+      "När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Var behöver vi kunna göra ändringar oberoende av varandra? Vilka fel behöver bli synliga direkt? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.",
+    architecture_agents_heading: "AI-agenter i utvecklingen",
+    architecture_agents:
+      "I det arbetet använder jag också AI-agenter för avgränsade uppgifter, till exempel att kartlägga beroenden, ta fram en prototyp eller skriva tester. Jag bedömer resultatet utifrån hur det passar in i systemet och vad kollegorna behöver kunna förstå och ändra senare.",
     testimonial_heading: "Vad en tidigare kollega säger",
     testimonial_quote:
       "”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”",
@@ -201,6 +207,13 @@ defmodule Kalyna.PortfolioContent do
         [{:link, :daily_diff_url, [{:image, :daily_diff_image_alt, :daily_diff_image_src}]}]}
      ]},
     {:experience, :experience},
+    {:architecture,
+     [
+       {:heading, 2, [:architecture_heading]},
+       {:paragraph, [:architecture_approach]},
+       {:heading, 3, [:architecture_agents_heading]},
+       {:paragraph, [:architecture_agents]}
+     ]},
     {:testimonial,
      [
        {:heading, 2, [:testimonial_heading]},

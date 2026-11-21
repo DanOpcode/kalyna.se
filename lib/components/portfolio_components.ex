@@ -72,6 +72,7 @@ defmodule Kalyna.PortfolioComponents do
 
       <!-- Professional Experience Section -->
       <.experience lang={@lang} />
+      <.architecture lang={@lang} />
 
       <!-- Testimonial Section -->
       <.testimonial lang={@lang} />
@@ -324,6 +325,34 @@ defmodule Kalyna.PortfolioComponents do
               <li>{copy(@lang, :web_platform)}</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+    """
+  end
+
+  attr(:lang, :string, required: true)
+
+  def architecture(assigns) do
+    ~H"""
+    <section id="architecture" aria-labelledby="architecture-heading" class="px-6 py-10">
+      <div class="mx-auto max-w-3xl rounded-2xl border border-stone-200 border-t-4 border-t-rose-800 bg-stone-50 px-6 py-8 shadow-sm sm:px-10 sm:py-10 dark:border-stone-700 dark:border-t-rose-400 dark:bg-stone-900 print:border-0 print:p-0">
+        <h2
+          id="architecture-heading"
+          class="mb-5 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl dark:text-white"
+        >
+          {copy(@lang, :architecture_heading)}
+        </h2>
+        <p class="leading-relaxed text-stone-700 dark:text-stone-200 sm:text-lg">
+          {copy(@lang, :architecture_approach)}
+        </p>
+        <div class="mt-7 border-t border-stone-300 pt-6 sm:text-lg dark:border-stone-700 print:mt-3 print:border-0 print:pt-0">
+          <h3 class="mb-2 text-lg font-semibold text-rose-800 dark:text-rose-300">
+            {copy(@lang, :architecture_agents_heading)}
+          </h3>
+          <p class="leading-relaxed text-stone-700 dark:text-stone-200">
+            {copy(@lang, :architecture_agents)}
+          </p>
         </div>
       </div>
     </section>

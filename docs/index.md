@@ -400,6 +400,14 @@ Daniel jobbade självständigt med portningsarbetet. Samtidigt implementerade ha
 
 Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Bootstrap, JSON, Git, Windows 7, PyCharm, agila metoder (Kanban)
 
+## Arkitektur som teamet kan bygga vidare på
+
+När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Var behöver vi kunna göra ändringar oberoende av varandra? Vilka fel behöver bli synliga direkt? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.
+
+### AI-agenter i utvecklingen
+
+I det arbetet använder jag också AI-agenter för avgränsade uppgifter, till exempel att kartlägga beroenden, ta fram en prototyp eller skriva tester. Jag bedömer resultatet utifrån hur det passar in i systemet och vad kollegorna behöver kunna förstå och ändra senare.
+
 ## Vad en tidigare kollega säger
 
 > ”Daniel var utvecklare i många projekt (konsult), varav vissa med mig. Han tog stort eget ansvar för planering, ledning och utförande, samt direktkontakt med kund. Han var allmänt (även av ledningen) ansedd som en schweizisk armékniv som kunde skickas in i vilket mjukvaruprojekt som helst och glänsa.”

@@ -402,7 +402,7 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Arkitektur som teamet kan bygga vidare på
 
-När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Var behöver vi kunna göra ändringar oberoende av varandra? Vilka fel behöver bli synliga direkt? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.
+När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Vilka delar behöver teamet kunna ändra var för sig? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.
 
 ### AI-agenter i utvecklingen
 

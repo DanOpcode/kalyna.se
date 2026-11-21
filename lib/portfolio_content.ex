@@ -44,7 +44,7 @@ defmodule Kalyna.PortfolioContent do
     web_platform: "Webb",
     architecture_heading: "Arkitektur som teamet kan bygga vidare på",
     architecture_approach:
-      "När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Var behöver vi kunna göra ändringar oberoende av varandra? Vilka fel behöver bli synliga direkt? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.",
+      "När jag tar fram en arkitektur utgår jag från vad systemet behöver klara och hur teamet kommer att arbeta med det. Vilka delar behöver teamet kunna ändra var för sig? Vad behöver vi faktiskt bygga nu? Min erfarenhet av fullstackutveckling och DevOps hjälper mig att göra de avvägningarna och sedan vara med och bygga lösningen.",
     architecture_agents_heading: "AI-agenter i utvecklingen",
     architecture_agents:
       "I det arbetet använder jag också AI-agenter för avgränsade uppgifter, till exempel att kartlägga beroenden, ta fram en prototyp eller skriva tester. Jag bedömer resultatet utifrån hur det passar in i systemet och vad kollegorna behöver kunna förstå och ändra senare.",

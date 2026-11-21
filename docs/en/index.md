@@ -402,7 +402,7 @@ Python, Pandas, Flask, Pywin32, Named pipe, SQLite, SQL, Excel, HTML, CSS, Boots
 
 ## Architecture your team can build on
 
-When I design an architecture, I start with what the system needs to do and how the team will work with it. Where do we need to be able to make changes independently? Which failures do we need to see right away? What do we actually need to build now? My experience in full-stack development and DevOps helps me make those trade-offs and then help build the solution.
+When I design an architecture, I start with what the system needs to do and how the team will work with it. Which parts does the team need to be able to change independently? What do we actually need to build now? My experience in full-stack development and DevOps helps me make those trade-offs and then help build the solution.
 
 ### AI agents in development
 

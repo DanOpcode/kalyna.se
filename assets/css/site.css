@@ -29,6 +29,7 @@ details[open] > summary .expand-icon { transform: rotate(180deg); }
 
 /* Text links are recognizable without relying on hue. */
 #contact a { text-decoration: underline; text-underline-offset: .2em; display: inline-block; padding-block: .25rem; }
+#contact a.openpgp-help-link { display: inline-flex; }
 #daily-diff :focus-visible { outline-color: #67e8f9; }
 
 /* Allow content and controls to reflow when text is enlarged. */

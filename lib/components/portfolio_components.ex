@@ -98,7 +98,7 @@ defmodule Kalyna.PortfolioComponents do
         <img
           src="/images/logo-stylized.svg"
           alt=""
-          width="112"
+          width="111"
           height="112"
           loading="lazy"
           class="dark:invert"

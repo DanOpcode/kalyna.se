@@ -137,6 +137,8 @@ defmodule Kalyna.PortfolioContent do
     gpg_ubuntu_label: "Ubuntu",
     gpg_ubuntu_url:
       "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",
+    gpg_mit_label: "MIT PGP Key Server",
+    gpg_mit_url: "https://pgp.mit.edu/pks/lookup?search=daniel%40kalyna.se&op=index",
     gpg_mailvelope_label: "Mailvelope",
     gpg_mailvelope_url:
       "https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",
@@ -248,6 +250,7 @@ defmodule Kalyna.PortfolioContent do
         [
           [{:link, :gpg_openpgp_url, [:gpg_openpgp_label]}],
           [{:link, :gpg_ubuntu_url, [:gpg_ubuntu_label]}],
+          [{:link, :gpg_mit_url, [:gpg_mit_label]}],
           [{:link, :gpg_mailvelope_url, [:gpg_mailvelope_label]}],
           [{:link, :gpg_help_url, [:gpg_help_label]}]
         ]},

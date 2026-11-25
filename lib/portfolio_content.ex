@@ -138,7 +138,7 @@ defmodule Kalyna.PortfolioContent do
     gpg_ubuntu_url:
       "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",
     gpg_mit_label: "MIT PGP key server",
-    gpg_mit_url: "https://pgp.mit.edu/pks/lookup?search=daniel%40kalyna.se&op=index",
+    gpg_mit_url: "https://pgp.mit.edu/pks/lookup?op=get&search=0xD724EEFED54E4E35",
     gpg_mailvelope_label: "Mailvelope",
     gpg_mailvelope_url:
       "https://keys.mailvelope.com/pks/lookup?op=get&search=0xB94F1E8215E408604E02B35ED724EEFED54E4E35",

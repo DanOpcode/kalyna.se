@@ -571,7 +571,7 @@ defmodule Kalyna.PortfolioComponents do
                 <code class="block leading-relaxed">{value(:gpg_fingerprint)}</code>
               </p>
               <ul class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <li :for={server <- [:openpgp, :ubuntu, :mailvelope]}>
+                <li :for={server <- [:openpgp, :ubuntu, :mit, :mailvelope]}>
                   <a
                     href={value(:"gpg_#{server}_url")}
                     class="text-blue-600 underline dark:text-blue-300"
